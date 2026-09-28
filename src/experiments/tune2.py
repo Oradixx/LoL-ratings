@@ -1,0 +1,15 @@
+import sys, json; sys.path.insert(0,'src'); sys.path.insert(0,'src/experiments'); from tune import run, log, base
+import json
+b=dict(lam=50,lamL=3,target='result')
+run('B',b)
+run('lamL1',dict(b,lamL=1))
+run('gold',dict(b,target='gold'))
+run('mix',dict(b,target='mix'))
+run('tau120',dict(b,tau=120))
+run('tau240',dict(b,tau=240))
+run('noprior',dict(b,prior=False))
+run('nochamp',dict(b,champ=False))
+run('nolane',dict(b,lane=False))
+run('prior_scale0.5',dict(b,prior_scale=0.5))
+run('prior_alpha500',dict(b,prior_alpha=500))
+json.dump(log,open('data/proc/tune2.json','w'),indent=1,default=str)

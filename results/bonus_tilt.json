@@ -1,0 +1,26 @@
+[
+ {
+  "kind": "même série (quelques minutes après)",
+  "n": 8529,
+  "win": 0.4399,
+  "exp": 0.4584,
+  "ecart_pts": -1.8455,
+  "se_pts": 0.5375
+ },
+ {
+  "kind": "prochaine rencontre (<60 j)",
+  "n": 6016,
+  "win": 0.3805,
+  "exp": 0.4236,
+  "ecart_pts": -4.3083,
+  "se_pts": 0.626
+ },
+ {
+  "kind": "prochaine rencontre (>60 j)",
+  "n": 2665,
+  "win": 0.3884,
+  "exp": 0.4123,
+  "ecart_pts": -2.3933,
+  "se_pts": 0.9441
+ }
+]

@@ -1,0 +1,51 @@
+pid,name,team,league,role,GP,W,v02
+oe:player:d8362fe0d38ca0e70953ed957deaa00,Rekkles,Los Ratones,NLC,Support,87,0.851,2.622
+oe:player:dfc279de8d7bd571aa8edfd7eb89c03,Moham,Oh My God Academy,Asia Master,Support,39,0.385,2.012
+oe:player:36d61387b87cbabd4c833a490f25a55,Ryuk,Lille Esport,LFL2,ADC,18,0.611,1.938
+oe:player:3dbe8ecf9c97fc12b28ad199bdb5f82,Baut,BBL Dark Passage,TCL,Support,22,0.5,1.888
+oe:player:9b7c45e7ef1970c25aee38bf556f8c0,Kozak,Green Dolphin Gaming,NEXO,ADC,16,0.562,1.868
+oe:player:9d361f9d8214252ee571375f9105cb4,frosty,RED Canids,LTA,Support,63,0.508,1.754
+oe:player:10be1f35d8b5ea6babf916a6e7dd8a4,Fleshy,Team Vitality,LEC,Support,52,0.519,1.726
+oe:player:7676c3dbf9486cb34da6e1c94d09b70,Aomine,Saigon Dino,VCS,ADC,43,0.767,1.667
+oe:player:eaaf2e20683cde8408d05159c05528c,Aladoric,Austrian Force willhaben,PRM,Support,18,0.389,1.658
+oe:player:f89b14820da11d8679cfd07da552ca5,uZent,RED Academy,CD,Support,47,0.723,1.656
+oe:player:3e68fd564e4e518b8aed89b9a0bf855,Pyrka,Ramboot Club,LVP SL,Support,15,0.533,1.639
+oe:player:c8fe7c65a2ae0ab6ff62674ade6847d,Cloud,T1 Esports Academy,LCKC,Support,127,0.598,1.624
+oe:player:37b0ff747a3bc11f577c0a05f0dedd1,Samver,REJECT,LJL,ADC,60,0.783,1.593
+oe:player:1f7d70f56b608b3137df2493949fdd0,Bie,Saigon Dino,VCS,Support,43,0.767,1.588
+oe:player:db79ce6ad35451c938fbe2995dabd37,Keria,T1,LCK,Support,145,0.614,1.571
+oe:player:d24f38ec30ce6f7577066f80e43e4bf,Kael,Anyone's Legend,LPL,Support,173,0.642,1.558
+oe:player:ca18f3cf2fd9adb391d4770c33286f0,Raina,REJECT,LJL,Support,60,0.783,1.553
+oe:player:33312b25deba2013d40462c26e24b11,Pann,eSuba,HM,Support,32,0.812,1.53
+oe:player:90651ebea9a35ec4e018c8157492e17,ON,Bilibili Gaming,LPL,Support,172,0.622,1.529
+oe:player:1a38c55db5f8af06ebac94d8530ff71,Avra,Esprit Shōnen,LFL,ADC,49,0.694,1.528
+oe:player:285107bcc7ed3fdef0a479f78bc211c,DICE,QT DIG∞,LJL,Mid,61,0.672,1.526
+oe:player:1b90b5086aa57992143a92a2899b8e0,Taki,Team Secret Whales,LCP,Support,72,0.569,1.506
+oe:player:f5bf9bd732b85e4dcab5121e4769ae4,Alvaro,Movistar KOI,LEC,Support,95,0.558,1.494
+oe:player:c6445581b2cfc3646f4dc0ccf41753d,ianshaka,Farenvehn,LRS,ADC,50,0.68,1.494
+oe:player:55dd290e8824755e997201409a0b36a,FliiZee,Oxygen Gaming,NEXO,ADC,16,0.688,1.492
+oe:player:fe4329cec43193c425eb28a4a4b304a,Upset,Fnatic,LEC,ADC,79,0.633,1.482
+oe:player:0758af26fa0c3af6899bb1569059609,Lospa,GIANTX Pride,LVP SL,Support,75,0.707,1.473
+oe:player:fdde756c37f499c36df183d987b3c6d,Ibai,Oxygen Gaming,LVP SL,ADC,35,0.571,1.47
+oe:player:343b2b8ed97512673e3e1ef2705b0de,Cavalo,Corinthians Esports,CD,Support,52,0.558,1.461
+oe:player:115cbb13ff7ef811c05d6e95bf224c2,Shadow,Farenvehn,LRS,Support,47,0.702,1.456
+oe:player:31b5f1d49f55acb4ee7624813bda6b2,Woody,PSG Talon,LCP,Support,87,0.552,1.455
+oe:player:11ca8602d3855c158442bb37c9254bb,Neadz,Lechuga Gaming,LRS,Mid,16,0.562,1.452
+oe:player:dab9d868efc0d19f7f347ba16c372bc,Karaage,Clocks,LJL,Mid,24,0.667,1.451
+oe:player:051ca2e31ba25123961b3df95fdef4c,Delight,Hanwha Life Esports,LCK,Support,139,0.662,1.449
+oe:player:94e5c960a512595b39fea5f350d7d0d,OddEye,T1 Esports Academy Rookies,LAS,ADC,72,0.736,1.446
+oe:player:dbb4f0b38307e3b2a6c2e6568262dc7,HungryPanda,Partizan Sangal,EBL,Support,73,0.562,1.44
+oe:player:4e0619e57cb50c4ab1230c2dd72df1b,Tactical,Luminosity Gaming,NACL,ADC,51,0.804,1.435
+oe:player:0015d99e65183977a9e65547b37f1cb,Harp,DetonatioN FocusMe,LCP,Support,53,0.264,1.434
+oe:player:c7c0cc0b057c316e22af5c5da55c0c8,Guigs,KaBuM! Ilha das Lendas,CD,Support,44,0.341,1.432
+oe:player:ee051912ad5f9a97aa9ce4980cbb481,Peter,KT Rolster,LCK,Support,119,0.563,1.431
+oe:player:1e48e6a94caf09f3d8275ffba847eea,Jelly,Fuego,LRN,Support,15,0.533,1.43
+oe:player:a5a630a5d4f0d3151f3c98d2d98834b,Telas,Alpha7 Esports,CD,Support,39,0.59,1.427
+oe:player:13166913111075999f2adeb687548eb,Parukia,EDward Gaming,LPL,Support,36,0.639,1.423
+oe:player:1d1600d15a68ab1a80348ee748ea1e3,scamber,Vivo Keyd Stars Academy,CD,Support,58,0.672,1.413
+oe:player:3b2d059fda23dc133eb0e8d9e184acd,Nomi,CNG Royal,NLC,ADC,16,0.5,1.409
+oe:player:81acc6bcde5c927c78e0990e9887f84,Vulcan,Cloud9,LTA N,Support,66,0.636,1.403
+oe:player:7fdedd3126915607d5c8f42f8239253,Pleata,DRX Challengers,LCKC,Support,112,0.527,1.395
+oe:player:c70b6e57e597809a8561caa79c5db8f,Keii,DarkZero Dragonsteel,NACL,Top,44,0.659,1.391
+oe:player:943f53d325e6a71dab00800edcbbac6,Shakur,GTZ Esports,LPLOL,ADC,19,0.421,1.387
+oe:player:7c8d8bf5d11af12d15aad3ce6bf5522,Patch,Beşiktaş Esports,EM,Support,87,0.632,1.376

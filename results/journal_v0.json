@@ -1,0 +1,488 @@
+{
+ "v01_top": [
+  {
+   "name": "Rekkles",
+   "team": "Los Ratones",
+   "league": "NLC",
+   "role": "Support",
+   "GP": 87,
+   "KDA": 14.27,
+   "W": 0.85
+  },
+  {
+   "name": "Aomine",
+   "team": "Saigon Dino",
+   "league": "VCS",
+   "role": "ADC",
+   "GP": 43,
+   "KDA": 8.35,
+   "W": 0.77
+  },
+  {
+   "name": "Pann",
+   "team": "eSuba",
+   "league": "HM",
+   "role": "Support",
+   "GP": 32,
+   "KDA": 8.2,
+   "W": 0.81
+  },
+  {
+   "name": "Upset",
+   "team": "Fnatic",
+   "league": "LEC",
+   "role": "ADC",
+   "GP": 79,
+   "KDA": 8.01,
+   "W": 0.63
+  },
+  {
+   "name": "Soldier",
+   "team": "Caldya Esport",
+   "league": "LFL2",
+   "role": "ADC",
+   "GP": 63,
+   "KDA": 7.7,
+   "W": 0.59
+  },
+  {
+   "name": "CROmpir",
+   "team": "Oxygen Gaming",
+   "league": "NEXO",
+   "role": "Mid",
+   "GP": 16,
+   "KDA": 7.65,
+   "W": 0.69
+  },
+  {
+   "name": "M G",
+   "team": "Los Grandes",
+   "league": "CD",
+   "role": "Mid",
+   "GP": 43,
+   "KDA": 7.47,
+   "W": 0.56
+  },
+  {
+   "name": "sajed",
+   "team": "DarkZero Dragonsteel",
+   "league": "NACL",
+   "role": "ADC",
+   "GP": 45,
+   "KDA": 7.44,
+   "W": 0.67
+  },
+  {
+   "name": "FlickeR",
+   "team": "Geekay Esports",
+   "league": "EM",
+   "role": "ADC",
+   "GP": 49,
+   "KDA": 7.43,
+   "W": 0.82
+  },
+  {
+   "name": "Siler",
+   "team": "Falke Esports",
+   "league": "CT",
+   "role": "Mid",
+   "GP": 25,
+   "KDA": 7.33,
+   "W": 0.64
+  }
+ ],
+ "v01_corrW": 0.6736733477479236,
+ "v02_top": [
+  {
+   "name": "Rekkles",
+   "team": "Los Ratones",
+   "league": "NLC",
+   "role": "Support",
+   "GP": 87,
+   "v02": 2.62,
+   "W": 0.85
+  },
+  {
+   "name": "Moham",
+   "team": "Oh My God Academy",
+   "league": "Asia Master",
+   "role": "Support",
+   "GP": 39,
+   "v02": 2.01,
+   "W": 0.38
+  },
+  {
+   "name": "Ryuk",
+   "team": "Lille Esport",
+   "league": "LFL2",
+   "role": "ADC",
+   "GP": 18,
+   "v02": 1.94,
+   "W": 0.61
+  },
+  {
+   "name": "Baut",
+   "team": "BBL Dark Passage",
+   "league": "TCL",
+   "role": "Support",
+   "GP": 22,
+   "v02": 1.89,
+   "W": 0.5
+  },
+  {
+   "name": "Kozak",
+   "team": "Green Dolphin Gaming",
+   "league": "NEXO",
+   "role": "ADC",
+   "GP": 16,
+   "v02": 1.87,
+   "W": 0.56
+  },
+  {
+   "name": "frosty",
+   "team": "RED Canids",
+   "league": "LTA",
+   "role": "Support",
+   "GP": 63,
+   "v02": 1.75,
+   "W": 0.51
+  },
+  {
+   "name": "Fleshy",
+   "team": "Team Vitality",
+   "league": "LEC",
+   "role": "Support",
+   "GP": 52,
+   "v02": 1.73,
+   "W": 0.52
+  },
+  {
+   "name": "Aomine",
+   "team": "Saigon Dino",
+   "league": "VCS",
+   "role": "ADC",
+   "GP": 43,
+   "v02": 1.67,
+   "W": 0.77
+  },
+  {
+   "name": "Aladoric",
+   "team": "Austrian Force willhaben",
+   "league": "PRM",
+   "role": "Support",
+   "GP": 18,
+   "v02": 1.66,
+   "W": 0.39
+  },
+  {
+   "name": "uZent",
+   "team": "RED Academy",
+   "league": "CD",
+   "role": "Support",
+   "GP": 47,
+   "v02": 1.66,
+   "W": 0.72
+  }
+ ],
+ "v02_eff": {
+  "Top": {
+   "DPM": 0.108,
+   "DMG": 0.059,
+   "GD10": 0.245,
+   "CSD10": 0.176,
+   "XPD10": 0.152,
+   "KP": 0.12,
+   "KDA": 0.094,
+   "TDPG": 0.047
+  },
+  "Jungle": {
+   "KP": 0.179,
+   "GD10": 0.248,
+   "XPD10": 0.157,
+   "FB": 0.182,
+   "DPM": 0.047,
+   "KDA": 0.117,
+   "STL": 0.056,
+   "GOLD": 0.015
+  },
+  "Mid": {
+   "DPM": 0.151,
+   "DMG": 0.081,
+   "GD10": 0.254,
+   "CSD10": 0.171,
+   "KP": 0.14,
+   "KDA": 0.147,
+   "FB": 0.056
+  },
+  "ADC": {
+   "DPM": 0.173,
+   "DMG": 0.128,
+   "KDA": 0.281,
+   "CSPM": 0.047,
+   "CSD10": 0.183,
+   "GD10": 0.188
+  },
+  "Support": {
+   "KP": 0.231,
+   "WPM": 0.1,
+   "CWPM": 0.17,
+   "WCPM": 0.104,
+   "KDA": 0.217,
+   "FB": 0.13,
+   "GD10": 0.048
+  }
+ },
+ "v02_nan": 383,
+ "v03_corrW": 0.487630976457761,
+ "v03_top50_leagues": {
+  "LJL": 9,
+  "NEXO": 3,
+  "LFL2": 3,
+  "EM": 3,
+  "LPLOL": 3,
+  "LRN": 3,
+  "NLC": 2,
+  "NACL": 2
+ },
+ "v03_top": {
+  "Top": [
+   {
+    "name": "kPr",
+    "team": "FN Esports",
+    "league": "EM",
+    "v03": 2.06,
+    "W": 0.52
+   },
+   {
+    "name": "Bayonetta",
+    "team": "Otter Side",
+    "league": "LPLOL",
+    "v03": 1.99,
+    "W": 0.81
+   },
+   {
+    "name": "Zamudo",
+    "team": "Isurus",
+    "league": "LTA S",
+    "v03": 1.88,
+    "W": 0.65
+   },
+   {
+    "name": "Keii",
+    "team": "DarkZero Dragonsteel",
+    "league": "NACL",
+    "v03": 1.87,
+    "W": 0.66
+   },
+   {
+    "name": "tomomaso",
+    "team": "Andromeda Gaming",
+    "league": "HC",
+    "v03": 1.75,
+    "W": 0.39
+   }
+  ],
+  "Jungle": [
+   {
+    "name": "STEPZ",
+    "team": "inf",
+    "league": "LRN",
+    "v03": 1.85,
+    "W": 0.63
+   },
+   {
+    "name": "Mataz",
+    "team": "SDM Tigres",
+    "league": "LRN",
+    "v03": 1.58,
+    "W": 0.69
+   },
+   {
+    "name": "Norwegian",
+    "team": "Yang Yang Gaming",
+    "league": "LJL",
+    "v03": 1.55,
+    "W": 0.59
+   },
+   {
+    "name": "Samkz",
+    "team": "CITA Kaizen",
+    "league": "HC",
+    "v03": 1.51,
+    "W": 0.65
+   },
+   {
+    "name": "Mario",
+    "team": "AVE Axolotl",
+    "league": "LIT",
+    "v03": 1.45,
+    "W": 0.4
+   }
+  ],
+  "Mid": [
+   {
+    "name": "Saii",
+    "team": "Spirit Quartz Gaming",
+    "league": "LJL",
+    "v03": 2.13,
+    "W": 0.5
+   },
+   {
+    "name": "Neadz",
+    "team": "Lechuga Gaming",
+    "league": "LRS",
+    "v03": 1.76,
+    "W": 0.56
+   },
+   {
+    "name": "Karaage",
+    "team": "Clocks",
+    "league": "LJL",
+    "v03": 1.66,
+    "W": 0.67
+   },
+   {
+    "name": "DICE",
+    "team": "QT DIG∞",
+    "league": "LJL",
+    "v03": 1.64,
+    "W": 0.67
+   },
+   {
+    "name": "Nafkelah",
+    "team": "Caldya Esport",
+    "league": "LFL2",
+    "v03": 1.34,
+    "W": 0.59
+   }
+  ],
+  "ADC": [
+   {
+    "name": "Kozak",
+    "team": "Green Dolphin Gaming",
+    "league": "NEXO",
+    "v03": 2.38,
+    "W": 0.56
+   },
+   {
+    "name": "Ryuk",
+    "team": "Lille Esport",
+    "league": "LFL2",
+    "v03": 2.35,
+    "W": 0.61
+   },
+   {
+    "name": "Ibai",
+    "team": "Oxygen Gaming",
+    "league": "LVP SL",
+    "v03": 1.68,
+    "W": 0.57
+   },
+   {
+    "name": "Hans SamD",
+    "team": "Natus Vincere",
+    "league": "LEC",
+    "v03": 1.46,
+    "W": 0.48
+   },
+   {
+    "name": "raining",
+    "team": "FlameHard",
+    "league": "EM",
+    "v03": 1.45,
+    "W": 0.74
+   }
+  ],
+  "Support": [
+   {
+    "name": "Rekkles",
+    "team": "Los Ratones",
+    "league": "NLC",
+    "v03": 2.02,
+    "W": 0.85
+   },
+   {
+    "name": "Moham",
+    "team": "Oh My God Academy",
+    "league": "Asia Master",
+    "v03": 1.73,
+    "W": 0.38
+   },
+   {
+    "name": "Baut",
+    "team": "BBL Dark Passage",
+    "league": "TCL",
+    "v03": 1.61,
+    "W": 0.5
+   },
+   {
+    "name": "Fleshy",
+    "team": "Team Vitality",
+    "league": "LEC",
+    "v03": 1.33,
+    "W": 0.52
+   },
+   {
+    "name": "frosty",
+    "team": "RED Canids",
+    "league": "LTA",
+    "v03": 1.28,
+    "W": 0.51
+   }
+  ]
+ },
+ "pairs": [
+  [
+   "CSD10",
+   "GD10",
+   0.68
+  ],
+  [
+   "CSD10",
+   "XPD10",
+   0.73
+  ],
+  [
+   "CSPM",
+   "GOLD",
+   0.72
+  ],
+  [
+   "CWPM",
+   "WPM",
+   0.74
+  ],
+  [
+   "DMG",
+   "DPM",
+   0.77
+  ],
+  [
+   "DMG",
+   "GOLD",
+   0.69
+  ],
+  [
+   "GD10",
+   "XPD10",
+   0.71
+  ]
+ ],
+ "corrW": {
+  "CSD10": 0.35,
+  "CSPM": 0.26,
+  "CWPM": 0.06,
+  "DMG": 0.03,
+  "DPM": 0.41,
+  "FB": 0.14,
+  "GD10": 0.47,
+  "GOLD": 0.02,
+  "KDA": 0.75,
+  "KP": 0.13,
+  "STL": 0.13,
+  "TDPG": 0.57,
+  "WCPM": 0.16,
+  "WPM": 0.09,
+  "XPD10": 0.36
+ }
+}

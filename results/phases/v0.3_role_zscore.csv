@@ -1,0 +1,51 @@
+pid,name,team,league,role,GP,W,v03
+oe:player:9b7c45e7ef1970c25aee38bf556f8c0,Kozak,Green Dolphin Gaming,NEXO,ADC,16,0.562,2.378
+oe:player:36d61387b87cbabd4c833a490f25a55,Ryuk,Lille Esport,LFL2,ADC,18,0.611,2.345
+oe:player:86f395462990a4e7ecc8244caff13b5,Saii,Spirit Quartz Gaming,LJL,Mid,34,0.5,2.13
+oe:player:e72c863b7586a6b3a37e6e91339472d,kPr,FN Esports,EM,Top,27,0.519,2.061
+oe:player:d8362fe0d38ca0e70953ed957deaa00,Rekkles,Los Ratones,NLC,Support,87,0.851,2.017
+oe:player:04d8d57065f355309b2887a6e49d58b,Bayonetta,Otter Side,LPLOL,Top,16,0.812,1.992
+oe:player:81eb81987bcf9be1e3771a7f0a4ca77,Zamudo,Isurus,LTA S,Top,31,0.645,1.881
+oe:player:c70b6e57e597809a8561caa79c5db8f,Keii,DarkZero Dragonsteel,NACL,Top,44,0.659,1.869
+oe:player:6fcbbff49badbddafbda79a49abba07,STEPZ,inf,LRN,Jungle,27,0.63,1.85
+oe:player:11ca8602d3855c158442bb37c9254bb,Neadz,Lechuga Gaming,LRS,Mid,16,0.562,1.76
+oe:player:881b9cbf6567a84a259bec4e55f034e,tomomaso,Andromeda Gaming,HC,Top,31,0.387,1.754
+oe:player:dfc279de8d7bd571aa8edfd7eb89c03,Moham,Oh My God Academy,Asia Master,Support,39,0.385,1.729
+name:DM p1ng,DM p1ng,Dream in 24,LJL,Top,27,0.667,1.701
+oe:player:fdde756c37f499c36df183d987b3c6d,Ibai,Oxygen Gaming,LVP SL,ADC,35,0.571,1.683
+oe:player:dab9d868efc0d19f7f347ba16c372bc,Karaage,Clocks,LJL,Mid,24,0.667,1.663
+oe:player:285107bcc7ed3fdef0a479f78bc211c,DICE,QT DIG∞,LJL,Mid,61,0.672,1.642
+oe:player:c71563c4ae48cc1bbd2e7913366cdf7,SLT,Verdant,NLC,Top,35,0.657,1.635
+oe:player:786b5bbf7bbfb7b79379e8589a865c1,Zest,Bushido Wildcats,TCL,Top,47,0.511,1.634
+oe:player:3dbe8ecf9c97fc12b28ad199bdb5f82,Baut,BBL Dark Passage,TCL,Support,22,0.5,1.606
+oe:player:fa41f0e745119bde94b1cdcc8d10434,Mataz,SDM Tigres,LRN,Jungle,26,0.692,1.576
+oe:player:cb5feb1b7314637725a2e73bdc9f729,Color,Macko Esports,EM,Top,19,0.789,1.561
+oe:player:da550ca06bcacbd30b7c6ed32c864c7,Norwegian,Yang Yang Gaming,LJL,Jungle,56,0.589,1.553
+oe:player:44b1e81bfc6d5bb1a0da7fe5daaa4c0,Samkz,CITA Kaizen,HC,Jungle,26,0.654,1.507
+oe:player:90b5929ccb644ca52c504f4376faad3,Hans SamD,Natus Vincere,LEC,ADC,63,0.476,1.459
+oe:player:ffa7f50db949da3f7ccec7e2c4ec4c6,raining,FlameHard,EM,ADC,68,0.735,1.452
+oe:player:df1274a25b88333180c934458717dc5,Mario,AVE Axolotl,LIT,Jungle,15,0.4,1.446
+oe:player:46c0cc4125d2134240ee11081aa30b2,Asza,Senshi eSports,ROL,ADC,26,0.346,1.417
+oe:player:895b81748441d4b3c8faa7c1b8452dc,Sparda,Saigon Dino,VCS,Top,43,0.767,1.413
+oe:player:652b15e8a821f5f825693df9ae62a80,Kinatu,REJECT,LJL,Top,60,0.783,1.398
+oe:player:1a38c55db5f8af06ebac94d8530ff71,Avra,Esprit Shōnen,LFL,ADC,49,0.694,1.369
+oe:player:739c1ceddb772fbbf222215006c963d,Cripple,BeFive,EBL,Top,17,0.412,1.35
+oe:player:7b0aeb1bb297b0d44629e94186bcb6a,Nafkelah,Caldya Esport,LFL2,Mid,63,0.587,1.343
+oe:player:10be1f35d8b5ea6babf916a6e7dd8a4,Fleshy,Team Vitality,LEC,Support,52,0.519,1.334
+oe:player:55dd290e8824755e997201409a0b36a,FliiZee,Oxygen Gaming,NEXO,ADC,16,0.688,1.334
+oe:player:694d028e62f4ea668b206ab752b6f94,Sayn,IziDream,LFL2,Mid,63,0.54,1.327
+name:DG suyahime,DG suyahime,Deltan Gaming,LJL,Mid,37,0.649,1.31
+oe:player:dd77279f7d325eec933f05b1672f6a1,1116,Ground Zero Gaming,PCS,Mid,74,0.608,1.301
+oe:player:a1cd4e9b2265b1a11ea157ccc74b1e5,UNF0RGIVEN,Geekay Esports,AL,ADC,46,0.652,1.291
+oe:player:7bb257e3cbfb5ab2f597a76848372d1,CROmpir,Oxygen Gaming,NEXO,Mid,16,0.688,1.284
+oe:player:9d361f9d8214252ee571375f9105cb4,frosty,RED Canids,LTA,Support,63,0.508,1.28
+oe:player:943f53d325e6a71dab00800edcbbac6,Shakur,GTZ Esports,LPLOL,ADC,19,0.421,1.271
+oe:player:d1ae0e2f9f3ac1e0e0cdcb86504ca77,Feisty,GIANTX Pride,LVP SL,Mid,75,0.707,1.254
+name:DG socceryakyu,DG socceryakyu,Deltan Gaming,LJL,Jungle,18,0.778,1.252
+oe:player:c691200f8d12ee61ae01047c4629c62,Kenvi,Citadel Gaming,NACL,Jungle,20,0.55,1.23
+oe:player:c71b4244f70372f8be07a3e83c58490,Heroic,Zerolag Esports,HLL,Mid,45,0.556,1.228
+oe:player:c8fe7c65a2ae0ab6ff62674ade6847d,Cloud,T1 Esports Academy,LCKC,Support,127,0.598,1.211
+oe:player:9170917b7452bef889def6c113af150,Forest,REJECT,LJL,Jungle,60,0.783,1.199
+oe:player:eaaf2e20683cde8408d05159c05528c,Aladoric,Austrian Force willhaben,PRM,Support,18,0.389,1.185
+oe:player:415321375725940977273eaa5d7588b,Zuhy,Odivelas Sports Club,LPLOL,Mid,26,0.577,1.182
+oe:player:78081d0b3c01f1f295d52d53744261a,Ghost,Estral Esports,LRN,ADC,18,0.667,1.164

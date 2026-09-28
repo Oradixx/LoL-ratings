@@ -1,0 +1,42 @@
+{
+ "top": {
+  "naive": 19.3,
+  "ctrl": 73.6,
+  "ctrl_se": 16.0,
+  "champ": 80.7,
+  "champ_se": 15.2,
+  "n": 33706
+ },
+ "jng": {
+  "naive": 48.4,
+  "ctrl": 41.9,
+  "ctrl_se": 13.3,
+  "champ": 29.3,
+  "champ_se": 12.8,
+  "n": 33702
+ },
+ "mid": {
+  "naive": -33.1,
+  "ctrl": -11.0,
+  "ctrl_se": 13.3,
+  "champ": 11.1,
+  "champ_se": 12.9,
+  "n": 33702
+ },
+ "bot": {
+  "naive": -55.5,
+  "ctrl": -52.5,
+  "ctrl_se": 16.8,
+  "champ": -31.1,
+  "champ_se": 16.2,
+  "n": 33702
+ },
+ "sup": {
+  "naive": -1.0,
+  "ctrl": 6.8,
+  "ctrl_se": 8.9,
+  "champ": 5.6,
+  "champ_se": 8.5,
+  "n": 33702
+ }
+}
