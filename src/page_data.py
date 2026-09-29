@@ -65,3 +65,87 @@ D['exofeng']=dict(wr_with=float(allg[allg.index.isin(with_g)].mean()),wr_without
                   before=float(old.loc[EXP,'points']),after=float(r.loc[EXP,'points']),sd=float(r.loc[EXP,'points_sd']),rank_after=int(list(adc.index).index(EXP)+1) if EXP in adc.index else None)
 json.dump(D,open('results/page_data.json','w'),ensure_ascii=False,default=float)
 print('ok',len(json.dumps(D,default=float)))
+
+# ---------- notes par saison et par compétition (explorateur) ----------
+import numpy as np
+def season_block(year):
+    import numpy as np
+    r=pd.read_parquet(P+f'season_{year}.parquet'); S=J(f'season_{year}.json')
+    mv=pd.read_parquet(P+f'season_{year}_mv.parquet') if __import__('os').path.exists(P+f'season_{year}_mv.parquet') else pd.DataFrame()
+    r=r.join(mv,how='left')
+    keep=r[(r.gp>=10)&r.league.notna()].sort_values('points',ascending=False)
+    tidx={pid:i for i,pid in enumerate(S['traj'])}
+    TC={'Ligue majeure':'M','Deuxième niveau':'2','Troisième niveau':'3'}
+    # part des games du joueur jouées avec exactement les mêmes quatre coéquipiers (roster « inséparable »)
+    q=Pl[Pl.src_year==year].assign(pid=lambda d:d.playerid.fillna('name:'+d.playername.astype(str)))
+    lu=q.groupby(['gameid','side']).pid.agg(lambda s:tuple(sorted(s)))
+    qq=q.join(lu.rename('lu'),on=['gameid','side'])
+    qq['mates']=[tuple(x for x in l if x!=me) for l,me in zip(qq.lu,qq.pid)]
+    rs=qq.groupby('pid').mates.agg(lambda s:s.value_counts(normalize=True).iloc[0])
+    players=[]; pix={}
+    for pid,x in keep.iterrows():
+        pix[pid]=len(players)
+        players.append(dict(id=tidx.get(pid),n=x.player,t=x.team,l=x.league,g=TC.get(x.tier,'2'),r=x.role,gp=int(x.gp),a=bool(x.active),
+            p=int(x.points),sd=int(x.points_sd),u=None if pd.isna(x.vs_role_league_gold) else int(x.vs_role_league_gold),
+            m1=None if pd.isna(x.get('mv_p1',np.nan)) else round(float(x.mv_p1),3),m5=None if pd.isna(x.get('mv_top5',np.nan)) else round(float(x.mv_top5),3),
+            fl=S['flags'].get(pid,[]),c=S['career'].get(pid,''),rs=round(float(rs.get(pid,0)),2)))
+    comps={}; lm_keys=set(keep.league.unique())
+    for c,meta in S['comps'].items(): comps[c]=dict(meta)
+    dl={}
+    for d in S['deltas']:
+        if d['pid'] not in pix or d['comp'] not in comps: continue
+        dl.setdefault(d['comp'],[]).append([pix[d['pid']],d['gp'],round(d['win'],3),round(d['kda'],2),round(d['d']*1000),round(d['dsd']*1000)])
+    for c in list(comps):
+        if c not in dl: comps.pop(c)
+        else: comps[c]['n']=len(dl[c])
+    from leagues import comp_labels; comp_labels(comps,lm_keys)
+    lv={k:round(v-S['base']*1000) for k,v in S['league'].items() if not k.startswith('seul') and k!='INTL_ONLY'}
+    lm={l:dict(region=REGION.get(l,'Autre'),desc=DESC.get(l,''),tier=TC[tier(l)],n=int((keep.league==l).sum())) for l in sorted(keep.league.unique())}
+    return dict(players=players,comps=comps,deltas=dl,teams=S['teams'],traj_months=S['traj_months'],traj=list(S['traj'].values()),
+                league_meta=lm,levels=lv,post=S['post'])
+D['seasons']={str(y):season_block(y) for y in [2025,2026]}
+# le récit de la page (meilleurs par poste, multivers, sous-cotés) suit lui aussi les notes de la saison 2026
+r6=pd.read_parquet(P+'season_2026.parquet').join(pd.read_parquet(P+'season_2026_mv.parquet'),how='left'); S6=J('season_2026.json')
+act6=r6[r6.active]
+top={}; roles_mv={}
+for tr_ in ['Ligue majeure','Deuxième niveau','Troisième niveau']:
+    top[tr_]={}; roles_mv[tr_]={}
+    for ro in ['Top','Jungle','Mid','ADC','Support']:
+        t=act6[(act6.tier==tr_)&(act6.role==ro)]
+        top[tr_][ro]=[dict(name=x.player,team=x.team,league=x.league,gp=int(x.gp),pts=int(x.points),sd=int(x.points_sd),u_gold=int(x.vs_role_league_gold),
+                           mv_p1=round(float(x.mv_p1),3),post_p1=round(S6['post'].get(tr_,{}).get(ro,{}).get(i,0.0),3)) for i,x in t.sort_values('points',ascending=False).head(8).iterrows()]
+        roles_mv[tr_][ro]=[dict(player=x.player,team=x.team,league26=x.league,mv_p1=round(float(x.mv_p1),3),mv_top5=round(float(x.mv_top5),3)) for i,x in t.sort_values(['mv_p1','mv_top5'],ascending=False).head(5).iterrows()]
+D['top']=top; D['mv']['roles']=roles_mv
+nm=act6[act6.tier!='Ligue majeure'].sort_values(['nm_p10','nm_p1'],ascending=False).head(8)
+Pl2=Pl[Pl.src_year==2026].assign(pid=lambda d:d.playerid.fillna('name:'+d.playername.astype(str)))
+def mates(pid):
+    g=Pl2[Pl2.pid==pid][['gameid','side']]; return int(Pl2.merge(g,on=['gameid','side']).query('pid!=@pid').pid.nunique())
+D['underrated']=[dict(player=x.player,team=x.team,league26=x.league,role=x.role,points=int(x.points),p1=round(float(x.nm_p1),3),p10=round(float(x.nm_p10),3),teammates=mates(i)) for i,x in nm.iterrows()]
+# Exofeng dans les notes de saison
+adc=act6[(act6.league=='LFL')&(act6.role=='ADC')].sort_values('points',ascending=False)
+dd=pd.DataFrame(S6['deltas']); de=dd[(dd.pid==EXP)]
+lfl=de[de.comp.str.startswith('LFL')]
+D['exofeng_season']=dict(points=float(r6.loc[EXP,'points']),rank=int(list(adc.index).index(EXP)+1) if EXP in adc.index else None,n_adc=len(adc),
+    comps=[dict(comp=x.comp,gp=int(x.gp),win=float(x.win),d=round(x.d*1000)) for x in de.itertuples()],
+    lfl_note=float(r6.loc[EXP,'points']+lfl.d.iloc[0]*1000) if len(lfl) else None, lfl_comp=lfl.comp.iloc[0] if len(lfl) else None)
+_tt=sorted(J('season_2026.json')['teams'],key=lambda t:-t['pts'])[:2]; D['team_top2']=[dict(team=t['team'],pts=t['pts']) for t in _tt]
+D['geng_total']=int(gg.gameid.nunique())
+D['season_only']=J('season_only_check.json'); D['halves_history']=J('halves_history_check.json'); D['exofeng_split']=J('exofeng_season_check.json'); D['split_validation']=J('split_validation.json'); D['league_prior_check']=J('league_prior_check.json')
+D['role_sd']=float(act6[act6.tier=='Ligue majeure'].groupby('role').points.std().mean()); D['split_prior_sd']={y:float(np.sqrt(J(f'season_{y}.json')['s2']/1000)*1000) for y in ['2025','2026']}
+D['season_mv_n']=int(__import__('pickle').load(open(P+'season_mv_raw.pkl','rb'))[2026].__len__())
+def ex(name,team=None):
+    x=act6[act6.player==name]
+    if team: x=x[x.team==team]
+    if not len(x): return None
+    pid=x.index[0]; y=x.iloc[0]; e=dd[dd.pid==pid]
+    same=act6[(act6.league==y.league)&(act6.role==y.role)].sort_values('points',ascending=False)
+    return dict(name=name,team=y.team,league=y.league,role=y.role,points=int(y.points),sd=int(y.points_sd),rank=int(list(same.index).index(pid)+1),n_role=len(same),
+                comps=[dict(comp=S6['comps'][c.comp]['label'] if c.comp in S6['comps'] else c.comp,gp=int(c.gp),win=float(c.win),d=int(round(c.d*1000)),note=int(round(y.points+c.d*1000)),
+                            same_as_mates=bool((dd[(dd.comp==c.comp)&dd.pid.isin(act6.index[act6.team==y.team])].d.sub(c.d).abs()*1000).max()<2)) for c in e.sort_values('gp',ascending=False).itertuples()])
+_m0=pd.Timestamp('2026-03-01'); _seen=set(Pl2[Pl2.date<_m0].pid); _mm=Pl2[(Pl2.date>=_m0)&(Pl2.date<pd.Timestamp('2026-04-01'))]
+D['unseen_march']=float((~_mm.pid.isin(_seen)).mean())
+D['split_examples']={k:ex(k) for k in ['Caliste','Exofeng']}
+D['comp_dsd']=int(round(dd.dsd.median()*1000)); D['comp_d_abs']=int(round((dd.d.abs()*1000).median()))
+for k in ['players','traj','traj_months','teams','league_meta']: D.pop(k,None)
+json.dump(D,open('results/page_data.json','w'),ensure_ascii=False,default=float)
+print('seasons ok',len(json.dumps(D,default=float)))

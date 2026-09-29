@@ -20,7 +20,14 @@ python src/underrated.py
 python src/profiles.py             # player cards (monthly rating 2026, career) and team view
 python src/bonus_counterpick.py
 python src/bonus_tilt.py
-cp data/proc/*.json results/
+python src/seasons.py              # v1.3: one season at a time + rating per competition / split
+python src/split_validation.py     # are per-competition deltas signal or noise? (held-out halves)
+python src/league_prior_check.py   # strength of the previous-season league prior
+python src/season_only_check.py    # does a season-only model predict as well as the full history?
+python src/season_multiverse.py 300
+python src/halves_history_check.py # to describe 2026, does 2025 help? (random held-out 2026 games)
+python src/exofeng_season_check.py # a season mixing two contexts: with / without his pre-Skillcamp games
+cp data/proc/*.json results/ && rm -f results/tune*.json results/home_test.json results/season_20*.json
 python src/export_results.py
 python src/page_data.py
 python page/build_page.py

@@ -54,3 +54,15 @@ DESC={
  'LCS':'Amérique du Nord','NACL':'Amérique du Nord, 2e niveau','CBLOL':'Brésil (+ équipes LATAM en 2025)','CD':'Brésil, 2e niveau',
  'LRN':'Amérique latine Nord','LRS':'Amérique latine Sud',
  'LCP':'Pacifique (Taïwan, Vietnam, Japon…)','PCS':'Taïwan, Hong Kong & Asie du Sud-Est','VCS':'Vietnam','LJL':'Japon'}
+
+# noms lisibles des compétitions (codes Oracle's Elixir peu parlants)
+COMP_EXTRA={'AC':'AC (tournoi LCS–CBLOL, mars)','ASI':'ASI (invitation LCK–LPL–VCS, octobre)','WSCI':'WSCI (invitation des équipes académie, septembre)'}
+def comp_labels(comps,home_leagues):
+    """comps: {code: {label, league, region, ...}} (sortie de seasons.competitions). Modifie les libellés en place :
+    noms lisibles, et « phase de groupes » pour un tournoi qui a aussi des playoffs."""
+    for c,meta in comps.items():
+        lg=meta['league']
+        if lg in COMP_EXTRA: meta['label']=COMP_EXTRA[lg]+meta['label'][len(lg):]
+        meta['cup']=lg not in home_leagues
+        if meta['cup'] and c==lg and (c+' · playoffs') in comps: meta['label']+=' · phase de groupes'
+    return comps

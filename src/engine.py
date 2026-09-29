@@ -128,10 +128,17 @@ def fit(p,g_train,cfg):
     nL=Hs.shape[1]
     pen=np.r_[np.full(len(pl),lam),np.full(nL,lamL),1e-6]
     if use_league and cfg.get('tier_prior',False): pen[len(pl)+nL-1]=0.1
+    if use_league and cfg.get('league_prior_w') is not None:   # force de l'a priori sur les ligues connues la saison d'avant
+        for l in (cfg.get('league_prior') or {}):
+            if l in league_idx.index: pen[len(pl)+league_idx[l]]=cfg['league_prior_w']
     XtW=(Xd.T.multiply(w)).tocsr(); A=(XtW@Xd).toarray()+np.diag(pen)
     import scipy.linalg as sl
     cho=sl.cho_factor(A)
-    def solve(yoff): return sl.cho_solve(cho,XtW@yoff)
+    # a priori sur le niveau des ligues (ex. : la saison précédente) : la pénalité tire vers ces valeurs au lieu de 0
+    beta0=np.zeros(A.shape[0])
+    for l,v in (cfg.get('league_prior') or {}).items():
+        if use_league and l in league_idx.index: beta0[len(pl)+league_idx[l]]=v
+    def solve(yoff): return sl.cho_solve(cho,XtW@yoff+pen*beta0)
     fit.last_A=A
     beta=solve(y); prior=np.zeros(len(pl)); W=None
     if cfg.get('prior',True):
