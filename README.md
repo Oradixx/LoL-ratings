@@ -18,9 +18,10 @@ Data: [Oracle's Elixir](https://oracleselixir.com/tools/downloads) match data �
 | v1.0 frozen (2025 ratings, never updated) | 0.687 [0.678–0.698] | 62.5 % |
 | Team Elo (updated every game) | 0.688 [0.677–0.698] | 63.8 % |
 | Player Elo (updated every game) | 0.696 [0.686–0.706] | 63.8 % |
-| **v1.1 LoL Ratings 3.0 (retrained monthly)** | **0.722 [0.713–0.732]** | **65.2 %** |
+| v1.1 (retrained monthly) | 0.722 [0.713–0.732] | 65.2 % |
+| **v1.2 LoL Ratings 3.0 (retrained monthly, recency-weighted league attachment)** | **0.723 [0.713–0.733]** | **65.4 %** |
 
-v1.1 beats the team Elo in 7 months out of 8. Adding both Elos on top of it brings nothing (0.721).
+v1.2 beats the team Elo in 7 months out of 8. Adding both Elos on top of it brings nothing (0.722).
 
 **Right after the off-season** (February 2026, 1,010 games, 2025 ratings frozen): team Elo collapses to 53.3 % because the team name no longer tells you who plays; v1.0 keeps 63.3 % (AUC 0.692 vs 0.558).
 
@@ -28,15 +29,15 @@ v1.1 beats the team Elo in 7 months out of 8. Adding both Elos on top of it brin
 
 | Role | Reference model | #1 across 400 model versions |
 |---|---|---|
-| Top | PerfecT (KT Rolster) | Kiin (Gen.G) 56 %, PerfecT 40 % |
-| Jungle | JunJia (JD Gaming) | Canyon (Gen.G) 57 %, JunJia 41 % |
+| Top | PerfecT (KT Rolster) | Kiin (Gen.G) 58 %, PerfecT 40 % |
+| Jungle | JunJia (JD Gaming) | Canyon (Gen.G) 58 %, JunJia 40 % |
 | Mid | Chovy (Gen.G) | Chovy 100 % |
 | ADC | Ruler (Gen.G) | Ruler 100 % |
-| Support | Peter (DN SOOPers) | Peter 66 % |
+| Support | Peter (DN SOOPers) | Peter 52 %, Duro (Gen.G) 30 % |
 
-Gen.G fielded exactly the same five players in 2025 and 2026, so no version of the model can tell which of them carries the others — that is why modelling choices flip #1 between a Gen.G player and someone else. Under statistical uncertainty, a reference #1 is #1 in only 22–38 % of draws.
+Gen.G fielded exactly the same five players in 2025 and 2026, so no version of the model can tell which of them carries the others — that is why modelling choices flip #1 between a Gen.G player and someone else. Under statistical uncertainty, a reference #1 is #1 in only 17–39 % of draws.
 
-Academies and regional leagues get their own table: their players almost never face major-league players, so mixing them in one ranking would be misleading. Current #1 there: Rich (Kiwoom DRX Challengers, top) is #1 among all non-major players in 45 % of versions and top 10 in all of them; Guti (T1 Esports Academy) has the highest rating but is less robust.
+Leagues are split into three tiers that are never mixed in one ranking — major leagues; 2nd tier (LCK Challengers, ERLs, NACL, Circuito Desafiante, Pacific leagues…); 3rd tier (LCK Academy Series, Nexus League, Hitpoint Challengers) — their players almost never face major-league players, so mixing them in one ranking would be misleading. Best non-major player: Rich (Kiwoom DRX Challengers, top) is #1 among all non-major players in 47 % of versions and top 10 in all of them; Guti (T1 Esports Academy) has the highest rating but is less robust.
 
 **Scouting check.** Of the 20 best-rated non-major players in 2025, 70 % were playing in a major league in 2026 (base rate 10.3 %). AUC for predicting promotions: 0.75 (KDA 0.70).
 
@@ -58,11 +59,12 @@ Academies and regional leagues get their own table: their players almost never f
 | 0.6 | Box-score prior with role-specific weights learned from the RAPM impact (not from winning) | — |
 | 0.7 | Target = final gold difference | — |
 | 0.8 | Tested, no effect: champion adjustment, lane stats at 15, time decay | — |
+| 1.2 | A reader asked why Exofeng (hyped rookie ADC, 68 % wins with Skillcamp in the LFL) was rated so low. Players were attached to the league where they played most over two years (NLC for him), so everyone climbing from a weaker league was underrated. The league attachment is now a recency-weighted mix of the leagues played (half-life 6 months): same accuracy, Exofeng from 42 to 237 points. | — |
 | 1.1 | Bug found with more data: players seen only in tournaments shared one catch-all "international" group, creating fake links between leagues. Each tournament now keeps its own group, cups are detected automatically. Monthly retraining. | — |
 
-League names are harmonised across years (`src/leagues.py`): 2025 LTA North = LCS, LTA South = CBLOL (plus two LATAM teams), plain "LTA" (North/South cross-matches) is treated as an international event, LVP SuperLiga = LES.
+League names are harmonised across years (`src/leagues.py`): 2025 LTA North = LCS, LTA South = CBLOL (plus two LATAM teams), plain "LTA" (North/South cross-matches) is treated as an international event, LVP SuperLiga = LES, LFL Division 2 = Nexus League. The Chinese LDL is not in the Oracle's Elixir files.
 
-Final model: ridge regression with an empirical-Bayes prior, `rating = home league level + individual deviation`, deviation ~ N(box-score prior, 1/λ). Config: `lam=50, lamL=3, target='gold', role_prior=True, prior_alpha=200` (`src/engine.py`).
+Final model: ridge regression with an empirical-Bayes prior, `rating = home league level + individual deviation`, deviation ~ N(box-score prior, 1/λ). Config: `lam=50, lamL=3, target='gold', role_prior=True, prior_alpha=200, home='mix'` (`src/engine.py`).
 
 Checks against fooling myself: shuffled 2025 outcomes give AUC ≈ 0.5 (placebo); split-half stability 0.87; February 2026 was looked at once early for baselines, tuning was done on January 2026 and on August–September 2026 for the multiverse.
 
@@ -70,7 +72,8 @@ Checks against fooling myself: shuffled 2025 outcomes give AUC ≈ 0.5 (placebo)
 
 ```bash
 python explore.py leaderboard --role Mid --top 10                 # major leagues, 2026
-python explore.py leaderboard --role Mid --tier academy --region EMEA   # academies & regional leagues, Europe
+python explore.py leaderboard --role Mid --tier tier2 --region EMEA     # 2nd tier (LCK CL, ERLs, NACL...), Europe
+python explore.py leaderboard --tier tier3                         # 3rd tier (LCK Academy Series, Nexus League, Hitpoint Challengers)
 python explore.py player Chovy
 python explore.py compare Chovy Faker Caps
 python explore.py league LEC --top 10

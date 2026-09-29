@@ -3,7 +3,7 @@ robuste dans le multivers, et combien de coéquipiers différents (= a-t-on pu l
 import sys, json, pickle; sys.path.insert(0,'src')
 import pandas as pd, numpy as np
 mv=pickle.load(open('data/proc/multiverse.pkl','rb'))
-r=pd.read_parquet('data/proc/ratings_now.parquet'); r=r[r.active&(r.tier=='Académie / ligue régionale')]
+r=pd.read_parquet('data/proc/ratings_now.parquet'); r=r[r.active&(r.tier!='Ligue majeure')]
 rows=[]
 for u in mv:
     ok=u['gp'][u['gp']>=max(20,u['cfg']['min_gp'])].index.intersection(r.index)

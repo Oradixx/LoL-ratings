@@ -72,6 +72,17 @@ def player_home(p,train_mask,mode='most'):
     # joueurs n'ayant joué qu'en international: ligue de leur équipe la plus fréquente
     return home
 
+def home_weights(p,train_mask,half_life=180):
+    """part (pondérée par la récence) des games domestiques de chaque joueur dans chaque ligue.
+    Un joueur passé de la NLC à la LFL est rattaché surtout à la LFL, un peu à la NLC."""
+    from leagues import detect_cups
+    excl=INTL|detect_cups(p[train_mask])
+    q=p[train_mask & ~p.league.isin(excl) & (p.pid!='anon')][['pid','league','gameid','date']].drop_duplicates(['pid','gameid'])
+    end=p.loc[train_mask,'date'].max()
+    q=q.assign(w=np.power(0.5,(end-q.date).dt.days/half_life))
+    W=q.groupby(['pid','league']).w.sum().unstack(fill_value=0.0)
+    return W.div(W.sum(1),axis=0)
+
 def design(p,g,players_idx):
     from scipy import sparse
     q=p[p.gameid.isin(g.index)][['gameid','side','pid']]
@@ -96,6 +107,11 @@ def fit(p,g_train,cfg):
     hl=home.reindex(pl).fillna('INTL_ONLY')
     leagues=sorted(hl.unique()); league_idx=pd.Series(np.arange(len(leagues)),index=leagues)
     H=np.zeros((len(pl),len(leagues))); H[np.arange(len(pl)),league_idx[hl].values]=1
+    if cfg.get('home')=='mix':
+        Wm=home_weights(p,train_mask,cfg.get('home_half_life',180))
+        Wm=Wm.reindex(index=pl,columns=leagues).fillna(0.0)
+        has=Wm.sum(1)>0
+        H[has.values]=Wm.values[has.values]
     X=design(p,g_train,players_idx)
     use_league=cfg.get('league',True)
     y=target(g_train,cfg.get('target','result'))
@@ -140,8 +156,8 @@ def fit(p,g_train,cfg):
         tb=beta[len(pl)+nL-1]; Lv=pd.Series(beta[len(pl):len(pl)+nL-1],index=leagues)+np.array([tb if l in MAJOR else 0.0 for l in leagues])
     else:
         Lv=pd.Series(beta[len(pl):len(pl)+nL],index=leagues) if nL else pd.Series(0.0,index=leagues)
-    theta=u+hl.map(Lv).values
-    return dict(u=u,theta=theta,league=Lv,home=hl,side=beta[-1],prior=pd.Series(prior,index=pl),prior_w=W,gp=gp,cfg=cfg)
+    theta=u+pd.Series(H[:,:len(Lv)]@Lv.reindex(leagues).fillna(0).values,index=pl)
+    return dict(u=u,theta=theta,league=Lv,home=hl,H=pd.DataFrame(H[:,:len(leagues)],index=pl,columns=leagues),side=beta[-1],prior=pd.Series(prior,index=pl),prior_w=W,gp=gp,cfg=cfg)
 
 def rating_table(model,p):
     info=p.sort_values('date').groupby('pid').agg(name=('playername','last'),team=('teamname','last'),role=('role',lambda s:s.mode().iloc[0]))

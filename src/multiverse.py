@@ -11,7 +11,7 @@ def sample(seed):
              lamL=float(np.exp(rng.uniform(np.log(1),np.log(30)))),prior=bool(rng.random()<0.8),role_prior=bool(rng.random()<0.5),
              prior_alpha=float(np.exp(rng.uniform(np.log(20),np.log(1000)))),prior_scale=float(rng.uniform(0.5,1.2)),
              champ=bool(rng.random()<0.5),lane=bool(rng.random()<0.5),tau=[None,None,None,180,365][rng.integers(5)],
-             min_gp=int(rng.choice([10,20,40])))
+             min_gp=int(rng.choice([10,20,40])),home=str(rng.choice(['most','mix'])))
     cfg['stats']=stats+(['golddiffat15','xpdiffat15','csdiffat15'] if cfg['lane'] else [])
     return cfg
 def work(seed):

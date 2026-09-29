@@ -5,7 +5,7 @@ mv=pickle.load(open('data/proc/multiverse.pkl','rb'))
 r=pd.read_parquet('data/proc/ratings_now.parquet'); r=r[r.active]
 aucs=pd.Series({u['seed']:u['dev_auc'] for u in mv})
 cfg=pd.DataFrame([dict(seed=u['seed'],**{k:v for k,v in u['cfg'].items() if k!='stats'}) for u in mv]).set_index('seed'); cfg['auc']=aucs
-eff={c:cfg.groupby(cfg[c].astype(str)).auc.mean().round(4).to_dict() for c in ['target','prior','role_prior','champ','lane','tau','min_gp']}
+eff={c:cfg.groupby(cfg[c].astype(str)).auc.mean().round(4).to_dict() for c in ['target','prior','role_prior','champ','lane','tau','min_gp','home']}
 eff['lamL']={str(k):v for k,v in cfg.groupby(pd.cut(cfg.lamL,[0,2,5,10,31])).auc.mean().round(4).items()}
 eff['lam']={str(k):v for k,v in cfg.groupby(pd.cut(cfg.lam,[0,30,60,100,201])).auc.mean().round(4).items()}
 print('AUC août-sept 2026: min %.3f médiane %.3f max %.3f'%(aucs.min(),aucs.median(),aucs.max()))
@@ -20,7 +20,7 @@ R=pd.concat(ranks,axis=1)
 stats=pd.DataFrame({'mv_p1':(R==1).mean(1),'mv_top5':(R<=5).mean(1),'mv_median_rank':R.median(1),'mv_present':R.notna().mean(1)})
 stats.to_parquet('data/proc/mv_stats.parquet')
 out={}
-for tr in ['Ligue majeure','Académie / ligue régionale']:
+for tr in ['Ligue majeure','Deuxième niveau','Troisième niveau']:
     out[tr]={}
     for ro in ['Top','Jungle','Mid','ADC','Support']:
         sel=r[(r.tier==tr)&(r.role==ro)].join(stats)

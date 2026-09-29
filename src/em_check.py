@@ -1,6 +1,7 @@
 """Les EMEA Masters comptent-ils pour situer les ERL ? Modèle actuel avec et sans les games d'EM."""
 import sys, json; sys.path.insert(0,'src'); from evaluate import *
 V1=dict(lam=50,lamL=3,target='gold',role_prior=True,prior_alpha=200)
+V1=dict(V1,home='mix')   # v1.2 : rattachement à la ligue pondéré par la récence
 tr,_,_=splits('now')
 ERL=['LFL','PRM','LES','TCL','NLC','LIT','HLL','EBL','RL','ROL','HM','LPLOL','AL','NL','HC']
 def levels(t):

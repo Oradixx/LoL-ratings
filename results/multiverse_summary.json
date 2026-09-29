@@ -1,52 +1,56 @@
 {
  "auc": {
   "min": 0.6816927980429955,
-  "median": 0.7037920332172912,
-  "max": 0.7112285691360497,
+  "median": 0.7022799802843132,
+  "max": 0.7103547137955192,
   "n": 400
  },
  "choice_effects": {
   "target": {
-   "gold": 0.7054,
-   "mix": 0.7043,
-   "result": 0.6994
+   "gold": 0.7038,
+   "mix": 0.7027,
+   "result": 0.6984
   },
   "prior": {
-   "False": 0.702,
-   "True": 0.7033
+   "False": 0.7004,
+   "True": 0.7019
   },
   "role_prior": {
-   "False": 0.703,
-   "True": 0.7031
+   "False": 0.7017,
+   "True": 0.7016
   },
   "champ": {
-   "False": 0.7032,
-   "True": 0.7029
+   "False": 0.7017,
+   "True": 0.7016
   },
   "lane": {
-   "False": 0.7028,
-   "True": 0.7033
+   "False": 0.7013,
+   "True": 0.702
   },
   "tau": {
-   "180.0": 0.7012,
-   "365.0": 0.7045
+   "180.0": 0.6999,
+   "365.0": 0.7031
   },
   "min_gp": {
-   "10": 0.7021,
-   "20": 0.7036,
-   "40": 0.7033
+   "10": 0.7007,
+   "20": 0.7022,
+   "40": 0.7019
+  },
+  "home": {
+   "mix": 0.7007,
+   "most": 0.7026
   },
   "lamL": {
-   "(0, 2]": 0.702,
-   "(2, 5]": 0.7031,
-   "(5, 10]": 0.7037,
-   "(10, 31]": 0.7034
+   "(0, 2]": 0.7003,
+   "(2, 5]": 0.7014,
+   "(5, 10]": 0.7023,
+   "(10, 31]": 0.7025
   },
   "lam": {
-   "(0, 30]": 0.7035,
-   "(30, 60]": 0.7048,
-   "(60, 100]": 0.7046,
-   "(100, 201]": 0.6997
+   "(0, 30]": 0.7021,
+   "(30, 60]": 0.7033,
+   "(60, 100]": 0.7033,
+   "(100, 201]": 0.6984
   }
  },
  "roles": {
@@ -56,23 +60,23 @@
      "player": "Kiin",
      "team": "Gen.G",
      "league26": "LCK",
-     "mv_p1": 0.565,
-     "mv_top5": 0.985,
+     "mv_p1": 0.58,
+     "mv_top5": 0.99,
      "mv_median_rank": 1.0
     },
     {
      "player": "PerfecT",
      "team": "KT Rolster",
      "league26": "LCK",
-     "mv_p1": 0.402,
-     "mv_top5": 0.728,
+     "mv_p1": 0.398,
+     "mv_top5": 0.738,
      "mv_median_rank": 3.0
     },
     {
      "player": "Zeus",
      "team": "Hanwha Life Esports",
      "league26": "LCK",
-     "mv_p1": 0.02,
+     "mv_p1": 0.01,
      "mv_top5": 1.0,
      "mv_median_rank": 2.0
     },
@@ -80,16 +84,16 @@
      "player": "Bin",
      "team": "Bilibili Gaming",
      "league26": "LPL",
-     "mv_p1": 0.008,
-     "mv_top5": 0.63,
+     "mv_p1": 0.01,
+     "mv_top5": 0.688,
      "mv_median_rank": 5.0
     },
     {
      "player": "TheShy",
      "team": "Invictus Gaming",
      "league26": "LPL",
-     "mv_p1": 0.005,
-     "mv_top5": 0.15,
+     "mv_p1": 0.002,
+     "mv_top5": 0.17,
      "mv_median_rank": 7.0
     }
    ],
@@ -98,24 +102,32 @@
      "player": "Canyon",
      "team": "Gen.G",
      "league26": "LCK",
-     "mv_p1": 0.572,
-     "mv_top5": 0.875,
+     "mv_p1": 0.578,
+     "mv_top5": 0.878,
      "mv_median_rank": 1.0
     },
     {
      "player": "JunJia",
      "team": "JD Gaming",
      "league26": "LPL",
-     "mv_p1": 0.415,
-     "mv_top5": 0.82,
-     "mv_median_rank": 2.5
+     "mv_p1": 0.395,
+     "mv_top5": 0.812,
+     "mv_median_rank": 3.0
+    },
+    {
+     "player": "Kanavi",
+     "team": "Hanwha Life Esports",
+     "league26": "LCK",
+     "mv_p1": 0.022,
+     "mv_top5": 0.578,
+     "mv_median_rank": 5.0
     },
     {
      "player": "Oner",
      "team": "T1",
      "league26": "LCK",
-     "mv_p1": 0.012,
-     "mv_top5": 0.905,
+     "mv_p1": 0.005,
+     "mv_top5": 0.888,
      "mv_median_rank": 3.0
     },
     {
@@ -123,16 +135,8 @@
      "team": "Dplus Kia",
      "league26": "LCK",
      "mv_p1": 0.0,
-     "mv_top5": 0.95,
-     "mv_median_rank": 4.0
-    },
-    {
-     "player": "Xun",
-     "team": "Bilibili Gaming",
-     "league26": "LPL",
-     "mv_p1": 0.0,
-     "mv_top5": 0.875,
-     "mv_median_rank": 4.0
+     "mv_top5": 0.792,
+     "mv_median_rank": 5.0
     }
    ],
    "Mid": [
@@ -145,19 +149,19 @@
      "mv_median_rank": 1.0
     },
     {
-     "player": "Zeka",
-     "team": "Hanwha Life Esports",
-     "league26": "LCK",
-     "mv_p1": 0.0,
-     "mv_top5": 0.992,
-     "mv_median_rank": 3.0
-    },
-    {
      "player": "Knight",
      "team": "Bilibili Gaming",
      "league26": "LPL",
      "mv_p1": 0.0,
-     "mv_top5": 0.985,
+     "mv_top5": 0.99,
+     "mv_median_rank": 3.0
+    },
+    {
+     "player": "Zeka",
+     "team": "Hanwha Life Esports",
+     "league26": "LCK",
+     "mv_p1": 0.0,
+     "mv_top5": 0.99,
      "mv_median_rank": 3.0
     },
     {
@@ -165,7 +169,7 @@
      "team": "T1",
      "league26": "LCK",
      "mv_p1": 0.0,
-     "mv_top5": 0.808,
+     "mv_top5": 0.86,
      "mv_median_rank": 4.0
     },
     {
@@ -173,7 +177,7 @@
      "team": "JD Gaming",
      "league26": "LPL",
      "mv_p1": 0.0,
-     "mv_top5": 0.625,
+     "mv_top5": 0.65,
      "mv_median_rank": 5.0
     }
    ],
@@ -192,14 +196,14 @@
      "league26": "LPL",
      "mv_p1": 0.0,
      "mv_top5": 1.0,
-     "mv_median_rank": 3.0
+     "mv_median_rank": 2.0
     },
     {
      "player": "Gumayusi",
      "team": "Hanwha Life Esports",
      "league26": "LCK",
      "mv_p1": 0.0,
-     "mv_top5": 0.928,
+     "mv_top5": 0.895,
      "mv_median_rank": 4.0
     },
     {
@@ -207,15 +211,15 @@
      "team": "Dplus Kia",
      "league26": "LCK",
      "mv_p1": 0.0,
-     "mv_top5": 0.842,
+     "mv_top5": 0.828,
      "mv_median_rank": 3.0
     },
     {
-     "player": "JackeyLove",
-     "team": "Top Esports",
-     "league26": "LPL",
+     "player": "Peyz",
+     "team": "T1",
+     "league26": "LCK",
      "mv_p1": 0.0,
-     "mv_top5": 0.498,
+     "mv_top5": 0.458,
      "mv_median_rank": 6.0
     }
    ],
@@ -224,15 +228,15 @@
      "player": "Peter",
      "team": "DN SOOPers",
      "league26": "LCK",
-     "mv_p1": 0.662,
-     "mv_top5": 1.0,
+     "mv_p1": 0.518,
+     "mv_top5": 0.92,
      "mv_median_rank": 1.0
     },
     {
      "player": "Duro",
      "team": "Gen.G",
      "league26": "LCK",
-     "mv_p1": 0.212,
+     "mv_p1": 0.298,
      "mv_top5": 0.898,
      "mv_median_rank": 3.0
     },
@@ -240,7 +244,7 @@
      "player": "Keria",
      "team": "T1",
      "league26": "LCK",
-     "mv_p1": 0.125,
+     "mv_p1": 0.185,
      "mv_top5": 1.0,
      "mv_median_rank": 2.0
     },
@@ -249,7 +253,7 @@
      "team": "Hanwha Life Esports",
      "league26": "LCK",
      "mv_p1": 0.0,
-     "mv_top5": 0.97,
+     "mv_top5": 0.918,
      "mv_median_rank": 4.0
     },
     {
@@ -257,18 +261,18 @@
      "team": "Bilibili Gaming",
      "league26": "LPL",
      "mv_p1": 0.0,
-     "mv_top5": 0.452,
+     "mv_top5": 0.472,
      "mv_median_rank": 6.0
     }
    ]
   },
-  "Académie / ligue régionale": {
+  "Deuxième niveau": {
    "Top": [
     {
      "player": "Rich",
      "team": "Kiwoom DRX Challengers",
      "league26": "LCKC",
-     "mv_p1": 0.812,
+     "mv_p1": 0.912,
      "mv_top5": 1.0,
      "mv_median_rank": 1.0
     },
@@ -276,8 +280,8 @@
      "player": "Bwipo",
      "team": "Estral Esports",
      "league26": "CD",
-     "mv_p1": 0.188,
-     "mv_top5": 1.0,
+     "mv_p1": 0.088,
+     "mv_top5": 0.918,
      "mv_median_rank": 2.0
     },
     {
@@ -289,61 +293,61 @@
      "mv_median_rank": 3.0
     },
     {
-     "player": "Ragner",
-     "team": "Joblife",
-     "league26": "LFL",
-     "mv_p1": 0.0,
-     "mv_top5": 0.478,
-     "mv_median_rank": 6.0
-    },
-    {
      "player": "Haetae",
      "team": "T1 Esports Academy",
      "league26": "LCKC",
      "mv_p1": 0.0,
-     "mv_top5": 0.375,
+     "mv_top5": 0.442,
      "mv_median_rank": 6.0
+    },
+    {
+     "player": "Carlsen",
+     "team": "Galions",
+     "league26": "LFL",
+     "mv_p1": 0.0,
+     "mv_top5": 0.402,
+     "mv_median_rank": 8.0
     }
    ],
    "Jungle": [
     {
-     "player": "Oddie",
-     "team": "Estral Esports",
-     "league26": "CD",
-     "mv_p1": 0.48,
-     "mv_top5": 1.0,
-     "mv_median_rank": 2.0
-    },
-    {
      "player": "Thayger",
      "team": "Galions",
      "league26": "LFL",
-     "mv_p1": 0.418,
+     "mv_p1": 0.62,
      "mv_top5": 1.0,
-     "mv_median_rank": 2.0
+     "mv_median_rank": 1.0
+    },
+    {
+     "player": "Oddie",
+     "team": "Estral Esports",
+     "league26": "CD",
+     "mv_p1": 0.245,
+     "mv_top5": 0.492,
+     "mv_median_rank": 10.5
+    },
+    {
+     "player": "Zicssi",
+     "team": "Solary",
+     "league26": "LFL",
+     "mv_p1": 0.052,
+     "mv_top5": 0.772,
+     "mv_median_rank": 4.0
     },
     {
      "player": "Ellim",
      "team": "FENNEL",
      "league26": "LJL",
-     "mv_p1": 0.065,
-     "mv_top5": 0.645,
-     "mv_median_rank": 4.0
+     "mv_p1": 0.028,
+     "mv_top5": 0.292,
+     "mv_median_rank": 12.5
     },
     {
-     "player": "Theocacs",
-     "team": "Anubis Gaming",
-     "league26": "AL",
-     "mv_p1": 0.022,
-     "mv_top5": 0.268,
-     "mv_median_rank": 8.0
-    },
-    {
-     "player": "113",
+     "player": "Habubu",
      "team": "Berlin International Gaming",
      "league26": "PRM",
-     "mv_p1": 0.012,
-     "mv_top5": 0.618,
+     "mv_p1": 0.022,
+     "mv_top5": 0.7,
      "mv_median_rank": 4.0
     }
    ],
@@ -352,7 +356,7 @@
      "player": "Guti",
      "team": "T1 Esports Academy",
      "league26": "LCKC",
-     "mv_p1": 0.698,
+     "mv_p1": 0.77,
      "mv_top5": 0.992,
      "mv_median_rank": 1.0
     },
@@ -360,58 +364,58 @@
      "player": "Jool",
      "team": "Solary",
      "league26": "LFL",
-     "mv_p1": 0.3,
+     "mv_p1": 0.2,
      "mv_top5": 1.0,
      "mv_median_rank": 2.0
+    },
+    {
+     "player": "OMON",
+     "team": "Galions",
+     "league26": "LFL",
+     "mv_p1": 0.028,
+     "mv_top5": 0.802,
+     "mv_median_rank": 3.0
     },
     {
      "player": "Czajek",
      "team": "Vitality.Bee",
      "league26": "LFL",
      "mv_p1": 0.002,
-     "mv_top5": 0.648,
-     "mv_median_rank": 4.5
+     "mv_top5": 0.358,
+     "mv_median_rank": 8.0
     },
     {
      "player": "Hwichan",
      "team": "KT Rolster Challengers",
      "league26": "LCKC",
      "mv_p1": 0.0,
-     "mv_top5": 0.682,
-     "mv_median_rank": 3.0
-    },
-    {
-     "player": "OMON",
-     "team": "Galions",
-     "league26": "LFL",
-     "mv_p1": 0.0,
-     "mv_top5": 0.628,
-     "mv_median_rank": 5.0
+     "mv_top5": 0.71,
+     "mv_median_rank": 4.0
     }
    ],
    "ADC": [
     {
-     "player": "HARPOON",
-     "team": "Galions",
-     "league26": "LFL",
-     "mv_p1": 0.462,
-     "mv_top5": 0.855,
-     "mv_median_rank": 2.0
-    },
-    {
      "player": "LazyFeel",
      "team": "Kiwoom DRX Challengers",
      "league26": "LCKC",
-     "mv_p1": 0.312,
-     "mv_top5": 0.832,
+     "mv_p1": 0.62,
+     "mv_top5": 0.9,
+     "mv_median_rank": 1.0
+    },
+    {
+     "player": "HARPOON",
+     "team": "Galions",
+     "league26": "LFL",
+     "mv_p1": 0.242,
+     "mv_top5": 0.815,
      "mv_median_rank": 2.0
     },
     {
      "player": "3XA",
      "team": "Joblife",
      "league26": "LFL",
-     "mv_p1": 0.222,
-     "mv_top5": 0.998,
+     "mv_p1": 0.135,
+     "mv_top5": 0.95,
      "mv_median_rank": 2.0
     },
     {
@@ -419,16 +423,16 @@
      "team": "G2 NORD",
      "league26": "PRM",
      "mv_p1": 0.002,
-     "mv_top5": 0.762,
-     "mv_median_rank": 4.0
+     "mv_top5": 0.368,
+     "mv_median_rank": 7.0
     },
     {
      "player": "FenRir",
      "team": "KT Rolster Challengers",
      "league26": "LCKC",
      "mv_p1": 0.0,
-     "mv_top5": 0.328,
-     "mv_median_rank": 6.0
+     "mv_top5": 0.51,
+     "mv_median_rank": 5.0
     }
    ],
    "Support": [
@@ -436,7 +440,7 @@
      "player": "Targamas",
      "team": "French Flair",
      "league26": "LFL",
-     "mv_p1": 0.865,
+     "mv_p1": 0.912,
      "mv_top5": 1.0,
      "mv_median_rank": 1.0
     },
@@ -444,33 +448,245 @@
      "player": "Pollu",
      "team": "KT Rolster Challengers",
      "league26": "LCKC",
-     "mv_p1": 0.1,
-     "mv_top5": 0.602,
-     "mv_median_rank": 5.0
-    },
-    {
-     "player": "Aether",
-     "team": "T1 Esports Academy Rookies",
-     "league26": "LAS",
-     "mv_p1": 0.025,
-     "mv_top5": 0.255,
-     "mv_median_rank": 9.0
+     "mv_p1": 0.055,
+     "mv_top5": 0.4,
+     "mv_median_rank": 7.0
     },
     {
      "player": "Quantum",
      "team": "DN SOOPers Challengers",
      "league26": "LCKC",
-     "mv_p1": 0.01,
-     "mv_top5": 0.585,
+     "mv_p1": 0.028,
+     "mv_top5": 0.665,
+     "mv_median_rank": 3.0
+    },
+    {
+     "player": "Zoelys",
+     "team": "Galions",
+     "league26": "LFL",
+     "mv_p1": 0.002,
+     "mv_top5": 0.912,
+     "mv_median_rank": 3.0
+    },
+    {
+     "player": "Cloud",
+     "team": "T1 Esports Academy",
+     "league26": "LCKC",
+     "mv_p1": 0.002,
+     "mv_top5": 0.495,
+     "mv_median_rank": 6.0
+    }
+   ]
+  },
+  "Troisième niveau": {
+   "Top": [
+    {
+     "player": "Weather",
+     "team": "T1 Esports Academy Rookies",
+     "league26": "LAS",
+     "mv_p1": 0.522,
+     "mv_top5": 0.63,
+     "mv_median_rank": 1.0
+    },
+    {
+     "player": "Nevid",
+     "team": "Dplus Kia Academy",
+     "league26": "LAS",
+     "mv_p1": 0.228,
+     "mv_top5": 0.988,
+     "mv_median_rank": 2.0
+    },
+    {
+     "player": "Midir",
+     "team": "T1 Esports Academy Rookies",
+     "league26": "LAS",
+     "mv_p1": 0.155,
+     "mv_top5": 0.988,
+     "mv_median_rank": 2.0
+    },
+    {
+     "player": "Koala",
+     "team": "Esprit Shōnen",
+     "league26": "NL",
+     "mv_p1": 0.065,
+     "mv_top5": 0.975,
      "mv_median_rank": 4.0
     },
     {
-     "player": "Piero",
-     "team": "Solary",
-     "league26": "LFL",
-     "mv_p1": 0.0,
-     "mv_top5": 0.88,
+     "player": "Junu",
+     "team": "DN SOOPers Academy",
+     "league26": "LAS",
+     "mv_p1": 0.03,
+     "mv_top5": 0.878,
+     "mv_median_rank": 4.0
+    }
+   ],
+   "Jungle": [
+    {
+     "player": "Carim",
+     "team": "T1 Esports Academy Rookies",
+     "league26": "LAS",
+     "mv_p1": 0.562,
+     "mv_top5": 0.94,
+     "mv_median_rank": 1.0
+    },
+    {
+     "player": "Frost",
+     "team": "Project Conquerors",
+     "league26": "NL",
+     "mv_p1": 0.17,
+     "mv_top5": 0.775,
      "mv_median_rank": 3.0
+    },
+    {
+     "player": "IDEA",
+     "team": "HANJIN BRION Academy",
+     "league26": "LAS",
+     "mv_p1": 0.115,
+     "mv_top5": 0.56,
+     "mv_median_rank": 3.0
+    },
+    {
+     "player": "Oleg",
+     "team": "Karmine Corp Blue Stars",
+     "league26": "NL",
+     "mv_p1": 0.072,
+     "mv_top5": 0.758,
+     "mv_median_rank": 4.0
+    },
+    {
+     "player": "Ark",
+     "team": "Nongshim RedForce Academy",
+     "league26": "LAS",
+     "mv_p1": 0.032,
+     "mv_top5": 0.238,
+     "mv_median_rank": 8.0
+    }
+   ],
+   "Mid": [
+    {
+     "player": "Solbon",
+     "team": "T1 Esports Academy Rookies",
+     "league26": "LAS",
+     "mv_p1": 0.992,
+     "mv_top5": 1.0,
+     "mv_median_rank": 1.0
+    },
+    {
+     "player": "Panda",
+     "team": "Karmine Corp Blue Stars",
+     "league26": "NL",
+     "mv_p1": 0.008,
+     "mv_top5": 0.198,
+     "mv_median_rank": 9.0
+    },
+    {
+     "player": "Despair",
+     "team": "Dplus Kia Academy",
+     "league26": "LAS",
+     "mv_p1": 0.0,
+     "mv_top5": 0.945,
+     "mv_median_rank": 2.0
+    },
+    {
+     "player": "Buddy",
+     "team": "Hanwha Life Esports Academy",
+     "league26": "LAS",
+     "mv_p1": 0.0,
+     "mv_top5": 0.93,
+     "mv_median_rank": 3.0
+    },
+    {
+     "player": "Marty",
+     "team": "Galions Sharks",
+     "league26": "NL",
+     "mv_p1": 0.0,
+     "mv_top5": 0.5,
+     "mv_median_rank": 5.5
+    }
+   ],
+   "ADC": [
+    {
+     "player": "Levy",
+     "team": "DN SOOPers Academy",
+     "league26": "LAS",
+     "mv_p1": 0.305,
+     "mv_top5": 0.79,
+     "mv_median_rank": 3.0
+    },
+    {
+     "player": "Avarice",
+     "team": "Project Conquerors",
+     "league26": "NL",
+     "mv_p1": 0.268,
+     "mv_top5": 0.928,
+     "mv_median_rank": 2.0
+    },
+    {
+     "player": "Xdp",
+     "team": "Dplus Kia Academy",
+     "league26": "LAS",
+     "mv_p1": 0.24,
+     "mv_top5": 0.578,
+     "mv_median_rank": 2.0
+    },
+    {
+     "player": "Savvy",
+     "team": "KT Rolster Academy",
+     "league26": "LAS",
+     "mv_p1": 0.068,
+     "mv_top5": 0.515,
+     "mv_median_rank": 3.0
+    },
+    {
+     "player": "Jinbeom",
+     "team": "T1 Esports Academy Rookies",
+     "league26": "LAS",
+     "mv_p1": 0.062,
+     "mv_top5": 0.682,
+     "mv_median_rank": 4.0
+    }
+   ],
+   "Support": [
+    {
+     "player": "Aether",
+     "team": "T1 Esports Academy Rookies",
+     "league26": "LAS",
+     "mv_p1": 0.998,
+     "mv_top5": 1.0,
+     "mv_median_rank": 1.0
+    },
+    {
+     "player": "Alaric",
+     "team": "Karmine Corp Blue Stars",
+     "league26": "NL",
+     "mv_p1": 0.002,
+     "mv_top5": 0.738,
+     "mv_median_rank": 5.0
+    },
+    {
+     "player": "Kitten",
+     "team": "Dplus Kia Academy",
+     "league26": "LAS",
+     "mv_p1": 0.0,
+     "mv_top5": 1.0,
+     "mv_median_rank": 2.0
+    },
+    {
+     "player": "FLOW",
+     "team": "KT Rolster Academy",
+     "league26": "LAS",
+     "mv_p1": 0.0,
+     "mv_top5": 0.89,
+     "mv_median_rank": 4.0
+    },
+    {
+     "player": "Felix",
+     "team": "HANJIN BRION Academy",
+     "league26": "LAS",
+     "mv_p1": 0.0,
+     "mv_top5": 0.545,
+     "mv_median_rank": 4.0
     }
    ]
   }

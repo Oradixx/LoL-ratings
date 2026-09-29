@@ -36,7 +36,8 @@ V1=dict(lam=50,lamL=3,target='gold',role_prior=True,prior_alpha=200)
 MODELS={'v1.0 (2025 seul, gelée)':None,
         'v1.1 ré-entraînée chaque mois':dict(V1),
         'v1.1 + oubli progressif (1 an)':dict(V1,tau=365),
-        'v1.1 + oubli progressif (6 mois)':dict(V1,tau=180)}
+        'v1.1 + oubli progressif (6 mois)':dict(V1,tau=180),
+        'v1.2 rattachement mixte':dict(V1,home='mix')}
 if __name__=='__main__':
     t0=time.time()
     preds={k:{} for k in MODELS}; preds['KDA à date']={}

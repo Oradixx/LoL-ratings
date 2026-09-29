@@ -13,10 +13,10 @@ E=html.escape
 
 F=D['final']; R=D['rolling']['total']; M=D['rolling']['monthly']
 V10F=F['v1.0 LoL Ratings 3.0']; ELOF=F['Elo équipe']; KDAF=F['v0.1 KDA']
-V11=R['v1.1 ré-entraînée chaque mois']; ELO=R['Elo équipe (mis à jour à chaque game)']; ELOJ=R['Elo joueurs (mis à jour à chaque game)']
-KDAR=R['KDA à date']; FROZ=R['v1.0 (2025 seul, gelée)']; COMB=R['v1.1 + Elo (combinés)']; TAU=R['v1.1 + oubli progressif (1 an)']
-months_better=sum(1 for m in M['v1.1 ré-entraînée chaque mois'] if M['v1.1 ré-entraînée chaque mois'][m]['auc']>M['Elo équipe (mis à jour à chaque game)'][m]['auc'])
-nmonths=len(M['v1.1 ré-entraînée chaque mois'])
+V11=R['v1.2 rattachement mixte']; V11a=R['v1.1 ré-entraînée chaque mois']; ELO=R['Elo équipe (mis à jour à chaque game)']; ELOJ=R['Elo joueurs (mis à jour à chaque game)']
+KDAR=R['KDA à date']; FROZ=R['v1.0 (2025 seul, gelée)']; COMB=R['v1.2 + Elo (combinés)']; TAU=R['v1.1 + oubli progressif (1 an)']
+months_better=sum(1 for m in M['v1.2 rattachement mixte'] if M['v1.2 rattachement mixte'][m]['auc']>M['Elo équipe (mis à jour à chaque game)'][m]['auc'])
+nmonths=len(M['v1.2 rattachement mixte'])
 S=D['scouting']; U=D['underrated']; RT=D['ratones']; REL=D['reliab']; MV=D['mv']; TOP=D['top']
 t50=D['v03_top50']; t50s=sorted(t50.items(),key=lambda kv:-kv[1])
 top50_txt=', '.join(f'{v} de {k}' for k,v in t50s[:3])
@@ -24,7 +24,7 @@ pairs=D['pairs']
 C=D['counter']; cp={k:C[k]['champ']/2 for k in C}; cpse={k:C[k]['champ_se']/2 for k in C}
 TL={t['kind']:t for t in D['tilt']}
 t_same=TL['même série (quelques minutes après)']; t_next=TL['prochaine rencontre (<60 j)']
-maj=TOP['Ligue majeure']; aca=TOP['Académie / ligue régionale']
+maj=TOP['Ligue majeure']
 no1={ro:maj[ro][0] for ro in maj}
 no1_teams=[no1[r]['team'] for r in ['Top','Jungle','Mid','ADC','Support']]
 ROLES=['Top','Jungle','Mid','ADC','Support']
@@ -35,7 +35,7 @@ GENG_GAMES=D.get('geng_games',0)
 u0=U[0]
 games25=D['games']['2025']; games26=D['games']['2026']
 ch=MV['choice_effects']
-LC=D['league_check']; EM=D['em_check']; mov={x['origine']:x for x in LC['movers']}; LN=D['leagues_now']
+LC=D['league_check']; EM=D['em_check']; EXO=D['exofeng']; mov={x['origine']:x for x in LC['movers']}; LN=D['leagues_now']
 
 BODY=f'''
 <div class="wrap">
@@ -199,6 +199,17 @@ BODY=f'''
       </ul>
     </div>
   </div>
+  <div class="patch">
+    <div class="patch-head"><span class="ver">1.2</span><span class="name">Le cas Exofeng</span></div>
+    <div class="patch-body">
+      <p>Question d'un lecteur : pourquoi Exofeng, rookie ADC très attendu, est-il si bas&nbsp;? En LFL 2026, Skillcamp gagne {pct(EXO['wr_with'])} de ses games avec lui et {pct(EXO['wr_without'])} avec l'autre ADC de l'équipe, et il a le meilleur KDA des ADC de la ligue.</p>
+      <ul class="changes">
+        <li><span class="tag bug">Bug</span><span>Chaque joueur était rattaché à la ligue où il avait joué le plus de games sur deux ans. Pour Exofeng, c'était la NLC (2025), pas la LFL où il joue aujourd'hui. Sa note partait donc du niveau de la NLC, et la régularisation l'empêchait de remonter assez. Tous les joueurs qui montent d'une ligue plus faible étaient sous-estimés de la même façon.</span></li>
+        <li><span class="tag buff">Correctif</span><span>Le rattachement devient un mélange des ligues jouées, pondéré par la récence (demi-vie de 6 mois). Exofeng passe de {n(EXO['before'])} à {n(EXO['after'])} points, {EXO['rank_after']}<sup>e</sup> ADC de LFL. Sur la saison 2026, la prédiction reste au même niveau (AUC {n(V11['auc'],3)} contre {n(V11a['auc'],3)}) : le correctif ne se paie pas en précision, il corrige des cas comme le sien.</span></li>
+        <li><span class="tag new">Limite</span><span>Pourquoi pas plus haut&nbsp;? Ses {EXO['n_recent']} games avec Skillcamp (LFL et EMEA Masters) sont gagnées à {pct(EXO['wr_recent'])}, mais les {EXO['n_before']} d'avant (NLC, LES, Prime League) à {pct(EXO['wr_before'])}, et le modèle pèse toutes les games de la même façon. Donner plus de poids aux games récentes ne prédit pas mieux en moyenne, donc je ne l'ai pas fait. Avec ±{n(EXO['sd'])} points d'incertitude, il peut tout à fait être le meilleur ADC de LFL : les données ne suffisent pas encore à le dire. Sa fiche, dans l'explorateur, montre la montée mois par mois.</span></li>
+      </ul>
+    </div>
+  </div>
 </div></section>
 
 <section><div class="col">
@@ -226,17 +237,17 @@ BODY=f'''
   <figure>
     <div class="ftitle">Mois par mois</div>
     <div id="f-monthly"></div>
-    <figcaption>AUC de chaque mois. La v1.0 gelée (notes 2025 jamais mises à jour) décroche en fin de saison ; la v1.1 ré-entraînée tient.</figcaption>
+    <figcaption>AUC de chaque mois. La v1.0 gelée (notes 2025 jamais mises à jour) décroche en fin de saison ; la v1.2 ré-entraînée tient.</figcaption>
   </figure>
-  <p>La v1.1 fait mieux que l'Elo d'équipe {months_better} mois sur {nmonths}. La combiner avec les deux Elo n'apporte rien (AUC {n(COMB['auc'],3)} contre {n(V11['auc'],3)}) : l'Elo ne sait rien que le modèle ne sache déjà. L'oubli progressif n'aide pas non plus ({n(TAU['auc'],3)}).</p>
+  <p>La v1.2 (ré-entraînée chaque mois) fait mieux que l'Elo d'équipe {months_better} mois sur {nmonths}. La combiner avec les deux Elo n'apporte rien (AUC {n(COMB['auc'],3)} contre {n(V11['auc'],3)}) : l'Elo ne sait rien que le modèle ne sache déjà. L'oubli progressif n'aide pas non plus ({n(TAU['auc'],3)}).</p>
   <p>Deux vérifications contre l'auto-persuasion. Un placebo : si je mélange au hasard les résultats de 2025, le modèle retombe à une AUC de {n(D['placebo'],2)} sur janvier 2026. Il ne triche donc pas. Et la stabilité : en coupant 2025 en deux moitiés au hasard, les notes des deux moitiés sont corrélées à {n(REL['v1 theta'],2)}. Le KDA fait {n(REL['KDA'],2)}, mais il est stable parce que la force d'une équipe est stable. Stable ne veut pas dire juste.</p>
 </div></section>
 
 <section><div class="col">
   <span class="eyebrow">Les notes 2026 · le multivers</span>
   <h2>Qui est le meilleur à chaque poste&nbsp;?</h2>
-  <p>Comme dans la vidéo, je ne choisis pas une version. J'en tire {n(MV['auc']['n'])} au hasard, toutes défendables : force de la régularisation, cible (victoire, or, mélange), poids par rôle ou globaux, correction du champion, stats de lane, chaque stat retirée avec une probabilité de 15&nbsp;%, oubli progressif, minimum de games. Chaque version est notée sur août-septembre 2026 (AUC de {n(MV['auc']['min'],3)} à {n(MV['auc']['max'],3)}), puis ré-entraînée sur tout jusqu'au 28 septembre 2026.</p>
-  <p>Les académies et ligues régionales restent séparées des ligues majeures : leurs joueurs n'affrontent presque jamais ceux des ligues majeures, les mélanger dans un même classement serait trompeur. Choisis un niveau, puis affine par région, ligue ou poste.</p>
+  <p>Comme dans la vidéo, je ne choisis pas une version. J'en tire {n(MV['auc']['n'])} au hasard, toutes défendables : force de la régularisation, cible (victoire, or, mélange), poids par rôle ou globaux, correction du champion, stats de lane, chaque stat retirée avec une probabilité de 15&nbsp;%, oubli progressif, minimum de games, rattachement du joueur à une ligue (la plus jouée ou un mélange). Chaque version est notée sur août-septembre 2026 (AUC de {n(MV['auc']['min'],3)} à {n(MV['auc']['max'],3)}), puis ré-entraînée sur tout jusqu'au 28 septembre 2026.</p>
+  <p>Trois niveaux, jamais mélangés dans un même classement, parce que leurs joueurs ne s'affrontent presque jamais : les <b>ligues majeures</b> (LCK, LPL, LEC, LCS, CBLOL, LCP) ; le <b>2<sup>e</sup> niveau</b> (LCK Challengers, ERL comme la LFL ou la Prime League, NACL, Circuito Desafiante, ligues du Pacifique…) ; le <b>3<sup>e</sup> niveau</b> (LCK Academy Series, Nexus League, Hitpoint Challengers). Choisis un niveau, puis affine par région, ligue ou poste.</p>
   <div class="explorer bleed">
     <div class="xbar">
       <div class="role-tabs" role="group" aria-label="Vue" id="x-view">
@@ -245,7 +256,8 @@ BODY=f'''
       </div>
       <div class="role-tabs" role="group" aria-label="Niveau" id="x-tier">
         <button type="button" id="x-tier-M" data-v="M" aria-pressed="true">Ligues majeures</button>
-        <button type="button" id="x-tier-A" data-v="A" aria-pressed="false">Académies et ligues régionales</button>
+        <button type="button" id="x-tier-2" data-v="2" aria-pressed="false">2<sup>e</sup> niveau</button>
+        <button type="button" id="x-tier-3" data-v="3" aria-pressed="false">3<sup>e</sup> niveau</button>
       </div>
     </div>
     <div class="controls">
@@ -393,13 +405,13 @@ function draw(){
   const lab={'Pile ou face (+ côté bleu)':'Hasard (+ côté bleu)','v0.3 LoL Ratings 2.0 (corrigé par rôle)':'v0.3 Ratings 2.0 corrigé'};
   hbar($('#f-final'),names.map(k=>({label:lab[k]||k,value:F[k].auc,hl:k.startsWith('v1.0'),acc:F[k].acc,tip:`<b>${esc(lab[k]||k)}</b><br>AUC ${fmt(F[k].auc,3)} · ${pct(F[k].acc,1)} de bonnes prédictions`})),
     {left:188,right:112,row:26,base:.5,min:.5,max:.74,ticks:[.5,.55,.6,.65,.7],tf:t=>fmt(t,2),vf:d=>`${fmt(d.value,3)} (${pct(d.acc,0)})`,aria:'AUC février 2026'});
-  const R=D.rolling.total;const rn=['KDA à date','v1.0 (2025 seul, gelée)','Elo équipe (mis à jour à chaque game)','Elo joueurs (mis à jour à chaque game)','v1.1 + Elo (combinés)','v1.1 ré-entraînée chaque mois'];
-  const rl={'KDA à date':'KDA (mis à jour chaque mois)','v1.0 (2025 seul, gelée)':'v1.0 gelée (notes 2025)','Elo équipe (mis à jour à chaque game)':'Elo équipe (chaque game)','Elo joueurs (mis à jour à chaque game)':'Elo joueurs (chaque game)','v1.1 + Elo (combinés)':'v1.1 + Elo combinés','v1.1 ré-entraînée chaque mois':'v1.1 (chaque mois)'};
-  hbar($('#f-rolling'),rn.map(k=>({label:rl[k],value:R[k].auc,lo:R[k].auc_lo,hi:R[k].auc_hi,acc:R[k].acc,hl:k==='v1.1 ré-entraînée chaque mois',tip:`<b>${esc(rl[k])}</b><br>AUC ${fmt(R[k].auc,3)} [${fmt(R[k].auc_lo,3)} – ${fmt(R[k].auc_hi,3)}]<br>${pct(R[k].acc,1)} de bonnes prédictions`})),
+  const R=D.rolling.total;const rn=['KDA à date','v1.0 (2025 seul, gelée)','Elo équipe (mis à jour à chaque game)','Elo joueurs (mis à jour à chaque game)','v1.1 ré-entraînée chaque mois','v1.2 + Elo (combinés)','v1.2 rattachement mixte'];
+  const rl={'KDA à date':'KDA (mis à jour chaque mois)','v1.0 (2025 seul, gelée)':'v1.0 gelée (notes 2025)','Elo équipe (mis à jour à chaque game)':'Elo équipe (chaque game)','Elo joueurs (mis à jour à chaque game)':'Elo joueurs (chaque game)','v1.1 ré-entraînée chaque mois':'v1.1 (chaque mois)','v1.2 + Elo (combinés)':'v1.2 + Elo combinés','v1.2 rattachement mixte':'v1.2 (chaque mois)'};
+  hbar($('#f-rolling'),rn.map(k=>({label:rl[k],value:R[k].auc,lo:R[k].auc_lo,hi:R[k].auc_hi,acc:R[k].acc,hl:k==='v1.2 rattachement mixte',tip:`<b>${esc(rl[k])}</b><br>AUC ${fmt(R[k].auc,3)} [${fmt(R[k].auc_lo,3)} – ${fmt(R[k].auc_hi,3)}]<br>${pct(R[k].acc,1)} de bonnes prédictions`})),
     {left:200,right:100,row:28,base:.5,min:.5,max:.76,ticks:[.5,.55,.6,.65,.7,.75],tf:t=>fmt(t,2),vf:d=>`${fmt(d.value,3)} (${pct(d.acc,1)})`,aria:'AUC saison 2026'});
   const M=D.rolling.monthly,MN=['févr.','mars','avr.','mai','juin','juil.','août','sept.'],FULL=['Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre'];
-  const keys=Object.keys(M['v1.1 ré-entraînée chaque mois']);const cats=keys.map((k,i)=>({label:MN[i],full:FULL[i]+' 2026'}));
-  const ser=[['v1.1','v1.1 ré-entraînée chaque mois','var(--s1)',0],['Elo équipe','Elo équipe (mis à jour à chaque game)','var(--s2)',0],['v1.0 gelée','v1.0 (2025 seul, gelée)','var(--s3)',0]]
+  const keys=Object.keys(M['v1.2 rattachement mixte']);const cats=keys.map((k,i)=>({label:MN[i],full:FULL[i]+' 2026'}));
+  const ser=[['v1.2','v1.2 rattachement mixte','var(--s1)',0],['Elo équipe','Elo équipe (mis à jour à chaque game)','var(--s2)',0],['v1.0 gelée','v1.0 (2025 seul, gelée)','var(--s3)',0]]
     .map(([name,k,color])=>({name,color,v:keys.map(m=>M[k][m].auc)}));
   const ends=ser.map(s=>s.v[s.v.length-1]);ser.forEach((s,i)=>{for(let j=0;j<i;j++)if(Math.abs(ends[i]-ends[j])<.012)s.dy=(s.dy||0)+(ends[i]<ends[j]?12:-12)});
   const all=ser.flatMap(s=>s.v);lines($('#f-monthly'),ser,cats,{min:Math.floor(Math.min(...all)*50)/50-.01,max:Math.ceil(Math.max(...all)*50)/50,ticks:[.6,.65,.7,.75].filter(t=>t>=Math.min(...all)-.02&&t<=Math.max(...all)+.02),aria:'AUC par mois'});
@@ -421,6 +433,7 @@ function draw(){
  $('#f-heat').innerHTML=h+'</tbody></table>';}
 {const S={view:'P',tier:'M',region:'',league:'',role:'',path:'',sort:'p',unit:'pts',min:20,q:'',shown:25,open:null};
  try{Object.assign(S,JSON.parse(localStorage.getItem('lr3-explorer')||'{}'),{shown:25,open:null})}catch(e){}
+ if(!['M','2','3'].includes(S.tier))S.tier='M';
  const LM=D.league_meta,LV=D.leagues_now,P=D.players,TM=D.teams;
  const save=()=>{try{const {view,tier,region,league,role,path,sort,unit,min}=S;localStorage.setItem('lr3-explorer',JSON.stringify({view,tier,region,league,role,path,sort,unit,min}))}catch(e){}};
  const U=v=>S.unit==='gold'?v*5:v, US=()=>S.unit==='gold'?' g':'';
@@ -465,8 +478,8 @@ function draw(){
    rows.sort((a,b)=>key(b)-key(a)||b.p-a.p);
    const total=rows.length;rows=rows.slice(0,S.shown);
    let info=`${fmt(total)} joueur${total>1?'s':''}`;
-   if(!total&&S.path==='up'&&S.tier==='A')info+=' · les promus jouent en ligue majeure : passe sur « Ligues majeures »';
-   if(!total&&S.path==='down'&&S.tier==='M')info+=' · les joueurs redescendus sont dans « Académies et ligues régionales »';
+   if(!total&&S.path==='up'&&S.tier!=='M')info+=' · les promus jouent en ligue majeure : passe sur « Ligues majeures »';
+   if(!total&&S.path==='down'&&S.tier==='M')info+=' · les joueurs redescendus sont dans les 2e et 3e niveaux';
    if(S.league){const m=LM[S.league];info+=` · ${S.league} (${m.desc}) : niveau de la ligue ${LV[S.league]!=null?(LV[S.league]>0?'+':'')+fmt(U(LV[S.league]))+US():'n.c.'}${S.unit==='pts'?' points':''}`}
    $('#x-info').textContent=info;
    const cols=[{h:'#',r:1,f:(r,i)=>i+1},{h:'Joueur',f:r=>`<b>${esc(r.n)}</b>${(r.fl||[]).includes('up')?' <span class="pill">promu</span>':(r.fl||[]).includes('new')?' <span class="pill">nouveau</span>':''}`},{h:'Équipe',f:r=>esc(r.t)},{h:'Ligue',f:r=>`<span title="${esc(LM[r.l]?.desc||'')}">${esc(r.l)}</span>`},{h:'Poste',f:r=>r.r},{h:'Games',r:1,f:r=>r.gp},

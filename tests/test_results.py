@@ -9,7 +9,7 @@ def test_ratings_shape():
     assert len(R26)>1000 and R26.points.notna().all() and len(R25)>2500
 
 def test_tiers_are_separated():
-    assert set(R26.tier)=={'Ligue majeure','Académie / ligue régionale'}
+    assert set(R26.tier)=={'Ligue majeure','Deuxième niveau','Troisième niveau'}
     majors={'LCK','LPL','LEC','LCS','CBLOL','LCP'}
     assert set(R26[R26.tier=='Ligue majeure'].league)<=majors
     assert not set(R26[R26.tier!='Ligue majeure'].league)&majors

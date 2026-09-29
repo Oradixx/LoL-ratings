@@ -3,6 +3,7 @@ avec l'incertitude statistique de chaque note (loi a posteriori de la ridge)."""
 import sys, json; sys.path.insert(0,'src'); from evaluate import *
 from leagues import detect_cups, INTL, MAJOR, tier
 V1=dict(lam=50,lamL=3,target='gold',role_prior=True,prior_alpha=200)
+V1=dict(V1,home='mix')   # v1.2 : rattachement à la ligue pondéré par la récence
 tr,_,_=splits('now')
 m=fit(P_ALL,tr,V1); A=fit.last_A
 pl=m['u'].index; nP=len(pl); leagues=m['league'].index
@@ -32,7 +33,7 @@ r.to_parquet('data/proc/ratings_now.parquet')
 # P(n°1) sous incertitude, par rôle et par niveau
 rng=np.random.default_rng(1); out={}
 pidx=pd.Series(np.arange(nP),index=pl)
-for tr_ in ['Ligue majeure','Académie / ligue régionale']:
+for tr_ in ['Ligue majeure','Deuxième niveau','Troisième niveau']:
     out[tr_]={}
     for ro in ['Top','Jungle','Mid','ADC','Support']:
         sel=r[active&(r.role==ro)&(r.tier==tr_)]

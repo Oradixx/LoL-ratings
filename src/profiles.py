@@ -5,6 +5,7 @@
 import sys, json; sys.path.insert(0,'src'); from evaluate import *
 from leagues import INTL, MAJOR, detect_cups
 V1=dict(lam=50,lamL=3,target='gold',role_prior=True,prior_alpha=200)
+V1=dict(V1,home='mix')   # v1.2 : rattachement à la ligue pondéré par la récence
 r=pd.read_parquet('data/proc/ratings_now.parquet'); act=r[r.active]
 # 1) trajectoires
 MONTHS=pd.date_range('2026-02-01','2026-09-01',freq='MS')
