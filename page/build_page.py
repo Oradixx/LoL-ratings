@@ -34,6 +34,14 @@ GENG_GAMES=D.get('geng_games',0)
 u0=U[0]
 games25=D['games']['2025']; games26=D['games']['2026']
 ch=MV['choice_effects']
+MOIS=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre']
+def frdate(s):
+    y,mo,d=s.split('-'); return f"{int(d)} {MOIS[int(mo)-1]} {y}"
+_ws=D['worlds'].get('score')
+WSCORE=(f'''<p class="verdict">Verdict, sur les {n(_ws['n_games'])} games de Worlds 2026 : le modèle gelé a bien prédit {pct(_ws['p_model']['acc'])} des games (AUC {n(_ws['p_model']['auc'],3)}, log-loss {n(_ws['p_model']['logloss'],3)}), contre {pct(_ws['p_elo']['acc'])} pour l'Elo d'équipe gelé le même jour (AUC {n(_ws['p_elo']['auc'],3)}). Séries : {pct(_ws['series_acc_p_model'])} contre {pct(_ws['series_acc_p_elo'])}.</p>''' if _ws and _ws.get('n_games') else '<p class="muted">Verdict : après la finale.</p>')
+SIM=D['sim']; TRF=D['transfer']; CHC=D['champ']; CAL=D['calib']; WD=D['worlds']
+_s1=SIM['sigma_100']; _s2=SIM['sigma_200']; _cov=lambda s:(s['cov1_stable']+s['cov1_mobile'])/2
+_tg=TRF['_prior_gain']; _c2=CHC['<= 2 games']; _nb=CHC['new0_by_game_number']
 SO=D['season_only']; SVAL=D['split_validation']; LPC=D['league_prior_check']; SE=D['split_examples']; SMV=D.get('season_mv_n',300)
 _v12=SO['v1.2 rattachement mixte']; _v13=SO['v1.3 saison seule']
 early=lambda d:sum(d['monthly'][m] for m in ['2026-02','2026-03'])/2; late=lambda d:sum(d['monthly'][m] for m in ['2026-08','2026-09'])/2
@@ -71,7 +79,7 @@ BODY=f'''
     <div><b class="num">{n(MV['auc']['n'])}</b><span>versions du modèle</span></div>
     <div><b class="num">{pct(V11['acc'],1)}</b><span>des games 2026 prédites en conditions réelles</span></div>
   </div>
-  <p class="muted" style="font-size:14px">Inspiré de la méthode de la vidéo <a href="https://www.youtube.com/watch?v=0I2T0R91G38">« the most average NBA player »</a> (<a href="https://github.com/HQEye/basic-most-average-nba-player">code</a>) et parti du notebook <i>LoL Ratings 2.0</i>. Données : Oracle's Elixir, jusqu'au 28 septembre 2026.</p>
+  <p class="muted" style="font-size:14px">Inspiré de la méthode de la vidéo <a href="https://www.youtube.com/watch?v=0I2T0R91G38">« the most average NBA player »</a> (<a href="https://github.com/HQEye/basic-most-average-nba-player">code</a>) et parti du notebook <i>LoL Ratings 2.0</i>. Données : Oracle's Elixir, jusqu'au {frdate(D['data_until'])}.</p>
 </header>
 
 <section><div class="col">
@@ -165,7 +173,7 @@ BODY=f'''
   <figure>
     <div class="ftitle">Le niveau des ligues selon le modèle (2025-2026)</div>
     <div id="f-leagues"></div>
-    <figcaption>Points LR3 du joueur moyen de chaque ligue (0 = joueur moyen actif en 2026). 100 points ≈ 500 golds d'écart final par game et par joueur. Modèle entraîné sur toutes les games jusqu'au 28 septembre 2026. Les ligues peu reliées aux autres ont les estimations les plus fragiles.</figcaption>
+    <figcaption>Points LR3 du joueur moyen de chaque ligue (0 = joueur moyen actif en 2026). 100 points ≈ 500 golds d'écart final par game et par joueur. Modèle entraîné sur toutes les games jusqu'au {frdate(D['data_until'])}. Les ligues peu reliées aux autres ont les estimations les plus fragiles.</figcaption>
   </figure>
   <div class="callout"><span class="eyebrow">LCK CL ou LEC&nbsp;?</span><p>Avec la seule saison 2025, le modèle mettait la LCK Challengers au niveau de la LEC ({sgn(LC['diff']['LCKC-LEC'][0])} points, avec une incertitude de ±{n(LC['diff']['LCKC-LEC'][1])}) : trop peu de joueurs relient les deux ligues pour trancher. Les transferts de l'intersaison ont servi de test. Les joueurs partis de la LCK CL vers une autre ligue ont fait {sgn(mov['LCKC']['points_par_joueur'])} points par joueur par rapport à leur note 2025 (±{n(mov['LCKC']['se'])}), ceux partis de la LEC {sgn(mov['LEC']['points_par_joueur'])} (±{n(mov['LEC']['se'])}). La LEC était donc sous-estimée. Une fois 2026 intégrée, la LEC passe nettement devant ({sgn(LN['LEC'])} contre {sgn(LN['LCKC'])}).</p></div>
   <div class="callout"><span class="eyebrow">Et les EMEA Masters&nbsp;?</span><p>Elles comptent, comme tous les tournois : leurs {n(EM['em_games'])} games (2025-2026) sont le seul endroit où les ERL s'affrontent directement. Pour les grosses ERL, reliées à la LEC par de nombreux transferts, elles changent peu de chose (LFL {sgn(EM['with']['LFL']['vs_lec'])} points sous la LEC avec, {sgn(EM['without']['LFL']['vs_lec'])} sans). Pour les petites, elles font la différence : sans les EM, la Tchéquie-Slovaquie (HM) passerait de {sgn(EM['with']['HM']['vs_lec'])} à {sgn(EM['without']['HM']['vs_lec'])} et l'Italie (LIT) de {sgn(EM['with']['LIT']['vs_lec'])} à {sgn(EM['without']['LIT']['vs_lec'])}, avec une incertitude plus large d'environ 15&nbsp;%.</p></div>
@@ -247,6 +255,18 @@ BODY=f'''
       <p>Exofeng, sur la seule saison 2026 : {n(_exo['points'])} points, {_exo['rank']}<sup>e</sup> ADC de LFL sur {_exo['n_role']}. Ses {D['exofeng_split']['n_early']} premières games de l'année, avant Skillcamp (Prime League, CCWS), ont été gagnées à {pct(D['exofeng_split']['wr_early'])}. Sans elles, le même modèle le met à {n(D['exofeng_split']['skillcamp_only'])}. C'est exactement le cas d'une saison qui mélange deux contextes. Le filtre de compétition ne le corrige presque pas (saison régulière de LFL : {n(exo_rs['note'])}, {sgn(exo_rs['d'],0)}), parce qu'en moyenne, chez tous les joueurs, l'écart d'une compétition à l'autre est surtout du bruit. Pour un cas comme le sien, le chiffre à retenir est l'incertitude : ±{n(_exo['sd'])} points.</p>
     </div>
   </div>
+  <div class="patch">
+    <div class="patch-head"><span class="ver">1.4</span><span class="name">Trois contrôles, aucun réglage changé</span></div>
+    <div class="patch-body">
+      <p>Plutôt que d'ajouter des boutons, j'ai vérifié le raisonnement lui-même, avec des tests que le modèle ne pouvait pas influencer.</p>
+      <ul class="changes">
+        <li><span class="tag bug">Contrôle</span><span><b>Une simulation où la vérité est connue.</b> Mêmes games, mêmes joueurs, mêmes coéquipiers, même bruit que la saison 2026, mais des notes « vraies » tirées au hasard, avec une part de talent que les stats ne voient pas (±100 à ±200 points). Le modèle retrouve les notes (corrélation {n(_s2['corr'],2)} à {n(_s1['corr'],2)}, erreur typique {n(_s1['rmse'])} à {n(_s2['rmse'])} points), et ses ± sont à peu près honnêtes : la vraie note tombe dans ±1 écart-type pour {pct(_cov(_s2))} à {pct(_cov(_s1))} des joueurs selon la part de talent invisible (68 % attendus). En revanche, dans un roster qui joue toujours ensemble, l'ordre entre coéquipiers n'est retrouvé qu'à {n(_s2['pair_corr_stable'],2)}-{n(_s1['pair_corr_stable'],2)} (corrélation), contre {n(_s2['pair_corr_other'],2)}-{n(_s1['pair_corr_other'],2)} ailleurs. Et le vrai n°1 d'un poste n'est désigné que dans {pct(_s2['no1_found'])} à {pct(_s1['no1_found'])} des cas. Le cas Gen.G, chiffré.</span></li>
+        <li><span class="tag bug">Contrôle</span><span><b>Le partage du mérite, jugé sur les transferts.</b> Prédire les matchs ne dit pas comment répartir le mérite entre cinq joueurs inséparables ; un transfert, si. Notes 2025 gelées, jugées sur les {n(_tg['n'])} games 2026 où une équipe aligne au moins deux joueurs qui ont changé d'équipe. Le prior box-score aide vraiment (+{n(_tg['auc_gain'],4)} d'AUC, intervalle à 95 % [{n(_tg['lo'],4)} ; {n(_tg['hi'],4)}]). Et les réglages publiés sont déjà au sommet : plus ou moins de prior, de régularisation, avec ou sans stats de lane à 15 minutes, les variantes font jeu égal à 0,001 d'AUC près ou moins bien, sur janvier-mars comme sur avril-septembre. Rien qui justifie de changer.</span></li>
+        <li><span class="tag bug">Contrôle</span><span><b>La méta, regroupée sur la saison.</b> Un joueur sur un champion qu'il a joué au plus deux fois en match officiel ({pct(_c2['share'])} des picks en 2026) ne fait pas moins bien que sa note. En moyenne, c'est même l'inverse (+{n(_c2['gold_per_player'])} ± {n(_c2['gold_se'])} golds par joueur concerné), sans doute parce qu'on sort un nouveau champion quand il est fort. L'ajouter au modèle n'améliore pas la prédiction hors échantillon. Le fearless draft, lui, se voit : la part de champions jamais joués passe de {pct(_nb['1'])} en game 1 d'une série à {pct(_nb['5'])} en game 5.</span></li>
+      </ul>
+      <p class="verdict">Quand un test ne montre rien, la bonne réponse est de ne rien toucher. Le vrai angle mort reste les rosters inséparables : seules plus de données (2023-2024, mercato 2027) le réduiront.</p>
+    </div>
+  </div>
 </div></section>
 
 <section><div class="col">
@@ -278,6 +298,14 @@ BODY=f'''
   </figure>
   <p>La v1.2 (ré-entraînée chaque mois) fait mieux que l'Elo d'équipe {months_better} mois sur {nmonths}. La combiner avec les deux Elo n'apporte rien (AUC {n(COMB['auc'],3)} contre {n(V11['auc'],3)}) : l'Elo ne sait rien que le modèle ne sache déjà. L'oubli progressif n'aide pas non plus ({n(TAU['auc'],3)}).</p>
   <p>Deux vérifications contre l'auto-persuasion. Un placebo : si je mélange au hasard les résultats de 2025, le modèle retombe à une AUC de {n(D['placebo'],2)} sur janvier 2026. Il ne triche donc pas. Et la stabilité : en coupant 2025 en deux moitiés au hasard, les notes des deux moitiés sont corrélées à {n(REL['v1 theta'],2)}. Le KDA fait {n(REL['KDA'],2)}, mais il est stable parce que la force d'une équipe est stable. Stable ne veut pas dire juste.</p>
+  <h3>3. Les probabilités annoncées sont-elles justes&nbsp;?</h3>
+  <p>Bien classer ne suffit pas : quand le modèle annonce 70&nbsp;%, l'équipe doit gagner 7 fois sur 10.</p>
+  <figure>
+    <div class="ftitle">Probabilité annoncée contre victoires réelles, 2026</div>
+    <div id="f-calib"></div>
+    <figcaption>Games de février à septembre 2026 regroupées par probabilité annoncée (v1.2 ré-entraînée chaque mois). Une courbe parfaite suit la diagonale.</figcaption>
+  </figure>
+  <p>L'écart moyen entre annoncé et réel est de {pct(CAL['games']['v1.2']['ece'],1)}. En log-loss (plus bas = mieux), la v1.2 fait {n(CAL['games']['v1.2']['logloss'],3)}, contre {n(CAL['games']['Elo équipe']['logloss'],3)} pour l'Elo d'équipe, {n(CAL['games']['Elo joueurs']['logloss'],3)} pour l'Elo des joueurs et {n(CAL['games']['taux bleu constant']['logloss'],3)} pour « toujours le taux de victoire du côté bleu ». Sur les séries, en partant de la probabilité d'avant la game 1 : {pct(CAL['series']['Bo3']['v1.2']['acc'])} des Bo3 bien prédits ({pct(CAL['series']['Bo3']['Elo équipe']['acc'])} pour l'Elo d'équipe) et {pct(CAL['series']['Bo5']['v1.2']['acc'])} des Bo5 ({pct(CAL['series']['Bo5']['Elo équipe']['acc'])}).</p>
 </div></section>
 
 <section><div class="col">
@@ -313,10 +341,11 @@ BODY=f'''
       <label for="x-q" class="grow">Chercher<input type="search" id="x-q" placeholder="joueur ou équipe" autocomplete="off"></label>
     </div>
     <p class="muted x-info" id="x-info"></p>
+    <div id="x-cmp" class="x-cmp" hidden></div>
     <div class="tbl-wrap"><table id="x-table"></table></div>
     <button type="button" class="x-more" id="x-more">Afficher 25 de plus</button>
   </div>
-  <p class="muted" style="font-size:13.5px" id="x-legend-P">Notes d'une seule saison : le modèle ne voit que les games de la saison choisie (pour 2026, le niveau des ligues part de 2025, puis les games de 2026 le corrigent). Choisis une compétition ou un split pour voir la note du joueur sur cette compétition : sa note de saison plus un écart mesuré sur l'écart d'or de ces games, très régularisé (patch 1.3 : l'écart propre à un split est petit, et le même pour les cinq joueurs d'un roster stable). Clique sur un joueur pour sa fiche : évolution mois par mois, parcours, toutes ses compétitions. « vs rôle » = golds d'écart final par game par rapport au joueur moyen du même poste dans sa ligue. « N°1 multivers » = part de 300 versions du modèle où il est n°1 de son poste, dans son niveau.</p>
+  <p class="muted" style="font-size:13.5px" id="x-legend-P">Notes d'une seule saison : le modèle ne voit que les games de la saison choisie (pour 2026, le niveau des ligues part de 2025, puis les games de 2026 le corrigent). Choisis une compétition ou un split pour voir la note du joueur sur cette compétition : sa note de saison plus un écart mesuré sur l'écart d'or de ces games, très régularisé (patch 1.3 : l'écart propre à un split est petit, et le même pour les cinq joueurs d'un roster stable). Clique sur un joueur pour sa fiche : évolution mois par mois, parcours, toutes ses compétitions, et un bouton pour le comparer à d'autres joueurs (jusqu'à quatre, avec la probabilité que l'un soit vraiment meilleur que l'autre). « vs rôle » = golds d'écart final par game par rapport au joueur moyen du même poste dans sa ligue. « N°1 multivers » = part de 300 versions du modèle où il est n°1 de son poste, dans son niveau.</p>
   <p class="muted" style="font-size:13.5px" id="x-legend-T" hidden>Effectif = pour chaque poste, le joueur le plus présent sur les 20 dernières games de l'équipe dans la saison choisie. Force = note moyenne de ces cinq joueurs. « Contre l'équipe moyenne » = probabilité de battre une équipe moyenne de la même ligue, côté neutre. Le bilan réel de la saison est à côté pour comparer.</p>
   <p class="verdict">Version de référence : {', '.join(E(no1[r]['name'])+' ('+E(no1[r]['team'])+')' for r in ROLES)}. Le multivers, lui, désigne {', '.join(E(mvw[r]['player'])+' ('+pct(mvw[r]['mv_p1'])+')' for r in ROLES)}.</p>
   <p>{MV_TXT}</p>
@@ -335,6 +364,20 @@ BODY=f'''
   <div class="tbl-wrap bleed"><table id="t-under"></table></div>
   <p class="verdict">{E(u0['player'])}, {E(u0['role']).lower() if u0['role']!='ADC' else 'ADC'} de {E(u0['team'])} ({E(u0['league26'])}) : n°1 des joueurs hors ligue majeure dans {pct(u0['p1'])} des versions du modèle, top&nbsp;10 dans {pct(u0['p10'])}.</p>
   <p class="muted">Avec la réserve qui s'impose : {E(u0['player'])} a joué avec {u0['teammates']} coéquipiers différents cette saison. Plus ce nombre est petit, plus sa note peut appartenir en partie à son équipe. Même angle mort que Gen.G, en plus petit.</p>
+</div></section>
+
+<section><div class="col">
+  <span class="eyebrow">Le prochain juge · figé le {frdate(WD['frozen_on'])}</span>
+  <h2>Pronostics Worlds 2026</h2>
+  <p>Worlds 2026 se joue de mi-octobre au 14 novembre, aux États-Unis. Le modèle de prédiction (v1.2, tout l'historique jusqu'au {frdate(WD['data_until'])}) est gelé dans <code>results/worlds2026/frozen_model.json</code>, et le commit qui l'ajoute en fait la date. Après la finale, un script le notera sur les games réelles, avec les compositions réellement alignées, contre un Elo d'équipe gelé le même jour. Rien ne sera ré-entraîné entre les deux.</p>
+  {WSCORE}
+  <div class="tbl-wrap bleed"><table id="t-worlds"></table></div>
+  <div class="calc">
+    <label for="w-a">Équipe A<select id="w-a"></select></label>
+    <label for="w-b">Équipe B<select id="w-b"></select></label>
+    <div id="w-out" class="w-out" aria-live="polite"></div>
+  </div>
+  <p class="muted" style="font-size:13.5px">Force = note moyenne des cinq titulaires (joueur le plus présent à chaque poste sur les 20 dernières games de ligue), en points. Probabilités côté neutre, games supposées indépendantes pour les Bo3 et Bo5. Toutes les équipes des ligues majeures sont proposées : la liste des qualifiés n'était pas complète le jour du gel.</p>
 </div></section>
 
 <section><div class="col">
@@ -366,7 +409,7 @@ BODY=f'''
 </div></section>
 
 <footer class="col">
-  <p>Code : Python (pandas, NumPy, SciPy, scikit-learn). Données : <a href="https://oracleselixir.com/tools/downloads">Oracle's Elixir</a>, match data 2022, 2025 et 2026 (jusqu'au 28 septembre). Méthode inspirée de B.A.S.I.C. (HQEye). Notes = ridge « RAPM » sur l'écart d'or, prior « stats » appris par rôle, niveaux de ligue portés par les joueurs.</p>
+  <p>Code : Python (pandas, NumPy, SciPy, scikit-learn). Données : <a href="https://oracleselixir.com/tools/downloads">Oracle's Elixir</a>, match data 2022, 2025 et 2026 (jusqu'au {frdate(D['data_until'])}). Méthode inspirée de B.A.S.I.C. (HQEye). Notes = ridge « RAPM » sur l'écart d'or, prior « stats » appris par rôle, niveaux de ligue portés par les joueurs.</p>
 </footer>
 </div>
 <div class="tip" id="tip"></div>
@@ -428,7 +471,7 @@ function lines(host,series,cats,o){
   const x=i=>L+i*(W-L-R)/(cats.length-1),y=v=>T+(o.max-v)/(o.max-o.min)*(H-T-B);
   const g=el('g',{class:'grid'},svg),ax=el('g',{class:'axis'},svg);
   for(const t of o.ticks){el('line',{x1:L,x2:W-R,y1:y(t),y2:y(t)},g);const tx=el('text',{x:L-8,y:y(t)+4,'text-anchor':'end'},ax);tx.textContent=fmt(t,2)}
-  cats.forEach((c,i)=>{const tx=el('text',{x:x(i),y:H-B+18,'text-anchor':'middle'},ax);tx.textContent=W<480?c.full[0]:c.label});
+  cats.forEach((c,i)=>{const tx=el('text',{x:x(i),y:H-B+18,'text-anchor':'middle'},ax);tx.textContent=W<480?(c.s??c.full[0]):c.label});
   series.forEach(s=>{el('path',{d:s.v.map((v,i)=>(i?'L':'M')+x(i)+' '+y(v)).join(''),fill:'none',stroke:s.color,'stroke-width':2,'stroke-linejoin':'round'},svg);
     s.v.forEach((v,i)=>el('circle',{cx:x(i),cy:y(v),r:3.5,fill:s.color,stroke:'var(--surface)','stroke-width':1.5},svg));
     const lt=el('text',{x:W-R+8,y:y(s.v[s.v.length-1])+4+(s.dy||0),'font-size':12,'font-weight':600},svg);lt.textContent=s.name});
@@ -457,6 +500,8 @@ function draw(){
     .map(([name,k,color])=>({name,color,v:keys.map(m=>M[k][m].auc)}));
   const ends=ser.map(s=>s.v[s.v.length-1]);ser.forEach((s,i)=>{for(let j=0;j<i;j++)if(Math.abs(ends[i]-ends[j])<.012)s.dy=(s.dy||0)+(ends[i]<ends[j]?12:-12)});
   const all=ser.flatMap(s=>s.v);lines($('#f-monthly'),ser,cats,{min:Math.floor(Math.min(...all)*50)/50-.01,max:Math.ceil(Math.max(...all)*50)/50,ticks:[.6,.65,.7,.75].filter(t=>t>=Math.min(...all)-.02&&t<=Math.max(...all)+.02),aria:'AUC par mois'});
+  {const R=D.calib.reliability['v1.2'].filter(r=>r.n>=50);const cats=R.map(r=>({label:fmt(r.pred*100,0)+' %',s:fmt(r.pred*100,0),full:`Annoncé ${fmt(r.pred*100,0)} % · ${fmt(r.n)} games`}));
+   lines($('#f-calib'),[{name:'Réel',color:'var(--s1)',v:R.map(r=>r.obs)},{name:'Diagonale',color:'var(--muted)',v:R.map(r=>r.pred),dy:14}],cats,{min:0,max:1,ticks:[0,.25,.5,.75,1],aria:'Calibration'});}
   const S=D.scouting.auc;const sl=[['theta','v1.0 (note mondiale)'],['v03','v0.3 Ratings 2.0 corrigé'],['KDA','KDA'],['W','Winrate'],['u','v1.0 écart intra-ligue']];
   hbar($('#f-scout'),sl.map(([k,l])=>({label:l,value:S[k],hl:k==='theta'})),{left:160,right:44,row:24,base:.5,min:.5,max:.85,ticks:[.5,.6,.7,.8],tf:t=>fmt(t,1),vf:d=>fmt(d.value,2),aria:'AUC promotions'});
   const C=D.counter,RN={top:'Top',jng:'Jungle',mid:'Mid',bot:'ADC',sup:'Support'};
@@ -473,8 +518,19 @@ function draw(){
  let h='<table style="width:auto;min-width:100%"><thead><tr><th>Stat</th>'+roles.map(r=>`<th class="r">${r}</th>`).join('')+'</tr></thead><tbody>';
  for(const s of stats){h+=`<tr><td>${lab[s]||s}</td>`+roles.map(r=>{const v=W[r][s];const strong=Math.abs(v)>600;return `<td class="r" style="background:${col(v)};${strong?'color:#fff;font-weight:600':''}">${v>0?'+':''}${fmt(v)}</td>`}).join('')+'</tr>'}
  $('#f-heat').innerHTML=h+'</tbody></table>';}
-{const S={season:'2026',view:'P',tier:'M',region:'',league:'',comp:'',role:'',path:'',sort:'p',unit:'pts',min:20,minc:5,q:'',shown:25,open:null};
- try{Object.assign(S,JSON.parse(localStorage.getItem('lr3-explorer2')||'{}'),{shown:25,open:null,q:''})}catch(e){}
+{const WT=D.worlds.teams,A=D.worlds.a,B=D.worlds.b;
+ const sig=z=>1/(1+Math.exp(-z)),pg=(sa,sb)=>0.5*(sig(A+B*(sa-sb))+1-sig(A+B*(sb-sa)));
+ const pser=(p,n)=>{let s=0,c=1;for(let j=0;j<n;j++){if(j>0)c=c*(n-1+j)/j;s+=c*Math.pow(p,n)*Math.pow(1-p,j)}return s};
+ const top=WT.slice(0,24),T0=WT[0];
+ table($('#t-worlds'),[{h:'#',r:1,f:(r,i)=>i+1},{h:'Équipe',f:r=>`<b>${esc(r.team)}</b>`},{h:'Ligue',f:r=>esc(r.league)},{h:'Titulaires',f:r=>`<span class="lineup">${r.lineup.map(esc).join(' · ')}</span>`},{h:'Force',r:1,f:r=>fmt(r.pts)},
+   {h:`Game vs ${esc(T0.team)}`,r:1,f:r=>r===T0?'–':pct(pg(r.s,T0.s))},{h:`Bo5 vs ${esc(T0.team)}`,r:1,f:r=>r===T0?'–':pct(pser(pg(r.s,T0.s),3))}],top,(r,i)=>i==0);
+ const opts=WT.map((t,i)=>`<option value="${i}">${esc(t.team)} (${esc(t.league)})</option>`).join('');
+ $('#w-a').innerHTML=opts;$('#w-b').innerHTML=opts;$('#w-a').value=0;$('#w-b').value=Math.min(2,WT.length-1);
+ const upd=()=>{const a=WT[+$('#w-a').value],b=WT[+$('#w-b').value];if(a===b){$('#w-out').textContent='Choisis deux équipes différentes.';return}
+   const p=pg(a.s,b.s);$('#w-out').innerHTML=`<b>${esc(a.team)}</b> bat <b>${esc(b.team)}</b> : ${pct(p)} sur une game · ${pct(pser(p,2))} en Bo3 · ${pct(pser(p,3))} en Bo5`};
+ $('#w-a').addEventListener('change',upd);$('#w-b').addEventListener('change',upd);upd();}
+{const S={season:'2026',view:'P',tier:'M',region:'',league:'',comp:'',role:'',path:'',sort:'p',unit:'pts',min:20,minc:5,q:'',shown:25,open:null,cmp:[]};
+ try{Object.assign(S,JSON.parse(localStorage.getItem('lr3-explorer2')||'{}'),{shown:25,open:null,q:'',cmp:[]})}catch(e){}
  if(!D.seasons[S.season])S.season='2026'; if(!['M','2','3'].includes(S.tier))S.tier='M';
  const save=()=>{try{const {season,view,tier,region,league,comp,role,path,sort,unit,min,minc}=S;localStorage.setItem('lr3-explorer2',JSON.stringify({season,view,tier,region,league,comp,role,path,sort,unit,min,minc}))}catch(e){}};
  const SD=()=>D.seasons[S.season];
@@ -520,12 +576,13 @@ function draw(){
    const sd=SD(),LM=sd.league_meta;const tags={new:'Nouveau cette saison',moved:'A changé de ligue',up:'Promu en ligue majeure',down:'Redescendu'};
    const fl=(p.fl||[]).map(f=>`<span class="pill">${tags[f]}</span>`).join(' ');
    const tr=p.id!=null?sd.traj[p.id]:[];
-   const comps=(BYP[pi]||[]).sort((a,b)=>b[1][1]-a[1][1]).map(([c,e])=>`<tr><td>${esc(sd.comps[c].label)}</td><td class="r">${e[1]}</td><td class="r">${pct(e[2])}</td><td class="r">${fmt(U(p.p+e[4]))}${US()} <span class="muted">(${e[4]>0?'+':''}${fmt(U(e[4]))})</span></td></tr>`).join('');
+   const comps=(BYP[pi]||[]).sort((a,b)=>b[1][1]-a[1][1]).map(([c,e])=>`<tr><td>${esc(sd.comps[c].label)}</td><td class="r">${e[1]}</td><td class="r">${pct(e[2])}</td><td class="r">${fmt(e[3],1)}</td><td class="r">${fmt(U(p.p+e[4]))}${US()} <span class="muted hide-sm">(${e[4]>0?'+':''}${fmt(U(e[4]))})</span></td></tr>`).join('');
    return `<div class="pcard"><div class="pcard-main"><div><b>${esc(p.n)}</b> · ${esc(p.r)} · ${esc(p.t)} (${esc(p.l)}, ${esc(LM[p.l]?.desc||'')}) ${fl}</div>
      <div class="muted">${esc(p.c||'')}</div>
      <div>Saison ${S.season} : note ${fmt(U(p.p))}${US()} ± ${fmt(U(p.sd))} sur ${p.gp} games · N°1 multivers ${p.m1==null?'–':pct(p.m1)} · top 5 ${p.m5==null?'–':pct(p.m5)}</div>
+     <div><button type="button" class="x-cmp-btn" data-k="${S.season}|${pi}">${S.cmp.includes(S.season+'|'+pi)?'Retirer de la comparaison':'Comparer avec d\'autres joueurs'}</button></div>
      ${p.rs>=0.8?`<div class="muted">Mêmes quatre coéquipiers dans ${pct(p.rs)} de ses games : sa note se sépare mal de celle de son équipe.</div>`:''}
-     ${comps?`<table class="mini"><thead><tr><th>Compétition</th><th class="r">Games</th><th class="r">Vict.</th><th class="r">Note</th></tr></thead><tbody>${comps}</tbody></table>`:''}</div>
+     ${comps?`<table class="mini"><thead><tr><th>Compétition</th><th class="r">Games</th><th class="r">Vict.</th><th class="r">KDA</th><th class="r">Note</th></tr></thead><tbody>${comps}</tbody></table>`:''}</div>
      <div class="pcard-chart"><div class="muted" style="font-size:12px">Note au 1<sup>er</sup> de chaque mois (modèle ré-entraîné sur les games de la saison déjà jouées)</div>${spark(tr,sd.traj_months)}</div></div>`;
  }
  function rowsHTML(cols,rows,hl){
@@ -570,7 +627,18 @@ function draw(){
      {h:S.unit==='gold'?'Force (golds)':'Force',r:1,f:r=>fmt(U(r.pts))},{h:"Contre l'équipe moyenne",r:1,f:r=>pct(r.p_vs_avg)},{h:'Bilan de la saison',r:1,f:r=>r.wr==null?'–':`${pct(r.wr)} <span class="muted">(${r.gp} g)</span>`}],rows,(r,i)=>i==0&&!q);
    const mb=$('#x-more');mb.hidden=total<=S.shown;mb.textContent=`Afficher ${Math.min(25,total-S.shown)} de plus (${fmt(total-S.shown)} restantes)`;
  }
- const render=()=>S.view==='P'?renderPlayers():renderTeams();
+ const erf=x=>{const t=1/(1+0.3275911*Math.abs(x)),y=1-(((((1.061405429*t-1.453152027)*t)+1.421413741)*t-0.284496736)*t+0.254829592)*t*Math.exp(-x*x);return x>=0?y:-y};
+ const Phi=z=>0.5*(1+erf(z/Math.SQRT2));
+ function renderCmp(){const box=$('#x-cmp');if(S.view!=='P'||!S.cmp.length){box.hidden=true;return}
+   const L=S.cmp.map(k=>{const [y,i]=k.split('|');return Object.assign({k,y},D.seasons[y].players[+i])});
+   const rows=L.map(r=>`<tr><td><b>${esc(r.n)}</b> <span class="muted">${r.y}</span></td><td>${esc(r.t)}</td><td>${esc(r.l)}</td><td>${r.r}</td><td class="r">${r.gp}</td><td class="r">${fmt(U(r.p))}${US()} <span class="muted">± ${fmt(U(r.sd))}</span></td><td class="r"><button type="button" class="x-cmp-btn" data-k="${r.k}" aria-label="Retirer ${esc(r.n)}">×</button></td></tr>`).join('');
+   const pr=[];for(let i=0;i<L.length;i++)for(let j=i+1;j<L.length;j++){const a=L[i],b=L[j],z=(a.p-b.p)/Math.hypot(a.sd,b.sd);const w=z>=0?[a,b,Phi(z)]:[b,a,Phi(-z)];pr.push(`${esc(w[0].n)} meilleur que ${esc(w[1].n)} : ${pct(w[2])}`)}
+   box.innerHTML=`<div class="x-cmp-head"><b>Comparaison</b> <button type="button" id="x-cmp-clear">Tout retirer</button></div><div class="tbl-wrap"><table class="mini"><thead><tr><th>Joueur</th><th>Équipe</th><th>Ligue</th><th>Poste</th><th class="r">Games</th><th class="r">Note</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>`+
+     (pr.length?`<p class="muted" style="margin:6px 0 0">${pr.join(' · ')} <span title="Probabilité que la vraie note de l'un dépasse celle de l'autre, compte tenu des incertitudes (notes de saisons différentes : à prendre avec précaution).">(?)</span></p>`:'<p class="muted" style="margin:6px 0 0">Ajoute un deuxième joueur depuis sa fiche.</p>');
+   box.hidden=false;$('#x-cmp-clear').onclick=()=>{S.cmp=[];renderCmp();render()};}
+ const render=()=>{(S.view==='P'?renderPlayers:renderTeams)();renderCmp()};
+ document.querySelector('.explorer').addEventListener('click',e=>{const bt=e.target.closest('.x-cmp-btn');if(!bt)return;e.stopPropagation();const k=bt.dataset.k;
+   S.cmp=S.cmp.includes(k)?S.cmp.filter(x=>x!==k):[...S.cmp,k].slice(-4);render()},true);
  const upd=(k,v)=>{S[k]=v;S.shown=25;S.open=null;if(k==='season')index();fillSelects();render();save()};
  for(const [id,k] of [['#x-season','season'],['#x-view','view'],['#x-tier','tier']])$(id).addEventListener('click',e=>{const b=e.target.closest('button');if(b)upd(k,b.dataset.v)});
  for(const [id,k] of [['#x-region','region'],['#x-league','league'],['#x-comp','comp'],['#x-role','role'],['#x-path','path'],['#x-sort','sort'],['#x-unit','unit']])$(id).addEventListener('change',e=>upd(k,e.target.value));
@@ -608,8 +676,16 @@ tr.pdetail td{white-space:normal;background:var(--bg);padding:14px}
 .pcard-main{flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:6px;font-size:14px}
 .pcard-chart{flex:0 0 330px;max-width:100%;min-width:0}
 tr.pdetail td{white-space:normal}
+.x-cmp{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--gold);padding:10px 12px}
+.x-cmp-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.x-cmp button,.x-cmp-btn{font:inherit;font-size:13px;padding:4px 10px;background:transparent;color:var(--ink);border:1px solid var(--rule);cursor:pointer}
+.x-cmp-btn:hover,.x-cmp button:hover{border-color:var(--gold)}
+.calc{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin:14px 0 6px}
+.calc label{display:flex;flex-direction:column;gap:4px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);flex:1 1 220px}
+.calc select{font:inherit;font-size:15px;text-transform:none;letter-spacing:0;padding:8px 10px;background:var(--surface);color:var(--ink);border:1px solid var(--rule)}
+.w-out{flex:1 1 100%;font-size:15px;padding:10px 12px;background:var(--surface);border-left:3px solid var(--gold)}
 .pcard{position:sticky;left:0;max-width:min(940px,calc(100vw - 96px))}
-@media (max-width:600px){table.mini{font-size:12px;width:100%;table-layout:fixed}table.mini td,table.mini th{padding:4px 4px}table.mini th:first-child{width:44%}table.mini td:first-child{min-width:0}}
+@media (max-width:600px){table.mini{font-size:12px;width:100%;table-layout:fixed}table.mini td,table.mini th{padding:4px 4px}table.mini th:first-child{width:36%}.hide-sm{display:none}table.mini td:first-child{min-width:0}}
 table.mini td:first-child{white-space:normal;min-width:120px}
 table.mini td{white-space:nowrap}
 .lineup{white-space:normal;font-size:13px}

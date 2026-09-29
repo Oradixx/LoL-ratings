@@ -81,7 +81,7 @@ def home_weights(p,train_mask,half_life=180):
     end=p.loc[train_mask,'date'].max()
     q=q.assign(w=np.power(0.5,(end-q.date).dt.days/half_life))
     W=q.groupby(['pid','league']).w.sum().unstack(fill_value=0.0)
-    return W.div(W.sum(1),axis=0)
+    return W.div(W.sum(axis=1),axis=0)
 
 def design(p,g,players_idx):
     from scipy import sparse
@@ -110,7 +110,7 @@ def fit(p,g_train,cfg):
     if cfg.get('home')=='mix':
         Wm=home_weights(p,train_mask,cfg.get('home_half_life',180))
         Wm=Wm.reindex(index=pl,columns=leagues).fillna(0.0)
-        has=Wm.sum(1)>0
+        has=Wm.sum(axis=1)>0
         H[has.values]=Wm.values[has.values]
     X=design(p,g_train,players_idx)
     use_league=cfg.get('league',True)

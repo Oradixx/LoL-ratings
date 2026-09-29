@@ -15,14 +15,16 @@ Data: [Oracle's Elixir](https://oracleselixir.com/tools/downloads) match data �
 | Model | AUC [95 % CI] | Games called correctly |
 |---|---:|---:|
 | KDA (updated monthly) | 0.651 [0.640–0.662] | 60.3 % |
-| v1.0 frozen (2025 ratings, never updated) | 0.687 [0.678–0.698] | 62.5 % |
+| v1.0 frozen (2025 ratings, never updated) | 0.686 [0.677–0.697] | 62.4 % |
 | Team Elo (updated every game) | 0.688 [0.677–0.698] | 63.8 % |
 | Player Elo (updated every game) | 0.696 [0.686–0.706] | 63.8 % |
 | v1.1 (retrained monthly) | 0.722 [0.713–0.732] | 65.2 % |
-| **v1.2 LoL Ratings 3.0 (retrained monthly, recency-weighted league attachment)** | **0.723 [0.713–0.733]** | **65.4 %** |
+| **v1.2 LoL Ratings 3.0 (retrained monthly, recency-weighted league attachment)** | **0.723 [0.714–0.733]** | **65.4 %** |
 | v1.3 season-only ratings (the ones displayed, retrained monthly, see below) | 0.699 [0.688–0.710] | 62.8 % |
 
 v1.2 beats the team Elo in 7 months out of 8. Adding both Elos on top of it brings nothing (0.722).
+
+The probabilities are calibrated: the gap between announced and observed win rates averages 1.7 points; log-loss 0.612 vs 0.638 (team Elo), 0.631 (player Elo) and 0.691 (always the blue-side win rate). Series, from the probability before game 1: 71.6 % of Bo3 called correctly (69.5 % team Elo), 67.6 % of Bo5 (62.1 %).
 
 **Right after the off-season** (February 2026, 1,010 games, 2025 ratings frozen): team Elo collapses to 53.3 % because the team name no longer tells you who plays; v1.0 keeps 63.3 % (AUC 0.692 vs 0.558).
 
@@ -46,7 +48,7 @@ Leagues are split into three tiers that are never mixed in one ranking — major
 
 **EMEA Masters.** They count like every event: 817 games (2025–2026) are the only place where European regional leagues play each other. They barely move the big ERLs (linked to the LEC by many transfers) but pull the small ones down by 100–170 points and cut their uncertainty by ~15 %.
 
-**League levels.** With 2025 alone the model put the LCK Challengers level with the LEC (+9 ± 93 points: undetermined). The off-season transfers settled it: players who left the LCK CL did slightly worse than their 2025 rating (−47 ± 44 points), players who left the LEC did better (+301 ± 50). 2026 season: LCK +742, LPL +635, LEC +544, LCS +435, CBLOL +358, LFL +313, LCK CL +309, LCP +300 (LEC − LCK CL = 235 ± 79; LFL, LCK CL and LCP are tied within ± 80).
+**League levels.** With 2025 alone the model put the LCK Challengers level with the LEC (+9 ± 93 points: undetermined). The off-season transfers settled it: players who left the LCK CL did slightly worse than their 2025 rating (−47 ± 44 points), players who left the LEC did better (+301 ± 50). 2026 season: LCK +739, LPL +631, LEC +543, LCS +431, CBLOL +353, LFL +319, LCK CL +305, LCP +296 (LEC − LCK CL ≈ 238 ± 80; LFL, LCK CL and LCP are tied within that margin).
 
 **Bonus probes.** Counterpicking your lane opponent is worth about +33 gold at 15 minutes in top lane, +15 in jungle, +13 in mid, nothing in bot or support (≈26,700 lane matchups per role, controlling for side, team Elo and champion strength). The "tilt" after losing a game disappears under a placebo: the next meeting weeks later shows an even bigger gap, so it is Elo under-reacting, not tilt.
 
@@ -59,7 +61,15 @@ A reader's remark: a rating over two seasons mixes contexts (league change, team
 - **Checked out of sample** (`src/split_validation.py`): each competition's games are split at random in two halves, deltas learned on one half, judged on the other. The first version started the delta from the player's box-score stats on the competition: those stats predict nothing about the other games of the same split (correlation −0.01 in 2025, −0.00 in 2026) and made predictions worse, so they were removed. The gold-difference delta carries a little signal only when heavily regularised: λ = 1000, chosen on 2025 with a criterion fixed beforehand (squared error on the gold target), confirmed on 2026.
 - **What it says:** the split-specific part of a player's level is small, about ±55 points, while players of the same role in major leagues have a spread (sd) of 231 points. A meta that does not suit a player probably exists, but over 10–30 games it drowns in noise. And in a stable roster the five players get the same delta.
 - **The price:** a season-only model predicts worse early in the season (Feb–Mar AUC 0.654 vs 0.747: in March, when regional splits start, 29 % of fielded players have not played yet in 2026) and equally well in Aug–Sep (0.710 vs 0.708). Even on random held-out 2026 games, the two-season model is slightly better (0.737 vs 0.733). That is the cost of a rating that depends on one season only.
-- Example: Exofeng's 2026 rating is 148 (9th of 12 LFL ADCs). Without his 20 games before joining Skillcamp (25 % wins), the same model puts him at 335 — exactly the "season mixing two contexts" case. The competition filter barely moves it, because on average a competition-specific delta is mostly noise.
+- Example: Exofeng's 2026 rating is 159 (9th of 12 LFL ADCs). Without his 20 games before joining Skillcamp (25 % wins), the same model puts him at 348 — exactly the "season mixing two contexts" case. The competition filter barely moves it, because on average a competition-specific delta is mostly noise.
+
+## v1.4 — checking the reasoning (no setting changed)
+
+- **Known-truth simulation** (`src/simulation_study.py`): same games, players, teammates and noise as 2026, but "true" ratings drawn at random with a part of talent the stats cannot see (±100 to ±200 points). Recovery: correlation 0.90–0.95, typical error 147–216 points; the ± are roughly honest (true rating within ±1 sd for 63–82 % of players, 68 % expected). But inside rosters that always play together, the order between teammates is recovered at only 0.32–0.46 (vs 0.58–0.68 elsewhere), and the true #1 of a role is found in only 13–37 % of cases. The Gen.G blind spot, quantified.
+- **Credit split judged on transfers** (`src/transfer_check.py`): predicting games cannot tell how to split credit between five inseparable players; transfers can. 2025 ratings frozen, judged on the 8,685 2026 games where a team fields at least two players who changed team. The box-score prior helps (+0.0056 AUC, 95 % CI [0.0031; 0.0078]); more or less prior, regularisation, lane stats at 15 min: all variants tie within 0.001 AUC or do worse, on Jan–Mar and on Apr–Sep. Nothing to change.
+- **Meta, pooled over the season** (`src/champion_comfort.py`): a player on a champion he has played at most twice in official games (26 % of 2026 picks) does not underperform his rating — on average it is the opposite (+307 ± 107 gold per such player, probably because new champions come out when they are strong), and adding it does not improve out-of-sample predictions. Fearless draft is visible: never-played champions go from 10 % of picks in game 1 of a series to 17 % in game 5.
+- **Worlds 2026, pre-registered** (`src/worlds_preregister.py`, `results/worlds2026/frozen_model.json`): the prediction model (full history up to September 28) is frozen before the tournament, the commit dates it. After the final, `src/worlds_score.py` scores it on the real games with the lineups actually fielded, against a team Elo frozen the same day. Nothing is retrained in between.
+- **Engineering**: engine tests on synthetic seasons (`tests/test_engine.py`), CI on every push, and a weekly GitHub Action that re-downloads the Oracle's Elixir files, re-runs the whole pipeline and republishes the page (the Worlds predictions stay frozen; if Google Drive refuses the download, the update is skipped).
 
 ## How it works
 
@@ -74,6 +84,7 @@ A reader's remark: a rating over two seasons mixes contexts (league change, team
 | 0.7 | Target = final gold difference | — |
 | 0.8 | Tested, no effect: champion adjustment, lane stats at 15, time decay | — |
 | 1.2 | A reader asked why Exofeng (hyped rookie ADC, 68 % wins with Skillcamp in the LFL) was rated so low. Players were attached to the league where they played most over two years (NLC for him), so everyone climbing from a weaker league was underrated. The league attachment is now a recency-weighted mix of the leagues played (half-life 6 months): same accuracy, Exofeng from 42 to 237 points. | — |
+| 1.4 | Checks of the reasoning: known-truth simulation, credit split judged on transfers, calibration, meta pooled over the season; Worlds 2026 predictions frozen (see below). No setting changed. | Inseparable rosters: the order between teammates is barely identified. |
 | 1.3 | One rating per season, plus a rating per competition / split (see below). | — |
 | 1.1 | Bug found with more data: players seen only in tournaments shared one catch-all "international" group, creating fake links between leagues. Each tournament now keeps its own group, cups are detected automatically. Monthly retraining. | — |
 
@@ -104,7 +115,7 @@ Or open `results/ratings_2026.csv` / `results/ratings_2025.csv` (one season each
 ```bash
 pip install -r requirements.txt
 bash scripts/get_data.sh     # explains which Oracle's Elixir files to download into data/raw/
-bash run_all.sh              # ~45 min on a 2-core laptop, the multiverse is most of it
+bash run_all.sh              # about 1 h 15 on a 2-core machine, the two multiverses are most of it
 python -m pytest tests/
 ```
 
@@ -126,6 +137,13 @@ src/season_multiverse.py 300 versions of the model, trained on one season
 src/split_validation.py  are per-competition deltas signal or noise? (held-out halves)
 src/league_prior_check.py strength of the previous-season league prior
 src/season_only_check.py season-only vs full history, month by month in 2026
+src/simulation_study.py  known-truth simulation: recovery, honesty of the ±, inseparable rosters
+src/transfer_check.py    credit split between teammates, judged on transfers
+src/calibration_check.py calibration, log-loss, Bo3 / Bo5 series
+src/champion_comfort.py  new champions / meta, pooled over the season
+src/worlds_preregister.py, src/worlds_score.py   Worlds 2026 predictions, frozen then scored
+scripts/fetch_data.py    downloads the Oracle's Elixir files (weekly update workflow)
+.github/workflows/       tests on every push, weekly data update
 src/em_check.py          league levels with and without the EMEA Masters
 src/bonus_*.py           counterpick value, tilt placebo
 results/                 ratings CSVs, phase leaderboards, every number on the page (JSON)
@@ -140,6 +158,7 @@ tests/                   sanity checks on the results
 - A player who never played without his four teammates cannot be separated from them (Gen.G, and to a lesser degree academy rosters).
 - Complete 2023 and 2024 files were not available (Google Drive download quota), so the model only knows 2025–2026.
 - Gaps between leagues that never meet are extrapolated; "points" are a linear scale.
+- Inside a roster that always plays together, the order between teammates is barely identified (see the v1.4 simulation): ratings of Gen.G-like rosters say more about the team than about who carries it.
 - A rating per competition is mostly the season rating: over one split the data cannot isolate a player's own form from noise, or from his teammates in a stable roster.
 
 ## Credits

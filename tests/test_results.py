@@ -42,3 +42,18 @@ def test_published_split_setting_helps_out_of_sample():
     for y in ['2025','2026']:
         assert SV[y]['résultats seuls, λ=1000']['mse_gain']>0
         assert SV[y]['stats seules ×1']['mse_gain']<0
+
+def test_v14_checks():
+    cal=json.load(open('results/calibration_check.json'))['games']
+    assert cal['v1.2']['ece']<0.03 and cal['v1.2']['logloss']<cal['Elo équipe']['logloss']
+    tr=json.load(open('results/transfer_check.json'))['_prior_gain']
+    assert tr['lo']>0                      # the box-score prior helps on transfers (95 % interval above 0)
+    sim=json.load(open('results/simulation_study.json'))
+    for s in ['sigma_100','sigma_200']:
+        c=(sim[s]['cov1_stable']+sim[s]['cov1_mobile'])/2
+        assert 0.55<c<0.95                 # the ± are roughly honest
+        assert sim[s]['pair_corr_stable']<sim[s]['pair_corr_other']   # inseparable rosters are harder, as expected
+
+def test_worlds_predictions_are_frozen():
+    F=json.load(open('results/worlds2026/frozen_model.json'))
+    assert F['data_until']<='2026-09-28' and len(F['teams'])>=40 and len(F['theta'])>1000

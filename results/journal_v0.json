@@ -39,7 +39,7 @@
   {
    "name": "Soldier",
    "team": "Caldya Esport",
-   "league": "LFL2",
+   "league": "NL",
    "role": "ADC",
    "GP": 63,
    "KDA": 7.7,
@@ -105,7 +105,7 @@
   {
    "name": "Ryuk",
    "team": "Lille Esport",
-   "league": "LFL2",
+   "league": "NL",
    "role": "ADC",
    "GP": 18,
    "v02": 1.97,
@@ -237,7 +237,7 @@
  "v03_top50_leagues": {
   "LJL": 8,
   "NEXO": 4,
-  "LFL2": 4,
+  "NL": 4,
   "LPLOL": 4,
   "LRN": 3,
   "LFL": 3,
@@ -351,7 +351,7 @@
    {
     "name": "Nafkelah",
     "team": "Caldya Esport",
-    "league": "LFL2",
+    "league": "NL",
     "v03": 1.37,
     "W": 0.59
    }
@@ -367,7 +367,7 @@
    {
     "name": "Ryuk",
     "team": "Lille Esport",
-    "league": "LFL2",
+    "league": "NL",
     "v03": 2.34,
     "W": 0.61
    },

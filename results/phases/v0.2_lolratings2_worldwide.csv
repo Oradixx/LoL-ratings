@@ -1,6 +1,6 @@
 pid,name,team,league,role,GP,W,v02
 oe:player:d8362fe0d38ca0e70953ed957deaa00,Rekkles,Los Ratones,NLC,Support,110,0.8,2.6
-oe:player:36d61387b87cbabd4c833a490f25a55,Ryuk,Lille Esport,LFL2,ADC,18,0.611,1.969
+oe:player:36d61387b87cbabd4c833a490f25a55,Ryuk,Lille Esport,NL,ADC,18,0.611,1.969
 oe:player:3dbe8ecf9c97fc12b28ad199bdb5f82,Baut,BBL Dark Passage,TCL,Support,22,0.5,1.897
 oe:player:9b7c45e7ef1970c25aee38bf556f8c0,Kozak,Green Dolphin Gaming,NEXO,ADC,16,0.562,1.891
 oe:player:9d361f9d8214252ee571375f9105cb4,frosty,RED Canids,CBLOL,Support,63,0.508,1.762
@@ -17,7 +17,7 @@ oe:player:1f7d70f56b608b3137df2493949fdd0,Bie,1TAP Dino,VCS,Support,47,0.723,1.5
 oe:player:403937c97942cb4634ef8907077ede5,Xiaoxia,Ultra Prime,LPL,Support,64,0.406,1.568
 oe:player:ca18f3cf2fd9adb391d4770c33286f0,Raina,REJECT,LJL,Support,60,0.783,1.566
 oe:player:db79ce6ad35451c938fbe2995dabd37,Keria,T1,LCK,Support,187,0.631,1.56
-oe:player:1a38c55db5f8af06ebac94d8530ff71,Avra,Esprit Shōnen,LFL2,ADC,50,0.7,1.542
+oe:player:1a38c55db5f8af06ebac94d8530ff71,Avra,Esprit Shōnen,NL,ADC,50,0.7,1.542
 oe:player:37b0ff747a3bc11f577c0a05f0dedd1,Samver,1TAP Dino,LJL,ADC,64,0.75,1.531
 oe:player:55dd290e8824755e997201409a0b36a,FliiZee,Oxygen Gaming,NEXO,ADC,16,0.688,1.519
 oe:player:94e5c960a512595b39fea5f350d7d0d,OddEye,T1 Esports Academy Rookies,LAS,ADC,122,0.73,1.51

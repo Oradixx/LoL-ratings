@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Full pipeline, in order. ~45 min on a 2-core laptop (the multiverse is most of it).
+# Full pipeline, in order. About 1 h 15 on a 2-core machine (the two multiverses are most of it).
 set -e
 python src/prep.py                 # CSV -> parquet, league names harmonised
 python src/build_draft_order.py    # pick order per lane (bonus: counterpick)
@@ -27,6 +27,11 @@ python src/season_only_check.py    # does a season-only model predict as well as
 python src/season_multiverse.py 300
 python src/halves_history_check.py # to describe 2026, does 2025 help? (random held-out 2026 games)
 python src/exofeng_season_check.py # a season mixing two contexts: with / without his pre-Skillcamp games
+python src/simulation_study.py     # v1.4: known-truth simulation (recovery, calibration of the ±, inseparable rosters)
+python src/transfer_check.py       # v1.4: credit split between teammates, judged on transfers
+python src/calibration_check.py    # v1.4: are the announced probabilities right? log-loss, Bo3/Bo5
+python src/champion_comfort.py     # v1.4: new champions / meta, pooled over the season
+# (src/worlds_preregister.py is NOT re-run: the Worlds 2026 predictions stay frozen in results/worlds2026/)
 cp data/proc/*.json results/ && rm -f results/tune*.json results/home_test.json results/season_20*.json
 python src/export_results.py
 python src/page_data.py

@@ -146,6 +146,14 @@ _m0=pd.Timestamp('2026-03-01'); _seen=set(Pl2[Pl2.date<_m0].pid); _mm=Pl2[(Pl2.d
 D['unseen_march']=float((~_mm.pid.isin(_seen)).mean())
 D['split_examples']={k:ex(k) for k in ['Caliste','Exofeng']}
 D['comp_dsd']=int(round(dd.dsd.median()*1000)); D['comp_d_abs']=int(round((dd.d.abs()*1000).median()))
+# ---------- v1.4 : contrôles du raisonnement et pronostics Worlds figés ----------
+D['data_until']=str(pd.read_parquet(P+'teams.parquet').date.max().date()); D['sim']=J('simulation_study.json'); D['transfer']=J('transfer_check.json'); D['champ']=J('champion_comfort.json'); D['calib']=J('calibration_check.json')
+FZ=json.load(open('results/worlds2026/frozen_model.json'))
+_rn=pd.read_parquet(P+'ratings_now.parquet'); _base=float(_rn[_rn.active].theta.mean())
+_sc='results/worlds2026/score.json'
+D['worlds']=dict(score=json.load(open(_sc)) if __import__('os').path.exists(_sc) else None,frozen_on=FZ['frozen_on'],data_until=FZ['data_until'],a=FZ['calibration']['a'],b=FZ['calibration']['b'],
+    teams=[dict(team=t['team'],league=t['league'],region=t['region'],lineup=[t['lineup'][r] for r in ['Top','Jungle','Mid','ADC','Support']],
+                s=round(t['strength'],4),pts=int(round((t['strength']/5-_base)*1000))) for t in FZ['teams']])
 for k in ['players','traj','traj_months','teams','league_meta']: D.pop(k,None)
 json.dump(D,open('results/page_data.json','w'),ensure_ascii=False,default=float)
 print('seasons ok',len(json.dumps(D,default=float)))
