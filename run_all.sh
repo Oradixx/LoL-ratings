@@ -13,6 +13,7 @@ python src/rolling.py              # the whole 2026 season, retrained every mont
 python src/rolling_ensemble.py
 python src/current.py              # current ratings (all games up to the last file date) + uncertainty
 python src/league_check.py         # are league levels right? 2026 league-changers vs their 2025 ratings
+python src/em_check.py             # do the EMEA Masters matter for European regional leagues?
 python src/multiverse.py 400       # 400 reasonable versions of the model
 python src/multiverse_analysis.py
 python src/underrated.py

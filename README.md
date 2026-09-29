@@ -38,6 +38,8 @@ Academies and regional leagues get their own table: their players almost never f
 
 **Scouting check.** Of the 20 best-rated non-major players in 2025, 70 % were playing in a major league in 2026 (base rate 10.3 %). AUC for predicting promotions: 0.75 (KDA 0.70).
 
+**EMEA Masters.** They count like every event: 817 games (2025–2026) are the only place where European regional leagues play each other. They barely move the big ERLs (linked to the LEC by many transfers) but pull the small ones down by 100–170 points and cut their uncertainty by ~15 %.
+
 **League levels.** With 2025 alone the model put the LCK Challengers level with the LEC (+9 ± 93 points: undetermined). The off-season transfers settled it: players who left the LCK CL did slightly worse than their 2025 rating (−47 ± 44 points), players who left the LEC did better (+301 ± 50). With 2026 included: LCK +697, LPL +492, LEC +490, LCS +404, LCK CL +327, CBLOL +301, LCP +238, LFL +220.
 
 **Bonus probes.** Counterpicking your lane opponent is worth about +33 gold at 15 minutes in top lane, +15 in jungle, +13 in mid, nothing in bot or support (≈26,700 lane matchups per role, controlling for side, team Elo and champion strength). The "tilt" after losing a game disappears under a placebo: the next meeting weeks later shows an even bigger gap, so it is Elo under-reacting, not tilt.
@@ -66,14 +68,14 @@ Checks against fooling myself: shuffled 2025 outcomes give AUC ≈ 0.5 (placebo)
 
 ```bash
 python explore.py leaderboard --role Mid --top 10                 # major leagues, 2026
-python explore.py leaderboard --role Mid --tier academy           # academies & regional leagues
+python explore.py leaderboard --role Mid --tier academy --region EMEA   # academies & regional leagues, Europe
 python explore.py player Chovy
 python explore.py compare Chovy Faker Caps
 python explore.py league LEC --top 10
 python explore.py --year 2025 leaderboard --role Top
 ```
 
-Or open `results/ratings_2026.csv` / `results/ratings_2025.csv`.
+Or open `results/ratings_2026.csv` (league, region, tier, rating ± uncertainty, gap to the average player of the same role in the same league, recent form, multiverse stats) / `results/ratings_2025.csv`. The page has the same explorer with filters by tier, region, league, role, minimum games and search.
 
 ## Run it yourself
 

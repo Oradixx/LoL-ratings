@@ -32,8 +32,16 @@ for tier in ['Ligue majeure','Académie / ligue régionale']:
     for ro in ['Top','Jungle','Mid','ADC','Support']:
         t=r[r.active&(r.tier==tier)&(r.role==ro)].sort_values('theta',ascending=False).head(8)
         top[tier][ro]=[dict(name=x.player,team=x.team,league=x.league26,gp=int(x.gp26),pts=int(x.points),sd=int(x.points_sd),
-                            u_gold=int(x.u_gold),mv_p1=round(float(x.mv_p1),3),post_p1=round(post[tier][ro].get(i,0.0),3)) for i,x in t.iterrows()]
+                            u_gold=int(x.vs_role_league_gold),mv_p1=round(float(x.mv_p1),3),post_p1=round(post[tier][ro].get(i,0.0),3)) for i,x in t.iterrows()]
 D['top']=top
+from leagues import REGION, DESC
+act=r[r.active]
+D['players']=[dict(n=x.player,t=x.team,l=x.league26,g='M' if x.tier=='Ligue majeure' else 'A',r=x.role,gp=int(x.gp26),
+                   p=int(x.points),sd=int(x.points_sd),u=int(x.vs_role_league_gold),m1=None if pd.isna(x.mv_p1) else round(float(x.mv_p1),3),
+                   m5=None if pd.isna(x.mv_top5) else round(float(x.mv_top5),3),f=int(x.form_delta)) for x in act.itertuples()]
+lv=D.get('leagues_now',{})
+D['league_meta']={l:dict(region=REGION.get(l,'Autre'),desc=DESC.get(l,''),tier='M' if l in MAJOR else 'A',n=int((act.league26==l).sum())) for l in sorted(act.league26.unique())}
+D['em_check']=J('em_check.json')
 D['n_active']=int(r.active.sum()); D['n_active_tier']=r[r.active].tier.value_counts().to_dict()
 D['mv']=J('multiverse_summary.json')
 D['scouting']=J('scouting.json'); D['underrated']=J('underrated.json')[:8]

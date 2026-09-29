@@ -33,7 +33,7 @@ GENG_GAMES=D.get('geng_games',0)
 u0=U[0]
 games25=D['games']['2025']; games26=D['games']['2026']
 ch=MV['choice_effects']
-LC=D['league_check']; mov={x['origine']:x for x in LC['movers']}; LN=D['leagues_now']
+LC=D['league_check']; EM=D['em_check']; mov={x['origine']:x for x in LC['movers']}; LN=D['leagues_now']
 
 BODY=f'''
 <div class="wrap">
@@ -144,6 +144,7 @@ BODY=f'''
     <figcaption>Points LR3 du joueur moyen de chaque ligue (0 = joueur moyen actif en 2026). 100 points ≈ 500 golds d'écart final par game et par joueur. Modèle entraîné sur toutes les games jusqu'au 28 septembre 2026. Les ligues peu reliées aux autres ont les estimations les plus fragiles.</figcaption>
   </figure>
   <div class="callout"><span class="eyebrow">LCK CL ou LEC&nbsp;?</span><p>Avec la seule saison 2025, le modèle mettait la LCK Challengers au niveau de la LEC ({sgn(LC['diff']['LCKC-LEC'][0])} points, avec une incertitude de ±{n(LC['diff']['LCKC-LEC'][1])}) : trop peu de joueurs relient les deux ligues pour trancher. Les transferts de l'intersaison ont servi de test. Les joueurs partis de la LCK CL vers une autre ligue ont fait {sgn(mov['LCKC']['points_par_joueur'])} points par joueur par rapport à leur note 2025 (±{n(mov['LCKC']['se'])}), ceux partis de la LEC {sgn(mov['LEC']['points_par_joueur'])} (±{n(mov['LEC']['se'])}). La LEC était donc sous-estimée. Une fois 2026 intégrée, la LEC passe nettement devant ({sgn(LN['LEC'])} contre {sgn(LN['LCKC'])}).</p></div>
+  <div class="callout"><span class="eyebrow">Et les EMEA Masters&nbsp;?</span><p>Elles comptent, comme tous les tournois : leurs {n(EM['em_games'])} games (2025-2026) sont le seul endroit où les ERL s'affrontent directement. Pour les grosses ERL, reliées à la LEC par de nombreux transferts, elles changent peu de chose (LFL {sgn(EM['with']['LFL']['vs_lec'])} points sous la LEC avec, {sgn(EM['without']['LFL']['vs_lec'])} sans). Pour les petites, elles font la différence : sans les EM, la Tchéquie-Slovaquie (HM) passerait de {sgn(EM['with']['HM']['vs_lec'])} à {sgn(EM['without']['HM']['vs_lec'])} et l'Italie (LIT) de {sgn(EM['with']['LIT']['vs_lec'])} à {sgn(EM['without']['LIT']['vs_lec'])}, avec une incertitude plus large d'environ 15&nbsp;%.</p></div>
 </div></section>
 
 <section><div class="col">
@@ -233,13 +234,26 @@ BODY=f'''
   <span class="eyebrow">Les notes 2026 · le multivers</span>
   <h2>Qui est le meilleur à chaque poste&nbsp;?</h2>
   <p>Comme dans la vidéo, je ne choisis pas une version. J'en tire {n(MV['auc']['n'])} au hasard, toutes défendables : force de la régularisation, cible (victoire, or, mélange), poids par rôle ou globaux, correction du champion, stats de lane, chaque stat retirée avec une probabilité de 15&nbsp;%, oubli progressif, minimum de games. Chaque version est notée sur août-septembre 2026 (AUC de {n(MV['auc']['min'],3)} à {n(MV['auc']['max'],3)}), puis ré-entraînée sur tout jusqu'au 28 septembre 2026.</p>
-  <p>Les académies et ligues régionales ont leur propre tableau : leurs joueurs n'affrontent presque jamais ceux des ligues majeures, les mélanger dans un même classement serait trompeur.</p>
-  <div class="role-tabs" role="group" aria-label="Choisir un rôle" id="tabs"></div>
-  <h3>Ligues majeures <span class="muted" style="font-size:14px;font-family:var(--body);text-transform:none;letter-spacing:0">LCK, LPL, LEC, LCS, CBLOL, LCP</span></h3>
-  <div class="tbl-wrap bleed"><table id="t-major"></table></div>
-  <h3>Académies et ligues régionales</h3>
-  <div class="tbl-wrap bleed"><table id="t-acad"></table></div>
-  <p class="muted" style="font-size:13.5px">Joueurs à 20 games ou plus en 2026. Points LR3 ± écart-type (incertitude statistique) ; « vs rôle de sa ligue » = golds d'écart final par game par rapport au joueur moyen du même rôle dans sa ligue ; « n°1 multivers » = part des {n(MV['auc']['n'])} versions où il est n°1 de son rôle dans ce tableau ; « n°1 incertitude » = même chose en tirant 4&nbsp;000 fois dans l'incertitude statistique.</p>
+  <p>Les académies et ligues régionales restent séparées des ligues majeures : leurs joueurs n'affrontent presque jamais ceux des ligues majeures, les mélanger dans un même classement serait trompeur. Choisis un niveau, puis affine par région, ligue ou poste.</p>
+  <div class="explorer bleed">
+    <div class="role-tabs" role="group" aria-label="Niveau" id="x-tier">
+      <button type="button" id="x-tier-M" data-v="M" aria-pressed="true">Ligues majeures</button>
+      <button type="button" id="x-tier-A" data-v="A" aria-pressed="false">Académies et ligues régionales</button>
+    </div>
+    <div class="controls">
+      <label for="x-region">Région<select id="x-region"></select></label>
+      <label for="x-league">Ligue<select id="x-league"></select></label>
+      <label for="x-role">Poste<select id="x-role"><option value="">Tous</option><option>Top</option><option>Jungle</option><option>Mid</option><option>ADC</option><option>Support</option></select></label>
+      <label for="x-sort">Trier par<select id="x-sort"><option value="p">Note</option><option value="u">Écart au rôle de sa ligue</option><option value="f">Forme récente</option><option value="m1">N°1 multivers</option><option value="gp">Games</option></select></label>
+      <label for="x-unit">Unité<select id="x-unit"><option value="pts">Points LR3</option><option value="gold">Golds par game</option></select></label>
+      <label for="x-min">Games 2026 min. <span class="mono" id="x-min-v">20</span><input type="range" id="x-min" min="20" max="120" step="10" value="20"></label>
+      <label for="x-q" class="grow">Chercher<input type="search" id="x-q" placeholder="joueur ou équipe" autocomplete="off"></label>
+    </div>
+    <p class="muted x-info" id="x-info"></p>
+    <div class="tbl-wrap"><table id="x-table"></table></div>
+    <button type="button" class="x-more" id="x-more">Afficher 25 de plus</button>
+  </div>
+  <p class="muted" style="font-size:13.5px">Joueurs à 20 games ou plus en 2026. Note ± écart-type (incertitude statistique). « vs rôle » = golds d'écart final par game par rapport au joueur moyen du même poste dans sa ligue. « Forme » = note calculée en donnant plus de poids aux dernières semaines (demi-vie d'environ deux mois), moins la note normale : ▲ en progression, ▼ en baisse. « N°1 multivers » = part des {n(MV['auc']['n'])} versions où il est n°1 de son poste, dans son niveau, toutes régions confondues.</p>
   <p class="verdict">Version de référence : {', '.join(E(no1[r]['name'])+' ('+E(no1[r]['team'])+')' for r in ROLES)}. Le multivers, lui, désigne {', '.join(E(mvw[r]['player'])+' ('+pct(mvw[r]['mv_p1'])+')' for r in ROLES)}.</p>
   <p>Chovy et Ruler sont n°1 dans {'toutes les versions' if min(mvw['Mid']['mv_p1'],mvw['ADC']['mv_p1'])>=0.995 else 'presque toutes les versions'}. En top et en jungle, le multivers hésite entre un joueur de Gen.G et un joueur d'une autre équipe. Ce n'est pas un hasard : Gen.G a aligné exactement les mêmes cinq joueurs en 2025 et en 2026 ({n(GENG_GAMES)} games ensemble cette saison). Le problème de 2025 n'a pas disparu : aucune version ne peut dire lequel des cinq porte les autres, et c'est pour ça que les choix de modélisation font basculer le n°1.</p>
   <p>L'incertitude statistique le confirme : un n°1 de la version de référence ne l'est que dans {pct(min(no1[r]['post_p1'] for r in no1))} à {pct(max(no1[r]['post_p1'] for r in no1))} des tirages. Un multivers protège contre les choix arbitraires, pas contre le manque de données.</p>
@@ -395,12 +409,49 @@ function draw(){
  let h='<table style="width:auto;min-width:100%"><thead><tr><th>Stat</th>'+roles.map(r=>`<th class="r">${r}</th>`).join('')+'</tr></thead><tbody>';
  for(const s of stats){h+=`<tr><td>${lab[s]||s}</td>`+roles.map(r=>{const v=W[r][s];const strong=Math.abs(v)>600;return `<td class="r" style="background:${col(v)};${strong?'color:#fff;font-weight:600':''}">${v>0?'+':''}${fmt(v)}</td>`}).join('')+'</tr>'}
  $('#f-heat').innerHTML=h+'</tbody></table>';}
-{const roles=['Top','Jungle','Mid','ADC','Support'];let cur='Mid';
- const cols=[{h:'#',r:1,f:(r,i)=>i+1},{h:'Joueur',k:'name'},{h:'Équipe',k:'team'},{h:'Ligue',k:'league'},{h:'Points LR3',r:1,f:r=>`${fmt(r.pts)} <span class="muted">± ${fmt(r.sd)}</span>`},{h:'vs rôle de sa ligue',r:1,f:r=>(r.u_gold>0?'+':'')+fmt(r.u_gold)+' g'},{h:'N°1 multivers',r:1,f:r=>pct(r.mv_p1)},{h:'N°1 incertitude',r:1,f:r=>pct(r.post_p1)}];
- function render(){table($('#t-major'),cols,D.top['Ligue majeure'][cur],(r,i)=>i==0);table($('#t-acad'),cols,D.top['Académie / ligue régionale'][cur],(r,i)=>i==0);
-  document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.r===cur))}
- $('#tabs').innerHTML=roles.map(r=>`<button type="button" id="tab-${r}" data-r="${r}">${r}</button>`).join('');
- $('#tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b){cur=b.dataset.r;render()}});render();}
+{const S={tier:'M',region:'',league:'',role:'',sort:'p',unit:'pts',min:20,q:'',shown:25};
+ try{Object.assign(S,JSON.parse(localStorage.getItem('lr3-explorer')||'{}'),{shown:25})}catch(e){}
+ const LM=D.league_meta,LV=D.leagues_now,P=D.players;
+ const save=()=>{try{localStorage.setItem('lr3-explorer',JSON.stringify({tier:S.tier,region:S.region,league:S.league,role:S.role,sort:S.sort,unit:S.unit,min:S.min}))}catch(e){}};
+ const U=v=>S.unit==='gold'?v*5:v, US=()=>S.unit==='gold'?' g':'';
+ function fillSelects(){
+   const regs=[...new Set(Object.values(LM).filter(m=>m.tier===S.tier).map(m=>m.region))].sort();
+   if(S.region&&!regs.includes(S.region))S.region='';
+   $('#x-region').innerHTML='<option value="">Toutes</option>'+regs.map(r=>`<option ${r===S.region?'selected':''}>${esc(r)}</option>`).join('');
+   const lgs=Object.entries(LM).filter(([k,m])=>m.tier===S.tier&&(!S.region||m.region===S.region)).sort((a,b)=>(LV[b[0]]??-1e9)-(LV[a[0]]??-1e9));
+   if(S.league&&!lgs.some(([k])=>k===S.league))S.league='';
+   $('#x-league').innerHTML='<option value="">Toutes</option>'+lgs.map(([k,m])=>`<option value="${esc(k)}" ${k===S.league?'selected':''}>${esc(k)} · ${esc(m.desc)}</option>`).join('');
+   $('#x-role').value=S.role;$('#x-sort').value=S.sort;$('#x-unit').value=S.unit;$('#x-min').value=S.min;$('#x-min-v').textContent=S.min;$('#x-q').value=S.q;
+   document.querySelectorAll('#x-tier button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===S.tier));
+ }
+ function render(){
+   const q=S.q.trim().toLowerCase();
+   let rows=P.filter(p=>p.g===S.tier&&(!S.region||LM[p.l]?.region===S.region)&&(!S.league||p.l===S.league)&&(!S.role||p.r===S.role)&&p.gp>=S.min&&(!q||p.n.toLowerCase().includes(q)||p.t.toLowerCase().includes(q)));
+   const key={p:x=>x.p,u:x=>x.u,f:x=>x.f,m1:x=>x.m1??-1,gp:x=>x.gp}[S.sort];
+   rows.sort((a,b)=>key(b)-key(a)||b.p-a.p);
+   const total=rows.length;rows=rows.slice(0,S.shown);
+   let info=`${fmt(total)} joueur${total>1?'s':''}`;
+   if(S.league){const m=LM[S.league];info+=` · ${S.league} (${m.desc}) : niveau de la ligue ${LV[S.league]!=null?(LV[S.league]>0?'+':'')+fmt(U(LV[S.league]))+US():'n.c.'}${S.unit==='pts'?' points':''}`}
+   $('#x-info').textContent=info;
+   const cols=[{h:'#',r:1,f:(r,i)=>i+1},{h:'Joueur',f:r=>`<b>${esc(r.n)}</b>`},{h:'Équipe',f:r=>esc(r.t)},{h:'Ligue',f:r=>`<span title="${esc(LM[r.l]?.desc||'')}">${esc(r.l)}</span>`},{h:'Poste',f:r=>r.r},{h:'Games',r:1,f:r=>r.gp},
+     {h:S.unit==='gold'?'Note (golds)':'Note',r:1,f:r=>`${fmt(U(r.p))} <span class="muted">± ${fmt(U(r.sd))}</span>`},
+     {h:'vs rôle',r:1,f:r=>(r.u>0?'+':'')+fmt(r.u)+' g'},
+     {h:'Forme',r:1,f:r=>{const v=U(r.f),t=S.unit==='gold'?250:50;return Math.abs(v)<t?`<span class="muted">= ${v>0?'+':''}${fmt(v)}</span>`:`<span style="color:var(${v>0?'--buff':'--nerf'})">${v>0?'▲ +':'▼ '}${fmt(v)}</span>`}},
+     {h:'N°1 multivers',r:1,f:r=>r.m1==null?'<span class="muted">–</span>':r.m1>0?pct(r.m1):'<span class="muted">0 %</span>'}];
+   table($('#x-table'),cols,rows,(r,i)=>i==0&&S.sort==='p'&&!q);
+   const mb=$('#x-more');mb.hidden=total<=S.shown;mb.textContent=`Afficher ${Math.min(25,total-S.shown)} de plus (${fmt(total-S.shown)} restants)`;
+ }
+ const upd=(k,v)=>{S[k]=v;S.shown=25;fillSelects();render();save()};
+ $('#x-tier').addEventListener('click',e=>{const b=e.target.closest('button');if(b)upd('tier',b.dataset.v)});
+ $('#x-region').addEventListener('change',e=>upd('region',e.target.value));
+ $('#x-league').addEventListener('change',e=>upd('league',e.target.value));
+ $('#x-role').addEventListener('change',e=>upd('role',e.target.value));
+ $('#x-sort').addEventListener('change',e=>upd('sort',e.target.value));
+ $('#x-unit').addEventListener('change',e=>upd('unit',e.target.value));
+ $('#x-min').addEventListener('input',e=>{$('#x-min-v').textContent=e.target.value;upd('min',+e.target.value)});
+ $('#x-q').addEventListener('input',e=>{S.q=e.target.value;S.shown=25;render()});
+ $('#x-more').addEventListener('click',()=>{S.shown+=25;render()});
+ fillSelects();render();}
 table($('#t-under'),[{h:'Joueur',k:'player'},{h:'Équipe',k:'team'},{h:'Ligue',k:'league26'},{h:'Rôle',k:'role'},{h:'Points LR3',r:1,f:r=>fmt(r.points)},{h:'N°1 hors majeures',r:1,f:r=>pct(r.p1)},{h:'Top 10',r:1,f:r=>pct(r.p10)},{h:'Coéquipiers',r:1,f:r=>r.teammates}],D.underrated,(r,i)=>i==0);
 draw();let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw,150)});
 </script>
@@ -409,6 +460,17 @@ CSS=CSS.replace('--div-neg:#C4562B; --div-pos:#1F6FB8; --div-mid:#E6E9EE;','--di
 CSS=CSS.replace('--div-neg:#E07A4D; --div-pos:#5A9BE0; --div-mid:#1C2A3D; color-scheme:dark}}','--div-neg:#E07A4D; --div-pos:#5A9BE0; --div-mid:#1C2A3D; --s1:#3987e5; --s2:#d95926; --s3:#199e70; color-scheme:dark}}',1)
 CSS=CSS.replace('--div-neg:#E07A4D; --div-pos:#5A9BE0; --div-mid:#1C2A3D; color-scheme:dark}\n','--div-neg:#E07A4D; --div-pos:#5A9BE0; --div-mid:#1C2A3D; --s1:#3987e5; --s2:#d95926; --s3:#199e70; color-scheme:dark}\n',1)
 CSS=CSS.replace('h3{font-size:22px;','h3{margin-top:10px;font-size:22px;')
+CSS=CSS.replace('</style>','''.explorer{display:flex;flex-direction:column;gap:12px;background:var(--surface);border:1px solid var(--rule);padding:16px}
+.controls{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px 14px}
+.controls label{display:flex;flex-direction:column;gap:4px;font:500 11px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);min-width:0}
+.controls .grow{grid-column:span 2}
+@media (max-width:560px){.controls .grow{grid-column:auto}}
+.controls select,.controls input[type=search]{font:400 14px/1.2 var(--body);letter-spacing:0;text-transform:none;color:var(--ink);background:var(--bg);border:1px solid var(--rule);padding:7px 8px;width:100%;min-width:0}
+.controls input[type=range]{width:100%;accent-color:var(--gold)}
+.controls select:focus-visible,.controls input:focus-visible,.x-more:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+.x-info{font-size:13.5px;min-height:1.2em}
+.x-more{align-self:flex-start;font:600 13px/1 var(--body);padding:9px 14px;border:1px solid var(--rule);background:var(--bg);color:var(--ink);cursor:pointer}
+</style>''')
 HEAD='''<title>LoL Ratings 3.0</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

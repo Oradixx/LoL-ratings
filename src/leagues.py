@@ -30,3 +30,23 @@ def detect_cups(p, min_teams=3, share=0.5):
     q['foreign']=q.team.map(home)!=q.league
     s=q.groupby('league').agg(n=('team','size'),f=('foreign','mean'))
     return set(s[(s.n>=min_teams)&(s.f>=share)].index)
+
+# Région et description courte de chaque ligue domestique (vérifiées sur les noms d'équipes des fichiers 2025-2026)
+REGION={
+ 'LCK':'Corée','LCKC':'Corée','LAS':'Corée',
+ 'LPL':'Chine',
+ 'LEC':'EMEA','LFL':'EMEA','NL':'EMEA','LFL2':'EMEA','PRM':'EMEA','PRMP':'EMEA','LES':'EMEA','NEXO':'EMEA','CT':'EMEA',
+ 'TCL':'EMEA','NLC':'EMEA','LIT':'EMEA','HLL':'EMEA','EBL':'EMEA','RL':'EMEA','ROL':'EMEA','HM':'EMEA','HC':'EMEA',
+ 'LPLOL':'EMEA','AL':'EMEA',
+ 'LCS':'Amérique du Nord','NACL':'Amérique du Nord',
+ 'CBLOL':'Brésil & Amérique latine','CD':'Brésil & Amérique latine','LRN':'Brésil & Amérique latine','LRS':'Brésil & Amérique latine',
+ 'LCP':'Asie-Pacifique','PCS':'Asie-Pacifique','VCS':'Asie-Pacifique','LJL':'Asie-Pacifique'}
+DESC={
+ 'LCK':'Corée','LCKC':'LCK Challengers (académies LCK)','LAS':'académies LCK, 2e équipe','LPL':'Chine',
+ 'LEC':'Europe','LFL':'France','NL':'France, 2e division','LFL2':'France, 2e division','PRM':'Allemagne (Prime League)',
+ 'LES':'Espagne','TCL':'Turquie','NLC':'Royaume-Uni & pays nordiques','LIT':'Italie','HLL':'Grèce & Chypre','EBL':'Balkans',
+ 'RL':'Pologne & Europe centrale','ROL':'Benelux','HM':'Tchéquie & Slovaquie','HC':'Tchéquie & Slovaquie, 2e division',
+ 'LPLOL':'Portugal','AL':'Moyen-Orient & Afrique du Nord',
+ 'LCS':'Amérique du Nord','NACL':'Amérique du Nord, 2e niveau','CBLOL':'Brésil (+ équipes LATAM en 2025)','CD':'Brésil, 2e niveau',
+ 'LRN':'Amérique latine Nord','LRS':'Amérique latine Sud',
+ 'LCP':'Pacifique (Taïwan, Vietnam, Japon…)','PCS':'Taïwan, Hong Kong & Asie du Sud-Est','VCS':'Vietnam','LJL':'Japon'}
