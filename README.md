@@ -1,5 +1,7 @@
 # LoL Ratings 3.0 — Who is the best League of Legends player in the world?
 
+**Live page (in French), with the full story and a ratings explorer: https://oradixx.github.io/LoL-ratings/**
+
 A player rating for pro League of Legends, built one version at a time on the 2025 season: every time the model gave an answer, I looked for why it was wrong and shipped a patch. Then a judge I could not influence graded it: the whole 2026 season.
 
 Method inspired by [B.A.S.I.C.](https://github.com/HQEye/basic-most-average-nba-player) (the "most average NBA player" video): build up in phases, then run hundreds of reasonable versions of the model instead of picking one. This project adds what that one could not have: an out-of-sample test.
@@ -101,6 +103,7 @@ src/scouting.py          did 2025 ratings see the 2026 promotions coming?
 src/bonus_*.py           counterpick value, tilt placebo
 results/                 ratings CSVs, phase leaderboards, every number on the page (JSON)
 page/                    the write-up (French), rebuilt from results/ by page/build_page.py
+docs/index.html          same page, served by GitHub Pages
 explore.py               player lookup
 tests/                   sanity checks on the results
 ```
