@@ -2,3 +2,4 @@ data/raw/
 data/proc/
 __pycache__/
 *.pyc
+.DS_Store
