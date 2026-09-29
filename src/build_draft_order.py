@@ -1,6 +1,6 @@
 import pandas as pd, numpy as np
 P=pd.read_parquet('data/proc/players.parquet'); T=pd.read_parquet('data/proc/teams.parquet')
-T=T[T.src_year<2026]
+# toutes les années disponibles (2022, 2025, 2026)
 # global draft slot of each team pick
 slot={'Blue':{1:1,2:4,3:5,4:8,5:9},'Red':{1:2,2:3,3:6,4:7,5:10}}
 rows=[]

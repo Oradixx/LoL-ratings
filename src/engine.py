@@ -52,12 +52,23 @@ def box_features(p,train_mask,champ=True,lane=True,shrink_k=10,stats=None):
     F['has_lane']= (agg[(stats[-1],'count')]>0).astype(float) if lane else 0.0
     return F
 
-INTL={'MSI','EWC','FST','WLDs','Asia Master','EM'}
-def player_home(p,train_mask):
-    """ligue 'domestique' de chaque joueur = ligue (hors internationaux) où il a joué le plus de games."""
-    q=p[train_mask & ~p.league.isin(INTL) & (p.pid!='anon')]
+from leagues import INTL, MAJOR, tier
+def player_home(p,train_mask,mode='most'):
+    """ligue 'domestique' de chaque joueur, hors tournois internationaux / coupes.
+    mode='most'  : ligue où il a joué le plus de games
+    mode='recent': ligue de ses 20 dernières games (un joueur promu en cours d'année compte dans sa nouvelle ligue)"""
+    from leagues import detect_cups
+    excl=INTL|detect_cups(p[train_mask])
+    q=p[train_mask & ~p.league.isin(excl) & (p.pid!='anon')]
+    if mode=='recent':
+        q=q.sort_values('date').groupby('pid').tail(20)
     c=q.groupby(['pid','league']).gameid.nunique().reset_index().sort_values('gameid')
     home=c.groupby('pid').league.last()
+    # joueurs vus uniquement en tournoi/coupe : groupe propre à ce tournoi (pas un groupe « international » fourre-tout)
+    q2=p[train_mask & (p.pid!='anon')]
+    c2=q2.groupby(['pid','league']).gameid.nunique().reset_index().sort_values('gameid').groupby('pid').league.last()
+    only=c2.index.difference(home.index)
+    home=pd.concat([home,('seul:'+c2[only])])
     # joueurs n'ayant joué qu'en international: ligue de leur équipe la plus fréquente
     return home
 
@@ -79,7 +90,7 @@ def fit(p,g_train,cfg):
     """theta_joueur = L[ligue domestique] + u_joueur ;  u ~ N(prior_box, 1/lam), L ~ N(0, 1/lamL)."""
     lam=cfg.get('lam',30.0); lamL=cfg.get('lamL',30.0); tau=cfg.get('tau',None)
     train_mask=p.gameid.isin(g_train.index)
-    home=player_home(p,train_mask)
+    home=player_home(p,train_mask,cfg.get('home','most'))
     gp=p[train_mask & (p.pid!='anon')].groupby('pid').gameid.nunique()
     pl=gp.index; players_idx=pd.Series(np.arange(len(pl)),index=pl)
     hl=home.reindex(pl).fillna('INTL_ONLY')
@@ -92,10 +103,15 @@ def fit(p,g_train,cfg):
     if tau:
         age=(g_train.date.max()-g_train.date).dt.days.values; w=np.exp(-age/tau)
     from scipy import sparse
+    if use_league and cfg.get('tier_prior',False):
+        # niveau de ligue = moyenne de son niveau (majeure / académie-régionale) + écart propre à la ligue
+        tiers=np.array([1.0 if l in MAJOR else 0.0 for l in leagues])
+        H=np.hstack([H,(H@tiers)[:,None]])      # une colonne « ligue majeure » (l'autre niveau sert de référence)
     Hs=sparse.csr_matrix(H) if use_league else sparse.csr_matrix((len(pl),0))
     Xd=sparse.hstack([X, X@Hs, sparse.csr_matrix(np.ones((len(g_train),1)))]).tocsr()
     nL=Hs.shape[1]
     pen=np.r_[np.full(len(pl),lam),np.full(nL,lamL),1e-6]
+    if use_league and cfg.get('tier_prior',False): pen[len(pl)+nL-1]=0.1
     XtW=(Xd.T.multiply(w)).tocsr(); A=(XtW@Xd).toarray()+np.diag(pen)
     import scipy.linalg as sl
     cho=sl.cho_factor(A)
@@ -120,7 +136,10 @@ def fit(p,g_train,cfg):
             prior=rr.predict(F.values)*cfg.get('prior_scale',1.0); W=pd.Series(rr.coef_,index=F.columns)
         beta=solve(y-X@prior); beta[:len(pl)]+=prior
     u=pd.Series(beta[:len(pl)],index=pl)
-    Lv=pd.Series(beta[len(pl):len(pl)+nL],index=leagues) if nL else pd.Series(0.0,index=leagues)
+    if nL and cfg.get('tier_prior',False):
+        tb=beta[len(pl)+nL-1]; Lv=pd.Series(beta[len(pl):len(pl)+nL-1],index=leagues)+np.array([tb if l in MAJOR else 0.0 for l in leagues])
+    else:
+        Lv=pd.Series(beta[len(pl):len(pl)+nL],index=leagues) if nL else pd.Series(0.0,index=leagues)
     theta=u+hl.map(Lv).values
     return dict(u=u,theta=theta,league=Lv,home=hl,side=beta[-1],prior=pd.Series(prior,index=pl),prior_w=W,gp=gp,cfg=cfg)
 

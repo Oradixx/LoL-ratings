@@ -8,16 +8,33 @@ def splits(name):
     if name=='2025split':  # entraine jan->mi-juin 2025, teste mi-juin->sept
         tr=G_ALL[(G_ALL.year==2025)&(G_ALL.date<'2025-06-15')]; te=G_ALL[(G_ALL.year==2025)&(G_ALL.date>='2025-06-15')]
         dev=te[te.date<'2025-07-31']; test=te[te.date>='2025-07-31']
-    elif name=='2026':     # entraine 2025, dev = janvier 2026, test = fevrier 2026
+    elif name=='2026':     # entraine 2025, dev = janvier 2026, test = fevrier -> septembre 2026 (notes gelees)
         tr=G_ALL[G_ALL.year==2025]; te=G_ALL[G_ALL.year==2026]
         dev=te[te.date<'2026-02-01']; test=te[te.date>='2026-02-01']
+    elif name=='2026feb':  # comme la v1 de la page: test = fevrier 2026 seulement
+        tr=G_ALL[G_ALL.year==2025]; te=G_ALL[G_ALL.year==2026]
+        dev=te[te.date<'2026-02-01']; test=te[(te.date>='2026-02-01')&(te.date<'2026-03-01')]
+    elif name=='now':      # tout jusqu'au 28 septembre 2026 (notes publiées) ; pas de test
+        tr=G_ALL; dev=G_ALL.iloc[:0]; test=G_ALL.iloc[:0]
+    elif name=='mv':       # multivers: entraîné avant le 1er août 2026, noté sur août-septembre 2026
+        tr=G_ALL[G_ALL.date<'2026-08-01']; dev=G_ALL[G_ALL.date>='2026-08-01']; test=dev
     return tr,dev,test
 
-def score(pred_dev,pred_test,dev,test):
+def auc_ci(y,x,B=400,seed=0):
+    """intervalle de confiance à 95 % de l'AUC par bootstrap sur les games."""
+    rng=np.random.default_rng(seed); y=np.asarray(y); x=np.asarray(x); n=len(y); out=[]
+    for _ in range(B):
+        i=rng.integers(0,n,n)
+        if y[i].min()!=y[i].max(): out.append(roc_auc_score(y[i],x[i]))
+    return float(np.percentile(out,2.5)),float(np.percentile(out,97.5))
+
+def score(pred_dev,pred_test,dev,test,ci=False):
     lr=LogisticRegression(C=1e6).fit(pred_dev.values.reshape(-1,1),dev.bwin.values)
     pt=lr.predict_proba(pred_test.values.reshape(-1,1))[:,1]
-    return dict(logloss=log_loss(test.bwin,pt),auc=roc_auc_score(test.bwin,pred_test.values) if pred_test.std()>0 else 0.5,
+    out=dict(logloss=log_loss(test.bwin,pt),auc=roc_auc_score(test.bwin,pred_test.values) if pred_test.std()>0 else 0.5,
                 acc=((pt>0.5)==test.bwin.values).mean(), n=len(test))
+    if ci and pred_test.std()>0: out['auc_lo'],out['auc_hi']=auc_ci(test.bwin.values,pred_test.values)
+    return out
 
 def elo_preds(tr,dev,test,K=24):
     g=pd.DataFrame({'date':tr.date,'blue_k':tr.blue_team,'red_k':tr.red_team,'bwin':tr.bwin})

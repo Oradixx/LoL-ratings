@@ -1,83 +1,93 @@
 {
  "auc": {
-  "u": 0.707215587680704,
-  "theta": 0.8014204902576996,
-  "KDA": 0.710345694531741,
-  "W": 0.6837837837837838,
-  "v03": 0.725945945945946
+  "u": 0.6636790043189522,
+  "theta": 0.7499961299710522,
+  "KDA": 0.6984357342992926,
+  "W": 0.6690931748169476,
+  "v03": 0.7309555875477949
  },
- "n": 1149,
- "n_prom": 74,
+ "n": 1181,
+ "n_prom": 122,
  "top": [
   {
    "name": "Guti",
    "team": "T1 Esports Academy",
    "home": "LCKC",
    "role": "Mid",
-   "gp": 71,
-   "theta": 1.003802083757803,
+   "gp": 92,
+   "theta": 0.9034826348728585,
    "promoted": false,
-   "gold": 5019.0
+   "gold": 4517.0
   },
   {
    "name": "kyeahoo",
-   "team": "DRX",
+   "team": "Kiwoom DRX Challengers",
    "home": "LCKC",
    "role": "Mid",
-   "gp": 108,
-   "theta": 0.9579989363775098,
+   "gp": 135,
+   "theta": 0.8686911980653769,
    "promoted": true,
-   "gold": 4790.0
+   "gold": 4343.0
   },
   {
    "name": "Quantum",
-   "team": "DN Freecs Challengers",
+   "team": "DN SOOPers",
    "home": "LCKC",
    "role": "Support",
-   "gp": 104,
-   "theta": 0.9489047457885926,
-   "promoted": false,
-   "gold": 4745.0
+   "gp": 127,
+   "theta": 0.8317724543044632,
+   "promoted": true,
+   "gold": 4159.0
   },
   {
-   "name": "YoungJae",
-   "team": "KT Rolster Challengers",
+   "name": "Smash",
+   "team": "Dplus Kia",
    "home": "LCKC",
-   "role": "Jungle",
-   "gp": 113,
-   "theta": 0.8897637936846304,
+   "role": "ADC",
+   "gp": 144,
+   "theta": 0.8269101202966455,
    "promoted": true,
-   "gold": 4449.0
+   "gold": 4135.0
   },
   {
    "name": "Zinie",
    "team": "KT Rolster Challengers",
    "home": "LCKC",
    "role": "Mid",
-   "gp": 113,
-   "theta": 0.8897407986515639,
+   "gp": 129,
+   "theta": 0.7925728023883234,
    "promoted": true,
-   "gold": 4449.0
+   "gold": 3963.0
   },
   {
-   "name": "Smash",
-   "team": "T1 Esports Academy",
+   "name": "YoungJae",
+   "team": "KT Rolster Challengers",
    "home": "LCKC",
-   "role": "ADC",
-   "gp": 106,
-   "theta": 0.8739166043400994,
+   "role": "Jungle",
+   "gp": 129,
+   "theta": 0.7784242687024533,
    "promoted": true,
-   "gold": 4370.0
+   "gold": 3892.0
   },
   {
    "name": "Paduck",
    "team": "KT Rolster Challengers",
    "home": "LCKC",
    "role": "ADC",
-   "gp": 113,
-   "theta": 0.8638031869249692,
+   "gp": 129,
+   "theta": 0.7508249835152951,
    "promoted": true,
-   "gold": 4319.0
+   "gold": 3754.0
+  },
+  {
+   "name": "Career",
+   "team": "Dplus Kia",
+   "home": "LCKC",
+   "role": "Support",
+   "gp": 171,
+   "theta": 0.7372424967358435,
+   "promoted": true,
+   "gold": 3686.0
   },
   {
    "name": "Rhilech",
@@ -85,39 +95,59 @@
    "home": "LFL",
    "role": "Jungle",
    "gp": 61,
-   "theta": 0.8009415867874937,
+   "theta": 0.7361857748054621,
    "promoted": true,
-   "gold": 4005.0
+   "gold": 3681.0
   },
   {
-   "name": "Fisher",
-   "team": "Nongshim Esports Academy",
-   "home": "LCKC",
-   "role": "Mid",
-   "gp": 120,
-   "theta": 0.7691084232328542,
+   "name": "3XA",
+   "team": "Karmine Corp Blue",
+   "home": "LFL",
+   "role": "ADC",
+   "gp": 127,
+   "theta": 0.7347170877484482,
    "promoted": false,
-   "gold": 3846.0
+   "gold": 3674.0
   },
   {
    "name": "Piero",
    "team": "Karmine Corp Blue",
    "home": "LFL",
    "role": "Support",
-   "gp": 94,
-   "theta": 0.7670457978660707,
+   "gp": 114,
+   "theta": 0.7211043067230973,
    "promoted": false,
-   "gold": 3835.0
+   "gold": 3606.0
   },
   {
-   "name": "Willer",
-   "team": "BNK FEARX Youth",
+   "name": "SlowQ",
+   "team": "Karmine Corp Blue",
+   "home": "LFL",
+   "role": "Mid",
+   "gp": 127,
+   "theta": 0.7110215953446642,
+   "promoted": true,
+   "gold": 3555.0
+  },
+  {
+   "name": "Juhan",
+   "team": "Oh My God",
    "home": "LCKC",
    "role": "Jungle",
-   "gp": 99,
-   "theta": 0.7610903030010798,
+   "gp": 155,
+   "theta": 0.706268302770777,
    "promoted": true,
-   "gold": 3805.0
+   "gold": 3531.0
+  },
+  {
+   "name": "Vincenzo",
+   "team": "Kiwoom DRX",
+   "home": "LCKC",
+   "role": "Jungle",
+   "gp": 150,
+   "theta": 0.6817346259118733,
+   "promoted": false,
+   "gold": 3409.0
   },
   {
    "name": "Trigger",
@@ -125,39 +155,9 @@
    "home": "LCKC",
    "role": "ADC",
    "gp": 78,
-   "theta": 0.7576463634682932,
+   "theta": 0.6735501716057658,
    "promoted": true,
-   "gold": 3788.0
-  },
-  {
-   "name": "Haetae",
-   "team": "T1 Esports Academy",
-   "home": "LCKC",
-   "role": "Top",
-   "gp": 127,
-   "theta": 0.7502089236592209,
-   "promoted": false,
-   "gold": 3751.0
-  },
-  {
-   "name": "3XA",
-   "team": "Karmine Corp Blue",
-   "home": "LFL",
-   "role": "ADC",
-   "gp": 107,
-   "theta": 0.7501007021578319,
-   "promoted": false,
-   "gold": 3751.0
-  },
-  {
-   "name": "Vincenzo",
-   "team": "T1 Esports Academy",
-   "home": "LCKC",
-   "role": "Jungle",
-   "gp": 127,
-   "theta": 0.748160079537182,
-   "promoted": false,
-   "gold": 3741.0
+   "gold": 3368.0
   }
  ],
  "promoted": [
@@ -165,178 +165,178 @@
    "name": "kyeahoo",
    "home": "LCKC",
    "role": "Mid",
-   "theta": 0.9579989363775098,
+   "theta": 0.8686911980653769,
    "to": "LEC"
   },
   {
-   "name": "YoungJae",
+   "name": "Quantum",
    "home": "LCKC",
-   "role": "Jungle",
-   "theta": 0.8897637936846304,
-   "to": "CBLOL"
-  },
-  {
-   "name": "Zinie",
-   "home": "LCKC",
-   "role": "Mid",
-   "theta": 0.8897407986515639,
-   "to": "LCS"
+   "role": "Support",
+   "theta": 0.8317724543044632,
+   "to": "LCK"
   },
   {
    "name": "Smash",
    "home": "LCKC",
    "role": "ADC",
-   "theta": 0.8739166043400994,
+   "theta": 0.8269101202966455,
    "to": "LCK"
+  },
+  {
+   "name": "Zinie",
+   "home": "LCKC",
+   "role": "Mid",
+   "theta": 0.7925728023883234,
+   "to": "LCS"
+  },
+  {
+   "name": "YoungJae",
+   "home": "LCKC",
+   "role": "Jungle",
+   "theta": 0.7784242687024533,
+   "to": "CBLOL"
   },
   {
    "name": "Paduck",
    "home": "LCKC",
    "role": "ADC",
-   "theta": 0.8638031869249692,
+   "theta": 0.7508249835152951,
    "to": "LEC"
-  },
-  {
-   "name": "Rhilech",
-   "home": "LFL",
-   "role": "Jungle",
-   "theta": 0.8009415867874937,
-   "to": "LEC"
-  },
-  {
-   "name": "Willer",
-   "home": "LCKC",
-   "role": "Jungle",
-   "theta": 0.7610903030010798,
-   "to": "LCK"
-  },
-  {
-   "name": "Trigger",
-   "home": "LCKC",
-   "role": "ADC",
-   "theta": 0.7576463634682932,
-   "to": "CBLOL"
-  },
-  {
-   "name": "Juhan",
-   "home": "LCKC",
-   "role": "Jungle",
-   "theta": 0.7476097738133753,
-   "to": "LPL"
   },
   {
    "name": "Career",
    "home": "LCKC",
    "role": "Support",
-   "theta": 0.7261893604129985,
+   "theta": 0.7372424967358435,
    "to": "LCK"
+  },
+  {
+   "name": "Rhilech",
+   "home": "LFL",
+   "role": "Jungle",
+   "theta": 0.7361857748054621,
+   "to": "LEC"
+  },
+  {
+   "name": "SlowQ",
+   "home": "LFL",
+   "role": "Mid",
+   "theta": 0.7110215953446642,
+   "to": "LEC"
+  },
+  {
+   "name": "Juhan",
+   "home": "LCKC",
+   "role": "Jungle",
+   "theta": 0.706268302770777,
+   "to": "LPL"
+  },
+  {
+   "name": "Trigger",
+   "home": "LCKC",
+   "role": "ADC",
+   "theta": 0.6735501716057658,
+   "to": "CBLOL"
+  },
+  {
+   "name": "Maynter",
+   "home": "LFL",
+   "role": "Top",
+   "theta": 0.6732002161177846,
+   "to": "LEC"
+  },
+  {
+   "name": "Fisher",
+   "home": "LCKC",
+   "role": "Mid",
+   "theta": 0.6685423815623398,
+   "to": "LCP"
   },
   {
    "name": "Serin",
    "home": "LFL",
    "role": "Mid",
-   "theta": 0.7186920954786227,
+   "theta": 0.6530704774800122,
    "to": "LEC"
   },
   {
    "name": "Rekkles",
    "home": "NLC",
    "role": "Support",
-   "theta": 0.7080145837709501,
+   "theta": 0.6288929758307948,
    "to": "LEC"
   },
   {
-   "name": "Maynter",
-   "home": "LFL",
-   "role": "Top",
-   "theta": 0.7026269608520448,
-   "to": "LEC"
-  },
-  {
-   "name": "Peach",
-   "home": "TCL",
-   "role": "Jungle",
-   "theta": 0.6829016201982794,
-   "to": "CBLOL"
-  },
-  {
-   "name": "Grizzly",
+   "name": "Frog",
    "home": "LCKC",
-   "role": "Jungle",
-   "theta": 0.6764015762163069,
+   "role": "Top",
+   "theta": 0.626331495759489,
+   "to": "LCK"
+  },
+  {
+   "name": "Soboro",
+   "home": "LCKC",
+   "role": "Top",
+   "theta": 0.5965637666862504,
+   "to": "LEC,LPL"
+  },
+  {
+   "name": "LazyFeel",
+   "home": "LCKC",
+   "role": "ADC",
+   "theta": 0.5905096456110884,
+   "to": "LCK"
+  },
+  {
+   "name": "Jopa",
+   "home": "LFL",
+   "role": "ADC",
+   "theta": 0.5895490475835337,
+   "to": "LEC"
+  },
+  {
+   "name": "Crownie",
+   "home": "NLC",
+   "role": "ADC",
+   "theta": 0.589352514335682,
+   "to": "LEC"
+  },
+  {
+   "name": "Burdol",
+   "home": "LCKC",
+   "role": "Top",
+   "theta": 0.5801362133032633,
    "to": "LPL"
   },
   {
    "name": "Nemesis",
    "home": "NLC",
    "role": "Mid",
-   "theta": 0.6652324229750285,
+   "theta": 0.5763652820394354,
    "to": "LEC"
   },
   {
-   "name": "Callme",
-   "home": "TCL",
-   "role": "Mid",
-   "theta": 0.6584212831619933,
-   "to": "LCS"
-  },
-  {
-   "name": "Casting",
+   "name": "Grizzly",
    "home": "LCKC",
-   "role": "Top",
-   "theta": 0.6568348363830766,
-   "to": "LCK"
-  },
-  {
-   "name": "Crownie",
-   "home": "NLC",
-   "role": "ADC",
-   "theta": 0.6501503496149912,
-   "to": "LEC"
-  },
-  {
-   "name": "Feisty",
-   "home": "LVP SL",
-   "role": "Mid",
-   "theta": 0.6344533998160449,
-   "to": "CBLOL"
-  },
-  {
-   "name": "Soboro",
-   "home": "LCKC",
-   "role": "Top",
-   "theta": 0.6318673171328782,
+   "role": "Jungle",
+   "theta": 0.5745771078659762,
    "to": "LPL"
   },
   {
-   "name": "Bull",
+   "name": "Feisty",
+   "home": "LES",
+   "role": "Mid",
+   "theta": 0.5629082540783236,
+   "to": "CBLOL"
+  },
+  {
+   "name": "Willer",
    "home": "LCKC",
-   "role": "ADC",
-   "theta": 0.6281655009309682,
-   "to": "CBLOL"
-  },
-  {
-   "name": "BAO",
-   "home": "TCL",
-   "role": "ADC",
-   "theta": 0.6257867942717408,
-   "to": "CBLOL"
-  },
-  {
-   "name": "Jopa",
-   "home": "LFL",
-   "role": "ADC",
-   "theta": 0.6198099199673728,
-   "to": "LEC"
-  },
-  {
-   "name": "Velja",
-   "home": "NLC",
    "role": "Jungle",
-   "theta": 0.6151197852054393,
-   "to": "LEC"
+   "theta": 0.5623708810346073,
+   "to": "LCK"
   }
  ],
- "top20_rate": 0.5,
- "base": 0.06440382941688425
+ "top20_rate": 0.7,
+ "base": 0.10330228619813717
 }

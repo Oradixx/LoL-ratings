@@ -10,4 +10,11 @@ def load_players(year=2025):
     p['kp']=(p.kills+p.assists)/p.teamkills.replace(0,np.nan)
     return p
 def last_team(p):
-    return p.sort_values('date').groupby('pid').agg(name=('playername','last'),team=('teamname','last'),league=('league','last'),role=('role',lambda s:s.mode().iloc[0]))
+    """nom, dernière équipe, rôle et ligue domestique (hors tournois internationaux / coupes)."""
+    import sys; sys.path.insert(0,'src'); from leagues import INTL, detect_cups
+    excl=INTL|detect_cups(p)
+    dom=p[~p.league.isin(excl)]
+    lg=dom.groupby(['pid','league']).gameid.nunique().reset_index().sort_values('gameid').groupby('pid').league.last()
+    out=p.sort_values('date').groupby('pid').agg(name=('playername','last'),team=('teamname','last'),role=('role',lambda s:s.mode().iloc[0]))
+    out['league']=lg.reindex(out.index).fillna('international')
+    return out

@@ -3,7 +3,7 @@ from sklearn.metrics import roc_auc_score
 r=pd.read_parquet('data/proc/ratings_v1.parquet')
 p26=P_ALL[P_ALL.src_year==2026]
 print(sorted(p26.league.unique()))
-MAJ25={'LCK','LPL','LEC','LTA N','LTA S','LTA','LCP'}; MAJ26={'LCK','LPL','LEC','LCS','CBLOL','LCP'}
+from leagues import MAJOR; MAJ25=MAJOR; MAJ26=MAJOR
 pl26=p26.groupby('pid').league.agg(set)
 cand=r[(~r.home.isin(MAJ25))&(r.gp>=20)&(r.home!='INTL_ONLY')].copy()
 cand['seen26']=cand.index.isin(pl26.index)

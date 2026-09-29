@@ -1,6 +1,6 @@
 import pandas as pd, numpy as np, json
 g=pd.read_parquet('data/proc/games_elo.parquet').sort_values('date')
-g=g[g.src_year.isin([2022,2025])]
+g=g[g.src_year.isin([2022,2025,2026])]
 rows=[]
 for pair,d in g.groupby('pair'):
     d=d.sort_values('date').reset_index(drop=True)

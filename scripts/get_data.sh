@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Downloads Oracle's Elixir match data (2022, 2025, early 2026).
-# Official source: https://oracleselixir.com/tools/downloads (Google Drive, yearly CSVs).
-# The files below are public GitHub mirrors of those CSVs that were used for this project.
+# Data: Oracle's Elixir yearly match data, https://oracleselixir.com/tools/downloads
+# 1. Download 2025_LoL_esports_match_data_from_OraclesElixir.csv and 2026_... from that page
+#    (if Google Drive says "quota exceeded": right click > "Make a copy" in your own Drive, then download the copy)
+# 2. Put them in data/raw/ with their original names.
+# 2022 (only used by the bonus analyses) is fetched from a public GitHub mirror:
 set -e
 mkdir -p data/raw data/proc
-curl -L -o data/raw/oe_2022.csv https://raw.githubusercontent.com/stvngo/LoL-Statistical-Analysis/main/2022_LoL_esports_match_data_from_OraclesElixir.csv
-curl -L -o data/raw/oe_2025.csv https://raw.githubusercontent.com/jmirving/draft-sage/main/resources/2025_LoL_esports_match_data_from_OraclesElixir.csv
-curl -L -o data/raw/lyc_2026.csv https://raw.githubusercontent.com/Lycoriste/lol_analysis/master/loldata_2026.csv
-echo "done: $(ls data/raw)"
+[ -f data/raw/oe_2022.csv ] || curl -L -o data/raw/oe_2022.csv https://raw.githubusercontent.com/stvngo/LoL-Statistical-Analysis/main/2022_LoL_esports_match_data_from_OraclesElixir.csv
+ls -la data/raw

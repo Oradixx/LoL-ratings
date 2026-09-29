@@ -1,26 +1,26 @@
 [
  {
   "kind": "même série (quelques minutes après)",
-  "n": 8529,
-  "win": 0.4399,
-  "exp": 0.4584,
-  "ecart_pts": -1.8455,
-  "se_pts": 0.5375
+  "n": 13903,
+  "win": 0.4257,
+  "exp": 0.4489,
+  "ecart_pts": -2.3239,
+  "se_pts": 0.4193
  },
  {
   "kind": "prochaine rencontre (<60 j)",
-  "n": 6016,
-  "win": 0.3805,
-  "exp": 0.4236,
-  "ecart_pts": -4.3083,
-  "se_pts": 0.626
+  "n": 7623,
+  "win": 0.3834,
+  "exp": 0.4222,
+  "ecart_pts": -3.8805,
+  "se_pts": 0.5569
  },
  {
   "kind": "prochaine rencontre (>60 j)",
-  "n": 2665,
-  "win": 0.3884,
-  "exp": 0.4123,
-  "ecart_pts": -2.3933,
-  "se_pts": 0.9441
+  "n": 4235,
+  "win": 0.3941,
+  "exp": 0.4029,
+  "ecart_pts": -0.8834,
+  "se_pts": 0.7509
  }
 ]

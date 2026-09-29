@@ -1,29 +1,21 @@
-"""Le joueur le plus sous-coté: meilleur theta hors ligues majeures, robuste dans le multivers."""
+"""Le joueur le plus sous-coté aujourd'hui : meilleure note hors ligues majeures en 2026,
+robuste dans le multivers, et combien de coéquipiers différents (= a-t-on pu le séparer de son équipe ?)."""
 import sys, json, pickle; sys.path.insert(0,'src')
 import pandas as pd, numpy as np
-from engine import player_games
 mv=pickle.load(open('data/proc/multiverse.pkl','rb'))
-r1=pd.read_parquet('data/proc/ratings_v1.parquet')
-P=pd.read_parquet('data/proc/players.parquet'); p26=P[P.src_year==2026]
-p26=p26.assign(pid=p26.playerid.fillna('name:'+p26.playername.astype(str)))
-MAJ25={'LCK','LPL','LEC','LTA N','LTA S','LTA','LCP'}; MAJ26={'LCK','LPL','LEC','LCS','CBLOL','LCP'}
-minor=r1[(~r1.home.isin(MAJ25))&(r1.home!='INTL_ONLY')].index
+r=pd.read_parquet('data/proc/ratings_now.parquet'); r=r[r.active&(r.tier=='Académie / ligue régionale')]
 rows=[]
-for r in mv:
-    th=r['theta']; gp=r['gp']; ok=gp[gp>=max(20,r['cfg']['min_gp'])].index.intersection(minor)
-    t=th.reindex(ok).rank(ascending=False)
-    rows.append(t)
+for u in mv:
+    ok=u['gp'][u['gp']>=max(20,u['cfg']['min_gp'])].index.intersection(r.index)
+    rows.append(u['theta'].reindex(ok).rank(ascending=False))
 R=pd.DataFrame(rows)
-s=pd.DataFrame({'p1':(R==1).mean(),'p10':(R<=10).mean(),'med':R.median()}).join(r1[['name','team','home','role','gp']])
-s['gold_v1']=r1.theta.reindex(s.index)*5000
-where26=p26.groupby('pid').agg(lg=('league',lambda x:','.join(sorted(set(x)))),team26=('teamname','last'))
-s=s.join(where26)
-s=s.sort_values(['p10','p1'],ascending=False).head(15)
+s=pd.DataFrame({'p1':(R==1).mean(),'p10':(R<=10).mean(),'med':R.median()}).join(r[['player','team','league26','role','gp26','points','points_sd']])
+P=pd.read_parquet('data/proc/players.parquet'); P=P[P.src_year.isin([2025,2026])]
+P=P.assign(pid=P.playerid.fillna('name:'+P.playername.astype(str)))
+def mates(pid):
+    g=P[P.pid==pid][['gameid','side']]
+    return P.merge(g,on=['gameid','side']).query('pid!=@pid').pid.nunique()
+s=s.sort_values(['p10','p1'],ascending=False).head(12)
+s['teammates']=[mates(i) for i in s.index]
 print(s.round(3).to_string())
-json.dump(s.round(3).reset_index().to_dict('records'),open('data/proc/underrated.json','w'),indent=1,default=str,ensure_ascii=False)
-# how many different lineups did top candidates play with (identifiability)
-p=player_games((2025,))
-for pid in s.index[:6]:
-    g=p[p.pid==pid].gameid.unique()
-    mates=p[p.gameid.isin(g)&(p.teamname.isin(p[p.pid==pid].teamname.unique()))&(p.pid!=pid)]
-    print(s.loc[pid,'name'],'distinct teammates:',mates.pid.nunique(),'teams:',p[p.pid==pid].teamname.unique()[:4])
+json.dump(s.round(3).reset_index().rename(columns={'index':'pid'}).to_dict('records'),open('data/proc/underrated.json','w'),indent=1,default=str,ensure_ascii=False)

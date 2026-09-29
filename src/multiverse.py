@@ -15,13 +15,17 @@ def sample(seed):
     cfg['stats']=stats+(['golddiffat15','xpdiffat15','csdiffat15'] if cfg['lane'] else [])
     return cfg
 def work(seed):
+    """chaque univers: (1) entraîné avant août 2026, noté sur août-sept. 2026 ; (2) ré-entraîné sur tout pour le classement."""
     import evaluate as E
-    cfg=sample(seed); tr,dev,test=E.splits('2026')
-    t=time.time()
-    (a,b),m=E.model_preds(cfg,tr,dev,test)
+    from engine import fit, predict_games
+    cfg=sample(seed); t=time.time()
+    tr,dev,_=E.splits('mv')
+    m1=fit(E.P_ALL,tr,cfg); a=predict_games(m1,E.P_ALL,dev,m1['u'][m1['gp']<10].mean())
     sc=E.score_dev(a,dev)
+    trn,_,_=E.splits('now'); m=fit(E.P_ALL,trn,cfg)
     return dict(seed=seed,cfg=cfg,dev_auc=sc['auc'],dev_ll=sc['logloss'],theta=m['theta'].astype('float32'),
-                gp=m['gp'],pred_dev=a.astype('float32'),pred_test=b.astype('float32'),secs=time.time()-t)
+                gp=m['gp'],home=m['home'],secs=time.time()-t)
+
 if __name__=='__main__':
     t0=time.time(); res=[]
     with Pool(2) as pool:
