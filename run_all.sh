@@ -17,6 +17,7 @@ python src/em_check.py             # do the EMEA Masters matter for European reg
 python src/multiverse.py 400       # 400 reasonable versions of the model
 python src/multiverse_analysis.py
 python src/underrated.py
+python src/profiles.py             # player cards (monthly rating 2026, career) and team view
 python src/bonus_counterpick.py
 python src/bonus_tilt.py
 cp data/proc/*.json results/

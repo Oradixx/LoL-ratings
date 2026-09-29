@@ -77,7 +77,7 @@ python explore.py league LEC --top 10
 python explore.py --year 2025 leaderboard --role Top
 ```
 
-Or open `results/ratings_2026.csv` (league, region, tier, rating ± uncertainty, gap to the average player of the same role in the same league, recent form, multiverse stats) / `results/ratings_2025.csv`. The page has the same explorer with filters by tier, region, league, role, minimum games and search.
+Or open `results/ratings_2026.csv` (league, region, tier, rating ± uncertainty, gap to the average player of the same role in the same league, multiverse stats) / `results/ratings_2025.csv`. The page has an explorer with a players view (filters by tier, region, league, role, career path — new, changed league, promoted, relegated —, minimum games, search; click a player for his career and his rating month by month in 2026) and a teams view (current lineup, lineup strength, probability to beat an average team of the league, next to the real 2026 record).
 
 ## Run it yourself
 
@@ -100,6 +100,8 @@ src/current.py           current ratings + statistical uncertainty
 src/league_check.py      are league levels right? 2026 league changers vs their 2025 rating
 src/multiverse.py        400 reasonable versions of the model
 src/scouting.py          did 2025 ratings see the 2026 promotions coming?
+src/profiles.py          player cards (rating month by month, career) and team view
+src/em_check.py          league levels with and without the EMEA Masters
 src/bonus_*.py           counterpick value, tilt placebo
 results/                 ratings CSVs, phase leaderboards, every number on the page (JSON)
 page/                    the write-up (French), rebuilt from results/ by page/build_page.py

@@ -11,8 +11,8 @@ a.sort_values('v03',ascending=False)[cols+['v03']].head(50).round(3).to_csv('res
 r=pd.read_parquet('data/proc/ratings_now.parquet').join(pd.read_parquet('data/proc/mv_stats.parquet'))
 from leagues import REGION
 r['region']=r.league26.map(REGION)
-out=r[r.active][['player','team','league26','region','tier','role','gp26','gp_total','points','points_sd','vs_role_league_gold','form_delta','mv_median_rank','mv_p1','mv_top5']]
-out=out.rename(columns={'league26':'league','gp26':'games_2026','gp_total':'games_2025_2026','vs_role_league_gold':'vs_role_in_league_gold','form_delta':'form_vs_rating'})
+out=r[r.active][['player','team','league26','region','tier','role','gp26','gp_total','points','points_sd','vs_role_league_gold','mv_median_rank','mv_p1','mv_top5']]
+out=out.rename(columns={'league26':'league','gp26':'games_2026','gp_total':'games_2025_2026','vs_role_league_gold':'vs_role_in_league_gold'})
 out.sort_values('points',ascending=False).round(3).to_csv('results/ratings_2026.csv')
 # notes 2025 (le labo)
 v=pd.read_parquet('data/proc/ratings_v1.parquet')

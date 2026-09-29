@@ -25,11 +25,6 @@ active=(r.gp26>=20)
 base=r[active].theta.mean()
 r['points']=((r.theta-base)*1000).round(0); r['points_sd']=(r.sd*1000).round(0); r['u_gold']=(r.u*5000).round(0)
 r['active']=active
-# « forme » : même modèle, mais les games comptent de moins en moins avec le temps (demi-vie ≈ 2 mois)
-mf=fit(P_ALL,tr,dict(V1,tau=90)); tf=mf['theta'].reindex(r.index)
-# même dispersion que la note normale, pour que la différence mesure un changement de rang et non un effet d'échelle
-fz=(tf-tf[active].mean())/tf[active].std()
-r['form_points']=(fz*r.loc[active,'points'].std()+r.loc[active,'points'].mean()).round(0); r['form_delta']=r.form_points-r.points
 # écart au joueur moyen du même poste dans sa ligue ACTUELLE (en golds d'écart final par game)
 grp=r[active].groupby(['league26','role']).theta.mean()
 r['vs_role_league_gold']=((r.theta-pd.Series([grp.get((l,ro),np.nan) for l,ro in zip(r.league26,r.role)],index=r.index))*5000).round(0)

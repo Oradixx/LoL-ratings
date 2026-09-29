@@ -18,7 +18,7 @@ d=sp.add_parser('league'); d.add_argument('league'); d.add_argument('--top',type
 x=ap.parse_args()
 R=pd.read_csv(f'results/ratings_{x.year}.csv',index_col=0)
 TIER={'major':'Ligue majeure','academy':'Académie / ligue régionale'}
-cols=[c for c in ['player','team','league','role',f'games_{x.year}','points','points_sd','vs_role_in_league_gold','form_vs_rating','mv_p1','mv_top5'] if c in R.columns]
+cols=[c for c in ['player','team','league','role',f'games_{x.year}','points','points_sd','vs_role_in_league_gold','mv_p1','mv_top5'] if c in R.columns]
 def show(d): print(d[cols].to_string(index=False) if len(d) else 'no match')
 if x.cmd=='leaderboard':
     d=R[R.tier==TIER[x.tier]]; d=d[d.role==x.role] if x.role else d
