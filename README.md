@@ -128,7 +128,7 @@ python explore.py comps --league LEC                              # competitions
 python explore.py comp "LEC Summer · saison régulière" --role ADC  # rating on one competition
 ```
 
-Or open `results/ratings_<year>.csv` for 2023 to 2026 (one season each: league, region, tier, rating ± uncertainty, gap to the average player of the same role in the same league, multiverse stats), `results/competitions_<year>.csv` (rating per competition / split, with games, win rate, KDA) and `results/ratings_now_2025-2026.csv` (the full-history prediction model). The page has an explorer: seasons 2023 to 2026, players or teams, tier, region, league, competition / split, role, career path (new, changed league, promoted, relegated), minimum games, search; click a player for his season month by month, his career and all his competitions.
+Or open `results/ratings_<year>.csv` for 2023 to 2026 (one season each: league, region, tier, rating ± uncertainty, gap to the average player of the same role in the same league, multiverse stats), `results/competitions_<year>.csv` (rating per competition / split, with games, win rate, KDA) and `results/ratings_now_2025-2026.csv` (the full-history prediction model). The page has an explorer: seasons 2023 to 2026, players or teams, tier, region, league, competition / split, role, career path (new, changed league, promoted, relegated), minimum games, search (a player who went back and forth between leagues during a season, e.g. LCK CL and LCK, is listed in each league with at least 10 games, with the same rating); click a player for his season month by month, his career and all his competitions.
 
 ## Run it yourself
 

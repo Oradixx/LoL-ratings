@@ -26,6 +26,7 @@ LEAGUE_PRIOR_W=100.0
 NAMES={'WLDs':'Worlds','FST':'First Stand','EM':'EMEA Masters','AM':'Asia Masters','DCup':'Demacia Cup','LTA':'LTA Championship',
        'EWC':'Esports World Cup','MSI':'MSI','KeSPA Cup':'KeSPA Cup'}
 TIERCODE={'Ligue majeure':'M','Deuxième niveau':'2','Troisième niveau':'3'}
+ALSO_MIN=10     # games minimum dans une autre ligue domestique pour être aussi listé dans son tableau
 
 def prior_for(year):
     """niveau des ligues estimé sur la saison précédente (None pour la première saison), étendu aux ligues qui
@@ -58,6 +59,14 @@ def player_info(year):
     lg=dom.sort_values('date').groupby('pid').tail(20).groupby(['pid','league']).gameid.nunique().reset_index().sort_values('gameid').groupby('pid').league.last()
     info=p.sort_values('date').groupby('pid').agg(player=('playername','last'),team=('teamname','last'),role=('role',lambda s:s.mode().iloc[0]),gp=('gameid','nunique'))
     info['league']=lg.reindex(info.index)
+    # games et dernière équipe par ligue domestique : l'équipe affichée est celle de la ligue affichée,
+    # et un joueur qui a fait des allers-retours (ex. LCK CL <-> LCK) est aussi listé dans son autre ligue (>= ALSO_MIN games)
+    per=dom.sort_values('date').groupby(['pid','league']).agg(games=('gameid','nunique'),team=('teamname','last')).reset_index()
+    main_team=per.merge(info.league.rename('main').reset_index(),on='pid').query('league==main').set_index('pid').team
+    info['team']=main_team.reindex(info.index).fillna(info.team)
+    oth=per.merge(info.league.rename('main').reset_index(),on='pid').query('league!=main and games>=@ALSO_MIN')
+    info['also']=pd.Series({pid:[[r.league,int(r.games),r.team] for r in d.sort_values('games',ascending=False).itertuples()] for pid,d in oth.groupby('pid')}).reindex(info.index)
+    info['main_games']=per.merge(info.league.rename('main').reset_index(),on='pid').query('league==main').set_index('pid').games.reindex(info.index)
     return info, excl
 
 def competitions(year,info,excl):
@@ -190,6 +199,10 @@ if __name__=='__main__':
         r['points']=((r.theta-base)*1000).round(0); r['points_sd']=(r.sd*1000).round(0)
         grp=r[r.active].groupby(['league','role']).theta.mean()
         r['vs_role_league_gold']=((r.theta-pd.Series([grp.get((l,ro),np.nan) for l,ro in zip(r.league,r.role)],index=r.index))*5000).round(0)
+        # autres ligues (allers-retours) : écart au joueur moyen du même poste dans CETTE ligue
+        also={pid:[[l,g_,t_,None if pd.isna(grp.get((l,r.role[pid]),np.nan)) else int(round((r.theta[pid]-grp.get((l,r.role[pid])))*5000))] for l,g_,t_ in a]
+              for pid,a in r.also.dropna().items()}
+        r=r.drop(columns=['also'])
         p,comps=competitions(year,info,excl)
         D=split_deltas(m,year,p,comps,s2)
         keep=r[r.gp>=10].index
@@ -210,5 +223,5 @@ if __name__=='__main__':
         json.dump(dict(year=year,base=float(base),s2=s2,league=(m['league']*1000).round(0).to_dict(),comps=comps,
                        deltas=D.round(4).to_dict('records'),teams=teams_view(m,year,info,excl,base),
                        traj_months=list(T.columns),traj={pid:[None if pd.isna(v) else int(v) for v in T.loc[pid].values] for pid in T.index},
-                       flags=fl,career=car,post=post),open(f'data/proc/season_{year}.json','w'),ensure_ascii=False,default=float)
+                       flags=fl,career=car,post=post,also=also),open(f'data/proc/season_{year}.json','w'),ensure_ascii=False,default=float)
         print(year,'joueurs actifs',int(r.active.sum()),'compétitions',len(comps),'écarts',len(D),flush=True)

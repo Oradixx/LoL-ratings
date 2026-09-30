@@ -51,13 +51,13 @@ c0st0m,ROSSMANN Centaurs,PRM,Mid,AL Spring · saison régulière,31,0.452,3.27,5
 Xicor,FN Esports,AL,ADC,AL Spring · saison régulière,19,0.684,2.56,43.0,2.0,55.0,45.0
 Random,Disruptors,AL,Mid,AL Spring · saison régulière,19,0.684,2.27,28.0,2.0,55.0,30.0
 Aeru,JSK Esports,AL,ADC,AL Spring · saison régulière,18,0.722,3.56,34.0,-4.0,55.0,30.0
-Raider,CGN Esports,AL,Top,AL Spring · saison régulière,11,0.364,2.21,31.0,-3.0,55.0,28.0
+Raider,JSK Esports,AL,Top,AL Spring · saison régulière,11,0.364,2.21,31.0,-3.0,55.0,28.0
 handm,BAAM Esports,AL,Top,AL Spring · saison régulière,21,0.571,2.24,21.0,5.0,54.0,26.0
 CoBiT,Dragons Esports,AL,Support,AL Spring · saison régulière,17,0.765,4.61,17.0,8.0,55.0,25.0
 Slayder,Dragons Esports,AL,ADC,AL Spring · saison régulière,17,0.765,4.96,14.0,8.0,55.0,22.0
 MAXI,Forsaken,RL,Jungle,AL Spring · saison régulière,19,0.684,3.41,14.0,2.0,55.0,16.0
 Akashi,Pyramid IV Esports,AL,Mid,AL Spring · saison régulière,17,0.765,3.96,-31.0,8.0,55.0,-23.0
-Aymen,Karmine Corp Blue Stars,AL,Support,AL Spring · saison régulière,19,0.684,3.39,-88.0,2.0,55.0,-86.0
+Aymen,FN Esports,AL,Support,AL Spring · saison régulière,19,0.684,3.39,-88.0,2.0,55.0,-86.0
 Fallen,Ancient Ones,NL,Jungle,AL Spring · saison régulière,10,0.7,3.61,-98.0,2.0,55.0,-96.0
 moe,Pyramid IV Esports,AL,Jungle,AL Spring · saison régulière,17,0.765,4.11,-104.0,8.0,55.0,-96.0
 Exan,JSK Esports,AL,Jungle,AL Spring · saison régulière,26,0.346,2.92,-108.0,-2.0,54.0,-110.0
@@ -67,7 +67,7 @@ SS Kuroko,Super Stars,AL,ADC,AL Spring · saison régulière,10,0.7,2.5,-126.0,2
 Nawaf,One More Esports,AL,ADC,AL Spring · saison régulière,7,0.714,5.31,-139.0,5.0,55.0,-134.0
 Ajwad,One More Esports,AL,Jungle,AL Spring · saison régulière,7,0.714,4.36,-146.0,5.0,55.0,-141.0
 Enoch,The Secret Club,EBL,Support,AL Spring · saison régulière,26,0.346,2.5,-148.0,-2.0,54.0,-150.0
-DANKI,Zerolag Esports,AL,Top,AL Spring · saison régulière,10,0.7,5.31,-156.0,2.0,55.0,-154.0
+DANKI,Super Stars,AL,Top,AL Spring · saison régulière,10,0.7,5.31,-156.0,2.0,55.0,-154.0
 sas,Disruptors,AL,Support,AL Spring · saison régulière,21,0.571,3.15,-182.0,5.0,54.0,-177.0
 Jalleba,Pyramid IV Esports,AL,ADC,AL Spring · saison régulière,31,0.452,3.19,-189.0,-2.0,54.0,-191.0
 Sotsy,3BL Esports,AL,Top,AL Spring · saison régulière,31,0.452,2.58,-210.0,-2.0,54.0,-212.0
@@ -88,7 +88,7 @@ Degla,One More Esports,AL,Support,AL Spring · saison régulière,16,0.25,2.45,-
 Improver,BAAM Esports,AL,Mid,AL Spring · saison régulière,21,0.571,2.47,-368.0,5.0,54.0,-363.0
 Leo s Man,Only The Family,EBL,Support,AL Spring · saison régulière,10,0.7,3.26,-385.0,2.0,55.0,-383.0
 Zero0o,One More Esports,AL,Top,AL Spring · saison régulière,6,0.5,1.9,-393.0,-1.0,55.0,-394.0
-Soufiane,GD Esports,AL,Mid,AL Spring · saison régulière,21,0.333,2.62,-417.0,-2.0,54.0,-419.0
+Soufiane,GnG Amazigh,AL,Mid,AL Spring · saison régulière,21,0.333,2.62,-417.0,-2.0,54.0,-419.0
 Darky,One More Esports,AL,Top,AL Spring · saison régulière,21,0.333,1.54,-432.0,-4.0,54.0,-436.0
 Jasten,Pyramid IV Esports,AL,ADC,AL Spring · saison régulière,26,0.346,2.07,-492.0,-2.0,54.0,-494.0
 Goliah,Team Aqua ASD,LIT,Jungle,AL Spring · saison régulière,14,0.143,1.91,-526.0,-8.0,55.0,-534.0
@@ -149,7 +149,7 @@ Shanks,JSK Esports,AL,Jungle,AL Summer · saison régulière,17,0.647,5.04,-217.
 Shourdy,Senshi eSports,ROL,Top,AL Summer · saison régulière,10,0.6,1.95,-227.0,3.0,55.0,-224.0
 Skream,Disruptors,AL,ADC,AL Summer · saison régulière,25,0.56,3.05,-247.0,5.0,54.0,-242.0
 IHEBIC,GnG Amazigh,AL,Support,AL Summer · saison régulière,17,0.412,1.95,-250.0,2.0,55.0,-248.0
-Elramir,Dream Esports,TCL,Jungle,AL Summer · saison régulière,7,0.571,3.03,-251.0,0.0,55.0,-251.0
+Elramir,Bushido Wildcats,TCL,Jungle,AL Summer · saison régulière,7,0.571,3.03,-251.0,0.0,55.0,-251.0
 Deceiving,3BL Esports,AL,Mid,AL Summer · saison régulière,15,0.267,2.34,-253.0,0.0,55.0,-253.0
 ShizuOo,BAAM Esports,AL,Jungle,AL Summer · saison régulière,15,0.667,4.11,-262.0,2.0,55.0,-260.0
 Lokmays,JSK Esports,AL,Support,AL Summer · saison régulière,6,0.833,3.31,-265.0,3.0,55.0,-262.0
@@ -168,7 +168,7 @@ CPM,3BL Esports,AL,Top,AL Summer · saison régulière,17,0.235,3.72,-359.0,-2.0
 Biskoo,3BL Esports,AL,Support,AL Summer · saison régulière,25,0.32,2.63,-360.0,-3.0,54.0,-363.0
 Zero0o,One More Esports,AL,Top,AL Summer · saison régulière,12,0.333,1.92,-393.0,-2.0,55.0,-395.0
 Mune,One More Esports,AL,ADC,AL Summer · saison régulière,15,0.333,2.12,-406.0,-3.0,55.0,-409.0
-Soufiane,GD Esports,AL,Mid,AL Summer · saison régulière,10,0.6,5.86,-417.0,3.0,55.0,-414.0
+Soufiane,GnG Amazigh,AL,Mid,AL Summer · saison régulière,10,0.6,5.86,-417.0,3.0,55.0,-414.0
 Antonio,3BL Esports,AL,ADC,AL Summer · saison régulière,17,0.235,2.79,-418.0,-2.0,55.0,-420.0
 Jasten,Pyramid IV Esports,AL,ADC,AL Summer · saison régulière,12,0.5,2.39,-492.0,-1.0,55.0,-493.0
 Blueboar,One More Esports,AL,Jungle,AL Summer · saison régulière,15,0.333,2.32,-493.0,-3.0,55.0,-496.0
@@ -187,7 +187,7 @@ Kobs,ZYB Esport,LFL,Jungle,AL Winter · playoffs,4,0.0,2.12,-34.0,-4.0,55.0,-38.
 Akashi,Pyramid IV Esports,AL,Mid,AL Winter · playoffs,4,0.0,1.47,-31.0,-9.0,55.0,-40.0
 marlon,JSK Esports,AL,Support,AL Winter · playoffs,8,0.5,3.94,-64.0,0.0,55.0,-64.0
 VAEII,JSK Esports,AL,Mid,AL Winter · playoffs,9,0.444,4.0,-84.0,-2.0,55.0,-86.0
-Aymen,Karmine Corp Blue Stars,AL,Support,AL Winter · playoffs,4,0.0,1.33,-88.0,-4.0,55.0,-92.0
+Aymen,FN Esports,AL,Support,AL Winter · playoffs,4,0.0,1.33,-88.0,-4.0,55.0,-92.0
 moe,Pyramid IV Esports,AL,Jungle,AL Winter · playoffs,13,0.538,2.93,-104.0,9.0,55.0,-95.0
 choego,BAAM Esports,AL,ADC,AL Winter · playoffs,9,0.444,3.33,-120.0,-2.0,55.0,-122.0
 Color,Forsaken,RL,Top,AL Winter · playoffs,8,0.5,2.57,-141.0,0.0,55.0,-141.0
@@ -218,7 +218,7 @@ Akashi,Pyramid IV Esports,AL,Mid,AL Winter · saison régulière,24,0.792,4.97,-
 Kobs,ZYB Esport,LFL,Jungle,AL Winter · saison régulière,25,0.48,3.21,-34.0,4.0,54.0,-30.0
 marlon,JSK Esports,AL,Support,AL Winter · saison régulière,21,0.476,3.01,-64.0,-8.0,54.0,-72.0
 VAEII,JSK Esports,AL,Mid,AL Winter · saison régulière,24,0.417,3.79,-84.0,0.0,54.0,-84.0
-Aymen,Karmine Corp Blue Stars,AL,Support,AL Winter · saison régulière,25,0.48,3.27,-88.0,4.0,54.0,-84.0
+Aymen,FN Esports,AL,Support,AL Winter · saison régulière,25,0.48,3.27,-88.0,4.0,54.0,-84.0
 moe,Pyramid IV Esports,AL,Jungle,AL Winter · saison régulière,23,0.522,2.98,-104.0,-10.0,54.0,-114.0
 choego,BAAM Esports,AL,ADC,AL Winter · saison régulière,24,0.417,2.83,-120.0,0.0,54.0,-120.0
 Nawaf,One More Esports,AL,ADC,AL Winter · saison régulière,7,0.286,2.83,-139.0,-3.0,55.0,-142.0
@@ -257,7 +257,7 @@ Lucy,Nongshim Esports Academy,LCKC,ADC,Asia Masters,12,0.5,2.86,502.0,-6.0,55.0,
 SeTab,Nongshim Esports Academy,LCKC,Mid,Asia Masters,12,0.5,2.67,499.0,-6.0,55.0,493.0
 Janus,Nongshim Esports Academy,LCKC,Top,Asia Masters,12,0.5,2.58,497.0,-6.0,55.0,491.0
 Jaehyuk,Dplus Kia Challengers,LCKC,Top,Asia Masters,16,0.75,6.31,480.0,10.0,55.0,490.0
-Liangchen,Bilibili Gaming Junior,LPL,Top,Asia Masters,5,0.2,1.57,485.0,-1.0,55.0,484.0
+Liangchen,Ultra Prime,LPL,Top,Asia Masters,5,0.2,1.57,485.0,-1.0,55.0,484.0
 Garden,Dplus Kia Challengers,LCKC,Mid,Asia Masters,16,0.75,4.24,462.0,10.0,55.0,472.0
 Wayne,Dplus Kia Challengers,LCKC,ADC,Asia Masters,16,0.75,4.68,460.0,10.0,55.0,470.0
 Loopy,Dplus Kia Challengers,LCKC,Support,Asia Masters,16,0.75,4.1,459.0,10.0,55.0,469.0
@@ -504,7 +504,7 @@ DenVoksne,Unicorns of Love Sexy Edition,PRM,ADC,CCWS,7,0.429,3.05,244.0,-3.0,55.
 Fun K3y,Eintracht Spandau,PRM,ADC,CCWS,15,0.667,4.09,221.0,3.0,55.0,224.0
 Twiizt,Unicorns of Love Sexy Edition,PRM,Support,CCWS,7,0.429,4.36,222.0,-3.0,55.0,219.0
 RoyalKanin,Unicorns of Love Sexy Edition,PRM,Mid,CCWS,7,0.429,2.62,218.0,-3.0,55.0,215.0
-Keduii,Joblife,PRM,ADC,CCWS,6,0.333,1.72,221.0,-7.0,55.0,214.0
+Keduii,Eintracht Spandau,PRM,ADC,CCWS,6,0.333,1.72,221.0,-7.0,55.0,214.0
 White,Unicorns of Love Sexy Edition,PRM,Jungle,CCWS,7,0.429,1.93,198.0,-3.0,55.0,195.0
 Fornoreason,Unicorns of Love Sexy Edition,PRM,Top,CCWS,7,0.429,1.67,178.0,-3.0,55.0,175.0
 Xagog,Eintracht Spandau,PRM,Jungle,CCWS,6,0.333,1.66,175.0,-7.0,55.0,168.0
@@ -528,7 +528,7 @@ Dome,A One Man Army Prime,PRM,Jungle,CCWS,6,0.5,3.82,-12.0,1.0,55.0,-11.0
 D4nKa,Eintracht Frankfurt,PRM,Jungle,CCWS,7,0.429,2.53,-17.0,2.0,55.0,-15.0
 Xay,A One Man Army Prime,PRM,ADC,CCWS,6,0.5,2.89,-19.0,1.0,55.0,-18.0
 Artoria,DMG Esports,NLC,Mid,CCWS,6,0.5,2.48,-25.0,1.0,55.0,-24.0
-Smurfe,Frites Esports Club,HLL,Top,CCWS,6,0.5,3.47,-39.0,1.0,55.0,-38.0
+Smurfe,WLGaming Esports,HLL,Top,CCWS,6,0.5,3.47,-39.0,1.0,55.0,-38.0
 Fooneses,ROSSMANN Centaurs,PRM,Mid,CCWS,4,0.25,1.4,-67.0,4.0,55.0,-63.0
 Pyrka,Kaufland Hangry Knights,PRM,Support,CCWS,4,0.0,2.05,-87.0,-3.0,55.0,-90.0
 Venour,Kaufland Hangry Knights,PRM,Top,CCWS,4,0.0,1.36,-106.0,-3.0,55.0,-109.0
@@ -748,13 +748,13 @@ random,Team Solid,CD,Mid,CD · saison régulière,24,0.542,3.16,-173.0,3.0,54.0,
 Aegis,Team Solid,CD,Jungle,CD · saison régulière,10,0.8,4.91,-252.0,12.0,55.0,-240.0
 Velthan,Kuma e-Sports,CD,Support,CD · saison régulière,14,0.214,3.14,-243.0,-2.0,55.0,-245.0
 DarkHarvest,Kuma e-Sports,CD,Mid,CD · saison régulière,14,0.214,2.41,-246.0,-2.0,55.0,-248.0
-Peco,RAMPAGE,LRS,Mid,CD · saison régulière,8,0.375,2.73,-274.0,2.0,55.0,-272.0
+Peco,Seven Dark,LRS,Mid,CD · saison régulière,8,0.375,2.73,-274.0,2.0,55.0,-272.0
 Levizin,paiN Gaming Academy,CD,Jungle,CD · saison régulière,12,0.583,3.57,-276.0,4.0,55.0,-272.0
 Aikawa,7REX,CD,ADC,CD · saison régulière,5,0.2,2.44,-279.0,-2.0,55.0,-281.0
 TiRAn,Kuma e-Sports,CD,Top,CD · saison régulière,14,0.214,1.56,-291.0,-2.0,55.0,-293.0
 nanashi,RED Academy,CD,ADC,CD · saison régulière,5,0.6,3.75,-302.0,1.0,55.0,-301.0
 kenNedy,Kuma e-Sports,CD,Jungle,CD · saison régulière,16,0.188,2.08,-300.0,-3.0,55.0,-303.0
-Stoneses,RAMPAGE,LRS,Support,CD · saison régulière,8,0.375,2.94,-308.0,2.0,55.0,-306.0
+Stoneses,Seven Dark,LRS,Support,CD · saison régulière,8,0.375,2.94,-308.0,2.0,55.0,-306.0
 schastye,Kuma e-Sports,CD,ADC,CD · saison régulière,14,0.214,1.97,-337.0,-2.0,55.0,-339.0
 Houndin,Team Solid,CD,Support,CD · saison régulière,5,0.6,4.2,-388.0,2.0,55.0,-386.0
 jmz,RED Academy,CD,Top,CD · saison régulière,12,0.583,1.93,-393.0,4.0,55.0,-389.0
@@ -786,17 +786,17 @@ Chan,Partizan Sangal,EBL,Top,EBL Spring · playoffs,9,1.0,5.3,-33.0,1.0,55.0,-32
 Ruby,Partizan Sangal,EBL,Mid,EBL Spring · playoffs,9,1.0,8.31,-60.0,1.0,55.0,-59.0
 Ferret,Partizan Sangal,EBL,Jungle,EBL Spring · playoffs,9,1.0,6.38,-87.0,1.0,55.0,-86.0
 Mood,Deer Gaming,NLC,Support,EBL Spring · playoffs,9,0.556,3.8,-133.0,4.0,55.0,-129.0
-Passzi,UCAM Esports,NL,Support,EBL Spring · playoffs,13,0.538,3.44,-147.0,-4.0,55.0,-151.0
+Passzi,Galions Sharks,NL,Support,EBL Spring · playoffs,13,0.538,3.44,-147.0,-4.0,55.0,-151.0
 Metroflox,Magaza Esports,EBL,Jungle,EBL Spring · playoffs,13,0.538,3.54,-222.0,7.0,55.0,-215.0
 Falleo,White Dragons,LPLOL,Top,EBL Spring · playoffs,13,0.538,2.6,-213.0,-4.0,55.0,-217.0
-Archfiend,Esprit Shōnen,EBL,Top,EBL Spring · playoffs,13,0.538,1.69,-284.0,7.0,55.0,-277.0
+Archfiend,Magaza Esports,EBL,Top,EBL Spring · playoffs,13,0.538,1.69,-284.0,7.0,55.0,-277.0
 Crem,Magaza Esports,EBL,ADC,EBL Spring · playoffs,13,0.538,3.18,-284.0,7.0,55.0,-277.0
 FSZ,Magaza Esports,EBL,Mid,EBL Spring · playoffs,13,0.538,3.39,-298.0,7.0,55.0,-291.0
 STANIK,mCon esports,ROL,Mid,EBL Spring · playoffs,13,0.538,3.74,-321.0,-4.0,55.0,-325.0
 justcan,Magaza Esports,EBL,Support,EBL Spring · playoffs,13,0.538,3.87,-403.0,7.0,55.0,-396.0
 Death,Magaza Esports,EBL,Jungle,EBL Spring · playoffs,7,0.286,2.35,-418.0,2.0,55.0,-416.0
 Lagolinas,Lenovo Legion Honvéd,EBL,Mid,EBL Spring · playoffs,10,0.5,4.0,-465.0,2.0,55.0,-463.0
-mirza,Mighty Eagles,EBL,ADC,EBL Spring · playoffs,5,0.4,2.33,-486.0,1.0,55.0,-485.0
+mirza,TQ DURPA KASHLQ,EBL,ADC,EBL Spring · playoffs,5,0.4,2.33,-486.0,1.0,55.0,-485.0
 Endless,Lenovo Legion Honvéd,EBL,ADC,EBL Spring · playoffs,10,0.5,3.36,-487.0,2.0,55.0,-485.0
 vladichich,RLX Esports,EBL,ADC,EBL Spring · playoffs,6,0.333,1.85,-485.0,-2.0,55.0,-487.0
 Blueboar,One More Esports,AL,Jungle,EBL Spring · playoffs,10,0.5,2.53,-493.0,2.0,55.0,-491.0
@@ -805,22 +805,22 @@ Ryuzaki,TITANS,LIT,Jungle,EBL Spring · playoffs,13,0.538,4.57,-540.0,-4.0,55.0,
 Exile1,SPIKE Syndicate,EBL,Jungle,EBL Spring · playoffs,6,0.333,1.82,-547.0,-2.0,55.0,-549.0
 Paresz,Lenovo Legion Honvéd,EBL,Jungle,EBL Spring · playoffs,1,0.0,1.25,-550.0,-2.0,55.0,-552.0
 Kaylem,EKO Esports,LIT,Top,EBL Spring · playoffs,6,0.333,2.88,-579.0,-2.0,55.0,-581.0
-Mihai,EKO Esports,EBL,ADC,EBL Spring · playoffs,13,0.538,4.32,-607.0,-4.0,55.0,-611.0
+Mihai,The Secret Club,EBL,ADC,EBL Spring · playoffs,13,0.538,4.32,-607.0,-4.0,55.0,-611.0
 Candy,Lupus Esports,EBL,Support,EBL Spring · playoffs,6,0.333,2.15,-667.0,-2.0,55.0,-669.0
 VeRu,Lupus Esports,EBL,Mid,EBL Spring · playoffs,6,0.333,1.76,-672.0,-2.0,55.0,-674.0
 Ludas Matyi,Team Spawn Peek,EBL,ADC,EBL Spring · playoffs,7,0.286,1.41,-744.0,-3.0,55.0,-747.0
 Baki,Lupus Esports,EBL,ADC,EBL Spring · playoffs,5,0.2,2.0,-752.0,-2.0,55.0,-754.0
-Neczo,ALMO Players,EBL,Mid,EBL Spring · playoffs,7,0.286,1.97,-766.0,-3.0,55.0,-769.0
+Neczo,Team Spawn Peek,EBL,Mid,EBL Spring · playoffs,7,0.286,1.97,-766.0,-3.0,55.0,-769.0
 Shy Carry,Anubis Gaming,AL,ADC,EBL Spring · saison régulière,8,1.0,6.22,259.0,-1.0,55.0,258.0
 Erdote,devils.one inStreamly,RL,Support,EBL Spring · saison régulière,8,1.0,6.0,224.0,-1.0,55.0,223.0
 Chan,Partizan Sangal,EBL,Top,EBL Spring · saison régulière,8,1.0,5.11,-33.0,-1.0,55.0,-34.0
 Ruby,Partizan Sangal,EBL,Mid,EBL Spring · saison régulière,8,1.0,5.76,-60.0,-1.0,55.0,-61.0
 Ferret,Partizan Sangal,EBL,Jungle,EBL Spring · saison régulière,8,1.0,6.3,-87.0,-1.0,55.0,-88.0
-Passzi,UCAM Esports,NL,Support,EBL Spring · saison régulière,10,0.6,5.76,-147.0,5.0,55.0,-142.0
+Passzi,Galions Sharks,NL,Support,EBL Spring · saison régulière,10,0.6,5.76,-147.0,5.0,55.0,-142.0
 Rayito,GIANTX iTero,LES,ADC,EBL Spring · saison régulière,11,0.364,1.8,-182.0,-2.0,55.0,-184.0
 Falleo,White Dragons,LPLOL,Top,EBL Spring · saison régulière,10,0.6,2.27,-213.0,5.0,55.0,-208.0
 Metroflox,Magaza Esports,EBL,Jungle,EBL Spring · saison régulière,11,0.546,4.06,-222.0,-1.0,55.0,-223.0
-Archfiend,Esprit Shōnen,EBL,Top,EBL Spring · saison régulière,11,0.546,1.77,-284.0,-1.0,55.0,-285.0
+Archfiend,Magaza Esports,EBL,Top,EBL Spring · saison régulière,11,0.546,1.77,-284.0,-1.0,55.0,-285.0
 Crem,Magaza Esports,EBL,ADC,EBL Spring · saison régulière,11,0.546,3.58,-284.0,-1.0,55.0,-285.0
 FSZ,Magaza Esports,EBL,Mid,EBL Spring · saison régulière,11,0.546,3.61,-298.0,-1.0,55.0,-299.0
 STANIK,mCon esports,ROL,Mid,EBL Spring · saison régulière,10,0.6,5.95,-321.0,5.0,55.0,-316.0
@@ -833,7 +833,7 @@ Lotuss,Myth Esports,ROL,Jungle,EBL Spring · saison régulière,11,0.364,3.5,-49
 Ryuzaki,TITANS,LIT,Jungle,EBL Spring · saison régulière,10,0.6,4.15,-540.0,5.0,55.0,-535.0
 Exile1,SPIKE Syndicate,EBL,Jungle,EBL Spring · saison régulière,11,0.364,2.27,-547.0,5.0,55.0,-542.0
 Kaylem,EKO Esports,LIT,Top,EBL Spring · saison régulière,11,0.364,2.46,-579.0,5.0,55.0,-574.0
-Mihai,EKO Esports,EBL,ADC,EBL Spring · saison régulière,10,0.6,3.97,-607.0,5.0,55.0,-602.0
+Mihai,The Secret Club,EBL,ADC,EBL Spring · saison régulière,10,0.6,3.97,-607.0,5.0,55.0,-602.0
 Tasteless,Lupus Esports,EBL,Support,EBL Spring · saison régulière,11,0.364,2.68,-603.0,-2.0,55.0,-605.0
 Pesho,Lupus Esports,EBL,Mid,EBL Spring · saison régulière,11,0.364,2.23,-611.0,-2.0,55.0,-613.0
 Sikterr,Croatian Flair,EBL,Jungle,EBL Spring · saison régulière,11,0.273,2.63,-610.0,-6.0,55.0,-616.0
@@ -844,7 +844,7 @@ CROmpir,RLX Esports,EBL,Mid,EBL Spring · saison régulière,11,0.273,1.8,-684.0
 Mxe,Magaza Esports,EBL,Support,EBL Summer · playoffs,7,0.429,2.75,-41.0,-9.0,55.0,-50.0
 Enoch,The Secret Club,EBL,Support,EBL Summer · playoffs,9,0.889,6.1,-148.0,7.0,55.0,-141.0
 pr1me,Magaza Esports,EBL,Top,EBL Summer · playoffs,7,0.429,2.21,-232.0,-9.0,55.0,-241.0
-Shakur,Only The Family,HLL,ADC,EBL Summer · playoffs,2,1.0,5.0,-250.0,2.0,55.0,-248.0
+Shakur,Gamespace Mediterranean College Esports,HLL,ADC,EBL Summer · playoffs,2,1.0,5.0,-250.0,2.0,55.0,-248.0
 Kryzik,The Secret Club,EBL,Mid,EBL Summer · playoffs,9,0.889,8.5,-280.0,7.0,55.0,-273.0
 Crem,Magaza Esports,EBL,ADC,EBL Summer · playoffs,7,0.429,2.62,-284.0,-9.0,55.0,-293.0
 Nasser,The Secret Club,EBL,Jungle,EBL Summer · playoffs,9,0.889,6.75,-312.0,7.0,55.0,-305.0
@@ -859,15 +859,15 @@ Renewal,Only The Family,EBL,Jungle,EBL Summer · playoffs,5,0.4,2.03,-468.0,-3.0
 Endless,Lenovo Legion Honvéd,EBL,ADC,EBL Summer · playoffs,9,0.556,4.41,-487.0,8.0,55.0,-479.0
 Heprex,Only The Family,EBL,Top,EBL Summer · playoffs,5,0.4,3.4,-500.0,-3.0,55.0,-503.0
 Bala,Lenovo Legion Honvéd,EBL,Top,EBL Summer · playoffs,9,0.556,2.75,-518.0,8.0,55.0,-510.0
-SoimuMIC,REDPack Esports,HLL,Top,EBL Summer · playoffs,3,0.333,2.27,-537.0,0.0,55.0,-537.0
+SoimuMIC,Zerolag Esports,HLL,Top,EBL Summer · playoffs,3,0.333,2.27,-537.0,0.0,55.0,-537.0
 Paresz,Lenovo Legion Honvéd,EBL,Jungle,EBL Summer · playoffs,9,0.556,4.89,-550.0,8.0,55.0,-542.0
-Royeq,REDPack Esports,NLC,ADC,EBL Summer · playoffs,3,0.333,5.4,-546.0,0.0,55.0,-546.0
+Royeq,Lundqvist Lightside,NLC,ADC,EBL Summer · playoffs,3,0.333,5.4,-546.0,0.0,55.0,-546.0
 Kozak,SPIKE Syndicate,EBL,ADC,EBL Summer · playoffs,2,0.0,5.4,-574.0,-2.0,55.0,-576.0
 mannelig,SPIKE Syndicate,EBL,Support,EBL Summer · playoffs,2,0.0,2.56,-578.0,-2.0,55.0,-580.0
 Skaterot,Only The Family,EBL,Mid,EBL Summer · playoffs,5,0.4,1.78,-598.0,-3.0,55.0,-601.0
 Leader,Hooligans,EBL,Jungle,EBL Summer · playoffs,2,0.0,2.67,-622.0,-2.0,55.0,-624.0
-Sprotte,SPIKE Syndicate,ROL,Top,EBL Summer · playoffs,2,0.0,1.08,-636.0,-2.0,55.0,-638.0
-Unchained,Hooligans,ROL,Mid,EBL Summer · playoffs,2,0.0,0.69,-640.0,-2.0,55.0,-642.0
+Sprotte,Myth Esports,ROL,Top,EBL Summer · playoffs,2,0.0,1.08,-636.0,-2.0,55.0,-638.0
+Unchained,Dynasty,ROL,Mid,EBL Summer · playoffs,2,0.0,0.69,-640.0,-2.0,55.0,-642.0
 Robi,SPIKE Syndicate,EBL,Mid,EBL Summer · playoffs,2,0.0,1.7,-642.0,-2.0,55.0,-644.0
 Ferrari,SPIKE Syndicate,EBL,Jungle,EBL Summer · playoffs,2,0.0,2.2,-644.0,-2.0,55.0,-646.0
 2 Meters,Hooligans,EBL,Top,EBL Summer · playoffs,2,0.0,1.22,-649.0,-2.0,55.0,-651.0
@@ -905,7 +905,7 @@ Chan,Partizan Sangal,EBL,Top,EBL Winter · playoffs,9,1.0,5.71,-33.0,0.0,55.0,-3
 Ruby,Partizan Sangal,EBL,Mid,EBL Winter · playoffs,9,1.0,12.15,-60.0,0.0,55.0,-60.0
 Ferret,Partizan Sangal,EBL,Jungle,EBL Winter · playoffs,9,1.0,10.0,-87.0,0.0,55.0,-87.0
 Enoch,The Secret Club,EBL,Support,EBL Winter · playoffs,10,0.6,3.58,-148.0,4.0,55.0,-144.0
-Passzi,UCAM Esports,NL,Support,EBL Winter · playoffs,13,0.462,3.79,-147.0,-2.0,55.0,-149.0
+Passzi,Galions Sharks,NL,Support,EBL Winter · playoffs,13,0.462,3.79,-147.0,-2.0,55.0,-149.0
 Rayito,GIANTX iTero,LES,ADC,EBL Winter · playoffs,13,0.538,2.55,-182.0,8.0,55.0,-174.0
 Falleo,White Dragons,LPLOL,Top,EBL Winter · playoffs,7,0.429,3.05,-213.0,-1.0,55.0,-214.0
 Panj,Myth Esports,ROL,Support,EBL Winter · playoffs,13,0.538,3.41,-298.0,8.0,55.0,-290.0
@@ -914,24 +914,24 @@ Yuki,The Secret Club,EBL,ADC,EBL Winter · playoffs,10,0.6,4.26,-315.0,4.0,55.0,
 DoubleAiM,BeFive,EBL,Jungle,EBL Winter · playoffs,7,0.429,2.86,-318.0,-1.0,55.0,-319.0
 Ronaldo,Bulldog Esports,NLC,Mid,EBL Winter · playoffs,6,0.333,2.32,-357.0,-5.0,55.0,-362.0
 Diva,BeFive,EBL,Mid,EBL Winter · playoffs,7,0.429,1.97,-372.0,-1.0,55.0,-373.0
-Dehaste,Team Aqua ASD,EBL,Mid,EBL Winter · playoffs,13,0.538,2.29,-421.0,8.0,55.0,-413.0
+Dehaste,Lupus Esports,EBL,Mid,EBL Winter · playoffs,13,0.538,2.29,-421.0,8.0,55.0,-413.0
 Danilo,The Secret Club,EBL,Top,EBL Winter · playoffs,10,0.6,3.1,-421.0,4.0,55.0,-417.0
 Lagolinas,Lenovo Legion Honvéd,EBL,Mid,EBL Winter · playoffs,13,0.462,3.8,-465.0,-2.0,55.0,-467.0
 Lotuss,Myth Esports,ROL,Jungle,EBL Winter · playoffs,13,0.538,4.0,-495.0,8.0,55.0,-487.0
-mirza,Mighty Eagles,EBL,ADC,EBL Winter · playoffs,2,0.0,3.33,-486.0,-2.0,55.0,-488.0
+mirza,TQ DURPA KASHLQ,EBL,ADC,EBL Winter · playoffs,2,0.0,3.33,-486.0,-2.0,55.0,-488.0
 Endless,Lenovo Legion Honvéd,EBL,ADC,EBL Winter · playoffs,13,0.462,2.83,-487.0,-2.0,55.0,-489.0
 Blueboar,One More Esports,AL,Jungle,EBL Winter · playoffs,13,0.462,3.22,-493.0,-2.0,55.0,-495.0
 Bala,Lenovo Legion Honvéd,EBL,Top,EBL Winter · playoffs,13,0.462,1.68,-518.0,-2.0,55.0,-520.0
 Ryuzaki,TITANS,LIT,Jungle,EBL Winter · playoffs,4,0.5,3.42,-540.0,-1.0,55.0,-541.0
 Kaylem,EKO Esports,LIT,Top,EBL Winter · playoffs,6,0.333,1.75,-579.0,-5.0,55.0,-584.0
 Sikterr,Croatian Flair,EBL,Jungle,EBL Winter · playoffs,10,0.6,2.8,-610.0,4.0,55.0,-606.0
-Mihai,EKO Esports,EBL,ADC,EBL Winter · playoffs,6,0.333,2.36,-607.0,-5.0,55.0,-612.0
+Mihai,The Secret Club,EBL,ADC,EBL Winter · playoffs,6,0.333,2.36,-607.0,-5.0,55.0,-612.0
 Davyyy,TIGROTS,LIT,Top,EBL Winter · playoffs,4,0.0,1.04,-634.0,-3.0,55.0,-637.0
-ZaFiR,Hyperion (Portuguese Team),EBL,Support,EBL Winter · playoffs,2,0.0,0.62,-658.0,-4.0,55.0,-662.0
-Coli,Dynasty,EBL,Support,EBL Winter · playoffs,7,0.429,1.77,-675.0,-1.0,55.0,-676.0
+ZaFiR,The Secret Club,EBL,Support,EBL Winter · playoffs,2,0.0,0.62,-658.0,-4.0,55.0,-662.0
+Coli,BeFive,EBL,Support,EBL Winter · playoffs,7,0.429,1.77,-675.0,-1.0,55.0,-676.0
 CROmpir,RLX Esports,EBL,Mid,EBL Winter · playoffs,10,0.6,2.77,-684.0,4.0,55.0,-680.0
 Alessio,EKO Esports,LIT,ADC,EBL Winter · playoffs,4,0.0,2.29,-711.0,-3.0,55.0,-714.0
-bakisa,Dynasty,EBL,ADC,EBL Winter · playoffs,7,0.429,2.41,-762.0,-1.0,55.0,-763.0
+bakisa,BeFive,EBL,ADC,EBL Winter · playoffs,7,0.429,2.41,-762.0,-1.0,55.0,-763.0
 flini,Mighty Eagles,HC,Jungle,EBL Winter · playoffs,4,0.0,1.79,-929.0,-3.0,55.0,-932.0
 Shy Carry,Anubis Gaming,AL,ADC,EBL Winter · saison régulière,8,1.0,9.14,259.0,-2.0,55.0,257.0
 Erdote,devils.one inStreamly,RL,Support,EBL Winter · saison régulière,8,1.0,6.04,224.0,-2.0,55.0,222.0
@@ -947,16 +947,16 @@ PatkicaA,Myth Esports,ROL,Top,EBL Winter · saison régulière,13,0.615,3.49,-31
 Ronaldo,Bulldog Esports,NLC,Mid,EBL Winter · saison régulière,12,0.333,3.16,-357.0,3.0,55.0,-354.0
 Diva,BeFive,EBL,Mid,EBL Winter · saison régulière,10,0.7,2.85,-372.0,6.0,55.0,-366.0
 M0NK,Dynasty,ROL,ADC,EBL Winter · saison régulière,12,0.417,2.78,-394.0,-3.0,55.0,-397.0
-Dehaste,Team Aqua ASD,EBL,Mid,EBL Winter · saison régulière,13,0.615,2.7,-421.0,-1.0,55.0,-422.0
+Dehaste,Lupus Esports,EBL,Mid,EBL Winter · saison régulière,13,0.615,2.7,-421.0,-1.0,55.0,-422.0
 Lotuss,Myth Esports,ROL,Jungle,EBL Winter · saison régulière,13,0.615,4.07,-495.0,-1.0,55.0,-496.0
 Ryuzaki,TITANS,LIT,Jungle,EBL Winter · saison régulière,12,0.333,4.34,-540.0,3.0,55.0,-537.0
 Kaylem,EKO Esports,LIT,Top,EBL Winter · saison régulière,12,0.333,2.22,-579.0,3.0,55.0,-576.0
-Mihai,EKO Esports,EBL,ADC,EBL Winter · saison régulière,12,0.333,3.07,-607.0,3.0,55.0,-604.0
+Mihai,The Secret Club,EBL,ADC,EBL Winter · saison régulière,12,0.333,3.07,-607.0,3.0,55.0,-604.0
 Robi,SPIKE Syndicate,EBL,Mid,EBL Winter · saison régulière,12,0.417,3.24,-642.0,-3.0,55.0,-645.0
-ZaFiR,Hyperion (Portuguese Team),EBL,Support,EBL Winter · saison régulière,12,0.333,2.5,-658.0,3.0,55.0,-655.0
-Coli,Dynasty,EBL,Support,EBL Winter · saison régulière,12,0.583,3.0,-675.0,7.0,55.0,-668.0
+ZaFiR,The Secret Club,EBL,Support,EBL Winter · saison régulière,12,0.333,2.5,-658.0,3.0,55.0,-655.0
+Coli,BeFive,EBL,Support,EBL Winter · saison régulière,12,0.583,3.0,-675.0,7.0,55.0,-668.0
 Phaxi,SPIKE Syndicate,EBL,Top,EBL Winter · saison régulière,12,0.417,2.32,-667.0,-3.0,55.0,-670.0
-bakisa,Dynasty,EBL,ADC,EBL Winter · saison régulière,12,0.583,3.33,-762.0,7.0,55.0,-755.0
+bakisa,BeFive,EBL,ADC,EBL Winter · saison régulière,12,0.583,3.33,-762.0,7.0,55.0,-755.0
 Thayger,Galions,LFL,Jungle,EMEA Masters Spring,14,0.929,10.3,564.0,11.0,55.0,575.0
 Kryze,Solary,LFL,Top,EMEA Masters Spring,14,0.714,2.61,565.0,-1.0,55.0,564.0
 Carlsen,Galions,LFL,Top,EMEA Masters Spring,14,0.929,6.75,545.0,11.0,55.0,556.0
@@ -998,7 +998,7 @@ ESCIK,UCAM Esports,LES,Mid,EMEA Masters Spring,12,0.583,4.6,218.0,6.0,55.0,224.0
 Giyuu,Anubis Gaming,AL,Mid,EMEA Masters Spring,7,0.429,3.23,222.0,2.0,55.0,224.0
 Erdote,devils.one inStreamly,RL,Support,EMEA Masters Spring,10,0.5,6.2,224.0,-1.0,55.0,223.0
 ANDARIEL,UCAM Esports,LES,ADC,EMEA Masters Spring,12,0.583,7.24,215.0,6.0,55.0,221.0
-Keduii,Joblife,PRM,ADC,EMEA Masters Spring,15,0.467,2.44,221.0,-2.0,55.0,219.0
+Keduii,Eintracht Spandau,PRM,ADC,EMEA Masters Spring,15,0.467,2.44,221.0,-2.0,55.0,219.0
 bluerzor,UCAM Esports,LES,Jungle,EMEA Masters Spring,12,0.583,3.84,196.0,6.0,55.0,202.0
 Ruep,Bushido Wildcats,TCL,ADC,EMEA Masters Spring,9,0.444,3.17,196.0,2.0,55.0,198.0
 Robocop,Ruddy Corporation,NLC,Top,EMEA Masters Spring,6,0.5,2.75,197.0,-1.0,55.0,196.0
@@ -1048,7 +1048,7 @@ Vasco,Nightbirds,HM,Mid,EMEA Masters Spring,5,0.4,2.17,-28.0,-4.0,55.0,-32.0
 FireAscept,PCIFIC Esports,TCL,Mid,EMEA Masters Spring,5,0.2,2.0,-32.0,-1.0,55.0,-33.0
 Strode,Nightbirds,HM,ADC,EMEA Masters Spring,5,0.4,3.31,-30.0,-4.0,55.0,-34.0
 Chan,Partizan Sangal,EBL,Top,EMEA Masters Spring,10,0.5,3.82,-33.0,-1.0,55.0,-34.0
-Smurfe,Frites Esports Club,HLL,Top,EMEA Masters Spring,7,0.429,2.08,-39.0,3.0,55.0,-36.0
+Smurfe,WLGaming Esports,HLL,Top,EMEA Masters Spring,7,0.429,2.08,-39.0,3.0,55.0,-36.0
 Aytekn,Bushido Wildcats,TCL,Top,EMEA Masters Spring,5,0.2,2.2,-39.0,-1.0,55.0,-40.0
 APP,HMBLE,LIT,Top,EMEA Masters Spring,5,0.2,1.85,-47.0,-2.0,55.0,-49.0
 Abagnale,Gamespace Mediterranean College Esports,HLL,Support,EMEA Masters Spring,7,0.429,2.52,-57.0,2.0,55.0,-55.0
@@ -1068,11 +1068,11 @@ Markus,Senshi eSports,ROL,Jungle,EMEA Masters Spring,5,0.4,2.26,-138.0,3.0,55.0,
 Însane,FN Esports,AL,Support,EMEA Masters Spring,3,0.333,2.38,-142.0,-1.0,55.0,-143.0
 Kuroneel,GOAL,HLL,Mid,EMEA Masters Spring,7,0.429,3.27,-153.0,2.0,55.0,-151.0
 Vigil,HMBLE,LIT,Mid,EMEA Masters Spring,5,0.2,1.65,-155.0,-2.0,55.0,-157.0
-Lulas,Esprit Shōnen,LPLOL,Jungle,EMEA Masters Spring,4,0.25,2.62,-179.0,-3.0,55.0,-182.0
+Lulas,Otter Side,LPLOL,Jungle,EMEA Masters Spring,4,0.25,2.62,-179.0,-3.0,55.0,-182.0
 ugandan fighter,Ruddy Corporation,NLC,Top,EMEA Masters Spring,5,0.4,1.95,-216.0,3.0,55.0,-213.0
 Metroflox,Magaza Esports,EBL,Jungle,EMEA Masters Spring,3,0.0,1.73,-222.0,-3.0,55.0,-225.0
 Pipibaat,The Bandits,ROL,Jungle,EMEA Masters Spring,5,0.4,3.69,-270.0,2.0,55.0,-268.0
-Archfiend,Esprit Shōnen,EBL,Top,EMEA Masters Spring,3,0.0,1.45,-284.0,-3.0,55.0,-287.0
+Archfiend,Magaza Esports,EBL,Top,EMEA Masters Spring,3,0.0,1.45,-284.0,-3.0,55.0,-287.0
 Crem,Magaza Esports,EBL,ADC,EMEA Masters Spring,3,0.0,2.4,-284.0,-3.0,55.0,-287.0
 Druxy,ZennIT,ROL,ADC,EMEA Masters Spring,7,0.429,4.75,-301.0,2.0,55.0,-299.0
 Elix1r,Gamespace Mediterranean College Esports,HLL,Jungle,EMEA Masters Spring,7,0.429,4.11,-303.0,2.0,55.0,-301.0
@@ -1152,7 +1152,7 @@ Seal,Frites Esports Club,ROL,Support,EMEA Masters Summer,3,0.333,2.92,142.0,0.0,
 Patrik,Berlin International Gaming,PRM,ADC,EMEA Masters Summer,3,0.667,2.12,144.0,-3.0,55.0,141.0
 Cboi,Valerion,HLL,Jungle,EMEA Masters Summer,3,0.667,5.0,137.0,2.0,55.0,139.0
 J3rkie,Ruddy Corporation,NLC,Support,EMEA Masters Summer,3,0.667,6.57,135.0,-0.0,55.0,135.0
-Kaboom,SU Esports,LFL,Jungle,EMEA Masters Summer,10,0.5,3.55,129.0,2.0,55.0,131.0
+Kaboom,Ici Japon Corp. Esport,LFL,Jungle,EMEA Masters Summer,10,0.5,3.55,129.0,2.0,55.0,131.0
 Scorth,PCIFIC Esports,TCL,ADC,EMEA Masters Summer,3,0.667,3.92,124.0,1.0,55.0,125.0
 Vetheo,SU Esports,TCL,Mid,EMEA Masters Summer,10,0.5,3.54,120.0,2.0,55.0,122.0
 Mrozku,Bomba Team,RL,Mid,EMEA Masters Summer,3,0.667,4.62,108.0,3.0,55.0,111.0
@@ -1193,7 +1193,7 @@ Osman123,Bushido Wildcats,TCL,Jungle,EMEA Masters Summer,3,0.333,2.14,22.0,-5.0,
 monkaS,PCIFIC Esports,TCL,Support,EMEA Masters Summer,3,0.667,4.29,13.0,1.0,55.0,14.0
 MAXI,Forsaken,RL,Jungle,EMEA Masters Summer,3,0.0,1.12,14.0,-4.0,55.0,10.0
 denyk,Nightbirds,HM,Support,EMEA Masters Summer,3,0.667,2.11,7.0,3.0,55.0,10.0
-Twight,eSuba,NL,Jungle,EMEA Masters Summer,2,0.0,1.38,10.0,-0.0,55.0,10.0
+Twight,Galions Sharks,NL,Jungle,EMEA Masters Summer,2,0.0,1.38,10.0,-0.0,55.0,10.0
 Drofan,Team Phantasma,HLL,Jungle,EMEA Masters Summer,3,0.333,2.27,9.0,-2.0,55.0,7.0
 Evangelyne,Team Phantasma,HLL,ADC,EMEA Masters Summer,3,0.333,2.33,8.0,-2.0,55.0,6.0
 adi1,Bomba Team,RL,Jungle,EMEA Masters Summer,3,0.667,4.91,3.0,3.0,55.0,6.0
@@ -1230,7 +1230,7 @@ Secrett,Team Phantasma,HLL,Mid,EMEA Masters Summer,3,0.333,2.45,-120.0,-2.0,55.0
 kehvo,Arctic Pandas,NLC,ADC,EMEA Masters Summer,6,0.333,3.26,-129.0,4.0,55.0,-125.0
 Archer,CITA Kaizen,HM,ADC,EMEA Masters Summer,8,0.375,3.35,-129.0,-2.0,55.0,-131.0
 Markus,Senshi eSports,ROL,Jungle,EMEA Masters Summer,3,0.333,1.11,-138.0,2.0,55.0,-136.0
-Passzi,UCAM Esports,NL,Support,EMEA Masters Summer,7,0.714,3.88,-147.0,2.0,55.0,-145.0
+Passzi,Galions Sharks,NL,Support,EMEA Masters Summer,7,0.714,3.88,-147.0,2.0,55.0,-145.0
 Color,Forsaken,RL,Top,EMEA Masters Summer,3,0.0,0.87,-141.0,-4.0,55.0,-145.0
 Enoch,The Secret Club,EBL,Support,EMEA Masters Summer,3,0.0,2.5,-148.0,-2.0,55.0,-150.0
 Vigil,HMBLE,LIT,Mid,EMEA Masters Summer,3,0.333,4.5,-155.0,1.0,55.0,-154.0
@@ -1275,7 +1275,7 @@ tomomaso,CITA Kaizen,HM,Top,EMEA Masters Summer,8,0.375,1.69,-366.0,-2.0,55.0,-3
 Sharon,Colossal Gaming,LIT,Mid,EMEA Masters Summer,3,0.333,2.86,-380.0,5.0,55.0,-375.0
 SkaR,Colossal Gaming,LIT,Top,EMEA Masters Summer,3,0.333,1.14,-381.0,5.0,55.0,-376.0
 Leo s Man,Only The Family,EBL,Support,EMEA Masters Summer,6,0.333,2.5,-385.0,-0.0,55.0,-385.0
-Dehaste,Team Aqua ASD,EBL,Mid,EMEA Masters Summer,5,0.2,2.53,-421.0,-1.0,55.0,-422.0
+Dehaste,Lupus Esports,EBL,Mid,EMEA Masters Summer,5,0.2,2.53,-421.0,-1.0,55.0,-422.0
 Oguzkhan,mCon esports,ROL,Jungle,EMEA Masters Summer,4,0.0,1.19,-422.0,-0.0,55.0,-422.0
 Danilo,The Secret Club,EBL,Top,EMEA Masters Summer,3,0.0,2.0,-421.0,-2.0,55.0,-423.0
 Slyv3r,mCon esports,ROL,ADC,EMEA Masters Summer,4,0.0,0.74,-446.0,-0.0,55.0,-446.0
@@ -1299,7 +1299,7 @@ Heroic,Bubliki,LPLOL,Mid,EMEA Masters Summer,5,0.2,1.75,-650.0,2.0,55.0,-648.0
 Sankaizer,Bubliki,LPLOL,Top,EMEA Masters Summer,5,0.2,1.27,-678.0,2.0,55.0,-676.0
 Hype,Team Heretics,LEC,ADC,EMEA Masters Winter,18,0.667,5.17,594.0,10.0,55.0,604.0
 SlowQ,SK Gaming,LEC,Mid,EMEA Masters Winter,18,0.667,5.17,569.0,10.0,55.0,579.0
-Rekkles,Witchcraft,LEC,Support,EMEA Masters Winter,10,0.6,13.9,580.0,-4.0,55.0,576.0
+Rekkles,Los Ratones,LEC,Support,EMEA Masters Winter,10,0.6,13.9,580.0,-4.0,55.0,576.0
 Thayger,Galions,LFL,Jungle,EMEA Masters Winter,20,0.75,6.38,564.0,7.0,54.0,571.0
 Kryze,Solary,LFL,Top,EMEA Masters Winter,20,0.65,3.55,565.0,-2.0,54.0,563.0
 Carlsen,Galions,LFL,Top,EMEA Masters Winter,20,0.75,5.23,545.0,7.0,54.0,552.0
@@ -1314,10 +1314,10 @@ HARPOON,Galions,LFL,ADC,EMEA Masters Winter,20,0.75,4.81,528.0,7.0,54.0,535.0
 Stend,Shifters,LEC,Support,EMEA Masters Winter,18,0.667,8.3,506.0,10.0,55.0,516.0
 Jool,Solary,LFL,Mid,EMEA Masters Winter,20,0.65,3.35,518.0,-2.0,54.0,516.0
 OMON,Galions,LFL,Mid,EMEA Masters Winter,20,0.75,5.94,498.0,7.0,54.0,505.0
-Crownie,Witchcraft,LEC,ADC,EMEA Masters Winter,10,0.6,4.23,488.0,-4.0,55.0,484.0
-Nemesis,Witchcraft,LEC,Mid,EMEA Masters Winter,10,0.6,3.0,461.0,-4.0,55.0,457.0
+Crownie,Los Ratones,LEC,ADC,EMEA Masters Winter,10,0.6,4.23,488.0,-4.0,55.0,484.0
+Nemesis,Los Ratones,LEC,Mid,EMEA Masters Winter,10,0.6,3.0,461.0,-4.0,55.0,457.0
 Habubu,Berlin International Gaming,PRM,Jungle,EMEA Masters Winter,24,0.667,3.65,439.0,9.0,54.0,448.0
-Velja,Witchcraft,LEC,Jungle,EMEA Masters Winter,10,0.6,2.77,434.0,-4.0,55.0,430.0
+Velja,Los Ratones,LEC,Jungle,EMEA Masters Winter,10,0.6,2.77,434.0,-4.0,55.0,430.0
 Fresskowy,Movistar KOI Fénix,LES,Mid,EMEA Masters Winter,7,0.286,5.21,390.0,-4.0,55.0,386.0
 Batuuu,Team Heretics Academy,LES,Support,EMEA Masters Winter,11,0.636,3.95,384.0,-3.0,55.0,381.0
 Irrelevant,Berlin International Gaming,PRM,Top,EMEA Masters Winter,24,0.667,3.24,358.0,9.0,54.0,367.0
@@ -1354,7 +1354,7 @@ Tao,Karmine Corp Blue,LFL,Top,EMEA Masters Winter,13,0.615,1.77,253.0,-7.0,55.0,
 Kozi,UCAM Esports,LES,Top,EMEA Masters Winter,9,0.556,1.9,242.0,-0.0,55.0,242.0
 B Butcher,Anubis Gaming,AL,Support,EMEA Masters Winter,8,0.25,1.81,250.0,-8.0,55.0,242.0
 Erdote,devils.one inStreamly,RL,Support,EMEA Masters Winter,7,0.571,9.09,224.0,6.0,55.0,230.0
-Keduii,Joblife,PRM,ADC,EMEA Masters Winter,11,0.636,2.93,221.0,4.0,55.0,225.0
+Keduii,Eintracht Spandau,PRM,ADC,EMEA Masters Winter,11,0.636,2.93,221.0,4.0,55.0,225.0
 Twiizt,Unicorns of Love Sexy Edition,PRM,Support,EMEA Masters Winter,20,0.6,5.22,222.0,3.0,54.0,225.0
 RoyalKanin,Unicorns of Love Sexy Edition,PRM,Mid,EMEA Masters Winter,20,0.6,3.76,218.0,3.0,54.0,221.0
 ESCIK,UCAM Esports,LES,Mid,EMEA Masters Winter,9,0.556,3.34,218.0,-0.0,55.0,218.0
@@ -1404,7 +1404,7 @@ Random,Disruptors,AL,Mid,EMEA Masters Winter,8,0.25,3.21,28.0,-8.0,55.0,20.0
 Slayder,Dragons Esports,AL,ADC,EMEA Masters Winter,6,0.333,2.82,14.0,2.0,55.0,16.0
 Kenal,Bushido Wildcats,TCL,ADC,EMEA Masters Winter,6,0.333,2.77,15.0,-0.0,55.0,15.0
 Jactroll,Barcząca Esports by Yumisu,RL,Support,EMEA Masters Winter,9,0.444,2.27,8.0,2.0,55.0,10.0
-Twight,eSuba,NL,Jungle,EMEA Masters Winter,5,0.2,2.43,10.0,-1.0,55.0,9.0
+Twight,Galions Sharks,NL,Jungle,EMEA Masters Winter,5,0.2,2.43,10.0,-1.0,55.0,9.0
 denyk,Nightbirds,HM,Support,EMEA Masters Winter,6,0.333,2.28,7.0,-2.0,55.0,5.0
 Mihile,Team Heretics Academy,LES,Top,EMEA Masters Winter,11,0.636,2.97,5.0,-3.0,55.0,2.0
 adi1,Bomba Team,RL,Jungle,EMEA Masters Winter,9,0.333,2.22,3.0,-2.0,55.0,1.0
@@ -1441,11 +1441,11 @@ Vigil,HMBLE,LIT,Mid,EMEA Masters Winter,9,0.333,2.41,-155.0,-2.0,55.0,-157.0
 Centu,Team Phantasma,HLL,Support,EMEA Masters Winter,4,0.0,3.36,-156.0,-2.0,55.0,-158.0
 Calmsky,White Dragons,LPLOL,Support,EMEA Masters Winter,10,0.4,3.0,-169.0,3.0,55.0,-166.0
 Lekcyc,Bubliki,LPLOL,Support,EMEA Masters Winter,6,0.333,3.47,-170.0,-0.0,55.0,-170.0
-Lulas,Esprit Shōnen,LPLOL,Jungle,EMEA Masters Winter,10,0.4,2.49,-179.0,3.0,55.0,-176.0
+Lulas,Otter Side,LPLOL,Jungle,EMEA Masters Winter,10,0.4,2.49,-179.0,3.0,55.0,-176.0
 Tenshi,Barcząca Esports by Yumisu,RL,Mid,EMEA Masters Winter,9,0.444,2.43,-179.0,2.0,55.0,-177.0
 sas,Disruptors,AL,Support,EMEA Masters Winter,6,0.333,1.41,-182.0,2.0,55.0,-180.0
 Rayito,GIANTX iTero,LES,ADC,EMEA Masters Winter,4,0.0,1.4,-182.0,1.0,55.0,-181.0
-fantomisto,Esprit Shōnen,RL,Mid,EMEA Masters Winter,10,0.4,3.18,-191.0,3.0,55.0,-188.0
+fantomisto,devils.one inStreamly,RL,Mid,EMEA Masters Winter,10,0.4,3.18,-191.0,3.0,55.0,-188.0
 Warner,ZennIT,ROL,Mid,EMEA Masters Winter,6,0.333,3.62,-201.0,2.0,55.0,-199.0
 REAVER,WLGaming Esports,HLL,Support,EMEA Masters Winter,9,0.444,3.44,-201.0,2.0,55.0,-199.0
 MrJackson,The ParadOx Invaders,HLL,Jungle,EMEA Masters Winter,6,0.333,3.13,-213.0,-2.0,55.0,-215.0
@@ -1453,7 +1453,7 @@ Faetski,devils.one inStreamly,RL,ADC,EMEA Masters Winter,10,0.4,2.14,-218.0,3.0,
 Goldmen,Team Phantasma,HLL,Top,EMEA Masters Winter,10,0.4,1.43,-228.0,3.0,55.0,-225.0
 Luncafoer,The Bandits,ROL,Jungle,EMEA Masters Winter,5,0.2,1.3,-233.0,-0.0,55.0,-233.0
 bicas,DMG Esports,NLC,Jungle,EMEA Masters Winter,2,0.0,1.8,-250.0,2.0,55.0,-248.0
-Elramir,Dream Esports,TCL,Jungle,EMEA Masters Winter,2,0.0,0.73,-251.0,-3.0,55.0,-254.0
+Elramir,Bushido Wildcats,TCL,Jungle,EMEA Masters Winter,2,0.0,0.73,-251.0,-3.0,55.0,-254.0
 ShizuOo,BAAM Esports,AL,Jungle,EMEA Masters Winter,4,0.0,2.28,-262.0,-0.0,55.0,-262.0
 bbmuffin,The Bandits,ROL,Mid,EMEA Masters Winter,5,0.2,2.67,-269.0,-0.0,55.0,-269.0
 Ace,Senshi eSports,ROL,ADC,EMEA Masters Winter,4,0.0,0.68,-271.0,0.0,55.0,-271.0
@@ -1465,10 +1465,10 @@ PatkicaA,Myth Esports,ROL,Top,EMEA Masters Winter,4,0.0,0.95,-317.0,1.0,55.0,-31
 STANIK,mCon esports,ROL,Mid,EMEA Masters Winter,5,0.2,3.08,-321.0,-1.0,55.0,-322.0
 Darkeszy,eSuba,HM,Top,EMEA Masters Winter,5,0.2,1.63,-334.0,-1.0,55.0,-335.0
 TheGreatGary,Otter Side,LPLOL,Top,EMEA Masters Winter,4,0.0,0.32,-364.0,0.0,55.0,-364.0
-Inzuh,Crystal Rose,LPLOL,Mid,EMEA Masters Winter,4,0.0,0.5,-370.0,0.0,55.0,-370.0
+Inzuh,Vantex Esports,LPLOL,Mid,EMEA Masters Winter,4,0.0,0.5,-370.0,0.0,55.0,-370.0
 Claww,3BL Esports,AL,Top,EMEA Masters Winter,4,0.0,0.83,-370.0,-0.0,55.0,-370.0
 Bisgaard,Colossal Gaming,LIT,Mid,EMEA Masters Winter,4,0.0,2.71,-415.0,-2.0,55.0,-417.0
-Dehaste,Team Aqua ASD,EBL,Mid,EMEA Masters Winter,4,0.0,1.21,-421.0,1.0,55.0,-420.0
+Dehaste,Lupus Esports,EBL,Mid,EMEA Masters Winter,4,0.0,1.21,-421.0,1.0,55.0,-420.0
 Tochas,Dream Esports,LPLOL,Support,EMEA Masters Winter,4,0.0,0.86,-432.0,0.0,55.0,-432.0
 Renewal,Only The Family,EBL,Jungle,EMEA Masters Winter,4,0.0,0.55,-468.0,0.0,55.0,-468.0
 Fragola,Colossal Gaming,LIT,Jungle,EMEA Masters Winter,4,0.0,2.56,-470.0,-2.0,55.0,-472.0
@@ -1827,7 +1827,7 @@ Sobakk,EXILE esports Academy,HC,Support,HC Spring · playoffs,12,0.75,3.65,-519.
 WalliR,Ethereal Enigmas,HC,Mid,HC Spring · playoffs,12,0.75,2.49,-527.0,4.0,55.0,-523.0
 FoobaR,EXILE esports,HM,Jungle,HC Spring · playoffs,8,0.5,3.32,-570.0,1.0,55.0,-569.0
 skakavka,KIA.eSuba Academy,HC,ADC,HC Spring · playoffs,10,0.5,3.48,-608.0,1.0,55.0,-607.0
-dylux,GD Esports,HC,Jungle,HC Spring · playoffs,8,0.25,2.76,-646.0,-2.0,55.0,-648.0
+dylux,CITA Kaizen Academy,HC,Jungle,HC Spring · playoffs,8,0.25,2.76,-646.0,-2.0,55.0,-648.0
 VOPI,Priority,HC,Top,HC Spring · playoffs,20,0.6,3.66,-658.0,-0.0,54.0,-658.0
 StarPax,Priority,HC,Support,HC Spring · playoffs,4,0.25,4.78,-666.0,-2.0,55.0,-668.0
 Arp,Andromeda Gaming,HC,Jungle,HC Spring · playoffs,15,0.467,4.0,-668.0,-5.0,55.0,-673.0
@@ -1859,7 +1859,7 @@ Sobakk,EXILE esports Academy,HC,Support,HC Spring · saison régulière,16,0.875
 WalliR,Ethereal Enigmas,HC,Mid,HC Spring · saison régulière,16,0.875,3.13,-527.0,2.0,55.0,-525.0
 FoobaR,EXILE esports,HM,Jungle,HC Spring · saison régulière,17,0.647,5.42,-570.0,5.0,55.0,-565.0
 Vlaren,eSuba,HM,Support,HC Spring · saison régulière,15,0.267,2.27,-590.0,-5.0,55.0,-595.0
-dylux,GD Esports,HC,Jungle,HC Spring · saison régulière,17,0.588,3.53,-646.0,3.0,55.0,-643.0
+dylux,CITA Kaizen Academy,HC,Jungle,HC Spring · saison régulière,17,0.588,3.53,-646.0,3.0,55.0,-643.0
 VOPI,Priority,HC,Top,HC Spring · saison régulière,18,0.667,3.6,-658.0,3.0,55.0,-655.0
 Arp,Andromeda Gaming,HC,Jungle,HC Spring · saison régulière,18,0.667,5.56,-668.0,3.0,55.0,-665.0
 StarPax,Priority,HC,Support,HC Spring · saison régulière,13,0.769,4.32,-666.0,1.0,55.0,-665.0
@@ -1885,10 +1885,10 @@ Ad1s,EXILE esports Academy,HC,Mid,HC Spring · saison régulière,16,0.375,2.07,
 Zelvicka,Andromeda Gaming,HC,ADC,HC Spring · saison régulière,17,0.412,2.28,-916.0,-2.0,55.0,-918.0
 Danden,Rugby Club Havířov,HC,Jungle,HC Spring · saison régulière,12,0.167,2.08,-919.0,-1.0,55.0,-920.0
 miflond,Magyar Gamer Szövetsèg,HC,Jungle,HC Spring · saison régulière,11,0.273,1.94,-949.0,-2.0,55.0,-951.0
-Etoo,Once Upon A Team,HC,ADC,HC Spring · saison régulière,15,0.267,2.53,-959.0,-5.0,55.0,-964.0
+Etoo,KIA.eSuba Academy,HC,ADC,HC Spring · saison régulière,15,0.267,2.53,-959.0,-5.0,55.0,-964.0
 Vexter,Rugby Club Havířov,HC,Support,HC Spring · saison régulière,12,0.25,2.44,-972.0,-0.0,55.0,-972.0
 Doge,KIA.eSuba Academy,HC,Jungle,HC Spring · saison régulière,15,0.267,2.69,-984.0,-5.0,55.0,-989.0
-Pulzer,Onion Team,HC,Mid,HC Spring · saison régulière,15,0.267,2.47,-1013.0,-5.0,55.0,-1018.0
+Pulzer,KIA.eSuba Academy,HC,Mid,HC Spring · saison régulière,15,0.267,2.47,-1013.0,-5.0,55.0,-1018.0
 Kaeru,Rugby Club Havířov,HC,Mid,HC Spring · saison régulière,15,0.2,2.3,-1047.0,0.0,55.0,-1047.0
 Yakko,Diversion Gaming,HC,Jungle,HC Spring · saison régulière,8,0.375,1.87,-1102.0,-3.0,55.0,-1105.0
 Kargic,Rugby Club Havířov,HC,ADC,HC Spring · saison régulière,17,0.176,1.81,-1150.0,-3.0,55.0,-1153.0
@@ -1918,7 +1918,7 @@ safo,CITA Kaizen Academy,HC,ADC,HC Summer · playoffs,4,0.25,1.57,-895.0,-0.0,55
 Ad1s,EXILE esports Academy,HC,Mid,HC Summer · playoffs,9,0.556,2.76,-894.0,-2.0,55.0,-896.0
 Danden,Rugby Club Havířov,HC,Jungle,HC Summer · playoffs,5,0.6,3.83,-919.0,1.0,55.0,-918.0
 Kars,CITA Kaizen Academy,HC,Top,HC Summer · playoffs,4,0.25,1.95,-981.0,-0.0,55.0,-981.0
-mirza,Mighty Eagles,EBL,ADC,HC Summer · saison régulière,7,0.714,4.65,-486.0,6.0,55.0,-480.0
+mirza,TQ DURPA KASHLQ,EBL,ADC,HC Summer · saison régulière,7,0.714,4.65,-486.0,6.0,55.0,-480.0
 Sobakk,EXILE esports Academy,HC,Support,HC Summer · saison régulière,17,0.588,3.42,-519.0,-1.0,55.0,-520.0
 skakavka,KIA.eSuba Academy,HC,ADC,HC Summer · saison régulière,11,0.727,4.16,-608.0,6.0,55.0,-602.0
 Deepe,KIA.eSuba Academy,HC,Mid,HC Summer · saison régulière,12,0.5,3.46,-607.0,-1.0,55.0,-608.0
@@ -1966,7 +1966,7 @@ Speedy1,Valerion,HLL,Support,HLL Spring · playoffs,8,0.75,4.43,146.0,1.0,55.0,1
 Peppe,Valerion,HLL,Mid,HLL Spring · playoffs,5,0.4,2.77,76.0,3.0,55.0,79.0
 alix,Gamespace Mediterranean College Esports,HLL,Mid,HLL Spring · playoffs,5,0.4,2.23,76.0,-0.0,55.0,76.0
 Drofan,Team Phantasma,HLL,Jungle,HLL Spring · playoffs,5,0.4,2.94,9.0,-0.0,55.0,9.0
-Smurfe,Frites Esports Club,HLL,Top,HLL Spring · playoffs,8,0.75,2.96,-39.0,1.0,55.0,-38.0
+Smurfe,WLGaming Esports,HLL,Top,HLL Spring · playoffs,8,0.75,2.96,-39.0,1.0,55.0,-38.0
 Vaynedeta,Gamespace Mediterranean College Esports,HLL,ADC,HLL Spring · playoffs,5,0.4,3.0,-59.0,3.0,55.0,-56.0
 Abagnale,Gamespace Mediterranean College Esports,HLL,Support,HLL Spring · playoffs,8,0.375,2.44,-57.0,-3.0,55.0,-60.0
 Addusto,Eintracht Frankfurt,PRM,Top,HLL Spring · playoffs,5,0.4,1.75,-93.0,-0.0,55.0,-93.0
@@ -1986,7 +1986,7 @@ Speedy1,Valerion,HLL,Support,HLL Spring · saison régulière,14,0.786,6.26,146.
 alix,Gamespace Mediterranean College Esports,HLL,Mid,HLL Spring · saison régulière,14,0.714,4.54,76.0,3.0,55.0,79.0
 Peppe,Valerion,HLL,Mid,HLL Spring · saison régulière,14,0.643,4.86,76.0,2.0,55.0,78.0
 Drofan,Team Phantasma,HLL,Jungle,HLL Spring · saison régulière,14,0.714,5.61,9.0,3.0,55.0,12.0
-Smurfe,Frites Esports Club,HLL,Top,HLL Spring · saison régulière,14,0.786,5.32,-39.0,3.0,55.0,-36.0
+Smurfe,WLGaming Esports,HLL,Top,HLL Spring · saison régulière,14,0.786,5.32,-39.0,3.0,55.0,-36.0
 Abagnale,Gamespace Mediterranean College Esports,HLL,Support,HLL Spring · saison régulière,14,0.714,5.0,-57.0,3.0,55.0,-54.0
 Vaynedeta,Gamespace Mediterranean College Esports,HLL,ADC,HLL Spring · saison régulière,14,0.643,5.17,-59.0,2.0,55.0,-57.0
 Addusto,Eintracht Frankfurt,PRM,Top,HLL Spring · saison régulière,14,0.714,2.65,-93.0,3.0,55.0,-90.0
@@ -1998,7 +1998,7 @@ Color,Forsaken,RL,Top,HLL Spring · saison régulière,2,1.0,3.25,-141.0,5.0,55.
 Nikiyas,Bulldog Esports,NLC,ADC,HLL Spring · saison régulière,14,0.714,5.34,-141.0,3.0,55.0,-138.0
 Kuroneel,GOAL,HLL,Mid,HLL Spring · saison régulière,14,0.714,4.92,-153.0,3.0,55.0,-150.0
 Mahonix,Pyramid IV Esports,AL,Support,HLL Spring · saison régulière,9,0.556,3.71,-161.0,4.0,55.0,-157.0
-DANKI,Zerolag Esports,AL,Top,HLL Spring · saison régulière,5,0.4,3.79,-156.0,-3.0,55.0,-159.0
+DANKI,Super Stars,AL,Top,HLL Spring · saison régulière,5,0.4,3.79,-156.0,-3.0,55.0,-159.0
 Lekcyc,Bubliki,LPLOL,Support,HLL Spring · saison régulière,14,0.714,4.83,-170.0,3.0,55.0,-167.0
 K1ckbait,ALMO Players,HLL,Mid,HLL Spring · saison régulière,10,0.4,2.56,-170.0,1.0,55.0,-169.0
 Septico1,Gamespace Mediterranean College Esports,HLL,Top,HLL Spring · saison régulière,14,0.357,1.74,-180.0,-1.0,55.0,-181.0
@@ -2020,7 +2020,7 @@ Kartso,EKSI EPTA,HLL,Support,HLL Spring · saison régulière,4,0.25,2.39,-419.0
 Tochas,Dream Esports,LPLOL,Support,HLL Spring · saison régulière,18,0.444,2.67,-432.0,2.0,55.0,-430.0
 SM,Spartans EU,HLL,ADC,HLL Spring · saison régulière,14,0.357,2.48,-437.0,-1.0,55.0,-438.0
 Cripple,The Bandits,ROL,Top,HLL Spring · saison régulière,16,0.5,1.32,-452.0,4.0,55.0,-448.0
-D4rtaine,Hyperion (Portuguese Team),HLL,Top,HLL Spring · saison régulière,19,0.316,1.66,-468.0,-2.0,54.0,-470.0
+D4rtaine,The ParadOx Invaders,HLL,Top,HLL Spring · saison régulière,19,0.316,1.66,-468.0,-2.0,54.0,-470.0
 Ambush,ALMO Players,HLL,Jungle,HLL Spring · saison régulière,8,0.5,3.08,-483.0,1.0,55.0,-482.0
 Loading,The ParadOx Invaders,HLL,Top,HLL Spring · saison régulière,18,0.333,2.56,-493.0,0.0,55.0,-493.0
 GaraXy,The ParadOx Invaders,HLL,Support,HLL Spring · saison régulière,8,0.25,2.05,-497.0,0.0,55.0,-497.0
@@ -2030,7 +2030,7 @@ Nikolex,Spartans EU,HLL,Jungle,HLL Spring · saison régulière,12,0.25,2.09,-51
 Prosty,Zerolag Esports,HLL,ADC,HLL Spring · saison régulière,19,0.316,2.47,-628.0,-2.0,54.0,-630.0
 Heroic,Bubliki,LPLOL,Mid,HLL Spring · saison régulière,4,0.25,1.65,-650.0,-3.0,55.0,-653.0
 Faded,Aeterna Esports,LIT,Mid,HLL Spring · saison régulière,18,0.333,1.88,-693.0,0.0,55.0,-693.0
-Messclick,2 Massive,HLL,ADC,HLL Spring · saison régulière,4,0.25,1.5,-698.0,-3.0,55.0,-701.0
+Messclick,Zerolag Esports,HLL,ADC,HLL Spring · saison régulière,4,0.25,1.5,-698.0,-3.0,55.0,-701.0
 kPr,Valerion,HLL,Top,HLL Summer · playoffs,10,0.9,6.0,255.0,5.0,55.0,260.0
 Unkn0wn,Valerion,HLL,ADC,HLL Summer · playoffs,10,0.9,4.84,166.0,5.0,55.0,171.0
 Speedy1,Valerion,HLL,Support,HLL Summer · playoffs,10,0.9,4.7,146.0,5.0,55.0,151.0
@@ -2088,23 +2088,23 @@ Elix1r,Gamespace Mediterranean College Esports,HLL,Jungle,HLL Summer · saison r
 RaFaL,The ParadOx Invaders,HLL,Support,HLL Summer · saison régulière,14,0.429,1.93,-303.0,4.0,55.0,-299.0
 Aggress1on,The ParadOx Invaders,HLL,ADC,HLL Summer · saison régulière,14,0.429,3.0,-375.0,4.0,55.0,-371.0
 Alex,Spartans EU,HLL,Mid,HLL Summer · saison régulière,14,0.429,3.18,-386.0,0.0,55.0,-386.0
-SmallBugi,The ParadOx Invaders,TCL,Mid,HLL Summer · saison régulière,2,0.0,0.85,-404.0,-2.0,55.0,-406.0
+SmallBugi,Team Phoenix,TCL,Mid,HLL Summer · saison régulière,2,0.0,0.85,-404.0,-2.0,55.0,-406.0
 Jimsnop,The ParadOx Invaders,HLL,Mid,HLL Summer · saison régulière,12,0.5,3.59,-418.0,6.0,55.0,-412.0
 Virgo,Zerolag Esports,HLL,Support,HLL Summer · saison régulière,12,0.0,1.24,-407.0,-8.0,55.0,-415.0
-denizzz,Zerolag Esports,NL,Jungle,HLL Summer · saison régulière,4,0.0,1.78,-415.0,-1.0,55.0,-416.0
+denizzz,Zephyr Esport,NL,Jungle,HLL Summer · saison régulière,4,0.0,1.78,-415.0,-1.0,55.0,-416.0
 Lagas,Spartans EU,HLL,Support,HLL Summer · saison régulière,14,0.429,2.39,-418.0,0.0,55.0,-418.0
 SM,Spartans EU,HLL,ADC,HLL Summer · saison régulière,14,0.429,2.24,-437.0,0.0,55.0,-437.0
 Cripple,The Bandits,ROL,Top,HLL Summer · saison régulière,2,0.0,0.43,-452.0,1.0,55.0,-451.0
 Ambush,ALMO Players,HLL,Jungle,HLL Summer · saison régulière,14,0.143,1.98,-483.0,-3.0,55.0,-486.0
 Loading,The ParadOx Invaders,HLL,Top,HLL Summer · saison régulière,14,0.429,2.92,-493.0,4.0,55.0,-489.0
 Azu,ALMO Players,HLL,ADC,HLL Summer · saison régulière,14,0.143,1.53,-507.0,-3.0,55.0,-510.0
-SoimuMIC,REDPack Esports,HLL,Top,HLL Summer · saison régulière,6,0.0,1.72,-537.0,-2.0,55.0,-539.0
+SoimuMIC,Zerolag Esports,HLL,Top,HLL Summer · saison régulière,6,0.0,1.72,-537.0,-2.0,55.0,-539.0
 Shinn,ALMO Players,HLL,Top,HLL Summer · saison régulière,12,0.167,0.79,-608.0,-4.0,55.0,-612.0
 Prosty,Zerolag Esports,HLL,ADC,HLL Summer · saison régulière,2,0.0,0.75,-628.0,-5.0,55.0,-633.0
 CrabLord,ALMO Players,HLL,Support,HLL Summer · saison régulière,12,0.167,1.59,-635.0,-4.0,55.0,-639.0
-Messclick,2 Massive,HLL,ADC,HLL Summer · saison régulière,6,0.0,1.0,-698.0,-2.0,55.0,-700.0
+Messclick,Zerolag Esports,HLL,ADC,HLL Summer · saison régulière,6,0.0,1.0,-698.0,-2.0,55.0,-700.0
 helforca,Zerolag Esports,HLL,Mid,HLL Summer · saison régulière,12,0.0,1.71,-761.0,-8.0,55.0,-769.0
-Neczo,ALMO Players,EBL,Mid,HLL Summer · saison régulière,6,0.0,0.87,-766.0,-3.0,55.0,-769.0
+Neczo,Team Spawn Peek,EBL,Mid,HLL Summer · saison régulière,6,0.0,0.87,-766.0,-3.0,55.0,-769.0
 Papiteero,Team Heretics Academy,LES,Top,HLL Winter · playoffs,7,0.571,5.21,341.0,1.0,55.0,342.0
 kPr,Valerion,HLL,Top,HLL Winter · playoffs,5,0.4,2.32,255.0,1.0,55.0,256.0
 Unkn0wn,Valerion,HLL,ADC,HLL Winter · playoffs,9,0.667,3.83,166.0,1.0,55.0,167.0
@@ -2146,7 +2146,7 @@ Kuroneel,GOAL,HLL,Mid,HLL Winter · saison régulière,14,0.643,4.33,-153.0,-0.0
 K1ckbait,ALMO Players,HLL,Mid,HLL Winter · saison régulière,3,1.0,13.6,-170.0,6.0,55.0,-164.0
 REAVER,WLGaming Esports,HLL,Support,HLL Winter · saison régulière,14,0.714,3.96,-201.0,-6.0,55.0,-207.0
 Shourdy,Senshi eSports,ROL,Top,HLL Winter · saison régulière,14,0.429,1.92,-227.0,-1.0,55.0,-228.0
-Shakur,Only The Family,HLL,ADC,HLL Winter · saison régulière,14,0.429,3.77,-250.0,-1.0,55.0,-251.0
+Shakur,Gamespace Mediterranean College Esports,HLL,ADC,HLL Winter · saison régulière,14,0.429,3.77,-250.0,-1.0,55.0,-251.0
 Nenad,Team Insidious,HLL,Top,HLL Winter · saison régulière,14,0.643,2.8,-259.0,4.0,55.0,-255.0
 Nsurr,Team Insidious,HLL,Support,HLL Winter · saison régulière,14,0.643,2.52,-282.0,4.0,55.0,-278.0
 Druxy,ZennIT,ROL,ADC,HLL Winter · saison régulière,14,0.643,4.19,-301.0,-0.0,55.0,-301.0
@@ -2162,12 +2162,12 @@ Dafnis,EKSI EPTA,HLL,Top,HLL Winter · saison régulière,14,0.286,1.47,-494.0,2
 GaraXy,The ParadOx Invaders,HLL,Support,HLL Winter · saison régulière,17,0.294,3.16,-497.0,-2.0,55.0,-499.0
 Azu,ALMO Players,HLL,ADC,HLL Winter · saison régulière,17,0.294,2.6,-507.0,-2.0,55.0,-509.0
 Nikolex,Spartans EU,HLL,Jungle,HLL Winter · saison régulière,14,0.286,2.86,-517.0,2.0,55.0,-515.0
-D1verse,Lausanne-Sport Esports,HLL,Mid,HLL Winter · saison régulière,14,0.286,2.35,-523.0,2.0,55.0,-521.0
+D1verse,Howl Esports,HLL,Mid,HLL Winter · saison régulière,14,0.286,2.35,-523.0,2.0,55.0,-521.0
 Paparotis,The ParadOx Invaders,HLL,Support,HLL Winter · saison régulière,14,0.143,1.62,-532.0,1.0,55.0,-531.0
-Alvanai,Hyperion (Portuguese Team),LIT,Mid,HLL Winter · saison régulière,14,0.429,2.87,-546.0,-1.0,55.0,-547.0
-C7,NORTHERNGRADE ESPORTS,HLL,Top,HLL Winter · saison régulière,10,0.5,2.06,-547.0,-2.0,55.0,-549.0
+Alvanai,Aeterna Esports,LIT,Mid,HLL Winter · saison régulière,14,0.429,2.87,-546.0,-1.0,55.0,-547.0
+C7,GOAL,HLL,Top,HLL Winter · saison régulière,10,0.5,2.06,-547.0,-2.0,55.0,-549.0
 AERO,The ParadOx Invaders,HLL,Jungle,HLL Winter · saison régulière,12,0.167,1.4,-563.0,1.0,55.0,-562.0
-K1ng,Hyperion (Portuguese Team),HLL,ADC,HLL Winter · saison régulière,14,0.143,1.44,-597.0,1.0,55.0,-596.0
+K1ng,The ParadOx Invaders,HLL,ADC,HLL Winter · saison régulière,14,0.143,1.44,-597.0,1.0,55.0,-596.0
 Faded,Aeterna Esports,LIT,Mid,HLL Winter · saison régulière,14,0.143,1.17,-693.0,-8.0,55.0,-701.0
 TheSerius,Bohemian Guardians,HM,Top,HLL Winter · saison régulière,14,0.143,1.19,-833.0,1.0,55.0,-832.0
 Robocop,Ruddy Corporation,NLC,Top,HM Spring · playoffs,11,0.818,3.48,197.0,1.0,55.0,198.0
@@ -2184,14 +2184,14 @@ Bobsik,Falke Esports,LES,Top,HM Spring · playoffs,12,0.5,2.13,-185.0,-2.0,55.0,
 Adyyy,eSuba,HM,Mid,HM Spring · playoffs,12,0.5,2.54,-243.0,-2.0,55.0,-245.0
 Mita,eSuba,HM,Support,HM Spring · playoffs,12,0.5,2.56,-298.0,-2.0,55.0,-300.0
 raining,eSuba,HM,ADC,HM Spring · playoffs,12,0.5,3.1,-302.0,-2.0,55.0,-304.0
-qualzy,Otter Side,HM,Jungle,HM Spring · playoffs,12,0.5,2.38,-323.0,-2.0,55.0,-325.0
+qualzy,eSuba,HM,Jungle,HM Spring · playoffs,12,0.5,2.38,-323.0,-2.0,55.0,-325.0
 BlackSwan,Meavedron,HM,ADC,HM Spring · playoffs,4,0.75,3.1,-418.0,3.0,55.0,-415.0
 Marco,EXILE esports,HM,Support,HM Spring · playoffs,4,0.25,3.53,-424.0,-3.0,55.0,-427.0
 Albi,Meavedron,HM,Jungle,HM Spring · playoffs,10,0.3,1.97,-455.0,0.0,55.0,-455.0
 SiroN1,Meavedron,HM,Support,HM Spring · playoffs,10,0.3,2.8,-484.0,0.0,55.0,-484.0
 Dzeffry,Meavedron,HM,Top,HM Spring · playoffs,3,0.0,1.0,-520.0,-6.0,55.0,-526.0
 Dyego,CITA Kaizen,HM,Mid,HM Spring · playoffs,10,0.3,2.51,-537.0,0.0,55.0,-537.0
-Royeq,REDPack Esports,NLC,ADC,HM Spring · playoffs,6,0.0,2.31,-546.0,-3.0,55.0,-549.0
+Royeq,Lundqvist Lightside,NLC,ADC,HM Spring · playoffs,6,0.0,2.31,-546.0,-3.0,55.0,-549.0
 DVLK,eSuba,HM,Jungle,HM Spring · playoffs,4,0.25,2.43,-558.0,-3.0,55.0,-561.0
 Baro,Meavedron,HM,Top,HM Spring · playoffs,10,0.3,1.81,-573.0,0.0,55.0,-573.0
 KNEZA,BRUTE,HM,ADC,HM Spring · playoffs,4,0.25,1.81,-599.0,-3.0,55.0,-602.0
@@ -2211,7 +2211,7 @@ Bobsik,Falke Esports,LES,Top,HM Spring · saison régulière,14,0.714,2.39,-185.
 Adyyy,eSuba,HM,Mid,HM Spring · saison régulière,14,0.714,3.67,-243.0,2.0,55.0,-241.0
 Mita,eSuba,HM,Support,HM Spring · saison régulière,14,0.714,2.92,-298.0,2.0,55.0,-296.0
 raining,eSuba,HM,ADC,HM Spring · saison régulière,14,0.714,5.56,-302.0,2.0,55.0,-300.0
-qualzy,Otter Side,HM,Jungle,HM Spring · saison régulière,14,0.714,4.37,-323.0,2.0,55.0,-321.0
+qualzy,eSuba,HM,Jungle,HM Spring · saison régulière,14,0.714,4.37,-323.0,2.0,55.0,-321.0
 behave,CITA Kaizen,HM,Jungle,HM Spring · saison régulière,9,0.778,6.29,-359.0,4.0,55.0,-355.0
 BlackSwan,Meavedron,HM,ADC,HM Spring · saison régulière,15,0.533,2.64,-418.0,1.0,55.0,-417.0
 Marco,EXILE esports,HM,Support,HM Spring · saison régulière,15,0.4,2.91,-424.0,0.0,55.0,-424.0
@@ -2227,7 +2227,7 @@ Baro,Meavedron,HM,Top,HM Spring · saison régulière,15,0.533,1.98,-573.0,1.0,5
 KNEZA,BRUTE,HM,ADC,HM Spring · saison régulière,15,0.4,2.1,-599.0,0.0,55.0,-599.0
 Drzemik,Onion Team,HM,ADC,HM Spring · saison régulière,17,0.235,2.01,-598.0,-4.0,55.0,-602.0
 Deepe,KIA.eSuba Academy,HC,Mid,HM Spring · saison régulière,15,0.4,2.14,-607.0,0.0,55.0,-607.0
-dylux,GD Esports,HC,Jungle,HM Spring · saison régulière,2,1.0,32.0,-646.0,4.0,55.0,-642.0
+dylux,CITA Kaizen Academy,HC,Jungle,HM Spring · saison régulière,2,1.0,32.0,-646.0,4.0,55.0,-642.0
 Robi,SPIKE Syndicate,EBL,Mid,HM Spring · saison régulière,6,0.333,2.36,-642.0,-0.0,55.0,-642.0
 Krosak,Onion Team,HM,Top,HM Spring · saison régulière,4,0.0,1.45,-659.0,-3.0,55.0,-662.0
 Downed,BRUTE,HM,Mid,HM Spring · saison régulière,14,0.214,1.61,-691.0,-2.0,55.0,-693.0
@@ -2311,9 +2311,9 @@ tonyroo,Onion Team,HM,Top,HM Summer · saison régulière,13,0.231,1.21,-817.0,-
 TheSerius,Bohemian Guardians,HM,Top,HM Summer · saison régulière,9,0.111,1.69,-833.0,-3.0,55.0,-836.0
 Taxvig,Onion Team,HM,Jungle,HM Summer · saison régulière,13,0.231,1.65,-844.0,-6.0,55.0,-850.0
 GoDirr,BRUTE,HM,Top,HM Summer · saison régulière,17,0.294,1.81,-892.0,-2.0,55.0,-894.0
-Pulzer,Onion Team,HC,Mid,HM Summer · saison régulière,9,0.333,2.83,-1013.0,-5.0,55.0,-1018.0
+Pulzer,KIA.eSuba Academy,HC,Mid,HM Summer · saison régulière,9,0.333,2.83,-1013.0,-5.0,55.0,-1018.0
 SLT,Nightbirds,HM,Top,HW,17,0.941,3.7,34.0,1.0,55.0,35.0
-Twight,eSuba,NL,Jungle,HW,23,0.609,4.04,10.0,2.0,54.0,12.0
+Twight,Galions Sharks,NL,Jungle,HW,23,0.609,4.04,10.0,2.0,54.0,12.0
 denyk,Nightbirds,HM,Support,HW,17,0.941,5.25,7.0,1.0,55.0,8.0
 Vasco,Nightbirds,HM,Mid,HW,17,0.941,6.73,-28.0,1.0,55.0,-27.0
 Strode,Nightbirds,HM,ADC,HW,17,0.941,6.92,-30.0,1.0,55.0,-29.0
@@ -2327,7 +2327,7 @@ Esko,eSuba,HM,ADC,HW,23,0.609,5.11,-277.0,2.0,54.0,-275.0
 Mita,eSuba,HM,Support,HW,20,0.6,2.74,-298.0,-2.0,54.0,-300.0
 raining,eSuba,HM,ADC,HW,20,0.6,4.63,-302.0,-2.0,54.0,-304.0
 STANIK,mCon esports,ROL,Mid,HW,23,0.609,6.06,-321.0,2.0,54.0,-319.0
-qualzy,Otter Side,HM,Jungle,HW,20,0.6,3.41,-323.0,-2.0,54.0,-325.0
+qualzy,eSuba,HM,Jungle,HW,20,0.6,3.41,-323.0,-2.0,54.0,-325.0
 Darkeszy,eSuba,HM,Top,HW,23,0.609,4.07,-334.0,2.0,54.0,-332.0
 oki1,CITA Kaizen,HM,Support,HW,25,0.52,2.87,-351.0,0.0,54.0,-351.0
 behave,CITA Kaizen,HM,Jungle,HW,29,0.517,4.49,-359.0,-2.0,54.0,-361.0
@@ -2366,10 +2366,10 @@ GoDirr,BRUTE,HM,Top,HW,6,0.333,1.64,-892.0,-0.0,55.0,-892.0
 Ad1s,EXILE esports Academy,HC,Mid,HW,6,0.333,2.55,-894.0,-0.0,55.0,-894.0
 Zelvicka,Andromeda Gaming,HC,ADC,HW,8,0.375,1.57,-916.0,3.0,55.0,-913.0
 AAdaMM,Magyar Gamer Szövetsèg,HC,ADC,HW,8,0.375,2.76,-923.0,-2.0,55.0,-925.0
-Etoo,Once Upon A Team,HC,ADC,HW,6,0.333,5.92,-959.0,-2.0,55.0,-961.0
+Etoo,KIA.eSuba Academy,HC,ADC,HW,6,0.333,5.92,-959.0,-2.0,55.0,-961.0
 Danos,Priority,HC,Mid,HW,4,0.0,1.71,-971.0,-1.0,55.0,-972.0
 Doge,KIA.eSuba Academy,HC,Jungle,HW,6,0.333,4.68,-984.0,-2.0,55.0,-986.0
-Pulzer,Onion Team,HC,Mid,HW,8,0.375,2.52,-1013.0,-2.0,55.0,-1015.0
+Pulzer,KIA.eSuba Academy,HC,Mid,HW,8,0.375,2.52,-1013.0,-2.0,55.0,-1015.0
 Yakko,Diversion Gaming,HC,Jungle,HW,6,0.333,2.89,-1102.0,-0.0,55.0,-1102.0
 Chovy,Gen.G,LCK,Mid,KeSPA Cup,9,0.556,3.09,1066.0,-7.0,55.0,1059.0
 Kiin,Gen.G,LCK,Top,KeSPA Cup,9,0.556,3.17,1058.0,-7.0,55.0,1051.0
@@ -2464,7 +2464,7 @@ xpd,Dplus Kia Academy,LAS,ADC,LAS Champ 1 · playoffs,15,0.8,4.51,-107.0,8.0,55.
 Buddy,Hanwha Life Esports Academy,LAS,Mid,LAS Champ 1 · playoffs,6,0.0,1.03,-108.0,-9.0,55.0,-117.0
 Hailstone,Hanwha Life Esports Academy,LAS,Support,LAS Champ 1 · playoffs,6,0.0,2.45,-116.0,-9.0,55.0,-125.0
 Flint,Hanwha Life Esports Academy,LAS,Jungle,LAS Champ 1 · playoffs,6,0.0,1.59,-136.0,-9.0,55.0,-145.0
-Revenge,DN SOOPers Challengers,LAS,ADC,LAS Champ 1 · playoffs,4,0.25,2.0,-163.0,-4.0,55.0,-167.0
+Revenge,DN SOOPers Academy,LAS,ADC,LAS Champ 1 · playoffs,4,0.25,2.0,-163.0,-4.0,55.0,-167.0
 Achael,Hanwha Life Esports Academy,LAS,Top,LAS Champ 1 · playoffs,6,0.0,1.72,-164.0,-9.0,55.0,-173.0
 Harusary,Gen.G Scholars,LAS,ADC,LAS Champ 1 · playoffs,15,0.4,2.22,-189.0,7.0,55.0,-182.0
 AKIRA,DN SOOPers Academy,LAS,Support,LAS Champ 1 · playoffs,4,0.25,2.79,-181.0,-4.0,55.0,-185.0
@@ -2497,9 +2497,9 @@ Hailstone,Hanwha Life Esports Academy,LAS,Support,LAS Champ 1 · saison réguli�
 xpd,Dplus Kia Academy,LAS,ADC,LAS Champ 1 · saison régulière,30,0.667,2.67,-107.0,-6.0,54.0,-113.0
 Flint,Hanwha Life Esports Academy,LAS,Jungle,LAS Champ 1 · saison régulière,49,0.776,4.73,-136.0,10.0,54.0,-126.0
 Achael,Hanwha Life Esports Academy,LAS,Top,LAS Champ 1 · saison régulière,49,0.776,3.3,-164.0,10.0,54.0,-154.0
-Revenge,DN SOOPers Challengers,LAS,ADC,LAS Champ 1 · saison régulière,51,0.51,3.03,-163.0,0.0,54.0,-163.0
+Revenge,DN SOOPers Academy,LAS,ADC,LAS Champ 1 · saison régulière,51,0.51,3.03,-163.0,0.0,54.0,-163.0
 Rapport,Nongshim RedForce Academy,LAS,Support,LAS Champ 1 · saison régulière,20,0.65,2.22,-163.0,-1.0,54.0,-164.0
-Valiant,Hanwha Life Esports Challengers,LAS,Mid,LAS Champ 1 · saison régulière,20,0.65,3.33,-175.0,-4.0,54.0,-179.0
+Valiant,Hanwha Life Esports Academy,LAS,Mid,LAS Champ 1 · saison régulière,20,0.65,3.33,-175.0,-4.0,54.0,-179.0
 AKIRA,DN SOOPers Academy,LAS,Support,LAS Champ 1 · saison régulière,18,0.444,3.63,-181.0,0.0,55.0,-181.0
 Harusary,Gen.G Scholars,LAS,ADC,LAS Champ 1 · saison régulière,52,0.423,2.89,-189.0,-3.0,54.0,-192.0
 Lancelot,Gen.G Scholars,LAS,Jungle,LAS Champ 1 · saison régulière,52,0.423,2.69,-199.0,-3.0,54.0,-202.0
@@ -2548,7 +2548,7 @@ Hinata,DN SOOPers Academy,LAS,Mid,LAS Champ 2 · saison régulière,31,0.581,3.8
 SMITE,KT Rolster Academy,LAS,Jungle,LAS Champ 2 · saison régulière,29,0.621,4.05,-128.0,3.0,54.0,-125.0
 Flint,Hanwha Life Esports Academy,LAS,Jungle,LAS Champ 2 · saison régulière,28,0.536,3.32,-136.0,-4.0,54.0,-140.0
 Hyun,Nongshim RedForce Academy,LAS,Top,LAS Champ 2 · saison régulière,17,0.471,2.62,-153.0,2.0,55.0,-151.0
-Revenge,DN SOOPers Challengers,LAS,ADC,LAS Champ 2 · saison régulière,9,0.667,3.18,-163.0,4.0,55.0,-159.0
+Revenge,DN SOOPers Academy,LAS,ADC,LAS Champ 2 · saison régulière,9,0.667,3.18,-163.0,4.0,55.0,-159.0
 Rapport,Nongshim RedForce Academy,LAS,Support,LAS Champ 2 · saison régulière,7,0.571,3.43,-163.0,3.0,55.0,-160.0
 Achael,Hanwha Life Esports Academy,LAS,Top,LAS Champ 2 · saison régulière,28,0.536,2.32,-164.0,-4.0,54.0,-168.0
 AKIRA,DN SOOPers Academy,LAS,Support,LAS Champ 2 · saison régulière,31,0.581,4.4,-181.0,3.0,54.0,-178.0
@@ -2930,7 +2930,7 @@ Courage,Gen.G Global Academy,LCKC,Jungle,LCKC Rounds 1-2 · saison régulière,4
 MUDAI,Gen.G Global Academy,LCKC,ADC,LCKC Rounds 1-2 · saison régulière,42,0.214,1.9,99.0,7.0,54.0,106.0
 Jinbeom,T1 Esports Academy Rookies,LAS,ADC,LCKC Rounds 1-2 · saison régulière,14,0.571,3.79,69.0,2.0,55.0,71.0
 Lumos,Gen.G Global Academy,LCKC,Support,LCKC Rounds 1-2 · saison régulière,31,0.194,1.5,-35.0,2.0,54.0,-33.0
-Valiant,Hanwha Life Esports Challengers,LAS,Mid,LCKC Rounds 1-2 · saison régulière,2,0.0,1.11,-175.0,-2.0,55.0,-177.0
+Valiant,Hanwha Life Esports Academy,LAS,Mid,LCKC Rounds 1-2 · saison régulière,2,0.0,1.11,-175.0,-2.0,55.0,-177.0
 Painter,T1 Esports Academy,LCKC,Jungle,LCKC Rounds 3-4 · playoffs,11,0.818,4.11,629.0,9.0,55.0,638.0
 Cloud,T1 Esports Academy,LCKC,Support,LCKC Rounds 3-4 · playoffs,11,0.818,5.66,600.0,9.0,55.0,609.0
 Guti,T1 Esports Academy,LCKC,Mid,LCKC Rounds 3-4 · playoffs,11,0.818,6.08,551.0,9.0,55.0,560.0
@@ -3025,7 +3025,7 @@ Courage,Gen.G Global Academy,LCKC,Jungle,LCKC Rounds 3-4 · saison régulière,2
 MUDAI,Gen.G Global Academy,LCKC,ADC,LCKC Rounds 3-4 · saison régulière,20,0.3,1.7,99.0,1.0,54.0,100.0
 Carim,T1 Esports Academy Rookies,LAS,Jungle,LCKC Rounds 3-4 · saison régulière,2,0.0,2.0,68.0,-3.0,55.0,65.0
 Lumos,Gen.G Global Academy,LCKC,Support,LCKC Rounds 3-4 · saison régulière,20,0.3,1.31,-35.0,1.0,54.0,-34.0
-Valiant,Hanwha Life Esports Challengers,LAS,Mid,LCKC Rounds 3-4 · saison régulière,3,0.0,1.4,-175.0,-0.0,55.0,-175.0
+Valiant,Hanwha Life Esports Academy,LAS,Mid,LCKC Rounds 3-4 · saison régulière,3,0.0,1.4,-175.0,-0.0,55.0,-175.0
 Eddie,Team Secret Whales,LCP,ADC,LCP Split 1 · playoffs,12,0.75,5.68,648.0,2.0,55.0,650.0
 Pun,Team Secret Whales,LCP,Top,LCP Split 1 · playoffs,12,0.75,3.8,625.0,2.0,55.0,627.0
 Bie,Team Secret Whales,LCP,Support,LCP Split 1 · playoffs,12,0.75,5.83,617.0,2.0,55.0,619.0
@@ -3622,7 +3622,7 @@ Lyncas,Team Vitality,LEC,Jungle,LEC Versus · saison régulière,11,0.636,3.81,6
 Trymbi,Shifters,LEC,Support,LEC Versus · saison régulière,11,0.454,2.91,590.0,3.0,55.0,593.0
 SamD,Natus Vincere,LEC,ADC,LEC Versus · saison régulière,11,0.636,5.08,588.0,5.0,55.0,593.0
 Maynter,Natus Vincere,LEC,Top,LEC Versus · saison régulière,11,0.636,3.41,583.0,5.0,55.0,588.0
-Rekkles,Witchcraft,LEC,Support,LEC Versus · saison régulière,11,0.454,10.0,580.0,-0.0,55.0,580.0
+Rekkles,Los Ratones,LEC,Support,LEC Versus · saison régulière,11,0.454,10.0,580.0,-0.0,55.0,580.0
 Parus,Natus Vincere,LEC,Support,LEC Versus · saison régulière,11,0.636,4.33,569.0,5.0,55.0,574.0
 Poby,Natus Vincere,LEC,Mid,LEC Versus · saison régulière,11,0.636,4.43,561.0,5.0,55.0,566.0
 ISMA,GiantX,LEC,Jungle,LEC Versus · saison régulière,11,0.546,4.04,540.0,2.0,55.0,542.0
@@ -3634,16 +3634,16 @@ Razork,Fnatic,LEC,Jungle,LEC Versus · saison régulière,11,0.454,2.94,514.0,0.
 Stend,Shifters,LEC,Support,LEC Versus · saison régulière,11,0.546,2.82,506.0,7.0,55.0,513.0
 Upset,Fnatic,LEC,ADC,LEC Versus · saison régulière,11,0.454,7.0,513.0,0.0,55.0,513.0
 Empyros,Fnatic,LEC,Top,LEC Versus · saison régulière,11,0.454,2.36,499.0,0.0,55.0,499.0
-Crownie,Witchcraft,LEC,ADC,LEC Versus · saison régulière,11,0.454,3.08,488.0,-0.0,55.0,488.0
+Crownie,Los Ratones,LEC,ADC,LEC Versus · saison régulière,11,0.454,3.08,488.0,-0.0,55.0,488.0
 Sheo,Shifters,LEC,Jungle,LEC Versus · saison régulière,11,0.546,3.32,480.0,7.0,55.0,487.0
 Vladi,Fnatic,LEC,Mid,LEC Versus · saison régulière,11,0.454,3.23,484.0,0.0,55.0,484.0
 Lot,GiantX,LEC,Top,LEC Versus · saison régulière,11,0.546,2.23,476.0,2.0,55.0,478.0
-Nemesis,Witchcraft,LEC,Mid,LEC Versus · saison régulière,11,0.454,3.5,461.0,-0.0,55.0,461.0
+Nemesis,Los Ratones,LEC,Mid,LEC Versus · saison régulière,11,0.454,3.5,461.0,-0.0,55.0,461.0
 Noah,GiantX,LEC,ADC,LEC Versus · saison régulière,11,0.546,4.45,459.0,2.0,55.0,461.0
 Boukada,Shifters,LEC,Jungle,LEC Versus · saison régulière,11,0.454,3.18,448.0,3.0,55.0,451.0
 Baus,Los Ratones,LEC,Top,LEC Versus · saison régulière,11,0.454,1.24,449.0,-0.0,55.0,449.0
 LIDER,SK Gaming,LEC,Mid,LEC Versus · saison régulière,11,0.273,2.63,444.0,-0.0,55.0,444.0
-Velja,Witchcraft,LEC,Jungle,LEC Versus · saison régulière,11,0.454,2.35,434.0,-0.0,55.0,434.0
+Velja,Los Ratones,LEC,Jungle,LEC Versus · saison régulière,11,0.454,2.35,434.0,-0.0,55.0,434.0
 Jopa,SK Gaming,LEC,ADC,LEC Versus · saison régulière,11,0.273,3.26,424.0,-0.0,55.0,424.0
 Rooster,Shifters,LEC,Top,LEC Versus · saison régulière,11,0.454,3.0,416.0,3.0,55.0,419.0
 Mikyx,SK Gaming,LEC,Support,LEC Versus · saison régulière,11,0.273,1.68,412.0,-0.0,55.0,412.0
@@ -3842,7 +3842,7 @@ Kingsblade,Kawaii Kiwis,LES,Top,LES · saison régulière,15,0.6,2.31,-48.0,-3.0
 joeyscags,Kawaii Kiwis,LES,Support,LES · saison régulière,15,0.6,3.11,-53.0,-3.0,55.0,-56.0
 Toumes,Kawaii Kiwis,LES,Mid,LES · saison régulière,15,0.6,3.04,-66.0,-3.0,55.0,-69.0
 Sorrow,Kawaii Kiwis,LES,ADC,LES · saison régulière,15,0.6,2.62,-94.0,-3.0,55.0,-97.0
-Satto,Guinea Pink,NL,Support,LES · saison régulière,5,0.4,3.78,-114.0,-2.0,55.0,-116.0
+Satto,Lille Esport,NL,Support,LES · saison régulière,5,0.4,3.78,-114.0,-2.0,55.0,-116.0
 Mentos,Falke Esports,LES,Mid,LES · saison régulière,5,0.4,4.53,-125.0,6.0,55.0,-119.0
 Bobsik,Falke Esports,LES,Top,LES · saison régulière,5,0.4,1.9,-185.0,6.0,55.0,-179.0
 Deleted,Falke Esports,LES,Support,LES · saison régulière,5,0.4,2.75,-297.0,6.0,55.0,-291.0
@@ -3881,7 +3881,7 @@ SPOOKY,Skillcamp,LFL,Jungle,LFL · playoffs,10,0.4,2.55,250.0,4.0,55.0,254.0
 Manaty,Ici Japon Corp. Esport,LFL,Jungle,LFL · playoffs,11,0.273,2.37,254.0,-4.0,55.0,250.0
 Dekap,Vitality.Bee,LFL,Support,LFL · playoffs,13,0.308,2.3,243.0,-3.0,55.0,240.0
 Potent,Vitality.Bee,LFL,Top,LFL · playoffs,13,0.308,1.85,233.0,-3.0,55.0,230.0
-Keduii,Joblife,PRM,ADC,LFL · playoffs,4,0.0,1.3,221.0,-6.0,55.0,215.0
+Keduii,Eintracht Spandau,PRM,ADC,LFL · playoffs,4,0.0,1.3,221.0,-6.0,55.0,215.0
 Dajor,Ici Japon Corp. Esport,LFL,Mid,LFL · playoffs,10,0.2,2.93,191.0,-7.0,55.0,184.0
 Badlulu,Ici Japon Corp. Esport,LFL,Top,LFL · playoffs,10,0.2,1.95,170.0,-7.0,55.0,163.0
 Dawciu,Vitality.Bee,LFL,Jungle,LFL · playoffs,13,0.308,1.79,165.0,-3.0,55.0,162.0
@@ -3889,7 +3889,7 @@ xKenzuke,Esprit Shōnen,LFL,Mid,LFL · playoffs,6,0.333,2.48,147.0,2.0,55.0,149.
 Soldier,Ici Japon Corp. Esport,LFL,ADC,LFL · playoffs,10,0.2,3.42,149.0,-7.0,55.0,142.0
 Wao,ZYB Esport,LFL,Top,LFL · playoffs,5,0.2,1.65,131.0,-2.0,55.0,129.0
 whiteinn,Ici Japon Corp. Esport,LFL,Support,LFL · playoffs,10,0.2,1.68,133.0,-7.0,55.0,126.0
-Kaboom,SU Esports,LFL,Jungle,LFL · playoffs,4,0.0,1.32,129.0,-6.0,55.0,123.0
+Kaboom,Ici Japon Corp. Esport,LFL,Jungle,LFL · playoffs,4,0.0,1.32,129.0,-6.0,55.0,123.0
 Shift,Joblife,LFL,Jungle,LFL · playoffs,4,0.0,1.24,127.0,-6.0,55.0,121.0
 Exofeng,Skillcamp,LFL,ADC,LFL · playoffs,10,0.4,4.03,85.0,4.0,55.0,89.0
 Jezu,ZYB Esport,LFL,ADC,LFL · playoffs,5,0.2,3.36,90.0,-2.0,55.0,88.0
@@ -3950,12 +3950,12 @@ Dawciu,Vitality.Bee,LFL,Jungle,LFL · saison régulière,30,0.467,3.57,165.0,4.0
 Oleg,Karmine Corp Blue Stars,NL,Jungle,LFL · saison régulière,3,0.333,2.43,171.0,-2.0,55.0,169.0
 Soldier,Ici Japon Corp. Esport,LFL,ADC,LFL · saison régulière,21,0.476,3.83,149.0,4.0,54.0,153.0
 xKenzuke,Esprit Shōnen,LFL,Mid,LFL · saison régulière,18,0.222,2.32,147.0,1.0,55.0,148.0
-Koala,Esprit Shōnen,NL,Top,LFL · saison régulière,6,0.167,1.86,140.0,-3.0,55.0,137.0
+Koala,Karmine Corp Blue Stars,NL,Top,LFL · saison régulière,6,0.167,1.86,140.0,-3.0,55.0,137.0
 whiteinn,Ici Japon Corp. Esport,LFL,Support,LFL · saison régulière,21,0.476,3.03,133.0,4.0,54.0,137.0
 J3rkie,Ruddy Corporation,NLC,Support,LFL · saison régulière,2,0.0,2.91,135.0,-1.0,55.0,134.0
 Wao,ZYB Esport,LFL,Top,LFL · saison régulière,9,0.333,1.68,131.0,3.0,55.0,134.0
 Shift,Joblife,LFL,Jungle,LFL · saison régulière,37,0.46,2.57,127.0,2.0,54.0,129.0
-Kaboom,SU Esports,LFL,Jungle,LFL · saison régulière,15,0.4,1.96,129.0,-1.0,55.0,128.0
+Kaboom,Ici Japon Corp. Esport,LFL,Jungle,LFL · saison régulière,15,0.4,1.96,129.0,-1.0,55.0,128.0
 Panda,Karmine Corp Blue Stars,NL,Mid,LFL · saison régulière,3,0.333,5.0,120.0,-2.0,55.0,118.0
 Sayn,Verdant,NLC,Mid,LFL · saison régulière,12,0.5,2.74,108.0,3.0,55.0,111.0
 Exofeng,Skillcamp,LFL,ADC,LFL · saison régulière,18,0.833,5.79,85.0,5.0,55.0,90.0
@@ -3979,15 +3979,15 @@ Sunfry,Project Conquerors,NL,Support,LFL · saison régulière,11,0.364,2.21,-32
 Kobs,ZYB Esport,LFL,Jungle,LFL · saison régulière,20,0.35,2.33,-34.0,-5.0,54.0,-39.0
 Mxe,Magaza Esports,EBL,Support,LFL · saison régulière,12,0.333,2.66,-41.0,2.0,55.0,-39.0
 Gordinho,Esprit Shōnen,LFL,Support,LFL · saison régulière,14,0.0,1.07,-43.0,-3.0,55.0,-46.0
-Yuros,DIA Ozarox Esports,NL,Mid,LFL · saison régulière,2,0.0,2.0,-82.0,-0.0,55.0,-82.0
+Yuros,Zephyr Esport,NL,Mid,LFL · saison régulière,2,0.0,2.0,-82.0,-0.0,55.0,-82.0
 Jeykup,Colossal Gaming,LIT,Jungle,LFL · saison régulière,12,0.5,2.91,-93.0,3.0,55.0,-90.0
 Addusto,Eintracht Frankfurt,PRM,Top,LFL · saison régulière,10,0.4,1.61,-93.0,3.0,55.0,-90.0
 KKT,Bulldog Esports,NLC,Jungle,LFL · saison régulière,12,0.333,1.96,-101.0,3.0,55.0,-98.0
 CRoNiiK,Team Phantasma,HLL,Jungle,LFL · saison régulière,3,0.333,2.54,-108.0,0.0,55.0,-108.0
 Marty,Galions Sharks,NL,Mid,LFL · saison régulière,2,0.0,5.0,-131.0,-1.0,55.0,-132.0
 SwiT,Galions Sharks,NL,Top,LFL · saison régulière,2,0.0,1.73,-164.0,-1.0,55.0,-165.0
-Lulas,Esprit Shōnen,LPLOL,Jungle,LFL · saison régulière,9,0.0,1.54,-179.0,-1.0,55.0,-180.0
-fantomisto,Esprit Shōnen,RL,Mid,LFL · saison régulière,6,0.0,1.36,-191.0,-1.0,55.0,-192.0
+Lulas,Otter Side,LPLOL,Jungle,LFL · saison régulière,9,0.0,1.54,-179.0,-1.0,55.0,-180.0
+fantomisto,devils.one inStreamly,RL,Mid,LFL · saison régulière,6,0.0,1.36,-191.0,-1.0,55.0,-192.0
 Deadly,Otter Side,LPLOL,ADC,LFL · saison régulière,23,0.348,3.67,-195.0,-2.0,54.0,-197.0
 Dream,Galions Sharks,NL,ADC,LFL · saison régulière,2,0.0,2.17,-219.0,-1.0,55.0,-220.0
 shibi,Anonymo Esports,RL,Jungle,LFL · saison régulière,2,0.0,3.9,-235.0,-1.0,55.0,-236.0
@@ -3999,7 +3999,7 @@ Louis,Lausanne-Sport Esports,NL,Mid,LFL · saison régulière,3,0.333,1.9,-269.0
 Drali,Caldya Esport,NL,Top,LFL · saison régulière,5,0.0,0.71,-268.0,-1.0,55.0,-269.0
 Kiki,Caldya Esport,NL,Jungle,LFL · saison régulière,5,0.0,1.15,-273.0,-1.0,55.0,-274.0
 Moto,Lausanne-Sport Esports,NL,Jungle,LFL · saison régulière,3,0.333,1.36,-275.0,1.0,55.0,-274.0
-Archfiend,Esprit Shōnen,EBL,Top,LFL · saison régulière,8,0.0,1.07,-284.0,1.0,55.0,-283.0
+Archfiend,Magaza Esports,EBL,Top,LFL · saison régulière,8,0.0,1.07,-284.0,1.0,55.0,-283.0
 Owpi,Once Upon A Team,ROL,Top,LFL · saison régulière,2,0.0,1.0,-289.0,-3.0,55.0,-292.0
 rym,Once Upon A Team,ROL,Mid,LFL · saison régulière,2,0.0,0.5,-327.0,-3.0,55.0,-330.0
 Marbirius,Caldya Esport,NL,Mid,LFL · saison régulière,3,0.0,0.92,-348.0,1.0,55.0,-347.0
@@ -4030,8 +4030,8 @@ xHikama,Colossal Gaming,LIT,ADC,LIT Spring · playoffs,3,0.0,0.44,-505.0,-4.0,55
 Strava,GMBLERS Esports,LIT,Top,LIT Spring · playoffs,9,0.667,3.78,-523.0,1.0,55.0,-522.0
 Corriragazzo,EKO Esports,LIT,Support,LIT Spring · playoffs,6,0.0,0.83,-518.0,-11.0,55.0,-529.0
 DejaVu,GMBLERS Esports,LIT,Mid,LIT Spring · playoffs,19,0.474,3.69,-536.0,4.0,55.0,-532.0
-Raffy,Crystal Rose,LIT,Top,LIT Spring · playoffs,8,0.625,3.16,-544.0,8.0,55.0,-536.0
-Alvanai,Hyperion (Portuguese Team),LIT,Mid,LIT Spring · playoffs,9,0.667,5.67,-546.0,1.0,55.0,-545.0
+Raffy,Zena Esports,LIT,Top,LIT Spring · playoffs,8,0.625,3.16,-544.0,8.0,55.0,-536.0
+Alvanai,Aeterna Esports,LIT,Mid,LIT Spring · playoffs,9,0.667,5.67,-546.0,1.0,55.0,-545.0
 Pericolo,Zena Esports,LIT,ADC,LIT Spring · playoffs,9,0.667,3.13,-553.0,1.0,55.0,-552.0
 Mario,TIGROTS,LIT,Jungle,LIT Spring · playoffs,19,0.474,3.08,-578.0,4.0,55.0,-574.0
 Izo,GMBLERS Esports,LIT,Jungle,LIT Spring · playoffs,6,0.0,0.56,-630.0,-11.0,55.0,-641.0
@@ -4041,7 +4041,7 @@ Alessio,EKO Esports,LIT,ADC,LIT Spring · playoffs,6,0.0,0.76,-711.0,-11.0,55.0,
 Divine,HANGMEN,LIT,Mid,LIT Spring · playoffs,3,0.0,0.64,-750.0,-4.0,55.0,-754.0
 Doxy,StoneHenge Esports,LIT,Top,LIT Spring · playoffs,3,0.0,0.13,-752.0,-4.0,55.0,-756.0
 Lerax,TITANS,LIT,Top,LIT Spring · playoffs,3,0.0,1.15,-768.0,-4.0,55.0,-772.0
-Daskhai,2 Massive,LIT,Mid,LIT Spring · playoffs,3,0.0,1.21,-771.0,-4.0,55.0,-775.0
+Daskhai,TITANS,LIT,Mid,LIT Spring · playoffs,3,0.0,1.21,-771.0,-4.0,55.0,-775.0
 Luke,TITANS,LIT,Mid,LIT Spring · playoffs,6,0.0,0.39,-774.0,-11.0,55.0,-785.0
 Bubba,TITANS,LIT,Support,LIT Spring · playoffs,3,0.0,1.25,-808.0,-4.0,55.0,-812.0
 RaptoSauros,TITANS,LIT,ADC,LIT Spring · playoffs,3,0.0,1.77,-841.0,-4.0,55.0,-845.0
@@ -4076,9 +4076,9 @@ Corriragazzo,EKO Esports,LIT,Support,LIT Spring · saison régulière,7,0.714,12
 OrthoZero,Zena Esports,LIT,Support,LIT Spring · saison régulière,7,0.429,2.75,-514.0,-5.0,55.0,-519.0
 ImTheTitan,Team Aqua ASD,LIT,Top,LIT Spring · saison régulière,10,0.6,3.71,-537.0,1.0,55.0,-536.0
 DejaVu,GMBLERS Esports,LIT,Mid,LIT Spring · saison régulière,7,0.571,4.8,-536.0,-1.0,55.0,-537.0
-Raffy,Crystal Rose,LIT,Top,LIT Spring · saison régulière,7,0.429,2.16,-544.0,-5.0,55.0,-549.0
+Raffy,Zena Esports,LIT,Top,LIT Spring · saison régulière,7,0.429,2.16,-544.0,-5.0,55.0,-549.0
 Huubiii,Macko Invictus,LIT,ADC,LIT Spring · saison régulière,17,0.706,3.04,-552.0,3.0,55.0,-549.0
-Alvanai,Hyperion (Portuguese Team),LIT,Mid,LIT Spring · saison régulière,7,0.143,2.46,-546.0,-4.0,55.0,-550.0
+Alvanai,Aeterna Esports,LIT,Mid,LIT Spring · saison régulière,7,0.143,2.46,-546.0,-4.0,55.0,-550.0
 Casablanca,DECOY 21,LIT,Mid,LIT Spring · saison régulière,10,0.7,2.83,-552.0,-0.0,55.0,-552.0
 Pericolo,Zena Esports,LIT,ADC,LIT Spring · saison régulière,7,0.143,1.7,-553.0,-4.0,55.0,-557.0
 Gwisin,P11 Esports,LIT,ADC,LIT Spring · saison régulière,2,1.0,12.5,-566.0,5.0,55.0,-561.0
@@ -4089,7 +4089,7 @@ CloudStrikee,Team Aqua ASD,LIT,Support,LIT Spring · saison régulière,6,0.167,
 Sheshwa,Huskies Esports,LIT,Jungle,LIT Spring · saison régulière,5,0.2,2.25,-573.0,-2.0,55.0,-575.0
 Sala,Epitomy Esports,LIT,Top,LIT Spring · saison régulière,2,0.5,2.43,-577.0,1.0,55.0,-576.0
 Mario,TIGROTS,LIT,Jungle,LIT Spring · saison régulière,7,0.571,2.54,-578.0,-1.0,55.0,-579.0
-Xero,Rich Gang,LIT,Mid,LIT Spring · saison régulière,4,0.0,1.7,-585.0,-2.0,55.0,-587.0
+Xero,StoneHenge Esports Academy,LIT,Mid,LIT Spring · saison régulière,4,0.0,1.7,-585.0,-2.0,55.0,-587.0
 Solfurion,DECOY 21,LIT,Jungle,LIT Spring · saison régulière,10,0.7,3.62,-591.0,-0.0,55.0,-591.0
 Xen0gan,P11 Esports,LIT,Mid,LIT Spring · saison régulière,2,0.0,1.22,-601.0,-6.0,55.0,-607.0
 Leader,Hooligans,EBL,Jungle,LIT Spring · saison régulière,8,0.375,2.51,-622.0,4.0,55.0,-618.0
@@ -4102,7 +4102,7 @@ Doxy,StoneHenge Esports,LIT,Top,LIT Spring · saison régulière,15,0.267,2.33,-
 Divine,HANGMEN,LIT,Mid,LIT Spring · saison régulière,7,0.143,1.18,-750.0,-5.0,55.0,-755.0
 Luke,TITANS,LIT,Mid,LIT Spring · saison régulière,7,0.714,4.37,-774.0,12.0,55.0,-762.0
 Lerax,TITANS,LIT,Top,LIT Spring · saison régulière,7,0.286,1.8,-768.0,1.0,55.0,-767.0
-Daskhai,2 Massive,LIT,Mid,LIT Spring · saison régulière,7,0.286,2.57,-771.0,1.0,55.0,-770.0
+Daskhai,TITANS,LIT,Mid,LIT Spring · saison régulière,7,0.286,2.57,-771.0,1.0,55.0,-770.0
 Showman,DECOY 21,LIT,ADC,LIT Spring · saison régulière,10,0.7,2.42,-798.0,-0.0,55.0,-798.0
 Bubba,TITANS,LIT,Support,LIT Spring · saison régulière,7,0.286,2.15,-808.0,1.0,55.0,-807.0
 TheSerius,Bohemian Guardians,HM,Top,LIT Spring · saison régulière,7,0.143,1.19,-833.0,-4.0,55.0,-837.0
@@ -4118,7 +4118,7 @@ Carnage,HMBLE,LIT,Jungle,LIT Summer · playoffs,9,1.0,13.82,-158.0,5.0,55.0,-153
 Shredder,Colossal Gaming,LIT,Support,LIT Summer · playoffs,13,0.462,3.1,-352.0,2.0,55.0,-350.0
 SkaR,Colossal Gaming,LIT,Top,LIT Summer · playoffs,13,0.462,1.39,-381.0,2.0,55.0,-379.0
 lobellan,TITANS,LIT,Top,LIT Summer · playoffs,9,0.667,2.26,-396.0,-0.0,55.0,-396.0
-Dehaste,Team Aqua ASD,EBL,Mid,LIT Summer · playoffs,8,0.375,2.5,-421.0,-0.0,55.0,-421.0
+Dehaste,Lupus Esports,EBL,Mid,LIT Summer · playoffs,8,0.375,2.5,-421.0,-0.0,55.0,-421.0
 Gemon,Zena Esports,LIT,Top,LIT Summer · playoffs,12,0.667,3.77,-428.0,3.0,55.0,-425.0
 JayJay,Zena Esports,LIT,Mid,LIT Summer · playoffs,12,0.667,6.33,-445.0,3.0,55.0,-442.0
 Rharesh,GMBLERS Esports,LIT,ADC,LIT Summer · playoffs,7,0.143,1.55,-444.0,-3.0,55.0,-447.0
@@ -4140,7 +4140,7 @@ Gwisin,P11 Esports,LIT,ADC,LIT Summer · playoffs,3,0.0,1.73,-566.0,-3.0,55.0,-5
 CloudStrikee,Team Aqua ASD,LIT,Support,LIT Summer · playoffs,12,0.333,2.03,-568.0,-2.0,55.0,-570.0
 Kaylem,EKO Esports,LIT,Top,LIT Summer · playoffs,3,0.0,1.63,-579.0,-2.0,55.0,-581.0
 Kyte,Team Aqua ASD,LIT,ADC,LIT Summer · playoffs,12,0.333,2.38,-579.0,-2.0,55.0,-581.0
-Mihai,EKO Esports,EBL,ADC,LIT Summer · playoffs,3,0.0,3.08,-607.0,-2.0,55.0,-609.0
+Mihai,The Secret Club,EBL,ADC,LIT Summer · playoffs,3,0.0,3.08,-607.0,-2.0,55.0,-609.0
 Izo,GMBLERS Esports,LIT,Jungle,LIT Summer · playoffs,7,0.143,1.86,-630.0,-3.0,55.0,-633.0
 Crocomux,EKO Esports,LIT,Mid,LIT Summer · playoffs,3,0.0,4.86,-638.0,-2.0,55.0,-640.0
 Speedy,EKO Esports,LIT,Jungle,LIT Summer · playoffs,3,0.0,1.94,-655.0,-2.0,55.0,-657.0
@@ -4181,7 +4181,7 @@ CloudStrikee,Team Aqua ASD,LIT,Support,LIT Summer · saison régulière,7,0.714,
 Kyte,Team Aqua ASD,LIT,ADC,LIT Summer · saison régulière,7,0.714,4.94,-579.0,6.0,55.0,-573.0
 Kaylem,EKO Esports,LIT,Top,LIT Summer · saison régulière,7,0.429,1.67,-579.0,2.0,55.0,-577.0
 Gwisin,P11 Esports,LIT,ADC,LIT Summer · saison régulière,7,0.0,1.48,-566.0,-11.0,55.0,-577.0
-Mihai,EKO Esports,EBL,ADC,LIT Summer · saison régulière,7,0.429,3.5,-607.0,2.0,55.0,-605.0
+Mihai,The Secret Club,EBL,ADC,LIT Summer · saison régulière,7,0.429,3.5,-607.0,2.0,55.0,-605.0
 Izo,GMBLERS Esports,LIT,Jungle,LIT Summer · saison régulière,7,0.571,5.95,-630.0,6.0,55.0,-624.0
 Crocomux,EKO Esports,LIT,Mid,LIT Summer · saison régulière,7,0.429,2.52,-638.0,2.0,55.0,-636.0
 Speedy,EKO Esports,LIT,Jungle,LIT Summer · saison régulière,7,0.429,2.9,-655.0,2.0,55.0,-653.0
@@ -4214,11 +4214,11 @@ OrthoZero,Zena Esports,LIT,Support,LIT Winter · playoffs,3,0.0,1.25,-514.0,-4.0
 Strava,GMBLERS Esports,LIT,Top,LIT Winter · playoffs,3,0.0,0.83,-523.0,1.0,55.0,-522.0
 Toti,EKO Esports,LIT,ADC,LIT Winter · playoffs,7,0.143,1.51,-524.0,1.0,55.0,-523.0
 DejaVu,GMBLERS Esports,LIT,Mid,LIT Winter · playoffs,20,0.65,4.2,-536.0,3.0,54.0,-533.0
-Raffy,Crystal Rose,LIT,Top,LIT Winter · playoffs,3,0.0,1.3,-544.0,-4.0,55.0,-548.0
+Raffy,Zena Esports,LIT,Top,LIT Winter · playoffs,3,0.0,1.3,-544.0,-4.0,55.0,-548.0
 Pericolo,Zena Esports,LIT,ADC,LIT Winter · playoffs,10,0.5,2.82,-553.0,1.0,55.0,-552.0
 Mario,TIGROTS,LIT,Jungle,LIT Winter · playoffs,20,0.65,5.57,-578.0,3.0,54.0,-575.0
 Kyte,Team Aqua ASD,LIT,ADC,LIT Winter · playoffs,8,0.25,1.72,-579.0,-0.0,55.0,-579.0
-Xero,Rich Gang,LIT,Mid,LIT Winter · playoffs,10,0.5,3.69,-585.0,1.0,55.0,-584.0
+Xero,StoneHenge Esports Academy,LIT,Mid,LIT Winter · playoffs,10,0.5,3.69,-585.0,1.0,55.0,-584.0
 Tigrot,TIGROTS,LIT,Support,LIT Winter · playoffs,5,0.4,2.48,-593.0,-1.0,55.0,-594.0
 Hamudis,Deacoy,LIT,Jungle,LIT Winter · playoffs,8,0.25,1.8,-625.0,-0.0,55.0,-625.0
 Padawii,TIGROTS,LIT,ADC,LIT Winter · playoffs,5,0.4,2.81,-628.0,-1.0,55.0,-629.0
@@ -4258,7 +4258,7 @@ Fragola,Colossal Gaming,LIT,Jungle,LIT Winter · saison régulière,7,1.0,21.4,-
 PiskHello,Colossal Gaming,LIT,ADC,LIT Winter · saison régulière,7,1.0,16.17,-485.0,12.0,55.0,-473.0
 The Mountain,EKO Esports,LIT,Top,LIT Winter · saison régulière,7,1.0,6.9,-488.0,12.0,55.0,-476.0
 Diobello,HANGMEN,LIT,Top,LIT Winter · saison régulière,20,0.5,2.33,-476.0,-4.0,54.0,-480.0
-mirza,Mighty Eagles,EBL,ADC,LIT Winter · saison régulière,10,0.5,5.54,-486.0,0.0,55.0,-486.0
+mirza,TQ DURPA KASHLQ,EBL,ADC,LIT Winter · saison régulière,10,0.5,5.54,-486.0,0.0,55.0,-486.0
 Jekko,Zena Esports,LIT,Jungle,LIT Winter · saison régulière,7,0.429,3.21,-495.0,2.0,55.0,-493.0
 HKE KyuuBee,Huskies Esports,LIT,ADC,LIT Winter · saison régulière,10,0.7,3.18,-505.0,2.0,55.0,-503.0
 xHikama,Colossal Gaming,LIT,ADC,LIT Winter · saison régulière,12,0.75,4.57,-505.0,2.0,55.0,-503.0
@@ -4269,7 +4269,7 @@ Toti,EKO Esports,LIT,ADC,LIT Winter · saison régulière,7,0.571,3.55,-524.0,4.
 Limoncello,P11 Esports,LIT,Top,LIT Winter · saison régulière,11,0.727,3.0,-549.0,10.0,55.0,-539.0
 EPTM Mozziii,Epitomy Masters,LIT,Support,LIT Winter · saison régulière,10,0.5,2.76,-540.0,0.0,55.0,-540.0
 DejaVu,GMBLERS Esports,LIT,Mid,LIT Winter · saison régulière,7,0.286,3.08,-536.0,-4.0,55.0,-540.0
-Raffy,Crystal Rose,LIT,Top,LIT Winter · saison régulière,7,0.429,1.29,-544.0,2.0,55.0,-542.0
+Raffy,Zena Esports,LIT,Top,LIT Winter · saison régulière,7,0.429,1.29,-544.0,2.0,55.0,-542.0
 Huubiii,Macko Invictus,LIT,ADC,LIT Winter · saison régulière,6,0.333,1.44,-552.0,-3.0,55.0,-555.0
 Gwisin,P11 Esports,LIT,ADC,LIT Winter · saison régulière,11,0.727,4.92,-566.0,10.0,55.0,-556.0
 HKE Naskito,Huskies Esports,LIT,Support,LIT Winter · saison régulière,10,0.7,3.69,-563.0,2.0,55.0,-561.0
@@ -4652,7 +4652,7 @@ Ycx,LNG Esports,LPL,Support,LPL Split 1 · saison régulière,17,0.471,3.2,535.0
 Feather,ThunderTalk Gaming,LPL,Support,LPL Split 1 · saison régulière,13,0.077,1.55,528.0,-12.0,55.0,516.0
 Heru,ThunderTalk Gaming,LPL,Mid,LPL Split 1 · saison régulière,13,0.077,1.96,519.0,-12.0,55.0,507.0
 Keshi,ThunderTalk Gaming,LPL,Top,LPL Split 1 · saison régulière,13,0.077,1.25,500.0,-12.0,55.0,488.0
-Liangchen,Bilibili Gaming Junior,LPL,Top,LPL Split 1 · saison régulière,13,0.231,2.13,485.0,-5.0,55.0,480.0
+Liangchen,Ultra Prime,LPL,Top,LPL Split 1 · saison régulière,13,0.231,2.13,485.0,-5.0,55.0,480.0
 Parukia,EDward Gaming,LPL,Support,LPL Split 1 · saison régulière,15,0.6,2.82,469.0,8.0,55.0,477.0
 Xiaoxia,Ultra Prime,LPL,Support,LPL Split 1 · saison régulière,13,0.231,1.87,479.0,-5.0,55.0,474.0
 Soboro,Fnatic,LEC,Top,LPL Split 1 · saison régulière,25,0.28,1.48,474.0,-5.0,54.0,469.0
@@ -4708,11 +4708,11 @@ Jiejie,EDward Gaming,LPL,Jungle,LPL Split 2 · playoffs,5,0.4,3.09,674.0,-5.0,55
 Assum,Invictus Gaming,LPL,ADC,LPL Split 2 · playoffs,5,0.4,1.7,674.0,-6.0,55.0,668.0
 Heng,LGD Gaming,LPL,Jungle,LPL Split 2 · playoffs,16,0.375,2.64,665.0,1.0,55.0,666.0
 Cube,Team WE,LPL,Top,LPL Split 2 · playoffs,20,0.55,2.81,633.0,17.0,54.0,650.0
-TheHank,Bilibili Gaming Junior,LPL,Support,LPL Split 2 · playoffs,5,0.4,2.06,651.0,-5.0,55.0,646.0
+TheHank,Weibo Gaming,LPL,Support,LPL Split 2 · playoffs,5,0.4,2.06,651.0,-5.0,55.0,646.0
 Shaoye,LGD Gaming,LPL,ADC,LPL Split 2 · playoffs,16,0.375,2.62,638.0,1.0,55.0,639.0
 Zhuo,Top Esports,LPL,Support,LPL Split 2 · playoffs,5,0.4,2.88,642.0,-6.0,55.0,636.0
 BuLLDoG,EDward Gaming,LPL,Mid,LPL Split 2 · playoffs,5,0.4,2.08,628.0,-4.0,55.0,624.0
-sinian,EDG Youth Team,LPL,Mid,LPL Split 2 · playoffs,11,0.273,2.56,613.0,4.0,55.0,617.0
+sinian,EDward Gaming,LPL,Mid,LPL Split 2 · playoffs,11,0.273,2.56,613.0,4.0,55.0,617.0
 Karis,Team WE,LPL,Mid,LPL Split 2 · playoffs,20,0.55,4.08,587.0,17.0,54.0,604.0
 About,Team WE,LPL,ADC,LPL Split 2 · playoffs,20,0.55,3.66,580.0,17.0,54.0,597.0
 Junhao,ThunderTalk Gaming,LPL,Jungle,LPL Split 2 · playoffs,12,0.5,3.53,576.0,6.0,55.0,582.0
@@ -4771,13 +4771,13 @@ sheer,LNG Esports,LPL,Top,LPL Split 2 · saison régulière,13,0.692,4.0,674.0,1
 Xiaohao,Weibo Gaming,LPL,Jungle,LPL Split 2 · saison régulière,14,0.5,3.48,676.0,-1.0,55.0,675.0
 climber,Ultra Prime,LPL,Jungle,LPL Split 2 · saison régulière,12,0.5,3.15,667.0,1.0,55.0,668.0
 Heng,LGD Gaming,LPL,Jungle,LPL Split 2 · saison régulière,12,0.5,3.43,665.0,-3.0,55.0,662.0
-TheHank,Bilibili Gaming Junior,LPL,Support,LPL Split 2 · saison régulière,8,0.75,2.69,651.0,6.0,55.0,657.0
+TheHank,Weibo Gaming,LPL,Support,LPL Split 2 · saison régulière,8,0.75,2.69,651.0,6.0,55.0,657.0
 Zhuo,Top Esports,LPL,Support,LPL Split 2 · saison régulière,33,0.485,4.49,642.0,4.0,54.0,646.0
 Shaoye,LGD Gaming,LPL,ADC,LPL Split 2 · saison régulière,12,0.5,2.78,638.0,-3.0,55.0,635.0
 Saber,Ultra Prime,LPL,Mid,LPL Split 2 · saison régulière,10,0.6,10.18,626.0,6.0,55.0,632.0
 BuLLDoG,EDward Gaming,LPL,Mid,LPL Split 2 · saison régulière,13,0.692,4.78,628.0,1.0,55.0,629.0
 sasi,Ultra Prime,LPL,Top,LPL Split 2 · saison régulière,12,0.5,2.26,620.0,1.0,55.0,621.0
-sinian,EDG Youth Team,LPL,Mid,LPL Split 2 · saison régulière,2,0.5,3.4,613.0,-1.0,55.0,612.0
+sinian,EDward Gaming,LPL,Mid,LPL Split 2 · saison régulière,2,0.5,3.4,613.0,-1.0,55.0,612.0
 Cube,Team WE,LPL,Top,LPL Split 2 · saison régulière,33,0.182,1.48,633.0,-21.0,54.0,612.0
 re0,Oh My God,LPL,Jungle,LPL Split 2 · saison régulière,9,0.222,1.08,605.0,-4.0,55.0,601.0
 Junhao,ThunderTalk Gaming,LPL,Jungle,LPL Split 2 · saison régulière,14,0.571,4.61,576.0,5.0,55.0,581.0
@@ -4901,7 +4901,7 @@ Shaoye,LGD Gaming,LPL,ADC,LPL Split 3 · saison régulière,35,0.486,3.41,638.0,
 Zhuo,Top Esports,LPL,Support,LPL Split 3 · saison régulière,31,0.581,3.62,642.0,-0.0,54.0,642.0
 Cube,Team WE,LPL,Top,LPL Split 3 · saison régulière,32,0.5,2.48,633.0,2.0,54.0,635.0
 BuLLDoG,EDward Gaming,LPL,Mid,LPL Split 3 · saison régulière,29,0.241,2.28,628.0,-7.0,54.0,621.0
-sinian,EDG Youth Team,LPL,Mid,LPL Split 3 · saison régulière,2,0.0,0.4,613.0,-4.0,55.0,609.0
+sinian,EDward Gaming,LPL,Mid,LPL Split 3 · saison régulière,2,0.0,0.4,613.0,-4.0,55.0,609.0
 Karis,Team WE,LPL,Mid,LPL Split 3 · saison régulière,32,0.5,3.25,587.0,2.0,54.0,589.0
 About,Team WE,LPL,ADC,LPL Split 3 · saison régulière,32,0.5,3.0,580.0,2.0,54.0,582.0
 Junhao,ThunderTalk Gaming,LPL,Jungle,LPL Split 3 · saison régulière,35,0.314,3.02,576.0,2.0,54.0,578.0
@@ -4918,7 +4918,7 @@ Weiwei,LNG Esports,LPL,Jungle,LPL Split 3 · saison régulière,14,0.143,2.4,443
 Nia,LNG Esports,LPL,Mid,LPL Split 3 · saison régulière,14,0.143,2.11,395.0,-6.0,55.0,389.0
 Cimpo,SU Esports,TCL,ADC,LPLOL Spring · playoffs,6,1.0,6.59,55.0,1.0,55.0,56.0
 Camana,Bushido Wildcats,TCL,Mid,LPLOL Spring · playoffs,6,1.0,5.29,-115.0,1.0,55.0,-114.0
-Lulas,Esprit Shōnen,LPLOL,Jungle,LPLOL Spring · playoffs,6,1.0,13.71,-179.0,1.0,55.0,-178.0
+Lulas,Otter Side,LPLOL,Jungle,LPLOL Spring · playoffs,6,1.0,13.71,-179.0,1.0,55.0,-178.0
 Kaplica,Lund Esports Organization,NLC,Top,LPLOL Spring · playoffs,7,0.143,1.62,-361.0,-2.0,55.0,-363.0
 TheGreatGary,Otter Side,LPLOL,Top,LPLOL Spring · playoffs,6,1.0,4.94,-364.0,1.0,55.0,-363.0
 kkero,ZennIT,ROL,Support,LPLOL Spring · playoffs,6,1.0,6.67,-380.0,1.0,55.0,-379.0
@@ -4938,8 +4938,8 @@ ardaffler,Bubliki,LPLOL,Mid,LPLOL Spring · playoffs,11,0.546,3.62,-673.0,2.0,55
 Sankaizer,Bubliki,LPLOL,Top,LPLOL Spring · playoffs,3,0.0,0.73,-678.0,-1.0,55.0,-679.0
 Cimpo,SU Esports,TCL,ADC,LPLOL Spring · saison régulière,7,1.0,7.5,55.0,2.0,55.0,57.0
 Camana,Bushido Wildcats,TCL,Mid,LPLOL Spring · saison régulière,7,1.0,8.18,-115.0,2.0,55.0,-113.0
-Noodle,Crusaders,NLC,Jungle,LPLOL Spring · saison régulière,5,0.8,21.75,-136.0,6.0,55.0,-130.0
-Lulas,Esprit Shōnen,LPLOL,Jungle,LPLOL Spring · saison régulière,7,1.0,7.14,-179.0,2.0,55.0,-177.0
+Noodle,Bulldog Esports,NLC,Jungle,LPLOL Spring · saison régulière,5,0.8,21.75,-136.0,6.0,55.0,-130.0
+Lulas,Otter Side,LPLOL,Jungle,LPLOL Spring · saison régulière,7,1.0,7.14,-179.0,2.0,55.0,-177.0
 Hamsi,DIA Ozarox Esports,TCL,Top,LPLOL Spring · saison régulière,5,0.4,1.5,-332.0,-3.0,55.0,-335.0
 Kaplica,Lund Esports Organization,NLC,Top,LPLOL Spring · saison régulière,7,0.714,3.35,-361.0,6.0,55.0,-355.0
 TheGreatGary,Otter Side,LPLOL,Top,LPLOL Spring · saison régulière,5,1.0,5.38,-364.0,1.0,55.0,-363.0
@@ -4967,10 +4967,10 @@ BANKAI,Dream Esports,LPLOL,Mid,LPLOL Spring · saison régulière,5,0.6,4.33,-65
 FallenBandit,Tung Tung Bogi,LPLOL,Jungle,LPLOL Spring · saison régulière,7,0.571,3.21,-665.0,4.0,55.0,-661.0
 ardaffler,Bubliki,LPLOL,Mid,LPLOL Spring · saison régulière,7,0.571,3.72,-673.0,2.0,55.0,-671.0
 Lumity,Bohemian Guardians,HM,Mid,LPLOL Spring · saison régulière,4,0.0,1.58,-671.0,-6.0,55.0,-677.0
-Coli,Dynasty,EBL,Support,LPLOL Spring · saison régulière,6,0.0,0.8,-675.0,-10.0,55.0,-685.0
+Coli,BeFive,EBL,Support,LPLOL Spring · saison régulière,6,0.0,0.8,-675.0,-10.0,55.0,-685.0
 Semide,GTZ Esports,LPLOL,Mid,LPLOL Spring · saison régulière,7,0.286,3.53,-739.0,-1.0,55.0,-740.0
 RealR,GTZ Esports,LPLOL,Jungle,LPLOL Spring · saison régulière,7,0.286,1.4,-771.0,-1.0,55.0,-772.0
-bakisa,Dynasty,EBL,ADC,LPLOL Spring · saison régulière,7,0.0,0.67,-762.0,-11.0,55.0,-773.0
+bakisa,BeFive,EBL,ADC,LPLOL Spring · saison régulière,7,0.0,0.67,-762.0,-11.0,55.0,-773.0
 JoKozz,ZeroZone Gaming,LPLOL,Top,LPLOL Spring · saison régulière,7,0.0,1.04,-884.0,-11.0,55.0,-895.0
 Calmsky,White Dragons,LPLOL,Support,LPLOL Summer · saison régulière,13,1.0,10.5,-169.0,10.0,55.0,-159.0
 Lekcyc,Bubliki,LPLOL,Support,LPLOL Summer · saison régulière,20,0.55,3.91,-170.0,0.0,54.0,-170.0
@@ -4978,38 +4978,38 @@ Kurama,Otter Side,LPLOL,Jungle,LPLOL Summer · saison régulière,15,0.6,3.05,-1
 Deadly,Otter Side,LPLOL,ADC,LPLOL Summer · saison régulière,16,0.562,3.96,-195.0,-4.0,55.0,-199.0
 Fred,White Dragons,LPLOL,Mid,LPLOL Summer · saison régulière,13,1.0,9.09,-213.0,10.0,55.0,-203.0
 Falleo,White Dragons,LPLOL,Top,LPLOL Summer · saison régulière,13,1.0,5.77,-213.0,10.0,55.0,-203.0
-Elramir,Dream Esports,TCL,Jungle,LPLOL Summer · saison régulière,4,0.25,2.71,-251.0,-6.0,55.0,-257.0
+Elramir,Bushido Wildcats,TCL,Jungle,LPLOL Summer · saison régulière,4,0.25,2.71,-251.0,-6.0,55.0,-257.0
 Aeon,White Dragons,LPLOL,ADC,LPLOL Summer · saison régulière,13,1.0,10.76,-273.0,10.0,55.0,-263.0
-Sukru,Dream Esports,NL,Top,LPLOL Summer · saison régulière,4,0.25,2.27,-298.0,-6.0,55.0,-304.0
-CLEARS,Dream Esports,NLC,Jungle,LPLOL Summer · saison régulière,6,0.667,6.0,-325.0,2.0,55.0,-323.0
-qualzy,Otter Side,HM,Jungle,LPLOL Summer · saison régulière,1,0.0,0.71,-323.0,-2.0,55.0,-325.0
+Sukru,Lille Esport,NL,Top,LPLOL Summer · saison régulière,4,0.25,2.27,-298.0,-6.0,55.0,-304.0
+CLEARS,DMG Esports,NLC,Jungle,LPLOL Summer · saison régulière,6,0.667,6.0,-325.0,2.0,55.0,-323.0
+qualzy,eSuba,HM,Jungle,LPLOL Summer · saison régulière,1,0.0,0.71,-323.0,-2.0,55.0,-325.0
 TheGreatGary,Otter Side,LPLOL,Top,LPLOL Summer · saison régulière,16,0.562,2.44,-364.0,-4.0,55.0,-368.0
-Soufiane,GD Esports,AL,Mid,LPLOL Summer · saison régulière,5,0.2,2.61,-417.0,-3.0,55.0,-420.0
+Soufiane,GnG Amazigh,AL,Mid,LPLOL Summer · saison régulière,5,0.2,2.61,-417.0,-3.0,55.0,-420.0
 Tochas,Dream Esports,LPLOL,Support,LPLOL Summer · saison régulière,10,0.5,3.24,-432.0,-4.0,55.0,-436.0
 Smarty,Otter Side,LPLOL,Support,LPLOL Summer · saison régulière,16,0.562,3.58,-459.0,-4.0,55.0,-463.0
-D4rtaine,Hyperion (Portuguese Team),HLL,Top,LPLOL Summer · saison régulière,9,0.556,2.68,-468.0,3.0,55.0,-465.0
-Cha0s,Dream Esports,NLC,Top,LPLOL Summer · saison régulière,6,0.667,2.69,-492.0,2.0,55.0,-490.0
+D4rtaine,The ParadOx Invaders,HLL,Top,LPLOL Summer · saison régulière,9,0.556,2.68,-468.0,3.0,55.0,-465.0
+Cha0s,Lund Esports Organization,NLC,Top,LPLOL Summer · saison régulière,6,0.667,2.69,-492.0,2.0,55.0,-490.0
 NGE H4far,NORTHERNGRADE ESPORTS,LPLOL,Support,LPLOL Summer · saison régulière,10,0.4,4.65,-513.0,4.0,55.0,-509.0
 Ze Luis,Francesinhas,LPLOL,Support,LPLOL Summer · saison régulière,11,0.546,3.02,-516.0,1.0,55.0,-515.0
 TTB raisu,Tung Tung Bogi,LPLOL,Support,LPLOL Summer · saison régulière,10,0.6,4.61,-531.0,3.0,55.0,-528.0
 D4SH,Capybara Esports,LPLOL,Jungle,LPLOL Summer · saison régulière,9,0.444,3.96,-546.0,2.0,55.0,-544.0
-Alvanai,Hyperion (Portuguese Team),LIT,Mid,LPLOL Summer · saison régulière,8,0.5,4.05,-546.0,1.0,55.0,-545.0
-C7,NORTHERNGRADE ESPORTS,HLL,Top,LPLOL Summer · saison régulière,9,0.333,2.97,-547.0,1.0,55.0,-546.0
+Alvanai,Aeterna Esports,LIT,Mid,LPLOL Summer · saison régulière,8,0.5,4.05,-546.0,1.0,55.0,-545.0
+C7,GOAL,HLL,Top,LPLOL Summer · saison régulière,9,0.333,2.97,-547.0,1.0,55.0,-546.0
 Janis,NORTHERNGRADE ESPORTS,LPLOL,Jungle,LPLOL Summer · saison régulière,10,0.4,4.14,-553.0,4.0,55.0,-549.0
 LVS,Francesinhas,LPLOL,Top,LPLOL Summer · saison régulière,11,0.546,3.53,-566.0,1.0,55.0,-565.0
 TinjaNurtles,Bubliki,LPLOL,Jungle,LPLOL Summer · saison régulière,20,0.55,3.18,-570.0,0.0,54.0,-570.0
 NOMA,Francesinhas,LPLOL,Mid,LPLOL Summer · saison régulière,11,0.546,2.52,-579.0,1.0,55.0,-578.0
 Demonadc,Bubliki,LPLOL,ADC,LPLOL Summer · saison régulière,20,0.55,4.06,-590.0,0.0,54.0,-590.0
 salgueir0,White Dragons,LPLOL,Jungle,LPLOL Summer · saison régulière,13,1.0,7.03,-601.0,10.0,55.0,-591.0
-K1ng,Hyperion (Portuguese Team),HLL,ADC,LPLOL Summer · saison régulière,9,0.556,2.54,-597.0,3.0,55.0,-594.0
+K1ng,The ParadOx Invaders,HLL,ADC,LPLOL Summer · saison régulière,9,0.556,2.54,-597.0,3.0,55.0,-594.0
 Dreampull,Capybara Esports,LPLOL,Top,LPLOL Summer · saison régulière,9,0.444,2.0,-599.0,2.0,55.0,-597.0
 NGE Katashi,NORTHERNGRADE ESPORTS,LPLOL,Mid,LPLOL Summer · saison régulière,10,0.4,2.6,-604.0,4.0,55.0,-600.0
 Baca,Otter Side,LPLOL,Mid,LPLOL Summer · saison régulière,16,0.562,4.23,-610.0,-4.0,55.0,-614.0
 costy,Francesinhas,LPLOL,ADC,LPLOL Summer · saison régulière,11,0.546,2.43,-626.0,1.0,55.0,-625.0
 Anechek,Dominion Goblins,LPLOL,Jungle,LPLOL Summer · saison régulière,18,0.5,2.69,-641.0,5.0,55.0,-636.0
-dylux,GD Esports,HC,Jungle,LPLOL Summer · saison régulière,3,0.333,2.33,-646.0,-1.0,55.0,-647.0
+dylux,CITA Kaizen Academy,HC,Jungle,LPLOL Summer · saison régulière,3,0.333,2.33,-646.0,-1.0,55.0,-647.0
 Heroic,Bubliki,LPLOL,Mid,LPLOL Summer · saison régulière,16,0.562,2.56,-650.0,1.0,55.0,-649.0
-ZaFiR,Hyperion (Portuguese Team),EBL,Support,LPLOL Summer · saison régulière,6,0.5,3.33,-658.0,0.0,55.0,-658.0
+ZaFiR,The Secret Club,EBL,Support,LPLOL Summer · saison régulière,6,0.5,3.33,-658.0,0.0,55.0,-658.0
 BANKAI,Dream Esports,LPLOL,Mid,LPLOL Summer · saison régulière,10,0.5,4.23,-657.0,-4.0,55.0,-661.0
 FallenBandit,Tung Tung Bogi,LPLOL,Jungle,LPLOL Summer · saison régulière,13,0.462,3.24,-665.0,1.0,55.0,-664.0
 Sankaizer,Bubliki,LPLOL,Top,LPLOL Summer · saison régulière,20,0.55,2.26,-678.0,0.0,54.0,-678.0
@@ -5033,12 +5033,12 @@ Ace,Senshi eSports,ROL,ADC,LPLOL Winter · saison régulière,12,0.667,2.8,-271.
 Degla,One More Esports,AL,Support,LPLOL Winter · saison régulière,7,0.571,3.37,-354.0,5.0,55.0,-349.0
 TheGreatGary,Otter Side,LPLOL,Top,LPLOL Winter · saison régulière,12,0.667,4.0,-364.0,6.0,55.0,-358.0
 Kaplica,Lund Esports Organization,NLC,Top,LPLOL Winter · saison régulière,7,0.571,2.07,-361.0,2.0,55.0,-359.0
-Inzuh,Crystal Rose,LPLOL,Mid,LPLOL Winter · saison régulière,12,0.667,4.79,-370.0,6.0,55.0,-364.0
-Wuis,Crystal Rose,ROL,Support,LPLOL Winter · saison régulière,6,0.5,2.65,-425.0,3.0,55.0,-422.0
+Inzuh,Vantex Esports,LPLOL,Mid,LPLOL Winter · saison régulière,12,0.667,4.79,-370.0,6.0,55.0,-364.0
+Wuis,Dynasty,ROL,Support,LPLOL Winter · saison régulière,6,0.5,2.65,-425.0,3.0,55.0,-422.0
 Tochas,Dream Esports,LPLOL,Support,LPLOL Winter · saison régulière,12,0.667,3.7,-432.0,6.0,55.0,-426.0
 Lostboy,Crusaders,LPLOL,Support,LPLOL Winter · saison régulière,7,0.571,6.71,-451.0,2.0,55.0,-449.0
 Renewal,Only The Family,EBL,Jungle,LPLOL Winter · saison régulière,12,0.667,4.58,-468.0,6.0,55.0,-462.0
-D4rtaine,Hyperion (Portuguese Team),HLL,Top,LPLOL Winter · saison régulière,6,0.5,2.25,-468.0,3.0,55.0,-465.0
+D4rtaine,The ParadOx Invaders,HLL,Top,LPLOL Winter · saison régulière,6,0.5,2.25,-468.0,3.0,55.0,-465.0
 vladichich,RLX Esports,EBL,ADC,LPLOL Winter · saison régulière,7,0.571,6.12,-485.0,5.0,55.0,-480.0
 Ze Luis,Francesinhas,LPLOL,Support,LPLOL Winter · saison régulière,12,0.833,6.72,-516.0,-0.0,55.0,-516.0
 D4SH,Capybara Esports,LPLOL,Jungle,LPLOL Winter · saison régulière,6,0.5,3.8,-546.0,2.0,55.0,-544.0
@@ -5111,7 +5111,7 @@ Tuercas,NCG Esports,LRN,Top,LRN Split 1 · saison régulière,16,0.375,1.87,-396
 VirusFx,SDM Tigres,LRN,ADC,LRN Split 1 · saison régulière,13,0.846,4.43,-403.0,7.0,55.0,-396.0
 Ratth,3v Team,LRN,ADC,LRN Split 1 · saison régulière,5,0.6,2.67,-430.0,3.0,55.0,-427.0
 Vares,3v Team,LRN,Mid,LRN Split 1 · saison régulière,10,0.4,1.9,-438.0,-0.0,55.0,-438.0
-Relax,Golden Lions,LRN,Support,LRN Split 1 · saison régulière,13,0.462,3.71,-445.0,4.0,55.0,-441.0
+Relax,Polar Squad Esports,LRN,Support,LRN Split 1 · saison régulière,13,0.462,3.71,-445.0,4.0,55.0,-441.0
 Zhayend,LYON Academy,LRN,Top,LRN Split 1 · saison régulière,18,0.444,2.35,-449.0,-1.0,55.0,-450.0
 Cor,3v Team,LRN,Mid,LRN Split 1 · saison régulière,15,0.4,2.83,-460.0,4.0,55.0,-456.0
 Mitir,SDM Tigres,LRN,Jungle,LRN Split 1 · saison régulière,3,0.667,3.5,-466.0,5.0,55.0,-461.0
@@ -5160,7 +5160,7 @@ NANINI,LYON Academy,LRN,ADC,LRN Split 2 · playoffs,3,0.0,1.64,-550.0,-2.0,55.0,
 Starhide,LYON Academy,LRN,Support,LRN Split 2 · playoffs,3,0.0,2.42,-578.0,-2.0,55.0,-580.0
 KASE,LYON Academy,LRN,Jungle,LRN Split 2 · playoffs,3,0.0,3.0,-673.0,-2.0,55.0,-675.0
 Sweeho,LYON Academy,LRN,Mid,LRN Split 2 · playoffs,3,0.0,2.38,-674.0,-2.0,55.0,-676.0
-Galileo,Zeu5 Esports,LRS,Mid,LRN Split 2 · playoffs,1,0.0,2.11,-792.0,-1.0,55.0,-793.0
+Galileo,Tu Papá Esports,LRS,Mid,LRN Split 2 · playoffs,1,0.0,2.11,-792.0,-1.0,55.0,-793.0
 Keii,Zeu5 Esports,LRN,Top,LRN Split 2 · saison régulière,17,0.824,5.38,160.0,5.0,55.0,165.0
 Jauny,Fuego,LRN,Top,LRN Split 2 · saison régulière,12,0.833,8.0,70.0,0.0,55.0,70.0
 Skyy,Fuego,LRN,Mid,LRN Split 2 · saison régulière,13,0.846,5.38,6.0,-1.0,55.0,5.0
@@ -5245,12 +5245,12 @@ FIX,9z Globant,LRS,ADC,LRS Split 1 · saison régulière,16,0.438,2.84,-207.0,-1
 Ganks,Golden Lions,LRS,Jungle,LRS Split 1 · saison régulière,16,0.812,4.98,-265.0,5.0,55.0,-260.0
 Saifer,Docta Esports,LRS,Mid,LRS Split 1 · saison régulière,16,0.812,6.13,-278.0,5.0,55.0,-273.0
 AlluK,Docta Esports,LRS,Jungle,LRS Split 1 · saison régulière,16,0.75,3.76,-283.0,8.0,55.0,-275.0
-Peco,RAMPAGE,LRS,Mid,LRS Split 1 · saison régulière,9,0.333,2.44,-274.0,-2.0,55.0,-276.0
+Peco,Seven Dark,LRS,Mid,LRS Split 1 · saison régulière,9,0.333,2.44,-274.0,-2.0,55.0,-276.0
 ianshaka,Volticons,LRS,ADC,LRS Split 1 · saison régulière,17,0.706,5.5,-288.0,3.0,55.0,-285.0
 Lac,Docta Esports,LRS,ADC,LRS Split 1 · saison régulière,16,0.75,4.32,-295.0,8.0,55.0,-287.0
 Neo,Maze Gaming,LRS,Jungle,LRS Split 1 · saison régulière,13,0.308,2.41,-298.0,0.0,55.0,-298.0
 Chordy,Volticons,LRS,Top,LRS Split 1 · saison régulière,17,0.706,3.14,-312.0,3.0,55.0,-309.0
-Stoneses,RAMPAGE,LRS,Support,LRS Split 1 · saison régulière,9,0.333,2.87,-308.0,-2.0,55.0,-310.0
+Stoneses,Seven Dark,LRS,Support,LRS Split 1 · saison régulière,9,0.333,2.87,-308.0,-2.0,55.0,-310.0
 Hitsu,Maze Gaming,LRS,Mid,LRS Split 1 · saison régulière,13,0.308,3.87,-316.0,0.0,55.0,-316.0
 Fortu,Malvinas Gaming,LRS,Support,LRS Split 1 · saison régulière,16,0.75,3.98,-340.0,8.0,55.0,-332.0
 DiDi,Volticons,LRS,Mid,LRS Split 1 · saison régulière,17,0.706,3.85,-351.0,3.0,55.0,-348.0
@@ -5273,7 +5273,7 @@ Warangelus,The New Kings,LRS,ADC,LRS Split 1 · saison régulière,18,0.389,2.36
 Funky,The New Kings,LRS,Jungle,LRS Split 1 · saison régulière,12,0.333,1.79,-604.0,-3.0,55.0,-607.0
 Acce,The New Kings,LRS,Top,LRS Split 1 · saison régulière,15,0.333,2.21,-623.0,-2.0,55.0,-625.0
 Pet,Tu Papá Esports,LRS,Top,LRS Split 1 · saison régulière,11,0.091,1.17,-685.0,-3.0,55.0,-688.0
-Galileo,Zeu5 Esports,LRS,Mid,LRS Split 1 · saison régulière,11,0.091,1.37,-792.0,-6.0,55.0,-798.0
+Galileo,Tu Papá Esports,LRS,Mid,LRS Split 1 · saison régulière,11,0.091,1.37,-792.0,-6.0,55.0,-798.0
 Ux,9z Globant,LRS,Support,LRS Split 2 · playoffs,10,0.9,4.34,24.0,9.0,55.0,33.0
 Warsor,9z Globant,LRS,Jungle,LRS Split 2 · playoffs,10,0.9,5.11,-109.0,9.0,55.0,-100.0
 Wamu,Maze Gaming,LRS,Top,LRS Split 2 · playoffs,16,0.5,2.73,-103.0,-2.0,55.0,-105.0
@@ -5298,7 +5298,7 @@ DiDi,Volticons,LRS,Mid,LRS Split 2 · playoffs,8,0.25,2.42,-351.0,-6.0,55.0,-357
 Martote,Volticons,LRS,Jungle,LRS Split 2 · playoffs,8,0.25,1.89,-361.0,-6.0,55.0,-367.0
 Shu Hari,Maze Gaming,LRS,Support,LRS Split 2 · playoffs,16,0.5,2.82,-375.0,-2.0,55.0,-377.0
 Piqueos,Golden Lions,LRS,Mid,LRS Split 2 · playoffs,14,0.429,2.59,-390.0,-2.0,55.0,-392.0
-Relax,Golden Lions,LRN,Support,LRS Split 2 · playoffs,2,0.0,1.0,-445.0,-3.0,55.0,-448.0
+Relax,Polar Squad Esports,LRN,Support,LRS Split 2 · playoffs,2,0.0,1.0,-445.0,-3.0,55.0,-448.0
 Hika,Malvinas Gaming,LRS,ADC,LRS Split 2 · playoffs,5,0.4,3.31,-515.0,2.0,55.0,-513.0
 Dinastik,Docta Esports,LRS,Top,LRS Split 2 · playoffs,7,0.429,2.43,-521.0,-0.0,55.0,-521.0
 KUMEW,Docta Esports,LRS,ADC,LRS Split 2 · playoffs,7,0.429,3.36,-544.0,-0.0,55.0,-544.0
@@ -5608,13 +5608,13 @@ arbrio,Contingent Esports,NACL,Top,NACL · saison régulière,5,0.2,1.61,-372.0,
 Jeskla,Vivo Keyd Stars,CBLOL,ADC,NL · playoffs,7,0.143,1.85,293.0,-1.0,55.0,292.0
 Looki,Karmine Corp Blue,LFL,ADC,NL · playoffs,9,0.667,7.73,274.0,-1.0,55.0,273.0
 Oleg,Karmine Corp Blue Stars,NL,Jungle,NL · playoffs,17,0.706,5.39,171.0,2.0,55.0,173.0
-Koala,Esprit Shōnen,NL,Top,NL · playoffs,17,0.706,4.7,140.0,2.0,55.0,142.0
+Koala,Karmine Corp Blue Stars,NL,Top,NL · playoffs,17,0.706,4.7,140.0,2.0,55.0,142.0
 Gwen,Karmine Corp Blue Stars,NL,ADC,NL · playoffs,8,0.75,6.37,122.0,3.0,55.0,125.0
 Panda,Karmine Corp Blue Stars,NL,Mid,NL · playoffs,17,0.706,5.02,120.0,2.0,55.0,122.0
 Alaric,Karmine Corp Blue Stars,NL,Support,NL · playoffs,17,0.706,4.28,58.0,2.0,55.0,60.0
 Avarice,Project Conquerors,NL,ADC,NL · playoffs,23,0.565,3.98,58.0,2.0,54.0,60.0
 Bambi,Project Conquerors,NL,Top,NL · playoffs,23,0.565,2.19,19.0,2.0,54.0,21.0
-Twight,eSuba,NL,Jungle,NL · playoffs,10,0.7,5.52,10.0,10.0,55.0,20.0
+Twight,Galions Sharks,NL,Jungle,NL · playoffs,10,0.7,5.52,10.0,10.0,55.0,20.0
 Evangelyne,Team Phantasma,HLL,ADC,NL · playoffs,3,0.0,1.92,8.0,-2.0,55.0,6.0
 UniqueCORN,Project Conquerors,NL,Mid,NL · playoffs,23,0.565,2.68,-16.0,2.0,54.0,-14.0
 Frost,Project Conquerors,NL,Jungle,NL · playoffs,23,0.565,2.57,-31.0,2.0,54.0,-29.0
@@ -5624,9 +5624,9 @@ Evaan,Ancient Ones,NL,Mid,NL · playoffs,3,0.0,2.91,-79.0,-5.0,55.0,-84.0
 Kross,Ancient Ones,NL,ADC,NL · playoffs,3,0.0,2.46,-92.0,-5.0,55.0,-97.0
 Fallen,Ancient Ones,NL,Jungle,NL · playoffs,3,0.0,2.5,-98.0,-5.0,55.0,-103.0
 IENCH Taric,Ancient Ones,NL,Support,NL · playoffs,3,0.0,2.69,-109.0,-5.0,55.0,-114.0
-Satto,Guinea Pink,NL,Support,NL · playoffs,3,0.0,2.64,-114.0,-2.0,55.0,-116.0
+Satto,Lille Esport,NL,Support,NL · playoffs,3,0.0,2.64,-114.0,-2.0,55.0,-116.0
 Marty,Galions Sharks,NL,Mid,NL · playoffs,10,0.7,8.2,-131.0,10.0,55.0,-121.0
-Passzi,UCAM Esports,NL,Support,NL · playoffs,10,0.7,6.78,-147.0,10.0,55.0,-137.0
+Passzi,Galions Sharks,NL,Support,NL · playoffs,10,0.7,6.78,-147.0,10.0,55.0,-137.0
 SwiT,Galions Sharks,NL,Top,NL · playoffs,10,0.7,7.82,-164.0,10.0,55.0,-154.0
 shidolovell,Lille Esport,NL,Jungle,NL · playoffs,3,0.0,4.0,-195.0,-2.0,55.0,-197.0
 Nireo,Ancient Ones,NL,Top,NL · playoffs,3,0.0,2.67,-200.0,-5.0,55.0,-205.0
@@ -5638,14 +5638,14 @@ Kitano,Team High Ground,NL,Top,NL · playoffs,6,0.5,2.05,-240.0,0.0,55.0,-240.0
 Scimmia,Team High Ground,NL,Mid,NL · playoffs,6,0.5,2.86,-263.0,0.0,55.0,-263.0
 Drali,Caldya Esport,NL,Top,NL · playoffs,10,0.1,1.24,-268.0,-6.0,55.0,-274.0
 Kiki,Caldya Esport,NL,Jungle,NL · playoffs,10,0.1,1.37,-273.0,-6.0,55.0,-279.0
-Sukru,Dream Esports,NL,Top,NL · playoffs,3,0.0,1.57,-298.0,-2.0,55.0,-300.0
+Sukru,Lille Esport,NL,Top,NL · playoffs,3,0.0,1.57,-298.0,-2.0,55.0,-300.0
 Tebox,Team High Ground,NL,ADC,NL · playoffs,6,0.5,3.38,-305.0,0.0,55.0,-305.0
 Marbirius,Caldya Esport,NL,Mid,NL · playoffs,10,0.1,1.54,-348.0,-6.0,55.0,-354.0
 Akanania,Caldya Esport,NL,ADC,NL · playoffs,3,0.0,0.87,-413.0,-5.0,55.0,-418.0
 Jeskla,Vivo Keyd Stars,CBLOL,ADC,NL · saison régulière,14,0.714,4.84,293.0,10.0,55.0,303.0
 Looki,Karmine Corp Blue,LFL,ADC,NL · saison régulière,14,0.929,7.55,274.0,0.0,55.0,274.0
 Oleg,Karmine Corp Blue Stars,NL,Jungle,NL · saison régulière,23,0.956,8.62,171.0,4.0,54.0,175.0
-Koala,Esprit Shōnen,NL,Top,NL · saison régulière,23,0.956,4.29,140.0,4.0,54.0,144.0
+Koala,Karmine Corp Blue Stars,NL,Top,NL · saison régulière,23,0.956,4.29,140.0,4.0,54.0,144.0
 Gwen,Karmine Corp Blue Stars,NL,ADC,NL · saison régulière,5,1.0,11.33,122.0,4.0,55.0,126.0
 Panda,Karmine Corp Blue Stars,NL,Mid,NL · saison régulière,23,0.956,6.08,120.0,4.0,54.0,124.0
 Alaric,Karmine Corp Blue Stars,NL,Support,NL · saison régulière,21,0.952,5.91,58.0,3.0,54.0,61.0
@@ -5654,22 +5654,22 @@ Dyenn,GIANTX iTero,LES,Mid,NL · saison régulière,3,1.0,5.6,34.0,2.0,55.0,36.0
 Bambi,Project Conquerors,NL,Top,NL · saison régulière,22,0.727,3.86,19.0,1.0,54.0,20.0
 Evangelyne,Team Phantasma,HLL,ADC,NL · saison régulière,14,0.643,4.21,8.0,8.0,55.0,16.0
 jokaa,ROSSMANN Centaurs,PRM,Jungle,NL · saison régulière,14,0.429,2.19,19.0,-6.0,55.0,13.0
-Twight,eSuba,NL,Jungle,NL · saison régulière,9,0.556,4.71,10.0,-3.0,55.0,7.0
+Twight,Galions Sharks,NL,Jungle,NL · saison régulière,9,0.556,4.71,10.0,-3.0,55.0,7.0
 Infoneral,ROSSMANN Centaurs,PRM,Support,NL · saison régulière,14,0.429,2.38,10.0,-6.0,55.0,4.0
 UniqueCORN,Project Conquerors,NL,Mid,NL · saison régulière,23,0.696,4.77,-16.0,0.0,54.0,-16.0
 Frost,Project Conquerors,NL,Jungle,NL · saison régulière,23,0.696,4.41,-31.0,0.0,54.0,-31.0
 Sunfry,Project Conquerors,NL,Support,NL · saison régulière,23,0.696,3.48,-32.0,0.0,54.0,-32.0
 Gordinho,Esprit Shōnen,LFL,Support,NL · saison régulière,14,0.714,3.91,-43.0,10.0,55.0,-33.0
 Evaan,Ancient Ones,NL,Mid,NL · saison régulière,17,0.765,7.62,-79.0,7.0,55.0,-72.0
-Yuros,DIA Ozarox Esports,NL,Mid,NL · saison régulière,13,0.308,3.55,-82.0,1.0,55.0,-81.0
+Yuros,Zephyr Esport,NL,Mid,NL · saison régulière,13,0.308,3.55,-82.0,1.0,55.0,-81.0
 Kross,Ancient Ones,NL,ADC,NL · saison régulière,17,0.765,6.54,-92.0,7.0,55.0,-85.0
-Aymen,Karmine Corp Blue Stars,AL,Support,NL · saison régulière,2,1.0,7.5,-88.0,1.0,55.0,-87.0
+Aymen,FN Esports,AL,Support,NL · saison régulière,2,1.0,7.5,-88.0,1.0,55.0,-87.0
 Fallen,Ancient Ones,NL,Jungle,NL · saison régulière,17,0.765,6.37,-98.0,7.0,55.0,-91.0
 KKT,Bulldog Esports,NLC,Jungle,NL · saison régulière,5,0.6,5.36,-101.0,2.0,55.0,-99.0
 IENCH Taric,Ancient Ones,NL,Support,NL · saison régulière,17,0.765,4.96,-109.0,7.0,55.0,-102.0
-Satto,Guinea Pink,NL,Support,NL · saison régulière,23,0.522,3.53,-114.0,5.0,54.0,-109.0
+Satto,Lille Esport,NL,Support,NL · saison régulière,23,0.522,3.53,-114.0,5.0,54.0,-109.0
 Marty,Galions Sharks,NL,Mid,NL · saison régulière,22,0.454,5.78,-131.0,-8.0,54.0,-139.0
-Passzi,UCAM Esports,NL,Support,NL · saison régulière,9,0.556,3.55,-147.0,-3.0,55.0,-150.0
+Passzi,Galions Sharks,NL,Support,NL · saison régulière,9,0.556,3.55,-147.0,-3.0,55.0,-150.0
 SwiT,Galions Sharks,NL,Top,NL · saison régulière,23,0.478,4.42,-164.0,-9.0,54.0,-173.0
 shidolovell,Lille Esport,NL,Jungle,NL · saison régulière,18,0.5,3.46,-195.0,4.0,55.0,-191.0
 Nireo,Ancient Ones,NL,Top,NL · saison régulière,17,0.765,2.92,-200.0,7.0,55.0,-193.0
@@ -5687,24 +5687,24 @@ Vespa,Only The Family,EBL,ADC,NL · saison régulière,9,0.333,2.24,-266.0,-3.0,
 Hexom,Lausanne-Sport Esports,NL,Support,NL · saison régulière,14,0.357,2.32,-269.0,-1.0,55.0,-270.0
 Louis,Lausanne-Sport Esports,NL,Mid,NL · saison régulière,14,0.357,2.03,-269.0,-1.0,55.0,-270.0
 Moto,Lausanne-Sport Esports,NL,Jungle,NL · saison régulière,14,0.357,2.31,-275.0,-1.0,55.0,-276.0
-Sukru,Dream Esports,NL,Top,NL · saison régulière,23,0.522,4.15,-298.0,5.0,54.0,-293.0
+Sukru,Lille Esport,NL,Top,NL · saison régulière,23,0.522,4.15,-298.0,5.0,54.0,-293.0
 CHARMANDERBOT,Zephyr Esport,NL,Support,NL · saison régulière,14,0.286,3.87,-301.0,-0.0,55.0,-301.0
 Tebox,Team High Ground,NL,ADC,NL · saison régulière,14,0.5,2.67,-305.0,1.0,55.0,-304.0
 Lixo,Zephyr Esport,NL,ADC,NL · saison régulière,14,0.286,5.03,-337.0,-0.0,55.0,-337.0
 Marbirius,Caldya Esport,NL,Mid,NL · saison régulière,20,0.5,3.28,-348.0,4.0,54.0,-344.0
-Inzuh,Crystal Rose,LPLOL,Mid,NL · saison régulière,9,0.222,2.29,-370.0,1.0,55.0,-369.0
+Inzuh,Vantex Esports,LPLOL,Mid,NL · saison régulière,9,0.222,2.29,-370.0,1.0,55.0,-369.0
 ZPR Navi,Zephyr Esport,NL,Top,NL · saison régulière,14,0.286,2.17,-375.0,-0.0,55.0,-375.0
-denizzz,Zerolag Esports,NL,Jungle,NL · saison régulière,14,0.286,2.67,-415.0,-0.0,55.0,-415.0
+denizzz,Zephyr Esport,NL,Jungle,NL · saison régulière,14,0.286,2.67,-415.0,-0.0,55.0,-415.0
 Akanania,Caldya Esport,NL,ADC,NL · saison régulière,9,0.333,3.82,-413.0,-3.0,55.0,-416.0
-Wuis,Crystal Rose,ROL,Support,NL · saison régulière,9,0.222,1.92,-425.0,1.0,55.0,-424.0
+Wuis,Dynasty,ROL,Support,NL · saison régulière,9,0.222,1.92,-425.0,1.0,55.0,-424.0
 FliiZee,Crystal Rose,NL,ADC,NL · saison régulière,13,0.077,1.67,-463.0,-1.0,55.0,-464.0
 Renewal,Only The Family,EBL,Jungle,NL · saison régulière,17,0.118,1.85,-468.0,-0.0,55.0,-468.0
 Achille,Crystal Rose,NL,Top,NL · saison régulière,12,0.083,1.36,-469.0,-3.0,55.0,-472.0
 Blazteurs,Crystal Rose,NL,Support,NL · saison régulière,8,0.0,1.25,-468.0,-5.0,55.0,-473.0
 Dym,Crystal Rose,NL,Mid,NL · saison régulière,14,0.071,1.63,-486.0,-4.0,55.0,-490.0
-Twendddy,Zephyr Esport,ROL,Top,NL · saison régulière,9,0.111,1.19,-495.0,-4.0,55.0,-499.0
-D1verse,Lausanne-Sport Esports,HLL,Mid,NL · saison régulière,9,0.222,1.92,-523.0,-4.0,55.0,-527.0
-Raffy,Crystal Rose,LIT,Top,NL · saison régulière,9,0.222,1.38,-544.0,1.0,55.0,-543.0
+Twendddy,Dynasty,ROL,Top,NL · saison régulière,9,0.111,1.19,-495.0,-4.0,55.0,-499.0
+D1verse,Howl Esports,HLL,Mid,NL · saison régulière,9,0.222,1.92,-523.0,-4.0,55.0,-527.0
+Raffy,Zena Esports,LIT,Top,NL · saison régulière,9,0.222,1.38,-544.0,1.0,55.0,-543.0
 Furuy,Verdant,NLC,Mid,NLC Spring · playoffs,5,1.0,24.67,146.0,4.0,55.0,150.0
 Szygenda,Eintracht Frankfurt,PRM,Top,NLC Spring · playoffs,3,0.333,1.89,96.0,-1.0,55.0,95.0
 bobista,Verdant,NLC,Top,NLC Spring · playoffs,5,1.0,8.88,75.0,4.0,55.0,79.0
@@ -5727,7 +5727,7 @@ uden,Deer Gaming,NLC,Support,NLC Spring · playoffs,10,0.4,4.19,-250.0,-2.0,55.0
 FredSpaghet,Sørby eSport,NLC,Support,NLC Spring · playoffs,13,0.462,4.0,-318.0,4.0,55.0,-314.0
 reje,Bulldog Esports,NLC,ADC,NLC Spring · playoffs,3,0.333,1.93,-325.0,-1.0,55.0,-326.0
 Hankat,Myth Esports,ROL,Jungle,NLC Spring · playoffs,10,0.4,1.96,-330.0,-2.0,55.0,-332.0
-Kakarot,SU Esports,NLC,ADC,NLC Spring · playoffs,10,0.4,2.5,-355.0,-2.0,55.0,-357.0
+Kakarot,Deer Gaming,NLC,ADC,NLC Spring · playoffs,10,0.4,2.5,-355.0,-2.0,55.0,-357.0
 Ronaldo,Bulldog Esports,NLC,Mid,NLC Spring · playoffs,3,0.333,2.13,-357.0,-1.0,55.0,-358.0
 MadsF,Sørby eSport,NLC,ADC,NLC Spring · playoffs,13,0.462,4.03,-412.0,4.0,55.0,-408.0
 Furuy,Verdant,NLC,Mid,NLC Spring · saison régulière,7,0.857,5.94,146.0,0.0,55.0,146.0
@@ -5753,9 +5753,9 @@ uden,Deer Gaming,NLC,Support,NLC Spring · saison régulière,7,0.571,6.35,-250.
 Mansterninja,Lundqvist Lightside,NLC,Top,NLC Spring · saison régulière,7,0.286,1.41,-264.0,0.0,55.0,-264.0
 FredSpaghet,Sørby eSport,NLC,Support,NLC Spring · saison régulière,7,0.571,4.22,-318.0,-0.0,55.0,-318.0
 reje,Bulldog Esports,NLC,ADC,NLC Spring · saison régulière,8,0.5,2.58,-325.0,-0.0,55.0,-325.0
-CLEARS,Dream Esports,NLC,Jungle,NLC Spring · saison régulière,8,0.375,2.63,-325.0,-1.0,55.0,-326.0
+CLEARS,DMG Esports,NLC,Jungle,NLC Spring · saison régulière,8,0.375,2.63,-325.0,-1.0,55.0,-326.0
 Hankat,Myth Esports,ROL,Jungle,NLC Spring · saison régulière,7,0.571,3.29,-330.0,2.0,55.0,-328.0
-Kakarot,SU Esports,NLC,ADC,NLC Spring · saison régulière,7,0.571,2.73,-355.0,2.0,55.0,-353.0
+Kakarot,Deer Gaming,NLC,ADC,NLC Spring · saison régulière,7,0.571,2.73,-355.0,2.0,55.0,-353.0
 Ronaldo,Bulldog Esports,NLC,Mid,NLC Spring · saison régulière,8,0.5,4.74,-357.0,-0.0,55.0,-357.0
 Luis,Dynasty,ROL,Support,NLC Spring · saison régulière,7,0.286,1.56,-371.0,0.0,55.0,-371.0
 Unicow,Lundqvist Lightside,NLC,Mid,NLC Spring · saison régulière,7,0.286,2.76,-381.0,0.0,55.0,-381.0
@@ -5765,7 +5765,7 @@ Bjoernen,Lundqvist Lightside,NLC,ADC,NLC Spring · saison régulière,7,0.286,3.
 MadsF,Sørby eSport,NLC,ADC,NLC Spring · saison régulière,7,0.571,2.63,-412.0,-0.0,55.0,-412.0
 JayJay,Zena Esports,LIT,Mid,NLC Spring · saison régulière,8,0.375,3.46,-445.0,-1.0,55.0,-446.0
 Furby,P11 Esports,LIT,Mid,NLC Spring · saison régulière,7,0.286,2.88,-463.0,0.0,55.0,-463.0
-Cha0s,Dream Esports,NLC,Top,NLC Spring · saison régulière,7,0.286,1.57,-492.0,0.0,55.0,-492.0
+Cha0s,Lund Esports Organization,NLC,Top,NLC Spring · saison régulière,7,0.286,1.57,-492.0,0.0,55.0,-492.0
 Robocop,Ruddy Corporation,NLC,Top,NLC Summer · saison régulière,20,0.85,5.22,197.0,6.0,54.0,203.0
 J3rkie,Ruddy Corporation,NLC,Support,NLC Summer · saison régulière,20,0.85,5.45,135.0,6.0,54.0,141.0
 Sayn,Verdant,NLC,Mid,NLC Summer · saison régulière,23,0.739,5.97,108.0,4.0,54.0,112.0
@@ -5823,14 +5823,14 @@ Zilax,Lund Esports Organization,NLC,Mid,NLC Summer · saison régulière,13,0.46
 Spiderlair,Lundqvist Lightside,NLC,Jungle,NLC Summer · saison régulière,12,0.417,3.41,-397.0,1.0,55.0,-396.0
 Guvez,B2U,NLC,Top,NLC Summer · saison régulière,10,0.5,1.67,-398.0,-0.0,55.0,-398.0
 Bjoernen,Lundqvist Lightside,NLC,ADC,NLC Summer · saison régulière,12,0.417,2.39,-405.0,1.0,55.0,-404.0
-Zuhy,Fortress Esports,ROL,Mid,NLC Summer · saison régulière,2,0.0,0.69,-403.0,-2.0,55.0,-405.0
+Zuhy,Senshi eSports,ROL,Mid,NLC Summer · saison régulière,2,0.0,0.69,-403.0,-2.0,55.0,-405.0
 MadsF,Sørby eSport,NLC,ADC,NLC Summer · saison régulière,6,0.0,2.0,-412.0,-6.0,55.0,-418.0
 Dovendyr,Lund Esports Organization,NLC,Support,NLC Summer · saison régulière,13,0.462,2.96,-501.0,0.0,55.0,-501.0
 BunnyBeast,Lund Esports Organization,NLC,ADC,NLC Summer · saison régulière,13,0.462,4.41,-511.0,0.0,55.0,-511.0
-Xero,Rich Gang,LIT,Mid,NLC Summer · saison régulière,5,0.2,2.45,-585.0,-3.0,55.0,-588.0
+Xero,StoneHenge Esports Academy,LIT,Mid,NLC Summer · saison régulière,5,0.2,2.45,-585.0,-3.0,55.0,-588.0
 Luke,2 Massive,NLC,Support,NLC Summer · saison régulière,4,0.0,0.71,-637.0,-4.0,55.0,-641.0
-Messclick,2 Massive,HLL,ADC,NLC Summer · saison régulière,2,0.0,1.75,-698.0,-2.0,55.0,-700.0
-Daskhai,2 Massive,LIT,Mid,NLC Summer · saison régulière,2,0.0,2.6,-771.0,-2.0,55.0,-773.0
+Messclick,Zerolag Esports,HLL,ADC,NLC Summer · saison régulière,2,0.0,1.75,-698.0,-2.0,55.0,-700.0
+Daskhai,TITANS,LIT,Mid,NLC Summer · saison régulière,2,0.0,2.6,-771.0,-2.0,55.0,-773.0
 Furuy,Verdant,NLC,Mid,NLC Winter · playoffs,9,1.0,6.86,146.0,12.0,55.0,158.0
 Leks,ROSSMANN Centaurs,PRM,Top,NLC Winter · playoffs,3,0.0,1.07,94.0,-4.0,55.0,90.0
 bobista,Verdant,NLC,Top,NLC Winter · playoffs,9,1.0,5.89,75.0,12.0,55.0,87.0
@@ -5842,10 +5842,10 @@ Simpli,Arctic Pandas,NLC,Mid,NLC Winter · playoffs,6,0.5,4.94,-87.0,-2.0,55.0,-
 Boltox,Arctic Pandas,NLC,Support,NLC Winter · playoffs,6,0.5,2.92,-94.0,-2.0,55.0,-96.0
 dibu,Arctic Pandas,NLC,Jungle,NLC Winter · playoffs,6,0.5,2.44,-107.0,-2.0,55.0,-109.0
 kehvo,Arctic Pandas,NLC,ADC,NLC Winter · playoffs,6,0.5,2.92,-129.0,-2.0,55.0,-131.0
-Noodle,Crusaders,NLC,Jungle,NLC Winter · playoffs,3,0.0,1.0,-136.0,-4.0,55.0,-140.0
+Noodle,Bulldog Esports,NLC,Jungle,NLC Winter · playoffs,3,0.0,1.0,-136.0,-4.0,55.0,-140.0
 Calmsky,White Dragons,LPLOL,Support,NLC Winter · playoffs,6,0.0,2.07,-169.0,-6.0,55.0,-175.0
-Lulas,Esprit Shōnen,LPLOL,Jungle,NLC Winter · playoffs,6,0.0,1.29,-179.0,-6.0,55.0,-185.0
-fantomisto,Esprit Shōnen,RL,Mid,NLC Winter · playoffs,6,0.0,1.81,-191.0,-6.0,55.0,-197.0
+Lulas,Otter Side,LPLOL,Jungle,NLC Winter · playoffs,6,0.0,1.29,-179.0,-6.0,55.0,-185.0
+fantomisto,devils.one inStreamly,RL,Mid,NLC Winter · playoffs,6,0.0,1.81,-191.0,-6.0,55.0,-197.0
 Faetski,devils.one inStreamly,RL,ADC,NLC Winter · playoffs,6,0.0,1.9,-218.0,-6.0,55.0,-224.0
 Kasing,Bulldog Esports,NLC,Support,NLC Winter · playoffs,3,0.0,0.71,-229.0,-4.0,55.0,-233.0
 Goldmen,Team Phantasma,HLL,Top,NLC Winter · playoffs,6,0.0,1.83,-228.0,-6.0,55.0,-234.0
@@ -5864,14 +5864,14 @@ Simpli,Arctic Pandas,NLC,Mid,NLC Winter · saison régulière,9,0.889,8.88,-87.0
 Boltox,Arctic Pandas,NLC,Support,NLC Winter · saison régulière,9,0.889,6.86,-94.0,5.0,55.0,-89.0
 dibu,Arctic Pandas,NLC,Jungle,NLC Winter · saison régulière,9,0.889,4.79,-107.0,5.0,55.0,-102.0
 kehvo,Arctic Pandas,NLC,ADC,NLC Winter · saison régulière,9,0.889,5.62,-129.0,5.0,55.0,-124.0
-Noodle,Crusaders,NLC,Jungle,NLC Winter · saison régulière,9,0.667,5.19,-136.0,5.0,55.0,-131.0
+Noodle,Bulldog Esports,NLC,Jungle,NLC Winter · saison régulière,9,0.667,5.19,-136.0,5.0,55.0,-131.0
 Calmsky,White Dragons,LPLOL,Support,NLC Winter · saison régulière,9,0.778,5.3,-169.0,6.0,55.0,-163.0
-Lulas,Esprit Shōnen,LPLOL,Jungle,NLC Winter · saison régulière,9,0.778,6.48,-179.0,6.0,55.0,-173.0
-fantomisto,Esprit Shōnen,RL,Mid,NLC Winter · saison régulière,9,0.778,7.22,-191.0,6.0,55.0,-185.0
+Lulas,Otter Side,LPLOL,Jungle,NLC Winter · saison régulière,9,0.778,6.48,-179.0,6.0,55.0,-173.0
+fantomisto,devils.one inStreamly,RL,Mid,NLC Winter · saison régulière,9,0.778,7.22,-191.0,6.0,55.0,-185.0
 Virtuso,Deer Gaming,NLC,Top,NLC Winter · saison régulière,9,0.556,1.81,-195.0,-2.0,55.0,-197.0
 Scuffed,Deer Gaming,NLC,Mid,NLC Winter · saison régulière,9,0.556,2.36,-202.0,-2.0,55.0,-204.0
 Faetski,devils.one inStreamly,RL,ADC,NLC Winter · saison régulière,9,0.778,6.54,-218.0,6.0,55.0,-212.0
-RustySniper,The Bandits,NLC,ADC,NLC Winter · saison régulière,8,0.625,2.34,-221.0,3.0,55.0,-218.0
+RustySniper,Lund Esports Organization,NLC,ADC,NLC Winter · saison régulière,8,0.625,2.34,-221.0,3.0,55.0,-218.0
 Goldmen,Team Phantasma,HLL,Top,NLC Winter · saison régulière,9,0.778,3.81,-228.0,6.0,55.0,-222.0
 Kasing,Bulldog Esports,NLC,Support,NLC Winter · saison régulière,9,0.667,6.87,-229.0,5.0,55.0,-224.0
 Hunt,Bulldog Esports,NLC,Mid,NLC Winter · saison régulière,8,0.625,3.96,-242.0,5.0,55.0,-237.0
@@ -5880,11 +5880,11 @@ uden,Deer Gaming,NLC,Support,NLC Winter · saison régulière,9,0.556,12.2,-250.
 Syzyfek,Forsaken,RL,ADC,NLC Winter · saison régulière,9,0.667,4.54,-259.0,5.0,55.0,-254.0
 Mansterninja,Lundqvist Lightside,NLC,Top,NLC Winter · saison régulière,7,0.714,2.31,-264.0,5.0,55.0,-259.0
 MathisV,Dynasty,ROL,Mid,NLC Winter · saison régulière,8,0.375,4.52,-282.0,1.0,55.0,-281.0
-CLEARS,Dream Esports,NLC,Jungle,NLC Winter · saison régulière,8,0.375,2.21,-325.0,1.0,55.0,-324.0
+CLEARS,DMG Esports,NLC,Jungle,NLC Winter · saison régulière,8,0.375,2.21,-325.0,1.0,55.0,-324.0
 Soul,DMG Esports,NLC,Support,NLC Winter · saison régulière,8,0.375,1.72,-390.0,1.0,55.0,-389.0
 Guvez,B2U,NLC,Top,NLC Winter · saison régulière,1,0.0,0.4,-398.0,-2.0,55.0,-400.0
 Furby,P11 Esports,LIT,Mid,NLC Winter · saison régulière,8,0.625,12.0,-463.0,3.0,55.0,-460.0
-Royeq,REDPack Esports,NLC,ADC,NLC Winter · saison régulière,7,0.429,3.29,-546.0,2.0,55.0,-544.0
+Royeq,Lundqvist Lightside,NLC,ADC,NLC Winter · saison régulière,7,0.429,3.29,-546.0,2.0,55.0,-544.0
 Exile1,SPIKE Syndicate,EBL,Jungle,NLC Winter · saison régulière,8,0.5,1.97,-547.0,-3.0,55.0,-550.0
 Painful,mCon esports,ROL,Mid,NLC Winter · saison régulière,4,0.0,0.94,-628.0,-3.0,55.0,-631.0
 Luke,2 Massive,NLC,Support,NLC Winter · saison régulière,9,0.222,1.98,-637.0,-2.0,55.0,-639.0
@@ -5959,7 +5959,7 @@ seaz,Eintracht Spandau,PRM,Support,PRM Spring · playoffs,16,0.438,3.98,264.0,1.
 JNX,Eintracht Spandau,PRM,Top,PRM Spring · playoffs,16,0.438,2.11,261.0,1.0,55.0,262.0
 UNF0RGIVEN,Kaufland Hangry Knights,PRM,ADC,PRM Spring · playoffs,12,0.583,4.75,248.0,5.0,55.0,253.0
 DenVoksne,Unicorns of Love Sexy Edition,PRM,ADC,PRM Spring · playoffs,16,0.375,2.01,244.0,-7.0,55.0,237.0
-Keduii,Joblife,PRM,ADC,PRM Spring · playoffs,8,0.625,5.18,221.0,8.0,55.0,229.0
+Keduii,Eintracht Spandau,PRM,ADC,PRM Spring · playoffs,8,0.625,5.18,221.0,8.0,55.0,229.0
 Fun K3y,Eintracht Spandau,PRM,ADC,PRM Spring · playoffs,8,0.25,2.03,221.0,-6.0,55.0,215.0
 Twiizt,Unicorns of Love Sexy Edition,PRM,Support,PRM Spring · playoffs,16,0.375,4.87,222.0,-7.0,55.0,215.0
 RoyalKanin,Unicorns of Love Sexy Edition,PRM,Mid,PRM Spring · playoffs,16,0.375,2.65,218.0,-7.0,55.0,211.0
@@ -5997,7 +5997,7 @@ seaz,Eintracht Spandau,PRM,Support,PRM Spring · saison régulière,17,0.882,4.5
 JNX,Eintracht Spandau,PRM,Top,PRM Spring · saison régulière,17,0.882,5.59,261.0,8.0,55.0,269.0
 UNF0RGIVEN,Kaufland Hangry Knights,PRM,ADC,PRM Spring · saison régulière,10,0.4,3.86,248.0,1.0,55.0,249.0
 DenVoksne,Unicorns of Love Sexy Edition,PRM,ADC,PRM Spring · saison régulière,19,0.579,2.72,244.0,-4.0,54.0,240.0
-Keduii,Joblife,PRM,ADC,PRM Spring · saison régulière,17,0.882,3.85,221.0,8.0,55.0,229.0
+Keduii,Eintracht Spandau,PRM,ADC,PRM Spring · saison régulière,17,0.882,3.85,221.0,8.0,55.0,229.0
 Twiizt,Unicorns of Love Sexy Edition,PRM,Support,PRM Spring · saison régulière,16,0.562,4.62,222.0,-6.0,55.0,216.0
 RoyalKanin,Unicorns of Love Sexy Edition,PRM,Mid,PRM Spring · saison régulière,19,0.579,3.16,218.0,-4.0,54.0,214.0
 White,Unicorns of Love Sexy Edition,PRM,Jungle,PRM Spring · saison régulière,19,0.579,2.86,198.0,-4.0,54.0,194.0
@@ -6105,7 +6105,7 @@ DenVoksne,Unicorns of Love Sexy Edition,PRM,ADC,PRM Winter · saison régulière
 Twiizt,Unicorns of Love Sexy Edition,PRM,Support,PRM Winter · saison régulière,15,0.6,4.82,222.0,7.0,55.0,229.0
 Fun K3y,Eintracht Spandau,PRM,ADC,PRM Winter · saison régulière,15,0.733,3.49,221.0,6.0,55.0,227.0
 RoyalKanin,Unicorns of Love Sexy Edition,PRM,Mid,PRM Winter · saison régulière,15,0.6,3.56,218.0,7.0,55.0,225.0
-Keduii,Joblife,PRM,ADC,PRM Winter · saison régulière,16,0.562,2.96,221.0,-1.0,55.0,220.0
+Keduii,Eintracht Spandau,PRM,ADC,PRM Winter · saison régulière,16,0.562,2.96,221.0,-1.0,55.0,220.0
 White,Unicorns of Love Sexy Edition,PRM,Jungle,PRM Winter · saison régulière,15,0.6,3.84,198.0,7.0,55.0,205.0
 Fornoreason,Unicorns of Love Sexy Edition,PRM,Top,PRM Winter · saison régulière,15,0.6,2.36,178.0,7.0,55.0,185.0
 Xagog,Eintracht Spandau,PRM,Jungle,PRM Winter · saison régulière,16,0.562,2.06,175.0,-1.0,55.0,174.0
@@ -6129,7 +6129,7 @@ D4nKa,Eintracht Frankfurt,PRM,Jungle,PRM Winter · saison régulière,9,0.444,3.
 Dome,A One Man Army Prime,PRM,Jungle,PRM Winter · saison régulière,6,0.167,1.62,-12.0,-4.0,55.0,-16.0
 Xay,A One Man Army Prime,PRM,ADC,PRM Winter · saison régulière,6,0.167,2.35,-19.0,-4.0,55.0,-23.0
 Artoria,DMG Esports,NLC,Mid,PRM Winter · saison régulière,6,0.167,1.86,-25.0,-4.0,55.0,-29.0
-Smurfe,Frites Esports Club,HLL,Top,PRM Winter · saison régulière,6,0.167,2.24,-39.0,-4.0,55.0,-43.0
+Smurfe,WLGaming Esports,HLL,Top,PRM Winter · saison régulière,6,0.167,2.24,-39.0,-4.0,55.0,-43.0
 Fooneses,ROSSMANN Centaurs,PRM,Mid,PRM Winter · saison régulière,4,0.0,1.0,-67.0,-1.0,55.0,-68.0
 Pyrka,Kaufland Hangry Knights,PRM,Support,PRM Winter · saison régulière,7,0.429,2.15,-87.0,3.0,55.0,-84.0
 Venour,Kaufland Hangry Knights,PRM,Top,PRM Winter · saison régulière,7,0.429,2.68,-106.0,3.0,55.0,-103.0
@@ -6144,7 +6144,7 @@ Szygenda,Eintracht Frankfurt,PRM,Top,PRM · saison régulière,14,0.5,2.56,96.0,
 Lorenz,All for One Gaming,PRM,Support,PRM · saison régulière,14,0.5,2.85,81.0,-5.0,55.0,76.0
 Diplex,All for One Gaming,PRM,Mid,PRM · saison régulière,14,0.5,4.86,73.0,-5.0,55.0,68.0
 Sencux,Eintracht Frankfurt,PRM,Mid,PRM · saison régulière,14,0.5,3.53,40.0,4.0,55.0,44.0
-Raider,CGN Esports,AL,Top,PRM · saison régulière,7,0.857,5.46,31.0,2.0,55.0,33.0
+Raider,JSK Esports,AL,Top,PRM · saison régulière,7,0.857,5.46,31.0,2.0,55.0,33.0
 Zanzarah,All for One Gaming,PRM,Jungle,PRM · saison régulière,14,0.5,3.17,16.0,-5.0,55.0,11.0
 Flamer,All for One Gaming,PRM,Top,PRM · saison régulière,14,0.5,3.06,-6.0,-5.0,55.0,-11.0
 D4nKa,Eintracht Frankfurt,PRM,Jungle,PRM · saison régulière,14,0.5,2.69,-17.0,4.0,55.0,-13.0
@@ -6197,7 +6197,7 @@ HeSSZero,Anonymo Esports,RL,Top,RL Spring · saison régulière,15,0.533,3.17,-1
 Calmsky,White Dragons,LPLOL,Support,RL Spring · saison régulière,19,0.368,2.92,-169.0,-4.0,55.0,-173.0
 Joki37,Bulldog Esports,NLC,Jungle,RL Spring · saison régulière,15,0.533,2.3,-186.0,4.0,55.0,-182.0
 Tenshi,Barcząca Esports by Yumisu,RL,Mid,RL Spring · saison régulière,7,0.571,3.1,-179.0,-6.0,55.0,-185.0
-fantomisto,Esprit Shōnen,RL,Mid,RL Spring · saison régulière,19,0.368,3.58,-191.0,-4.0,55.0,-195.0
+fantomisto,devils.one inStreamly,RL,Mid,RL Spring · saison régulière,19,0.368,3.58,-191.0,-4.0,55.0,-195.0
 ejsner,Barcząca Esports by Yumisu,RL,ADC,RL Spring · saison régulière,15,0.533,4.51,-207.0,4.0,55.0,-203.0
 Sobek,Anonymo Esports,RL,Mid,RL Spring · saison régulière,15,0.533,3.53,-208.0,4.0,55.0,-204.0
 PmK,DOCISK,RL,Top,RL Spring · saison régulière,17,0.412,2.51,-209.0,-0.0,55.0,-209.0
@@ -6318,9 +6318,9 @@ Guertas,Senshi eSports,ROL,Jungle,ROL Spring · playoffs,5,0.2,1.08,-353.0,-7.0,
 Colomblbl,Once Upon A Team,ROL,Support,ROL Spring · playoffs,7,0.571,2.91,-372.0,2.0,55.0,-370.0
 MaiYuk,mCon esports,ROL,Top,ROL Spring · playoffs,16,0.5,1.82,-396.0,4.0,55.0,-392.0
 Numandiel,Senshi eSports,ROL,Mid,ROL Spring · playoffs,5,0.2,1.21,-390.0,-7.0,55.0,-397.0
-Wuis,Crystal Rose,ROL,Support,ROL Spring · playoffs,4,0.0,2.37,-425.0,-1.0,55.0,-426.0
+Wuis,Dynasty,ROL,Support,ROL Spring · playoffs,4,0.0,2.37,-425.0,-1.0,55.0,-426.0
 Void,Dynasty,ROL,ADC,ROL Spring · playoffs,4,0.0,2.75,-468.0,-1.0,55.0,-469.0
-Twendddy,Zephyr Esport,ROL,Top,ROL Spring · playoffs,4,0.0,1.36,-495.0,-1.0,55.0,-496.0
+Twendddy,Dynasty,ROL,Top,ROL Spring · playoffs,4,0.0,1.36,-495.0,-1.0,55.0,-496.0
 AwerpiS,TITANS,LIT,Support,ROL Spring · playoffs,10,0.4,3.9,-502.0,0.0,55.0,-502.0
 Enkil,BRUTE,HM,Support,ROL Spring · playoffs,5,0.2,2.64,-504.0,-7.0,55.0,-511.0
 Fishue,Dynasty,ROL,Jungle,ROL Spring · playoffs,4,0.0,2.29,-559.0,-1.0,55.0,-560.0
@@ -6336,7 +6336,7 @@ Ilyxøu,mCon esports,ROL,Top,ROL Spring · saison régulière,15,0.6,3.71,-270.0
 Pipibaat,The Bandits,ROL,Jungle,ROL Spring · saison régulière,14,0.429,3.1,-270.0,3.0,55.0,-267.0
 bbmuffin,The Bandits,ROL,Mid,ROL Spring · saison régulière,15,0.733,4.71,-269.0,2.0,55.0,-267.0
 MathisV,Dynasty,ROL,Mid,ROL Spring · saison régulière,18,0.5,5.16,-282.0,1.0,55.0,-281.0
-Archfiend,Esprit Shōnen,EBL,Top,ROL Spring · saison régulière,3,0.667,2.62,-284.0,-0.0,55.0,-284.0
+Archfiend,Magaza Esports,EBL,Top,ROL Spring · saison régulière,3,0.667,2.62,-284.0,-0.0,55.0,-284.0
 Owpi,Once Upon A Team,ROL,Top,ROL Spring · saison régulière,3,0.667,2.7,-289.0,-0.0,55.0,-289.0
 CaviaVampier,The Bandits,ROL,ADC,ROL Spring · saison régulière,15,0.733,3.39,-305.0,2.0,55.0,-303.0
 rym,Once Upon A Team,ROL,Mid,ROL Spring · saison régulière,11,0.546,4.09,-327.0,1.0,55.0,-326.0
@@ -6349,11 +6349,11 @@ Aliplane,mCon esports,ROL,ADC,ROL Spring · saison régulière,2,0.0,0.86,-355.0
 Colomblbl,Once Upon A Team,ROL,Support,ROL Spring · saison régulière,17,0.471,3.17,-372.0,-1.0,55.0,-373.0
 Numandiel,Senshi eSports,ROL,Mid,ROL Spring · saison régulière,15,0.6,3.63,-390.0,8.0,55.0,-382.0
 MaiYuk,mCon esports,ROL,Top,ROL Spring · saison régulière,19,0.368,1.3,-396.0,-3.0,54.0,-399.0
-Wuis,Crystal Rose,ROL,Support,ROL Spring · saison régulière,18,0.5,3.95,-425.0,1.0,55.0,-424.0
+Wuis,Dynasty,ROL,Support,ROL Spring · saison régulière,18,0.5,3.95,-425.0,1.0,55.0,-424.0
 Slyv3r,mCon esports,ROL,ADC,ROL Spring · saison régulière,17,0.412,2.55,-446.0,-2.0,55.0,-448.0
 Stookbeer,mCon esports,ROL,Support,ROL Spring · saison régulière,17,0.412,1.88,-464.0,-2.0,55.0,-466.0
 Void,Dynasty,ROL,ADC,ROL Spring · saison régulière,18,0.5,3.08,-468.0,1.0,55.0,-467.0
-Twendddy,Zephyr Esport,ROL,Top,ROL Spring · saison régulière,10,0.5,3.11,-495.0,4.0,55.0,-491.0
+Twendddy,Dynasty,ROL,Top,ROL Spring · saison régulière,10,0.5,3.11,-495.0,4.0,55.0,-491.0
 Enkil,BRUTE,HM,Support,ROL Spring · saison régulière,15,0.6,4.14,-504.0,8.0,55.0,-496.0
 Franky,Myth Esports,ROL,Mid,ROL Spring · saison régulière,10,0.2,2.9,-499.0,-2.0,55.0,-501.0
 AwerpiS,TITANS,LIT,Support,ROL Spring · saison régulière,13,0.692,3.47,-502.0,0.0,55.0,-502.0
@@ -6369,7 +6369,7 @@ Dolis,eSuba,HM,Mid,ROL Spring · saison régulière,17,0.235,2.75,-539.0,-8.0,55
 Fishue,Dynasty,ROL,Jungle,ROL Spring · saison régulière,18,0.5,2.74,-559.0,1.0,55.0,-558.0
 Baumeef,Once Upon A Team,ROL,Jungle,ROL Spring · saison régulière,14,0.429,1.96,-568.0,-0.0,55.0,-568.0
 Painful,mCon esports,ROL,Mid,ROL Spring · saison régulière,17,0.412,1.91,-628.0,-2.0,55.0,-630.0
-Sprotte,SPIKE Syndicate,ROL,Top,ROL Spring · saison régulière,17,0.235,1.97,-636.0,-1.0,55.0,-637.0
+Sprotte,Myth Esports,ROL,Top,ROL Spring · saison régulière,17,0.235,1.97,-636.0,-1.0,55.0,-637.0
 Ferrari,SPIKE Syndicate,EBL,Jungle,ROL Spring · saison régulière,17,0.235,2.16,-644.0,-1.0,55.0,-645.0
 Joekie,mCon esports,ROL,Jungle,ROL Spring · saison régulière,5,0.2,2.08,-683.0,-6.0,55.0,-689.0
 Seal,Frites Esports Club,ROL,Support,ROL Summer · playoffs,9,0.889,5.93,142.0,1.0,55.0,143.0
@@ -6381,7 +6381,7 @@ Ag0nyPain,Senshi eSports,ROL,Mid,ROL Summer · playoffs,13,0.692,4.7,-113.0,7.0,
 Markus,Senshi eSports,ROL,Jungle,ROL Summer · playoffs,14,0.643,3.82,-138.0,7.0,55.0,-131.0
 Warner,ZennIT,ROL,Mid,ROL Summer · playoffs,3,0.333,3.44,-201.0,0.0,55.0,-201.0
 Shourdy,Senshi eSports,ROL,Top,ROL Summer · playoffs,14,0.643,2.16,-227.0,7.0,55.0,-220.0
-RustySniper,The Bandits,NLC,ADC,ROL Summer · playoffs,2,0.5,2.56,-221.0,-1.0,55.0,-222.0
+RustySniper,Lund Esports Organization,NLC,ADC,ROL Summer · playoffs,2,0.5,2.56,-221.0,-1.0,55.0,-222.0
 Luncafoer,The Bandits,ROL,Jungle,ROL Summer · playoffs,9,0.333,2.18,-233.0,-7.0,55.0,-240.0
 Ace,Senshi eSports,ROL,ADC,ROL Summer · playoffs,14,0.643,3.71,-271.0,7.0,55.0,-264.0
 Ilyxøu,mCon esports,ROL,Top,ROL Summer · playoffs,9,0.222,1.74,-270.0,0.0,55.0,-270.0
@@ -6410,12 +6410,12 @@ Wolorz,Frites Esports Club,ROL,Mid,ROL Summer · saison régulière,15,0.933,8.6
 FlickeR,Frites Esports Club,ROL,ADC,ROL Summer · saison régulière,15,0.933,8.36,44.0,2.0,55.0,46.0
 Bisk,The Bandits,ROL,Top,ROL Summer · saison régulière,5,0.6,2.75,-13.0,2.0,55.0,-11.0
 Artanis,Frites Esports Club,ROL,Jungle,ROL Summer · saison régulière,15,0.933,9.63,-34.0,2.0,55.0,-32.0
-Smurfe,Frites Esports Club,HLL,Top,ROL Summer · saison régulière,2,1.0,4.83,-39.0,2.0,55.0,-37.0
+Smurfe,WLGaming Esports,HLL,Top,ROL Summer · saison régulière,2,1.0,4.83,-39.0,2.0,55.0,-37.0
 Ag0nyPain,Senshi eSports,ROL,Mid,ROL Summer · saison régulière,13,0.615,3.75,-113.0,-3.0,55.0,-116.0
 Markus,Senshi eSports,ROL,Jungle,ROL Summer · saison régulière,18,0.5,3.41,-138.0,-7.0,55.0,-145.0
 Warner,ZennIT,ROL,Mid,ROL Summer · saison régulière,17,0.412,2.7,-201.0,-3.0,55.0,-204.0
 Metroflox,Magaza Esports,EBL,Jungle,ROL Summer · saison régulière,9,0.556,3.35,-222.0,3.0,55.0,-219.0
-RustySniper,The Bandits,NLC,ADC,ROL Summer · saison régulière,5,0.6,2.88,-221.0,2.0,55.0,-219.0
+RustySniper,Lund Esports Organization,NLC,ADC,ROL Summer · saison régulière,5,0.6,2.88,-221.0,2.0,55.0,-219.0
 Luncafoer,The Bandits,ROL,Jungle,ROL Summer · saison régulière,16,0.625,3.18,-233.0,5.0,55.0,-228.0
 Shourdy,Senshi eSports,ROL,Top,ROL Summer · saison régulière,18,0.5,2.14,-227.0,-7.0,55.0,-234.0
 bbmuffin,The Bandits,ROL,Mid,ROL Summer · saison régulière,18,0.667,2.89,-269.0,5.0,55.0,-264.0
@@ -6447,14 +6447,14 @@ Schorling,Once Upon A Team,ROL,Top,ROL Summer · saison régulière,10,0.2,1.82,
 Sjedow,Once Upon A Team,ROL,Support,ROL Summer · saison régulière,16,0.125,2.72,-513.0,-0.0,55.0,-513.0
 Boye,Senshi eSports,ROL,Mid,ROL Summer · saison régulière,2,0.0,0.77,-516.0,-1.0,55.0,-517.0
 Fede,Myth Esports,ROL,ADC,ROL Summer · saison régulière,21,0.476,2.91,-535.0,-0.0,54.0,-535.0
-SoimuMIC,REDPack Esports,HLL,Top,ROL Summer · saison régulière,2,1.0,4.62,-537.0,0.0,55.0,-537.0
+SoimuMIC,Zerolag Esports,HLL,Top,ROL Summer · saison régulière,2,1.0,4.62,-537.0,0.0,55.0,-537.0
 Hatred,ZennIT,ROL,Jungle,ROL Summer · saison régulière,17,0.412,2.92,-534.0,-3.0,55.0,-537.0
 IDA,Once Upon A Team,ROL,ADC,ROL Summer · saison régulière,16,0.125,2.15,-574.0,-0.0,55.0,-574.0
 Nightmares,The Bandits,ROL,Support,ROL Summer · saison régulière,2,1.0,6.25,-588.0,0.0,55.0,-588.0
 Floris56,Senshi eSports,ROL,ADC,ROL Summer · saison régulière,3,0.333,2.5,-669.0,-3.0,55.0,-672.0
-Coli,Dynasty,EBL,Support,ROL Summer · saison régulière,5,0.2,1.92,-675.0,-0.0,55.0,-675.0
-bakisa,Dynasty,EBL,ADC,ROL Summer · saison régulière,5,0.2,2.23,-762.0,-0.0,55.0,-762.0
-Etoo,Once Upon A Team,HC,ADC,ROL Summer · saison régulière,2,0.0,0.62,-959.0,1.0,55.0,-958.0
+Coli,BeFive,EBL,Support,ROL Summer · saison régulière,5,0.2,1.92,-675.0,-0.0,55.0,-675.0
+bakisa,BeFive,EBL,ADC,ROL Summer · saison régulière,5,0.2,2.23,-762.0,-0.0,55.0,-762.0
+Etoo,KIA.eSuba Academy,HC,ADC,ROL Summer · saison régulière,2,0.0,0.62,-959.0,1.0,55.0,-958.0
 Seal,Frites Esports Club,ROL,Support,ROL Winter · playoffs,3,1.0,11.33,142.0,2.0,55.0,144.0
 Cboi,Valerion,HLL,Jungle,ROL Winter · playoffs,3,1.0,18.33,137.0,2.0,55.0,139.0
 Wolorz,Frites Esports Club,ROL,Mid,ROL Winter · playoffs,3,1.0,6.5,51.0,2.0,55.0,53.0
@@ -6466,7 +6466,7 @@ bbmuffin,The Bandits,ROL,Mid,ROL Winter · playoffs,11,0.546,3.07,-269.0,1.0,55.
 Ilyxøu,mCon esports,ROL,Top,ROL Winter · playoffs,1,0.0,2.0,-270.0,-1.0,55.0,-271.0
 CaviaVampier,The Bandits,ROL,ADC,ROL Winter · playoffs,11,0.546,2.39,-305.0,1.0,55.0,-304.0
 Guertas,Senshi eSports,ROL,Jungle,ROL Winter · playoffs,3,0.0,3.07,-353.0,-4.0,55.0,-357.0
-Zuhy,Fortress Esports,ROL,Mid,ROL Winter · playoffs,3,0.0,2.19,-403.0,-4.0,55.0,-407.0
+Zuhy,Senshi eSports,ROL,Mid,ROL Winter · playoffs,3,0.0,2.19,-403.0,-4.0,55.0,-407.0
 Slyv3r,mCon esports,ROL,ADC,ROL Winter · playoffs,3,0.0,2.42,-446.0,-4.0,55.0,-450.0
 Smart,ZennIT,ROL,Top,ROL Winter · playoffs,8,0.625,2.68,-508.0,5.0,55.0,-503.0
 AwerpiS,TITANS,LIT,Support,ROL Winter · playoffs,9,0.444,2.38,-502.0,-2.0,55.0,-504.0
@@ -6491,7 +6491,7 @@ Ilyxøu,mCon esports,ROL,Top,ROL Winter · saison régulière,14,0.571,2.82,-270
 bbmuffin,The Bandits,ROL,Mid,ROL Winter · saison régulière,15,0.6,2.96,-269.0,3.0,55.0,-266.0
 CaviaVampier,The Bandits,ROL,ADC,ROL Winter · saison régulière,13,0.615,2.77,-305.0,2.0,55.0,-303.0
 Guertas,Senshi eSports,ROL,Jungle,ROL Winter · saison régulière,14,0.571,3.65,-353.0,4.0,55.0,-349.0
-Zuhy,Fortress Esports,ROL,Mid,ROL Winter · saison régulière,14,0.571,3.74,-403.0,4.0,55.0,-399.0
+Zuhy,Senshi eSports,ROL,Mid,ROL Winter · saison régulière,14,0.571,3.74,-403.0,4.0,55.0,-399.0
 Slyv3r,mCon esports,ROL,ADC,ROL Winter · saison régulière,14,0.571,3.27,-446.0,4.0,55.0,-442.0
 jjs156,Once Upon A Team,ROL,Top,ROL Winter · saison régulière,12,0.417,2.97,-451.0,-2.0,55.0,-453.0
 HandiDog,Dynasty,ROL,Top,ROL Winter · saison régulière,13,0.385,2.79,-478.0,-2.0,55.0,-480.0
@@ -6514,8 +6514,8 @@ Fishue,Dynasty,ROL,Jungle,ROL Winter · saison régulière,13,0.385,2.67,-559.0,
 Baumeef,Once Upon A Team,ROL,Jungle,ROL Winter · saison régulière,14,0.357,1.88,-568.0,-5.0,55.0,-573.0
 Nightmares,The Bandits,ROL,Support,ROL Winter · saison régulière,14,0.429,3.43,-588.0,1.0,55.0,-587.0
 John P,mCon esports,ROL,Top,ROL Winter · saison régulière,8,0.375,1.31,-610.0,0.0,55.0,-610.0
-Sprotte,SPIKE Syndicate,ROL,Top,ROL Winter · saison régulière,13,0.385,2.0,-636.0,-1.0,55.0,-637.0
-Unchained,Hooligans,ROL,Mid,ROL Winter · saison régulière,13,0.385,2.5,-640.0,-2.0,55.0,-642.0
+Sprotte,Myth Esports,ROL,Top,ROL Winter · saison régulière,13,0.385,2.0,-636.0,-1.0,55.0,-637.0
+Unchained,Dynasty,ROL,Mid,ROL Winter · saison régulière,13,0.385,2.5,-640.0,-2.0,55.0,-642.0
 Ferrari,SPIKE Syndicate,EBL,Jungle,ROL Winter · saison régulière,12,0.333,3.5,-644.0,-2.0,55.0,-646.0
 Floris56,Senshi eSports,ROL,ADC,ROL Winter · saison régulière,14,0.357,2.03,-669.0,-5.0,55.0,-674.0
 Joekie,mCon esports,ROL,Jungle,ROL Winter · saison régulière,14,0.429,2.11,-683.0,1.0,55.0,-682.0
@@ -6543,20 +6543,20 @@ Kurama,Otter Side,LPLOL,Jungle,TCL Kickoff · saison régulière,14,0.357,2.34,-
 Atat,Dark Passage,TCL,Support,TCL Kickoff · saison régulière,13,0.308,1.86,-219.0,0.0,55.0,-219.0
 MélyaP,Lille Esport,NL,Mid,TCL Kickoff · saison régulière,2,0.0,0.67,-217.0,-4.0,55.0,-221.0
 Fade,Ozarox Esports,TCL,Mid,TCL Kickoff · saison régulière,20,0.45,3.2,-222.0,-4.0,54.0,-226.0
-Elramir,Dream Esports,TCL,Jungle,TCL Kickoff · saison régulière,19,0.632,3.55,-251.0,3.0,55.0,-248.0
+Elramir,Bushido Wildcats,TCL,Jungle,TCL Kickoff · saison régulière,19,0.632,3.55,-251.0,3.0,55.0,-248.0
 Grave,Dark Passage,TCL,ADC,TCL Kickoff · saison régulière,20,0.45,2.93,-250.0,-4.0,54.0,-254.0
 KSAEZ,Dark Passage,TCL,Mid,TCL Kickoff · saison régulière,13,0.308,4.2,-286.0,0.0,55.0,-286.0
-Sukru,Dream Esports,NL,Top,TCL Kickoff · saison régulière,13,0.308,2.12,-298.0,0.0,55.0,-298.0
+Sukru,Lille Esport,NL,Top,TCL Kickoff · saison régulière,13,0.308,2.12,-298.0,0.0,55.0,-298.0
 Mean,BoostGate Esports,TCL,ADC,TCL Kickoff · saison régulière,6,0.0,1.24,-328.0,1.0,55.0,-327.0
-Kakarot,SU Esports,NLC,ADC,TCL Kickoff · saison régulière,14,0.357,2.59,-355.0,-2.0,55.0,-357.0
+Kakarot,Deer Gaming,NLC,ADC,TCL Kickoff · saison régulière,14,0.357,2.59,-355.0,-2.0,55.0,-357.0
 Joexy,Dark Passage,TCL,Support,TCL Kickoff · saison régulière,14,0.357,2.48,-356.0,-2.0,55.0,-358.0
-Wuis,Crystal Rose,ROL,Support,TCL Kickoff · saison régulière,3,0.333,2.07,-425.0,-2.0,55.0,-427.0
+Wuis,Dynasty,ROL,Support,TCL Kickoff · saison régulière,3,0.333,2.07,-425.0,-2.0,55.0,-427.0
 Neramin,BoostGate Esports,TCL,ADC,TCL Kickoff · saison régulière,13,0.308,2.57,-441.0,0.0,55.0,-441.0
 Kireas,BoostGate Esports,TCL,Jungle,TCL Kickoff · saison régulière,13,0.308,2.92,-449.0,0.0,55.0,-449.0
-Cha0s,Dream Esports,NLC,Top,TCL Kickoff · saison régulière,6,0.0,0.7,-492.0,1.0,55.0,-491.0
+Cha0s,Lund Esports Organization,NLC,Top,TCL Kickoff · saison régulière,6,0.0,0.7,-492.0,1.0,55.0,-491.0
 Varin,Team Phoenix,TCL,Support,TCL Kickoff · saison régulière,6,0.0,1.41,-505.0,1.0,55.0,-504.0
 ardaffler,Bubliki,LPLOL,Mid,TCL Kickoff · saison régulière,7,0.143,2.29,-673.0,-5.0,55.0,-678.0
-Daskhai,2 Massive,LIT,Mid,TCL Kickoff · saison régulière,5,0.2,1.65,-771.0,-2.0,55.0,-773.0
+Daskhai,TITANS,LIT,Mid,TCL Kickoff · saison régulière,5,0.2,1.65,-771.0,-2.0,55.0,-773.0
 Ragner,Joblife,LFL,Top,TCL Spring · playoffs,6,1.0,9.2,338.0,4.0,55.0,342.0
 113,Berlin International Gaming,PRM,Jungle,TCL Spring · playoffs,6,1.0,4.71,288.0,4.0,55.0,292.0
 Kofte,Joblife,LFL,Mid,TCL Spring · playoffs,6,1.0,6.22,272.0,4.0,55.0,276.0
@@ -6626,7 +6626,7 @@ Mean,BoostGate Esports,TCL,ADC,TCL Spring · saison régulière,17,0.412,4.06,-3
 Joexy,Dark Passage,TCL,Support,TCL Spring · saison régulière,15,0.133,1.74,-356.0,-2.0,55.0,-358.0
 Raen1,Team Phoenix,TCL,ADC,TCL Spring · saison régulière,16,0.25,2.19,-392.0,-1.0,55.0,-393.0
 Virgo,Zerolag Esports,HLL,Support,TCL Spring · saison régulière,18,0.444,3.89,-407.0,5.0,55.0,-402.0
-SmallBugi,The ParadOx Invaders,TCL,Mid,TCL Spring · saison régulière,16,0.25,2.15,-404.0,-1.0,55.0,-405.0
+SmallBugi,Team Phoenix,TCL,Mid,TCL Spring · saison régulière,16,0.25,2.15,-404.0,-1.0,55.0,-405.0
 Neramin,BoostGate Esports,TCL,ADC,TCL Spring · saison régulière,15,0.133,1.85,-441.0,-2.0,55.0,-443.0
 Hecabrand,Team Phoenix,TCL,Top,TCL Spring · saison régulière,16,0.25,1.93,-445.0,-1.0,55.0,-446.0
 Kireas,BoostGate Esports,TCL,Jungle,TCL Spring · saison régulière,15,0.133,1.55,-449.0,-2.0,55.0,-451.0
@@ -6646,7 +6646,7 @@ Aytekn,Bushido Wildcats,TCL,Top,TCL Summer · saison régulière,23,0.739,3.67,-
 Jeyrus,DIA Ozarox Esports,TCL,ADC,TCL Summer · saison régulière,11,0.454,2.3,-33.0,-0.0,55.0,-33.0
 Beplush,Dark Passage,TCL,Support,TCL Summer · saison régulière,22,0.5,3.79,-66.0,-1.0,54.0,-67.0
 RAMES,SU Esports,TCL,Jungle,TCL Summer · saison régulière,24,0.542,4.45,-70.0,2.0,54.0,-68.0
-Yuros,DIA Ozarox Esports,NL,Mid,TCL Summer · saison régulière,8,0.625,4.08,-82.0,6.0,55.0,-76.0
+Yuros,Zephyr Esport,NL,Mid,TCL Summer · saison régulière,8,0.625,4.08,-82.0,6.0,55.0,-76.0
 Patch,SU Esports,TCL,Support,TCL Summer · saison régulière,24,0.542,3.12,-78.0,2.0,54.0,-76.0
 Camana,Bushido Wildcats,TCL,Mid,TCL Summer · saison régulière,23,0.739,6.89,-115.0,9.0,54.0,-106.0
 Typhoon,Dark Passage,TCL,Jungle,TCL Summer · saison régulière,21,0.524,3.37,-115.0,-0.0,54.0,-115.0
@@ -6659,7 +6659,7 @@ Forzent,Team Phoenix,TCL,Jungle,TCL Summer · saison régulière,11,0.273,1.91,-
 Ozgur,Team Phoenix,TCL,ADC,TCL Summer · saison régulière,11,0.273,3.79,-264.0,1.0,55.0,-263.0
 Creal,Team Phoenix,TCL,Mid,TCL Summer · saison régulière,13,0.231,1.78,-287.0,-3.0,55.0,-290.0
 Hamsi,DIA Ozarox Esports,TCL,Top,TCL Summer · saison régulière,11,0.454,2.94,-332.0,-0.0,55.0,-332.0
-Kakarot,SU Esports,NLC,ADC,TCL Summer · saison régulière,4,0.5,1.93,-355.0,-1.0,55.0,-356.0
+Kakarot,Deer Gaming,NLC,ADC,TCL Summer · saison régulière,4,0.5,1.93,-355.0,-1.0,55.0,-356.0
 Aspect,DIA Ozarox Esports,TCL,Jungle,TCL Summer · saison régulière,11,0.454,3.51,-393.0,-0.0,55.0,-393.0
 Raen1,Team Phoenix,TCL,ADC,TCL Summer · saison régulière,2,0.0,0.86,-392.0,-3.0,55.0,-395.0
 Neramin,BoostGate Esports,TCL,ADC,TCL Summer · saison régulière,6,0.0,1.42,-441.0,-4.0,55.0,-445.0
@@ -6825,9 +6825,9 @@ Copper,MVK Esports Academy,VCS,Top,VCS Summer · saison régulière,11,0.273,1.8
 SkyK,MVK Esports Academy,VCS,ADC,VCS Summer · saison régulière,11,0.273,2.71,-325.0,-6.0,55.0,-331.0
 Nanaue,1TAP Dino,VCS,Top,VCS Summer · saison régulière,11,0.091,1.66,-336.0,-10.0,55.0,-346.0
 Tahahy,1TAP Dino,VCS,Support,VCS Summer · saison régulière,8,0.0,1.48,-615.0,-9.0,55.0,-624.0
-TheHank,Bilibili Gaming Junior,LPL,Support,"WSCI (invitation des équipes académie, septembre)",6,0.5,4.93,651.0,1.0,55.0,652.0
+TheHank,Weibo Gaming,LPL,Support,"WSCI (invitation des équipes académie, septembre)",6,0.5,4.93,651.0,1.0,55.0,652.0
 Painter,T1 Esports Academy,LCKC,Jungle,"WSCI (invitation des équipes académie, septembre)",10,0.8,4.44,629.0,-2.0,55.0,627.0
-sinian,EDG Youth Team,LPL,Mid,"WSCI (invitation des équipes académie, septembre)",6,0.5,3.3,613.0,2.0,55.0,615.0
+sinian,EDward Gaming,LPL,Mid,"WSCI (invitation des équipes académie, septembre)",6,0.5,3.3,613.0,2.0,55.0,615.0
 Cloud,T1 Esports Academy,LCKC,Support,"WSCI (invitation des équipes académie, septembre)",10,0.8,5.93,600.0,-2.0,55.0,598.0
 Kryze,Solary,LFL,Top,"WSCI (invitation des équipes académie, septembre)",9,0.889,6.31,565.0,5.0,55.0,570.0
 Thayger,Galions,LFL,Jungle,"WSCI (invitation des équipes académie, septembre)",9,0.778,5.12,564.0,1.0,55.0,565.0
@@ -6843,7 +6843,7 @@ Jool,Solary,LFL,Mid,"WSCI (invitation des équipes académie, septembre)",9,0.88
 Pollu,KT Rolster Challengers,LCKC,Support,"WSCI (invitation des équipes académie, septembre)",9,0.556,2.7,515.0,-4.0,55.0,511.0
 FenRir,KT Rolster Challengers,LCKC,ADC,"WSCI (invitation des équipes académie, septembre)",9,0.556,2.86,505.0,-4.0,55.0,501.0
 OMON,Galions,LFL,Mid,"WSCI (invitation des équipes académie, septembre)",9,0.778,3.23,498.0,1.0,55.0,499.0
-Liangchen,Bilibili Gaming Junior,LPL,Top,"WSCI (invitation des équipes académie, septembre)",6,0.5,2.41,485.0,1.0,55.0,486.0
+Liangchen,Ultra Prime,LPL,Top,"WSCI (invitation des équipes académie, septembre)",6,0.5,2.41,485.0,1.0,55.0,486.0
 Jaehyuk,Dplus Kia Challengers,LCKC,Top,"WSCI (invitation des équipes académie, septembre)",11,0.636,4.08,480.0,-10.0,55.0,470.0
 Garden,Dplus Kia Challengers,LCKC,Mid,"WSCI (invitation des équipes académie, septembre)",11,0.636,2.98,462.0,-10.0,55.0,452.0
 Wayne,Dplus Kia Challengers,LCKC,ADC,"WSCI (invitation des équipes académie, septembre)",11,0.636,4.6,460.0,-10.0,55.0,450.0
@@ -6903,7 +6903,7 @@ Leaky,CTBC Flying Oyster Academy,PCS,Jungle,"WSCI (invitation des équipes acad�
 Warsor,9z Globant,LRS,Jungle,"WSCI (invitation des équipes académie, septembre)",3,0.0,1.79,-109.0,-1.0,55.0,-110.0
 Camana,Bushido Wildcats,TCL,Mid,"WSCI (invitation des équipes académie, septembre)",3,0.0,2.25,-115.0,-1.0,55.0,-116.0
 Nate,9z Globant,LRS,Top,"WSCI (invitation des équipes académie, septembre)",3,0.0,3.5,-124.0,-1.0,55.0,-125.0
-Revenge,DN SOOPers Challengers,LAS,ADC,"WSCI (invitation des équipes académie, septembre)",11,0.546,4.56,-163.0,4.0,55.0,-159.0
+Revenge,DN SOOPers Academy,LAS,ADC,"WSCI (invitation des équipes académie, septembre)",11,0.546,4.56,-163.0,4.0,55.0,-159.0
 Grell,Fuego,LRN,Jungle,"WSCI (invitation des équipes académie, septembre)",9,0.444,1.89,-163.0,4.0,55.0,-159.0
 Aloned,9z Globant,LRS,Mid,"WSCI (invitation des équipes académie, septembre)",3,0.0,2.13,-192.0,-1.0,55.0,-193.0
 FIX,9z Globant,LRS,ADC,"WSCI (invitation des équipes académie, septembre)",3,0.0,3.4,-207.0,-1.0,55.0,-208.0

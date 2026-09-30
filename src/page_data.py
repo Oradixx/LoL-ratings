@@ -88,7 +88,8 @@ def season_block(year):
         players.append(dict(id=tidx.get(pid),n=x.player,t=x.team,l=x.league,g=TC.get(x.tier,'2'),r=x.role,gp=int(x.gp),a=bool(x.active),
             p=int(x.points),sd=int(x.points_sd),u=None if pd.isna(x.vs_role_league_gold) else int(x.vs_role_league_gold),
             m1=None if pd.isna(x.get('mv_p1',np.nan)) else round(float(x.mv_p1),3),m5=None if pd.isna(x.get('mv_top5',np.nan)) else round(float(x.mv_top5),3),
-            fl=S['flags'].get(pid,[]),c=S['career'].get(pid,''),rs=round(float(rs.get(pid,0)),2)))
+            fl=S['flags'].get(pid,[]),c=S['career'].get(pid,''),rs=round(float(rs.get(pid,0)),2),
+            mg=None if pd.isna(x.get('main_games',np.nan)) else int(x.main_games),al=S.get('also',{}).get(pid)))
     comps={}; lm_keys=set(keep.league.unique())
     for c,meta in S['comps'].items(): comps[c]=dict(meta)
     dl={}

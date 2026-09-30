@@ -27,7 +27,9 @@ for y in [2023,2024,2025,2026]:
     s=pd.read_parquet(f'data/proc/season_{y}.parquet')
     if os.path.exists(f'data/proc/season_{y}_mv.parquet'): s=s.join(pd.read_parquet(f'data/proc/season_{y}_mv.parquet'))
     s=s[(s.gp>=10)&s.league.notna()]
-    cols=['player','team','league','region','tier','role','gp','points','points_sd','vs_role_league_gold']+[c for c in ['mv_median_rank','mv_p1','mv_top5'] if c in s]
+    Sj=json.load(open(f'data/proc/season_{y}.json'))
+    s['also_in']=pd.Series({pid:' ; '.join(f'{a[0]} {a[1]} games ({a[2]})' for a in v) for pid,v in Sj.get('also',{}).items()}).reindex(s.index)
+    cols=['player','team','league','also_in','region','tier','role','gp','points','points_sd','vs_role_league_gold']+[c for c in ['mv_median_rank','mv_p1','mv_top5'] if c in s]
     s[cols].rename(columns={'gp':f'games_{y}','vs_role_league_gold':'vs_role_in_league_gold'}).sort_values('points',ascending=False).round(3).to_csv(f'results/ratings_{y}.csv')
     S=json.load(open(f'data/proc/season_{y}.json')); d=pd.DataFrame(S['deltas'])
     d=d[d.pid.isin(s.index)]

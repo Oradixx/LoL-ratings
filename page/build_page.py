@@ -368,7 +368,7 @@ BODY=f'''
     <div class="tbl-wrap"><table id="x-table"></table></div>
     <button type="button" class="x-more" id="x-more">Afficher 25 de plus</button>
   </div>
-  <p class="muted" style="font-size:13.5px" id="x-legend-P">Notes d'une seule saison : le modèle ne voit que les games de la saison choisie (le niveau des ligues part de la saison d'avant, puis les games de la saison le corrigent). En 2023 et 2024, avant la LTA et la LCP, « ligues majeures » désigne les dix ligues de premier niveau de l'époque (LCK, LPL, LEC, LCS, CBLOL, PCS, VCS, LJL, LLA, LCO) ; la LDL, 2e division chinoise, n'existe que dans ces deux saisons des fichiers. Choisis une compétition ou un split pour voir la note du joueur sur cette compétition : sa note de saison plus un écart mesuré sur l'écart d'or de ces games, très régularisé (patch 1.3 : l'écart propre à un split est petit, et le même pour les cinq joueurs d'un roster stable). Clique sur un joueur pour sa fiche : évolution mois par mois, parcours, toutes ses compétitions, et un bouton pour le comparer à d'autres joueurs (jusqu'à quatre, avec la probabilité que l'un soit vraiment meilleur que l'autre). « vs rôle » = golds d'écart final par game par rapport au joueur moyen du même poste dans sa ligue. « N°1 multivers » = part de 300 versions du modèle où il est n°1 de son poste, dans son niveau.</p>
+  <p class="muted" style="font-size:13.5px" id="x-legend-P">Notes d'une seule saison : le modèle ne voit que les games de la saison choisie (le niveau des ligues part de la saison d'avant, puis les games de la saison le corrigent). En 2023 et 2024, avant la LTA et la LCP, « ligues majeures » désigne les dix ligues de premier niveau de l'époque (LCK, LPL, LEC, LCS, CBLOL, PCS, VCS, LJL, LLA, LCO) ; la LDL, 2e division chinoise, n'existe que dans ces deux saisons des fichiers. Choisis une compétition ou un split pour voir la note du joueur sur cette compétition : sa note de saison plus un écart mesuré sur l'écart d'or de ces games, très régularisé (patch 1.3 : l'écart propre à un split est petit, et le même pour les cinq joueurs d'un roster stable). Un joueur qui a fait des allers-retours entre deux ligues pendant la saison (au moins 10 games dans chacune, par exemple LCK CL et LCK) apparaît dans les deux tableaux, avec la même note ; son équipe est celle de la ligue affichée. Clique sur un joueur pour sa fiche : évolution mois par mois, parcours, toutes ses compétitions, et un bouton pour le comparer à d'autres joueurs (jusqu'à quatre, avec la probabilité que l'un soit vraiment meilleur que l'autre). « vs rôle » = golds d'écart final par game par rapport au joueur moyen du même poste dans sa ligue. « N°1 multivers » = part de 300 versions du modèle où il est n°1 de son poste, dans son niveau.</p>
   <p class="muted" style="font-size:13.5px" id="x-legend-T" hidden>Effectif = pour chaque poste, le joueur le plus présent sur les 20 dernières games de l'équipe dans la saison choisie. Force = note moyenne de ces cinq joueurs. « Contre l'équipe moyenne » = probabilité de battre une équipe moyenne de la même ligue, côté neutre. Le bilan réel de la saison est à côté pour comparer.</p>
   <p class="verdict">Version de référence : {', '.join(E(no1[r]['name'])+' ('+E(no1[r]['team'])+')' for r in ROLES)}. Le multivers, lui, désigne {', '.join(E(mvw[r]['player'])+' ('+pct(mvw[r]['mv_p1'])+')' for r in ROLES)}.</p>
   <p>{MV_TXT}</p>
@@ -606,6 +606,7 @@ function draw(){
    const comps=(BYP[pi]||[]).sort((a,b)=>b[1][1]-a[1][1]).map(([c,e])=>`<tr><td>${esc(sd.comps[c].label)}</td><td class="r">${e[1]}</td><td class="r">${pct(e[2])}</td><td class="r">${fmt(e[3],1)}</td><td class="r">${fmt(U(p.p+e[4]))}${US()} <span class="muted hide-sm">(${e[4]>0?'+':''}${fmt(U(e[4]))})</span></td></tr>`).join('');
    return `<div class="pcard"><div class="pcard-main"><div><b>${esc(p.n)}</b> · ${esc(p.r)} · ${esc(p.t)} (${esc(p.l)}, ${esc(LM[p.l]?.desc||'')}) ${fl}</div>
      <div class="muted">${esc(p.c||'')}</div>
+     ${(()=>{const P0=sd.players[pi];return (P0.al||[]).length?`<div>Ligues cette saison : ${[[P0.l,P0.mg,P0.t],...P0.al].map(a=>`${esc(a[0])} ${a[1]} games (${esc(a[2])})`).join(' · ')}</div>`:''})()}
      <div>Saison ${S.season} : note ${fmt(U(p.p))}${US()} ± ${fmt(U(p.sd))} sur ${p.gp} games · N°1 multivers ${p.m1==null?'–':pct(p.m1)} · top 5 ${p.m5==null?'–':pct(p.m5)}</div>
      <div><button type="button" class="x-cmp-btn" data-k="${S.season}|${pi}">${S.cmp.includes(S.season+'|'+pi)?'Retirer de la comparaison':'Comparer avec d\'autres joueurs'}</button></div>
      ${p.rs>=0.8?`<div class="muted">Mêmes quatre coéquipiers dans ${pct(p.rs)} de ses games : sa note se sépare mal de celle de son équipe.</div>`:''}
@@ -620,10 +621,13 @@ function draw(){
  function renderPlayers(){
    const sd=SD(),P=sd.players,LM=sd.league_meta,LV=sd.levels;const q=S.q.trim().toLowerCase();
    const base=p=>(!S.region||LM[p.l]?.region===S.region)&&(!S.league||p.l===S.league)&&(!S.role||p.r===S.role)&&(!S.path||(p.fl||[]).includes(S.path))&&(!q||p.n.toLowerCase().includes(q)||p.t.toLowerCase().includes(q));
-   const pname=r=>`<b>${esc(r.n)}</b>${(r.fl||[]).includes('up')?' <span class="pill">promu</span>':(r.fl||[]).includes('new')?' <span class="pill">nouveau</span>':''}`;
+   const others=r=>[[P[r._i].l,P[r._i].mg],...(P[r._i].al||[]).map(a=>[a[0],a[1]])].filter(x=>x[0]!==r.l);
+   const pname=r=>`<b>${esc(r.n)}</b>${(r.fl||[]).includes('up')?' <span class="pill">promu</span>':(r.fl||[]).includes('new')?' <span class="pill">nouveau</span>':''}${!cmode()&&others(r).length?' <span class="pill" title="A joué dans plusieurs ligues cette saison : même note, sur une seule échelle">aussi '+others(r).map(x=>`${esc(x[0])}${x[1]?' ('+x[1]+' g)':''}`).join(', ')+'</span>':''}`;
    let rows,cols,total,info;
    if(!cmode()){
-     rows=P.map((p,i)=>Object.assign({_i:i},p)).filter(p=>p.g===S.tier&&p.gp>=S.min&&base(p));
+     // un joueur qui a joué dans plusieurs ligues de la saison (allers-retours) apparaît aussi dans son autre ligue
+     const ent=[];P.forEach((p,i)=>{ent.push(Object.assign({_i:i},p));(p.al||[]).forEach(a=>{const m=LM[a[0]];if(m)ent.push(Object.assign({_i:i},p,{l:a[0],t:a[2],u:a[3],g:m.tier,_sec:1},m.tier!==p.g?{m1:null,m5:null}:{}))})});
+     const seen=new Set();rows=ent.filter(e=>e.g===S.tier&&e.gp>=S.min&&base(e)).filter(e=>{if(seen.has(e._i))return false;seen.add(e._i);return true});
      const key={p:x=>x.p,u:x=>x.u??-1e9,m1:x=>x.m1??-1,gp:x=>x.gp}[S.sort];rows.sort((a,b)=>key(b)-key(a)||b.p-a.p);
      cols=[{h:'#',r:1,f:(r,i)=>i+1},{h:'Joueur',f:pname},{h:'Équipe',f:r=>esc(r.t)},{h:'Ligue',f:r=>`<span title="${esc(LM[r.l]?.desc||'')}">${esc(r.l)}</span>`},{h:'Poste',f:r=>r.r},{h:'Games',r:1,f:r=>r.gp},
        {h:S.unit==='gold'?'Note (golds)':'Note',r:1,f:r=>`${fmt(U(r.p))} <span class="muted">± ${fmt(U(r.sd))}</span>`},{h:'vs rôle',r:1,f:r=>r.u==null?'–':(r.u>0?'+':'')+fmt(r.u)+' g'},
@@ -632,7 +636,9 @@ function draw(){
      if(S.league){const m=LM[S.league];info+=` · ${S.league} (${m.desc}) : niveau de la ligue ${LV[S.league]!=null?(LV[S.league]>0?'+':'')+fmt(U(LV[S.league]))+US():'n.c.'}${S.unit==='pts'?' points':''}`}
    }else{
      const c=sd.comps[S.comp];
-     rows=(sd.deltas[S.comp]||[]).map(e=>Object.assign({_i:e[0],cg:e[1],cw:e[2],ck:e[3],cd:e[4],cs:e[5]},P[e[0]])).filter(p=>p.cg>=S.minc&&base(p));
+     const inL=(p,f)=>[p.l,...(p.al||[]).map(a=>a[0])].some(f);
+     const base2=p=>(!c.cup||((!S.region||inL(p,l=>LM[l]?.region===S.region))&&(!S.league||inL(p,l=>l===S.league))))&&(!S.role||p.r===S.role)&&(!S.path||(p.fl||[]).includes(S.path))&&(!q||p.n.toLowerCase().includes(q)||p.t.toLowerCase().includes(q));
+     rows=(sd.deltas[S.comp]||[]).map(e=>Object.assign({_i:e[0],cg:e[1],cw:e[2],ck:e[3],cd:e[4],cs:e[5]},P[e[0]])).filter(p=>p.cg>=S.minc&&base2(p));
      const key={p:x=>x.p+x.cd,d:x=>x.cd,w:x=>x.cw,k:x=>x.ck,gp:x=>x.cg}[S.sort];rows.sort((a,b)=>key(b)-key(a)||(b.p+b.cd)-(a.p+a.cd));
      cols=[{h:'#',r:1,f:(r,i)=>i+1},{h:'Joueur',f:pname},{h:'Équipe',f:r=>esc(r.t)},{h:'Ligue',f:r=>`<span title="${esc(LM[r.l]?.desc||'')}">${esc(r.l)}</span>`},{h:'Poste',f:r=>r.r},{h:'Games',r:1,f:r=>r.cg},{h:'Victoires',r:1,f:r=>pct(r.cw)},{h:'KDA',r:1,f:r=>fmt(r.ck,1)},
        {h:S.unit==='gold'?'Note compétition (golds)':'Note compétition',r:1,f:r=>`${fmt(U(r.p+r.cd))} <span class="muted">± ${fmt(U(Math.hypot(r.sd,r.cs)))}</span>`},
