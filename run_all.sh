@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Full pipeline, in order. About 1 h 15 on a 2-core machine (the two multiverses are most of it).
+# Full pipeline, in order. About 1 h on a 2-core machine (the two multiverses are most of it).
 set -e
 python src/prep.py                 # CSV -> parquet, league names harmonised
 python src/build_draft_order.py    # pick order per lane (bonus: counterpick)
@@ -12,6 +12,7 @@ python src/final_test.py           # off-season test: 2025 ratings frozen, Febru
 python src/rolling.py              # the whole 2026 season, retrained every month vs online Elo
 python src/rolling_ensemble.py
 python src/current.py              # current ratings (all games up to the last file date) + uncertainty
+python src/v11_reference.py         # patch 1.2 reference: current ratings with the old v1.1 league attachment
 python src/league_check.py         # are league levels right? 2026 league-changers vs their 2025 ratings
 python src/em_check.py             # do the EMEA Masters matter for European regional leagues?
 python src/multiverse.py 400       # 400 reasonable versions of the model

@@ -57,7 +57,7 @@ core=gg.groupby('playername').gameid.agg(set); D['geng_games']=len(set.intersect
 EXP='oe:player:22c335f178d8e1724b8d04831b1267a'
 Pl26=Pl[(Pl.src_year==2026)&(Pl.league=='LFL')&(Pl.teamname=='Skillcamp')]
 with_g=set(Pl26[Pl26.playerid==EXP].gameid); allg=Pl26.groupby('gameid').result.first()
-old=pd.read_parquet(P+'ratings_now_v11.parquet') if __import__('os').path.exists(P+'ratings_now_v11.parquet') else r
+old=pd.read_parquet(P+'ratings_now_v11.parquet')   # produit par src/v11_reference.py
 adc=r[r.active&(r.league26=='LFL')&(r.role=='ADC')].sort_values('points',ascending=False)
 D['exofeng']=dict(wr_with=float(allg[allg.index.isin(with_g)].mean()),wr_without=float(allg[~allg.index.isin(with_g)].mean()),
                   n_with=len(with_g),n_without=int((~allg.index.isin(with_g)).sum()),

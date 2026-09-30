@@ -83,7 +83,7 @@ A reader's remark: a rating over two seasons mixes contexts (league change, team
 | 0.6 | Box-score prior with role-specific weights learned from the RAPM impact (not from winning) | — |
 | 0.7 | Target = final gold difference | — |
 | 0.8 | Tested, no effect: champion adjustment, lane stats at 15, time decay | — |
-| 1.2 | A reader asked why Exofeng (hyped rookie ADC, 68 % wins with Skillcamp in the LFL) was rated so low. Players were attached to the league where they played most over two years (NLC for him), so everyone climbing from a weaker league was underrated. The league attachment is now a recency-weighted mix of the leagues played (half-life 6 months): same accuracy, Exofeng from 42 to 237 points. | — |
+| 1.2 | A reader asked why Exofeng (hyped rookie ADC, 68 % wins with Skillcamp in the LFL) was rated so low. Players were attached to the league where they played most over two years (NLC for him), so everyone climbing from a weaker league was underrated. The league attachment is now a recency-weighted mix of the leagues played (half-life 6 months): same accuracy, Exofeng from 76 to 241 points. | — |
 | 1.4 | Checks of the reasoning: known-truth simulation, credit split judged on transfers, calibration, meta pooled over the season; Worlds 2026 predictions frozen (see below). No setting changed. | Inseparable rosters: the order between teammates is barely identified. |
 | 1.3 | One rating per season, plus a rating per competition / split (see below). | — |
 | 1.1 | Bug found with more data: players seen only in tournaments shared one catch-all "international" group, creating fake links between leagues. Each tournament now keeps its own group, cups are detected automatically. Monthly retraining. | — |
@@ -115,9 +115,11 @@ Or open `results/ratings_2026.csv` / `results/ratings_2025.csv` (one season each
 ```bash
 pip install -r requirements.txt
 bash scripts/get_data.sh     # explains which Oracle's Elixir files to download into data/raw/
-bash run_all.sh              # about 1 h 15 on a 2-core machine, the two multiverses are most of it
+bash run_all.sh              # about 1 h on a 2-core machine, the two multiverses are most of it
 python -m pytest tests/
 ```
+
+Checked on September 30, 2026: a fresh clone with only the three raw files re-runs the whole pipeline in 57 minutes and reproduces every published result file byte for byte.
 
 ## Files
 
