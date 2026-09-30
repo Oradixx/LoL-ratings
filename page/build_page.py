@@ -39,6 +39,7 @@ def frdate(s):
     y,mo,d=s.split('-'); return f"{int(d)} {MOIS[int(mo)-1]} {y}"
 _ws=D['worlds'].get('score')
 WSCORE=(f'''<p class="verdict">Verdict, sur les {n(_ws['n_games'])} games de Worlds 2026 : le modèle gelé a bien prédit {pct(_ws['p_model']['acc'])} des games (AUC {n(_ws['p_model']['auc'],3)}, log-loss {n(_ws['p_model']['logloss'],3)}), contre {pct(_ws['p_elo']['acc'])} pour l'Elo d'équipe gelé le même jour (AUC {n(_ws['p_elo']['auc'],3)}). Séries : {pct(_ws['series_acc_p_model'])} contre {pct(_ws['series_acc_p_elo'])}.</p>''' if _ws and _ws.get('n_games') else '<p class="muted">Verdict : après la finale.</p>')
+RP=D['replication']; RPK='v1.2 (ré-entraînée chaque mois)'; CR=D['credit_roster']; CRK='rosters remaniés (une équipe garde au plus 2 coéquipiers)'; SR=D['scout_rep']; HL=D['history']
 SIM=D['sim']; TRF=D['transfer']; CHC=D['champ']; CAL=D['calib']; WD=D['worlds']
 _s1=SIM['sigma_100']; _s2=SIM['sigma_200']; _cov=lambda s:(s['cov1_stable']+s['cov1_mobile'])/2
 _tg=TRF['_prior_gain']; _c2=CHC['<= 2 games']; _nb=CHC['new0_by_game_number']
@@ -245,7 +246,7 @@ BODY=f'''
     <div class="patch-body">
       <p>Deuxième remarque de lecteur : noter un joueur sur deux saisons mélange des contextes qui n'ont rien à voir. Il change de ligue ou d'équipe, ou tombe pendant un split sur une méta qui ne lui convient pas.</p>
       <ul class="changes">
-        <li><span class="tag buff">Changement</span><span>Les notes affichées ne viennent plus que d'une saison. Pour 2026, le modèle part du niveau des ligues estimé sur 2025, puis n'apprend que sur les games de 2026. Cet a priori est volontairement ferme, parce qu'une ligue ne change pas de niveau du jour au lendemain : sur le rejeu de 2026 mois par mois, il fait passer l'AUC de {n(LPC['rolling']['None']['auc'],3)} à {n(LPC['rolling']['100']['auc'],3)}, et ne coûte rien ailleurs. L'onglet 2025 ne voit que la saison 2025.</span></li>
+        <li><span class="tag buff">Changement</span><span>Les notes affichées ne viennent plus que d'une saison. Pour 2026, le modèle part du niveau des ligues estimé sur 2025, puis n'apprend que sur les games de 2026 (et de même pour chaque saison depuis la v1.5). Cet a priori est volontairement ferme, parce qu'une ligue ne change pas de niveau du jour au lendemain : sur le rejeu de 2026 mois par mois, il fait passer l'AUC de {n(LPC['rolling']['None']['auc'],3)} à {n(LPC['rolling']['100']['auc'],3)}, et ne coûte rien ailleurs.</span></li>
         <li><span class="tag new">Nouveau</span><span>Dans l'explorateur, un filtre par compétition et par split, saison régulière et playoffs séparés. La note sur une compétition = la note de saison + un écart mesuré sur l'écart d'or final des seules games de cette compétition.</span></li>
         <li><span class="tag bug">Contrôle</span><span>Ma première version faisait partir cet écart des stats du joueur sur la compétition. Test hors échantillon : les games de chaque compétition coupées en deux au hasard, l'écart appris sur une moitié, jugé sur l'autre. Les stats d'un split ne prédisent rien des autres games du même split (corrélation {n(SVAL['2025']['stats seules ×1']['corr'],2)} en 2025, {n(SVAL['2026']['stats seules ×1']['corr'],2)} en 2026), et l'écart dégradait la prédiction. Je les ai retirées. L'écart d'or final garde un peu de signal, à condition d'être très régularisé : réglage choisi sur 2025 avec un critère fixé d'avance, puis confirmé sur 2026.</span></li>
         <li><span class="tag new">Leçon</span><span>L'écart propre à un joueur sur un split est petit : de l'ordre de ±{n(D['split_prior_sd']['2026'])} points, alors que l'écart-type entre les joueurs d'un même poste en ligue majeure est de {n(D['role_sd'])} points. Une méta qui ne convient pas à un joueur existe sans doute, mais sur 10 à 30 games elle se noie dans le bruit. Et dans un roster qui ne change pas, les cinq joueurs reçoivent le même écart : rien ne permet de dire lequel a porté l'équipe ce split-là. Victoires et KDA de la compétition restent affichés à côté pour le contexte.</span></li>
@@ -265,6 +266,26 @@ BODY=f'''
         <li><span class="tag bug">Contrôle</span><span><b>La méta, regroupée sur la saison.</b> Un joueur sur un champion qu'il a joué au plus deux fois en match officiel ({pct(_c2['share'])} des picks en 2026) ne fait pas moins bien que sa note. En moyenne, c'est même l'inverse (+{n(_c2['gold_per_player'])} ± {n(_c2['gold_se'])} golds par joueur concerné), sans doute parce qu'on sort un nouveau champion quand il est fort. L'ajouter au modèle n'améliore pas la prédiction hors échantillon. Le fearless draft, lui, se voit : la part de champions jamais joués passe de {pct(_nb['1'])} en game 1 d'une série à {pct(_nb['5'])} en game 5.</span></li>
       </ul>
       <p class="verdict">Quand un test ne montre rien, la bonne réponse est de ne rien toucher. Le vrai angle mort reste les rosters inséparables : seules plus de données (2023-2024, mercato 2027) le réduiront.</p>
+    </div>
+  </div>
+  <div class="patch">
+    <div class="patch-head"><span class="ver">1.5</span><span class="name">Deux saisons de plus : la réplication</span></div>
+    <div class="patch-body">
+      <p>Avec les fichiers 2023 et 2024 ({n(D['games_by_year']['2023'])} et {n(D['games_by_year']['2024'])} games), j'ai refait les épreuves sur une saison que le modèle n'avait jamais vue pendant sa construction. Aucun réglage n'a été touché.</p>
+      <figure>
+        <div class="ftitle">Rejeu de 2024 mois par mois, historique 2023</div>
+        <div id="f-repl"></div>
+        <figcaption>Même protocole que pour 2026 : réentraîné chaque 1<sup>er</sup> du mois, Elo mis à jour après chaque game. AUC avec intervalle de confiance à 95&nbsp;%, entre parenthèses le pourcentage de games bien prédites ({n(RP['rolling_2024'][RPK]['n'])} games, février-novembre 2024).</figcaption>
+      </figure>
+      <ul class="changes">
+        <li><span class="tag bug">Contrôle</span><span><b>La saison 2024.</b> AUC {n(RP['rolling_2024'][RPK]['auc'],3)} et {pct(RP['rolling_2024'][RPK]['acc'],1)} de bonnes prédictions, contre {n(RP['rolling_2024']['Elo équipe (chaque game)']['auc'],3)} pour l'Elo d'équipe et {n(RP['rolling_2024']['Elo joueurs (chaque game)']['auc'],3)} pour l'Elo des joueurs. Meilleur que l'Elo d'équipe {RP['rolling_2024_months_better_than_elo']} mois sur {RP['rolling_2024_n_months']}. C'est presque exactement le score de 2026 ({n(V11['auc'],3)}).</span></li>
+        <li><span class="tag bug">Contrôle</span><span><b>Les intersaisons.</b> Notes de la saison d'avant gelées, jugées sur février : {pct(RP['offseason']['2024']['v1.2 (notes gelées)']['acc'])} de bonnes prédictions en 2024 contre {pct(RP['offseason']['2024']['Elo équipe (gelé)']['acc'])} pour l'Elo d'équipe, {pct(RP['offseason']['2025']['v1.2 (notes gelées)']['acc'])} contre {pct(RP['offseason']['2025']['Elo équipe (gelé)']['acc'])} en 2025. L'écart est moins spectaculaire qu'en 2026, mais toujours dans le même sens.</span></li>
+        <li><span class="tag bug">Contrôle</span><span><b>Le partage du mérite.</b> D'une saison à l'autre, {pct(CR['2026'][CRK]['share'])} des games opposent au moins une équipe qui n'a gardé que deux de ses coéquipiers, ou moins : le partage du mérite compte presque partout. Le prior box-score aide à chacune des trois intersaisons : +{n(CR['2024'][CRK]['gain'],4)} d'AUC en 2024, +{n(CR['2025'][CRK]['gain'],4)} en 2025, +{n(CR['2026'][CRK]['gain'],4)} en 2026, avec des intervalles à 95&nbsp;% toujours au-dessus de 0.</span></li>
+        <li><span class="tag bug">Contrôle</span><span><b>Le scouting.</b> Parmi les 20 joueurs les mieux notés hors ligues majeures, {pct(SR['2023']['top20_rate'])} jouent en ligue majeure la saison suivante (2023 → 2024), {pct(SR['2024']['top20_rate'])} (2024 → 2025) et {pct(SR['2025']['top20_rate'])} (2025 → 2026), pour un taux de base d'environ {pct(SR['2024']['base'])}. Pour repérer les futurs promus, la note fait {n(SR['2023']['auc_rating'],2)}, {n(SR['2024']['auc_rating'],2)} et {n(SR['2025']['auc_rating'],2)} d'AUC ; le KDA {n(SR['2023']['auc_kda'],2)}, {n(SR['2024']['auc_kda'],2)} et {n(SR['2025']['auc_kda'],2)}.</span></li>
+        <li><span class="tag buff">Réglage</span><span><b>Combien d'historique&nbsp;?</b> Choisi sur 2025 avec un critère fixé d'avance (log-loss) : trois saisons d'historique plutôt que deux ({n(HL['2025']['3 saisons']['logloss'],4)} contre {n(HL['2025']['2 saisons']['logloss'],4)}). Confirmé sur 2026 : AUC {n(HL['2026']['3 saisons']['auc'],3)} au lieu de {n(HL['2026']['2 saisons']['auc'],3)} (écart +{n(HL['2026']['3 vs 2']['auc_gain'],4)}, intervalle [{n(HL['2026']['3 vs 2']['auc_lo'],4)} ; {n(HL['2026']['3 vs 2']['auc_hi'],4)}]), {pct(HL['2026']['3 saisons']['acc'],1)} de bonnes prédictions au lieu de {pct(HL['2026']['2 saisons']['acc'],1)}. Quatre saisons font moins bien que trois : les vieilles games finissent par gêner. Les pronostics Worlds, figés avant, restent ceux de la v1.2 ; ce réglage sera celui du prochain modèle de prévision.</span></li>
+        <li><span class="tag new">Nouveau</span><span>L'explorateur couvre 2023 et 2024, avec la LDL (2<sup>e</sup> division chinoise, absente des fichiers 2025-2026). Le niveau des ligues de chaque saison part de la saison d'avant, y compris quand une ligue change de nom (Ultraliga → Rift Legends, Elite Series → Road of Legends, CBLOL Academy → Circuito Desafiante…, vérifié sur les équipes et les joueurs communs).</span></li>
+      </ul>
+      <p class="verdict">Les résultats de 2026 n'étaient pas un coup de chance : même avance sur l'Elo, une intersaison qui va dans le même sens, le même scouting, sur une saison que le modèle n'avait jamais vue.</p>
     </div>
   </div>
 </div></section>
@@ -316,8 +337,10 @@ BODY=f'''
   <div class="explorer bleed">
     <div class="xbar">
       <div class="role-tabs" role="group" aria-label="Saison" id="x-season">
-        <button type="button" id="x-season-2026" data-v="2026" aria-pressed="true">Saison 2026</button>
-        <button type="button" id="x-season-2025" data-v="2025" aria-pressed="false">Saison 2025</button>
+        <button type="button" id="x-season-2026" data-v="2026" aria-pressed="true">2026</button>
+        <button type="button" id="x-season-2025" data-v="2025" aria-pressed="false">2025</button>
+        <button type="button" id="x-season-2024" data-v="2024" aria-pressed="false">2024</button>
+        <button type="button" id="x-season-2023" data-v="2023" aria-pressed="false">2023</button>
       </div>
       <div class="role-tabs" role="group" aria-label="Vue" id="x-view">
         <button type="button" id="x-view-P" data-v="P" aria-pressed="true">Joueurs</button>
@@ -345,7 +368,7 @@ BODY=f'''
     <div class="tbl-wrap"><table id="x-table"></table></div>
     <button type="button" class="x-more" id="x-more">Afficher 25 de plus</button>
   </div>
-  <p class="muted" style="font-size:13.5px" id="x-legend-P">Notes d'une seule saison : le modèle ne voit que les games de la saison choisie (pour 2026, le niveau des ligues part de 2025, puis les games de 2026 le corrigent). Choisis une compétition ou un split pour voir la note du joueur sur cette compétition : sa note de saison plus un écart mesuré sur l'écart d'or de ces games, très régularisé (patch 1.3 : l'écart propre à un split est petit, et le même pour les cinq joueurs d'un roster stable). Clique sur un joueur pour sa fiche : évolution mois par mois, parcours, toutes ses compétitions, et un bouton pour le comparer à d'autres joueurs (jusqu'à quatre, avec la probabilité que l'un soit vraiment meilleur que l'autre). « vs rôle » = golds d'écart final par game par rapport au joueur moyen du même poste dans sa ligue. « N°1 multivers » = part de 300 versions du modèle où il est n°1 de son poste, dans son niveau.</p>
+  <p class="muted" style="font-size:13.5px" id="x-legend-P">Notes d'une seule saison : le modèle ne voit que les games de la saison choisie (le niveau des ligues part de la saison d'avant, puis les games de la saison le corrigent). En 2023 et 2024, avant la LTA et la LCP, « ligues majeures » désigne les dix ligues de premier niveau de l'époque (LCK, LPL, LEC, LCS, CBLOL, PCS, VCS, LJL, LLA, LCO) ; la LDL, 2e division chinoise, n'existe que dans ces deux saisons des fichiers. Choisis une compétition ou un split pour voir la note du joueur sur cette compétition : sa note de saison plus un écart mesuré sur l'écart d'or de ces games, très régularisé (patch 1.3 : l'écart propre à un split est petit, et le même pour les cinq joueurs d'un roster stable). Clique sur un joueur pour sa fiche : évolution mois par mois, parcours, toutes ses compétitions, et un bouton pour le comparer à d'autres joueurs (jusqu'à quatre, avec la probabilité que l'un soit vraiment meilleur que l'autre). « vs rôle » = golds d'écart final par game par rapport au joueur moyen du même poste dans sa ligue. « N°1 multivers » = part de 300 versions du modèle où il est n°1 de son poste, dans son niveau.</p>
   <p class="muted" style="font-size:13.5px" id="x-legend-T" hidden>Effectif = pour chaque poste, le joueur le plus présent sur les 20 dernières games de l'équipe dans la saison choisie. Force = note moyenne de ces cinq joueurs. « Contre l'équipe moyenne » = probabilité de battre une équipe moyenne de la même ligue, côté neutre. Le bilan réel de la saison est à côté pour comparer.</p>
   <p class="verdict">Version de référence : {', '.join(E(no1[r]['name'])+' ('+E(no1[r]['team'])+')' for r in ROLES)}. Le multivers, lui, désigne {', '.join(E(mvw[r]['player'])+' ('+pct(mvw[r]['mv_p1'])+')' for r in ROLES)}.</p>
   <p>{MV_TXT}</p>
@@ -409,7 +432,7 @@ BODY=f'''
 </div></section>
 
 <footer class="col">
-  <p>Code : Python (pandas, NumPy, SciPy, scikit-learn). Données : <a href="https://oracleselixir.com/tools/downloads">Oracle's Elixir</a>, match data 2022, 2025 et 2026 (jusqu'au {frdate(D['data_until'])}). Méthode inspirée de B.A.S.I.C. (HQEye). Notes = ridge « RAPM » sur l'écart d'or, prior « stats » appris par rôle, niveaux de ligue portés par les joueurs.</p>
+  <p>Code : Python (pandas, NumPy, SciPy, scikit-learn). Données : <a href="https://oracleselixir.com/tools/downloads">Oracle's Elixir</a>, match data 2022 à 2026 (jusqu'au {frdate(D['data_until'])}). Méthode inspirée de B.A.S.I.C. (HQEye). Notes = ridge « RAPM » sur l'écart d'or, prior « stats » appris par rôle, niveaux de ligue portés par les joueurs.</p>
 </footer>
 </div>
 <div class="tip" id="tip"></div>
@@ -502,6 +525,10 @@ function draw(){
   const all=ser.flatMap(s=>s.v);lines($('#f-monthly'),ser,cats,{min:Math.floor(Math.min(...all)*50)/50-.01,max:Math.ceil(Math.max(...all)*50)/50,ticks:[.6,.65,.7,.75].filter(t=>t>=Math.min(...all)-.02&&t<=Math.max(...all)+.02),aria:'AUC par mois'});
   {const R=D.calib.reliability['v1.2'].filter(r=>r.n>=50);const cats=R.map(r=>({label:fmt(r.pred*100,0)+' %',s:fmt(r.pred*100,0),full:`Annoncé ${fmt(r.pred*100,0)} % · ${fmt(r.n)} games`}));
    lines($('#f-calib'),[{name:'Réel',color:'var(--s1)',v:R.map(r=>r.obs)},{name:'Diagonale',color:'var(--muted)',v:R.map(r=>r.pred),dy:14}],cats,{min:0,max:1,ticks:[0,.25,.5,.75,1],aria:'Calibration'});}
+  {const RR=D.replication.rolling_2024;const rk=['KDA (chaque mois)','v1.2 gelée (notes 2023)','Elo équipe (chaque game)','Elo joueurs (chaque game)','v1.2 (ré-entraînée chaque mois)'];
+   const rl={'KDA (chaque mois)':'KDA (chaque mois)','v1.2 gelée (notes 2023)':'v1.2 gelée (notes 2023)','Elo équipe (chaque game)':'Elo équipe (chaque game)','Elo joueurs (chaque game)':'Elo joueurs (chaque game)','v1.2 (ré-entraînée chaque mois)':'v1.2 (chaque mois)'};
+   hbar($('#f-repl'),rk.map(k=>({label:rl[k],value:RR[k].auc,lo:RR[k].lo,hi:RR[k].hi,acc:RR[k].acc,hl:k==='v1.2 (ré-entraînée chaque mois)',tip:`<b>${esc(rl[k])}</b><br>AUC ${fmt(RR[k].auc,3)} [${fmt(RR[k].lo,3)} – ${fmt(RR[k].hi,3)}]<br>${pct(RR[k].acc,1)} de bonnes prédictions`})),
+     {left:200,right:100,row:28,base:.5,min:.5,max:.76,ticks:[.5,.55,.6,.65,.7,.75],tf:t=>fmt(t,2),vf:d=>`${fmt(d.value,3)} (${pct(d.acc,1)})`,aria:'AUC saison 2024'});}
   const S=D.scouting.auc;const sl=[['theta','v1.0 (note mondiale)'],['v03','v0.3 Ratings 2.0 corrigé'],['KDA','KDA'],['W','Winrate'],['u','v1.0 écart intra-ligue']];
   hbar($('#f-scout'),sl.map(([k,l])=>({label:l,value:S[k],hl:k==='theta'})),{left:160,right:44,row:24,base:.5,min:.5,max:.85,ticks:[.5,.6,.7,.8],tf:t=>fmt(t,1),vf:d=>fmt(d.value,2),aria:'AUC promotions'});
   const C=D.counter,RN={top:'Top',jng:'Jungle',mid:'Mid',bot:'ADC',sup:'Support'};

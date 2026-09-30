@@ -23,7 +23,7 @@ print(out.shape, out.groupby('tier').size().to_dict())
 
 # notes d'une seule saison (v1.3) et notes par compétition / split
 import os
-for y in [2025,2026]:
+for y in [2023,2024,2025,2026]:
     s=pd.read_parquet(f'data/proc/season_{y}.parquet')
     if os.path.exists(f'data/proc/season_{y}_mv.parquet'): s=s.join(pd.read_parquet(f'data/proc/season_{y}_mv.parquet'))
     s=s[(s.gp>=10)&s.league.notna()]

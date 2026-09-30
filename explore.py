@@ -7,10 +7,10 @@ python explore.py compare Chovy Faker Caps
 python explore.py league LEC --top 10
 python explore.py comps --league LEC                              # competitions / splits of the season
 python explore.py comp "LEC Summer · saison régulière" --role ADC  # rating on one competition
-add --year 2025 to any command for the 2025 season (ratings use one season only)
+add --year 2023, 2024 or 2025 to any command for that season (ratings use one season only)
 """
 import argparse, pandas as pd
-ap=argparse.ArgumentParser(); ap.add_argument('--year',type=int,default=2026,choices=[2025,2026])
+ap=argparse.ArgumentParser(); ap.add_argument('--year',type=int,default=2026,choices=[2023,2024,2025,2026])
 sp=ap.add_subparsers(dest='cmd',required=True)
 a=sp.add_parser('leaderboard'); a.add_argument('--role'); a.add_argument('--top',type=int,default=10); a.add_argument('--tier',choices=['major','tier2','tier3'],default='major')
 a.add_argument('--region',help='2026 only: Corée, Chine, EMEA, "Amérique du Nord", "Brésil & Amérique latine", Asie-Pacifique'); a.add_argument('--min-games',type=int,default=20)

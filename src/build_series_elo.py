@@ -1,6 +1,6 @@
 import pandas as pd, numpy as np, sys
 sys.path.insert(0,'src'); from elo import *
-T=pd.read_parquet('data/proc/teams.parquet')
+T=pd.read_parquet('data/proc/teams.parquet'); T=T[T.src_year.isin([2022,2025,2026])]   # années des analyses bonus publiées
 g=team_games(T)
 # separate Elo run with side advantage estimated
 bwr=g.bwin.mean(); print('blue winrate',round(bwr,3))

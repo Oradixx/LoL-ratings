@@ -1,0 +1,56 @@
+{
+ "2024": {
+  "rosters remaniés (une équipe garde au plus 2 coéquipiers)": {
+   "n": 9285,
+   "share": 0.909937279498236,
+   "auc_prior": 0.6789064058280276,
+   "gain": 0.0076426096205217675,
+   "lo": 0.005570567249446165,
+   "hi": 0.009654215466861302
+  },
+  "rosters stables (les deux équipes gardent au moins 4 coéquipiers)": {
+   "n": 167,
+   "share": 0.016366130929047432,
+   "auc_prior": 0.6980697205416306,
+   "gain": 0.00417747046960526,
+   "lo": -0.010415723042546173,
+   "hi": 0.01981308097587179
+  }
+ },
+ "2025": {
+  "rosters remaniés (une équipe garde au plus 2 coéquipiers)": {
+   "n": 9191,
+   "share": 0.915073675826364,
+   "auc_prior": 0.6543705450282091,
+   "gain": 0.003848404119219384,
+   "lo": 0.001393595771626771,
+   "hi": 0.006325612742640055
+  },
+  "rosters stables (les deux équipes gardent au moins 4 coéquipiers)": {
+   "n": 102,
+   "share": 0.01015531660692951,
+   "auc_prior": 0.6873250699720113,
+   "gain": 0.009596161535385894,
+   "lo": -0.00904807591896411,
+   "hi": 0.027680345616058588
+  }
+ },
+ "2026": {
+  "rosters remaniés (une équipe garde au plus 2 coéquipiers)": {
+   "n": 8401,
+   "share": 0.9066479602849126,
+   "auc_prior": 0.6954310808102889,
+   "gain": 0.007064068932852385,
+   "lo": 0.0043426274936880505,
+   "hi": 0.00961912089845607
+  },
+  "rosters stables (les deux équipes gardent au moins 4 coéquipiers)": {
+   "n": 128,
+   "share": 0.013813943449169004,
+   "auc_prior": 0.6337484433374845,
+   "gain": 0.00996264009962644,
+   "lo": -0.009280323450134737,
+   "hi": 0.030521934269359275
+  }
+ }
+}

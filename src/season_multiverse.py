@@ -4,16 +4,16 @@ import sys, json, time, pickle; sys.path.insert(0,'src')
 import numpy as np, pandas as pd
 from multiprocessing import Pool
 N=int(sys.argv[1]) if len(sys.argv)>1 else 300
-YEARS=[int(y) for y in sys.argv[2].split(',')] if len(sys.argv)>2 else [2026,2025]
+YEARS=[int(y) for y in sys.argv[2].split(',')] if len(sys.argv)>2 else [2026,2025,2024,2023]
 def work(args):
     seed,year=args
-    import evaluate as E
+    import seasons as S
     from engine import fit
     from multiverse import sample
     cfg=sample(seed)
-    if year==2026:
-        lv=json.load(open('data/proc/season_2025.json'))['league']; cfg['league_prior']={k:v/1000 for k,v in lv.items()}; cfg['league_prior_w']=100.0
-    m=fit(E.P_ALL,E.G_ALL[E.G_ALL.year==year],cfg)
+    lp=S.prior_for(year)
+    if lp is not None: cfg['league_prior']=lp; cfg['league_prior_w']=S.LEAGUE_PRIOR_W
+    m=fit(S.P_ALL,S.G_ALL[S.G_ALL.year==year],cfg)
     return seed,year,m['theta'].astype('float32'),cfg['min_gp']
 if __name__=='__main__':
     t0=time.time(); import os
@@ -24,7 +24,7 @@ if __name__=='__main__':
             res[year].append((seed,th,mg))
             if i%100==0: print(i,round(time.time()-t0),'s',flush=True)
     pickle.dump(res,open('data/proc/season_mv_raw.pkl','wb'))
-    for year in [2025,2026]:
+    for year in sorted(res):
         r=pd.read_parquet(f'data/proc/season_{year}.parquet'); r=r[r.active]
         ranks=[]
         for seed,th,mg in res[year]:

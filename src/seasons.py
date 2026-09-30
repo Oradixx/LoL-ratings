@@ -8,8 +8,12 @@ Pour une saison Y :
   sur les résidus du modèle de la saison, avec une forte régularisation : note du split = note de la saison + écart.
 Sortie : data/proc/season_<Y>.parquet (joueurs), data/proc/season_<Y>.json (compétitions, écarts, équipes, trajectoires).
 """
-import sys, json; sys.path.insert(0,'src'); from evaluate import *
-from leagues import INTL, MAJOR, REGION, DESC, detect_cups, tier as tier_of
+import sys, json, os; sys.path.insert(0,'src'); from evaluate import *
+from leagues import INTL, MAJOR, REGION, DESC, detect_cups, tier as tier_of, majors, SUCCESSOR_OF
+# v1.5 : quatre saisons (2023-2026). Le modèle de chaque saison ne voit que ses games ; seule l'a priori sur les ligues
+# relie une saison à la précédente.
+SEASONS=[2023,2024,2025,2026]
+P_ALL=player_games(tuple(SEASONS)); G_ALL=game_table(P_ALL)
 V=dict(lam=50,lamL=3,target='gold',role_prior=True,prior_alpha=200,home='mix')
 # Réglage validé hors échantillon (src/split_validation.py) : games coupées en deux moitiés au hasard, écarts appris
 # sur l'une, jugés sur l'autre. Choisi sur 2025, confirmé sur 2026. λ=30 et le point de départ tiré des stats
@@ -22,6 +26,16 @@ LEAGUE_PRIOR_W=100.0
 NAMES={'WLDs':'Worlds','FST':'First Stand','EM':'EMEA Masters','AM':'Asia Masters','DCup':'Demacia Cup','LTA':'LTA Championship',
        'EWC':'Esports World Cup','MSI':'MSI','KeSPA Cup':'KeSPA Cup'}
 TIERCODE={'Ligue majeure':'M','Deuxième niveau':'2','Troisième niveau':'3'}
+
+def prior_for(year):
+    """niveau des ligues estimé sur la saison précédente (None pour la première saison), étendu aux ligues qui
+    prennent la suite d'une autre (SUCCESSOR_OF)."""
+    f=f'data/proc/season_{year-1}.json'
+    if year-1 not in SEASONS or not os.path.exists(f): return None
+    lv={k:v/1000 for k,v in json.load(open(f))['league'].items()}
+    for new,old in SUCCESSOR_OF.items():
+        if old in lv and new not in lv: lv[new]=lv[old]
+    return lv
 
 def season_fit(year,cfg=V,prior_levels=None):
     g=G_ALL[G_ALL.year==year]
@@ -57,11 +71,11 @@ def competitions(year,info,excl):
         if n<8: continue
         if lg in excl:
             homes=d.drop_duplicates('pid').pid.map(info.league).dropna()
-            tiers=homes.map(tier_of); t=tiers.mode().iloc[0] if len(tiers) else 'Deuxième niveau'
+            tiers=homes.map(lambda l:tier_of(l,year)); t=tiers.mode().iloc[0] if len(tiers) else 'Deuxième niveau'
             regs=homes.map(REGION).dropna(); reg=regs.mode().iloc[0] if (len(regs) and (regs==regs.mode().iloc[0]).mean()>=0.8) else 'International'
             label=NAMES.get(lg,lg)+('' if c==lg else c[len(lg):])
         else:
-            t=tier_of(lg); reg=REGION.get(lg,'Autre'); label=c
+            t=tier_of(lg,year); reg=REGION.get(lg,'Autre'); label=c
         comps[c]=dict(label=label,league=lg,tier=TIERCODE.get(t,'2'),region=reg,games=int(n))
     return p, comps
 
@@ -147,8 +161,8 @@ def flags(year,info):
         if a is None or pd.isna(a): f.append('new')
         elif a!=b:
             f.append('moved')
-            if a not in MAJOR and b in MAJOR: f.append('up')
-            if a in MAJOR and b not in MAJOR: f.append('down')
+            if a not in majors(year-1) and b in majors(year): f.append('up')
+            if a in majors(year-1) and b not in majors(year): f.append('down')
         out[pid]=f
     return out
 
@@ -164,13 +178,13 @@ def career(year,pids):
     return out
 
 if __name__=='__main__':
-    levels=None
-    for year in [2025,2026]:
+    for year in SEASONS:
+        levels=prior_for(year)
         m,g=season_fit(year,V,levels)
         sd,s2,covT=posterior_sd(m,g)
         info,excl=player_info(year)
         r=pd.DataFrame({'theta':m['theta'],'u':m['u'],'sd':sd}).join(info,how='inner')
-        r['tier']=r.league.map(tier_of); r['region']=r.league.map(REGION)
+        r['tier']=r.league.map(lambda l:tier_of(l,year)); r['region']=r.league.map(REGION)
         r['active']=(r.gp>=20)&r.league.notna()
         base=r[r.active].theta.mean()
         r['points']=((r.theta-base)*1000).round(0); r['points_sd']=(r.sd*1000).round(0)
@@ -198,4 +212,3 @@ if __name__=='__main__':
                        traj_months=list(T.columns),traj={pid:[None if pd.isna(v) else int(v) for v in T.loc[pid].values] for pid in T.index},
                        flags=fl,career=car,post=post),open(f'data/proc/season_{year}.json','w'),ensure_ascii=False,default=float)
         print(year,'joueurs actifs',int(r.active.sum()),'compétitions',len(comps),'écarts',len(D),flush=True)
-        levels=m['league'].to_dict()

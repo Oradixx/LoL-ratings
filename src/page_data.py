@@ -100,10 +100,10 @@ def season_block(year):
         else: comps[c]['n']=len(dl[c])
     from leagues import comp_labels; comp_labels(comps,lm_keys)
     lv={k:round(v-S['base']*1000) for k,v in S['league'].items() if not k.startswith('seul') and k!='INTL_ONLY'}
-    lm={l:dict(region=REGION.get(l,'Autre'),desc=DESC.get(l,''),tier=TC[tier(l)],n=int((keep.league==l).sum())) for l in sorted(keep.league.unique())}
+    lm={l:dict(region=REGION.get(l,'Autre'),desc=DESC.get(l,''),tier=TC[tier(l,year)],n=int((keep.league==l).sum())) for l in sorted(keep.league.unique())}
     return dict(players=players,comps=comps,deltas=dl,teams=S['teams'],traj_months=S['traj_months'],traj=list(S['traj'].values()),
                 league_meta=lm,levels=lv,post=S['post'])
-D['seasons']={str(y):season_block(y) for y in [2025,2026]}
+D['seasons']={str(y):season_block(y) for y in [2023,2024,2025,2026]}
 # le récit de la page (meilleurs par poste, multivers, sous-cotés) suit lui aussi les notes de la saison 2026
 r6=pd.read_parquet(P+'season_2026.parquet').join(pd.read_parquet(P+'season_2026_mv.parquet'),how='left'); S6=J('season_2026.json')
 act6=r6[r6.active]
@@ -154,6 +154,9 @@ _sc='results/worlds2026/score.json'
 D['worlds']=dict(score=json.load(open(_sc)) if __import__('os').path.exists(_sc) else None,frozen_on=FZ['frozen_on'],data_until=FZ['data_until'],a=FZ['calibration']['a'],b=FZ['calibration']['b'],
     teams=[dict(team=t['team'],league=t['league'],region=t['region'],lineup=[t['lineup'][r] for r in ['Top','Jungle','Mid','ADC','Support']],
                 s=round(t['strength'],4),pts=int(round((t['strength']/5-_base)*1000))) for t in FZ['teams']])
+# ---------- v1.5 : 2023-2024, réplication ----------
+D['replication']=J('replication.json'); D['history']=J('history_length.json'); D['scout_rep']=J('scouting_replication.json'); D['credit_roster']=J('credit_split_by_roster.json')
+D['games_by_year']={str(y):int(n) for y,n in G.groupby('src_year').gameid.nunique().items()}
 for k in ['players','traj','traj_months','teams','league_meta']: D.pop(k,None)
 json.dump(D,open('results/page_data.json','w'),ensure_ascii=False,default=float)
 print('seasons ok',len(json.dumps(D,default=float)))

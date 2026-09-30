@@ -3,7 +3,7 @@ Oracle's Elixir publishes them on Google Drive; the IDs below are the public fil
 https://oracleselixir.com/tools/downloads. Google Drive sometimes refuses automated downloads ("quota exceeded"):
 in that case the script says so and exits with code 3, and the workflow skips the update instead of failing."""
 import sys, os, subprocess
-FILES={2025:'1v6LRphp2kYciU4SXp0PCjEMuev1bDejc',2026:'1hnpbrUpBMS1TZI7IovfpKeZfWJH1Aptm'}
+FILES={2023:'1XXk2LO0CsNADBB1LRGOV5rUpyZdEZ8s2',2024:'1IjIEhLc9n8eLKeY-yh_YigKVWbhgGBsN',2025:'1v6LRphp2kYciU4SXp0PCjEMuev1bDejc',2026:'1hnpbrUpBMS1TZI7IovfpKeZfWJH1Aptm'}
 os.makedirs('data/raw',exist_ok=True)
 ok=True
 for y,fid in FILES.items():

@@ -57,3 +57,24 @@ def test_v14_checks():
 def test_worlds_predictions_are_frozen():
     F=json.load(open('results/worlds2026/frozen_model.json'))
     assert F['data_until']<='2026-09-28' and len(F['teams'])>=40 and len(F['theta'])>1000
+
+def test_v15_replication_on_unseen_seasons():
+    R=json.load(open('results/replication.json'))
+    r=R['rolling_2024']
+    assert r['v1.2 (ré-entraînée chaque mois)']['auc']>r['Elo équipe (chaque game)']['auc']
+    assert r['v1.2 (ré-entraînée chaque mois)']['auc']>r['Elo joueurs (chaque game)']['auc']
+    for y in ['2024','2025']:
+        o=R['offseason'][y]; assert o['v1.2 (notes gelées)']['auc']>o['Elo équipe (gelé)']['auc']
+    S=json.load(open('results/scouting_replication.json'))
+    for y,o in S.items(): assert o['top20_rate']>3*o['base'] and o['auc_rating']>o['auc_kda']
+    C=json.load(open('results/credit_split_by_roster.json'))
+    for y,o in C.items(): assert o['rosters remaniés (une équipe garde au plus 2 coéquipiers)']['lo']>0
+    H=json.load(open('results/history_length.json'))
+    assert H['2025']['3 saisons']['logloss']<H['2025']['2 saisons']['logloss']   # the choice, made on 2025
+
+def test_four_seasons_published():
+    for y in [2023,2024,2025,2026]:
+        R=pd.read_csv(f'results/ratings_{y}.csv',index_col=0)
+        assert len(R)>1000 and {'Ligue majeure','Deuxième niveau'}<=set(R.tier)
+    R24=pd.read_csv('results/ratings_2024.csv',index_col=0)
+    assert 'PCS' in set(R24[R24.tier=='Ligue majeure'].league) and 'LDL' in set(R24[R24.tier=='Deuxième niveau'].league)
