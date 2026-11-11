@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rift Scout</title>
+<meta name="description" content="Les meilleurs joueurs professionnels de League of Legends, notés de 1 à 100, et un outil de scouting par poste et par style de jeu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<style>/*CSS*/</style>
+</head>
+<body>
+<div class="top">
+  <div class="brand">Rift <span>Scout</span></div>
+  <div class="tabs" role="tablist">
+    <button role="tab" data-view="rank">Classement</button>
+    <button role="tab" data-view="scout">Scouting</button>
+    <button role="tab" data-view="method">Méthode</button>
+  </div>
+  <span class="spacer"></span>
+  <div class="seg" id="season" aria-label="Saison"></div>
+</div>
+
+<main class="page">
+  <!-- ======================= classement -->
+  <div class="view" id="view-rank">
+    <div class="five-head"><h1 id="five-title">Le meilleur cinq</h1><p id="five-sub"></p></div>
+    <div class="five" id="five"></div>
+    <div class="work">
+      <aside class="filters" aria-label="Filtres">
+        <div class="wide"><span class="count" id="count"></span></div>
+        <div class="field wide"><span>Poste</span>
+          <div class="roles" id="f-roles">
+            <button data-role="">Tous</button><button data-role="Top">Top</button><button data-role="Jungle">Jungle</button>
+            <button data-role="Mid">Mid</button><button data-role="ADC">ADC</button><button data-role="Support">Support</button>
+          </div></div>
+        <div><label for="f-tier">Niveau de ligue</label>
+          <select id="f-tier"><option value="">Tous</option><option value="0">Ligues majeures</option><option value="1">Deuxième niveau</option><option value="2">Troisième niveau</option></select></div>
+        <div><label for="f-region">Région</label><select id="f-region"></select></div>
+        <div><label for="f-league">Ligue</label><select id="f-league"></select></div>
+        <div><label for="f-event">Événement</label><select id="f-event"></select></div>
+        <div><label for="f-min">Parties jouées, au moins</label><input id="f-min" type="number" min="0" max="200" step="5"></div>
+        <div><label for="f-q">Joueur ou équipe</label><input id="f-q" type="search" placeholder="Chovy, G2, Solary…"></div>
+        <div class="wide"><button class="reset" id="reset">Réinitialiser les filtres</button></div>
+      </aside>
+      <div class="table">
+        <div class="thead"><span>Rang</span><span>Note</span><span>Joueur</span><span>Poste</span>
+          <span class="strip-head" title="Lane, début de partie, teamfight, dégâts, farm et or, vision, survie, objectifs"><span>Lane</span><span>Déb.</span><span>TF</span><span>Dég.</span><span>Or</span><span>Vis.</span><span>Surv.</span><span>Obj.</span></span>
+          <span class="r" id="th-trend">Forme</span><span class="r">Parties</span></div>
+        <div id="rows"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= scouting -->
+  <div class="view" id="view-scout" hidden>
+    <div class="scout-head">
+      <div>
+        <h1>Trouver un joueur pour une équipe</h1>
+        <p>Choisissez une équipe et le poste à pourvoir. Les candidats sont classés par leur note, par la ressemblance de leur style avec le titulaire actuel et par ce qu'ils apportent aux quatre autres joueurs.</p>
+      </div>
+      <div class="pick">
+        <div class="field"><span>Équipe</span>
+          <input id="team-input" type="search" placeholder="Nom de l'équipe" autocomplete="off" aria-controls="suggest">
+          <div class="suggest" id="suggest" hidden></div></div>
+        <div class="field"><span>Poste à pourvoir</span>
+          <div class="roles" id="s-roles" style="grid-template-columns:repeat(5,1fr)">
+            <button data-role="Top">Top</button><button data-role="Jungle">Jungle</button><button data-role="Mid">Mid</button><button data-role="ADC">ADC</button><button data-role="Support">Support</button>
+          </div></div>
+        <button class="reset" id="clear-team">Chercher sans équipe</button>
+      </div>
+    </div>
+    <div class="lineup" id="lineup" hidden></div>
+    <p class="brief" id="brief"></p>
+    <div class="work" style="margin-top:18px">
+      <aside class="filters" aria-label="Critères de recherche">
+        <div class="wide"><span class="count" id="scout-count"></span></div>
+        <div class="wide"><label for="s-sort">Trier par</label>
+          <select id="s-sort"><option value="score">Recommandation (note, apport, style)</option><option value="note">Note</option><option value="comp">Apport à l'équipe</option><option value="sim">Style proche du titulaire</option></select></div>
+        <label class="check wide"><input type="checkbox" id="s-reach" checked> Seulement les joueurs d'équipes de niveau égal ou inférieur</label>
+        <div><label for="s-tier">Niveau de ligue</label>
+          <select id="s-tier"><option value="">Tous</option><option value="0">Ligues majeures</option><option value="1">Deuxième niveau</option><option value="2">Troisième niveau</option></select></div>
+        <div><label for="s-region">Région</label><select id="s-region"></select></div>
+        <div><label for="s-league">Ligue</label><select id="s-league"></select></div>
+        <div><label for="s-note">Note minimale</label><input id="s-note" type="number" min="0" max="99" step="1" value="0"></div>
+        <div><label for="s-min">Parties jouées, au moins</label><input id="s-min" type="number" min="0" max="200" step="5" value="20"></div>
+        <p class="count wide">Les contrats ne figurent pas dans les données de match : la disponibilité d'un joueur reste à vérifier.</p>
+      </aside>
+      <div class="table scout-table">
+        <div class="thead" id="scout-head"><span>Rang</span><span>Note</span><span>Joueur</span><span class="r" title="Écart de note avec le joueur à remplacer">Écart</span>
+          <span title="Ressemblance du style de jeu avec le joueur à remplacer">Style proche</span>
+          <span title="Forces du candidat là où l'équipe est en retrait, et équilibre des ressources">Apport à l'équipe</span>
+          <span>Profil et forces</span></div>
+        <div id="scout-rows"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================= méthode -->
+  <div class="view" id="view-method" hidden>
+    <div class="prose">
+      <h1>Comment la note est calculée</h1>
+      <p class="formula">Note = <em>niveau de l'équipe</em> + <em>écart individuel</em></p>
+      <p>Une note de 80 correspond au joueur médian des ligues majeures. Les tout meilleurs approchent 97. L'échelle est la même pour toutes les ligues : un 75 en LFL et un 75 en LCK désignent le même niveau estimé.</p>
+      <h2>Le niveau de l'équipe</h2>
+      <p>Un modèle de victoire est ajusté sur toutes les parties de la saison. Chaque équipe y reçoit un niveau, qui dépend de ses résultats et de la force de ses adversaires. Les tournois internationaux (Worlds, MSI, First Stand, EWC, EMEA Masters) servent à situer les ligues les unes par rapport aux autres.</p>
+      <div class="lgs" id="lgs"></div>
+      <p>Niveau moyen des ligues, saison <span id="m-season"></span>, sur l'échelle des notes.</p>
+      <h2>L'écart individuel</h2>
+      <p>Pour chaque partie, les statistiques du joueur sont comparées à celles des joueurs du même poste dans la même compétition, après correction du champion joué (un tank n'est pas jugé sur les dégâts d'un carry). Elles sont regroupées en huit facettes. On retire ensuite ce que l'écart de niveau entre les deux équipes suffit à expliquer : il reste ce que le joueur fait en plus, ou en moins, de ce qu'on attend à son poste dans ce contexte.</p>
+      <p>Les facettes n'ont pas le même poids selon le poste :</p>
+      <div class="scroll-x"><table class="wtable" id="wtable"></table></div>
+      <p>Un joueur avec peu de parties est ramené vers le niveau moyen (l'équivalent de 12 parties moyennes est ajouté à chacun).</p>
+      <h2>Les lectures complémentaires</h2>
+      <ul>
+        <li><b>Note par événement</b> : même calcul sur les seules parties de l'événement, avec le parcours de l'équipe dans cet événement ; ramenée vers la note de saison quand il y a peu de parties.</li>
+        <li><b>Weakside et strongside</b> (top, mid, ADC) : une partie est comptée « weakside » quand le joueur participe peu aux kills de son équipe avant 15 minutes, « strongside » quand il y participe beaucoup. C'est une approximation : les données ne disent pas où passe le jungler.</li>
+        <li><b>Grands matchs</b> : écart entre ses parties de playoffs ou de tournoi international et ses parties de saison régulière.</li>
+        <li><b>Style de jeu</b> : part de l'or et des dégâts, activité avant 15 minutes, prise de risque, vision, farm, type de champions joués. Il sert à mesurer la ressemblance entre deux joueurs, pas leur niveau.</li>
+      </ul>
+      <h2>Le scouting</h2>
+      <p><b>Style proche</b> mesure la ressemblance avec le joueur à remplacer. <b>Apport à l'équipe</b> combine deux choses : les forces du candidat sur les facettes où les quatre autres joueurs sont en retrait, et l'équilibre des ressources (un carry de plus dans une équipe qui en a déjà trois s'intègre moins bien). Le tri recommandé part de la note et la corrige de ces deux mesures.</p>
+      <h2>Ce que la note ne sait pas</h2>
+      <ul>
+        <li>Dans un effectif qui ne change jamais, le niveau de l'équipe est partagé entre les cinq joueurs. Seules les statistiques individuelles les départagent.</li>
+        <li>Les appels, la draft, le rôle dans le vestiaire et tout ce qui ne laisse pas de trace statistique n'entrent pas dans le calcul.</li>
+        <li>Les contrats et la disponibilité des joueurs ne figurent pas dans les données.</li>
+      </ul>
+      <p>Données : Oracle's Elixir. Niveaux de ligue de départ repris de LoL Ratings 3.0.</p>
+    </div>
+  </div>
+</main>
+
+<div class="sheet-wrap" id="sheet-wrap"><div class="scrim"></div><div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-name" tabindex="-1"></div></div>
+
+<script>window.DATA=/*DATA*/;</script>
+<script>/*JS*/</script>
+</body>
+</html>
