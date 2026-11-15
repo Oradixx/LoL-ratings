@@ -8,7 +8,8 @@ os.makedirs('data/raw',exist_ok=True)
 ok=True
 for y,fid in FILES.items():
     out=f'data/raw/{y}_LoL_esports_match_data_from_OraclesElixir.csv'
-    r=subprocess.run([sys.executable,'-m','gdown','--fuzzy',f'https://drive.google.com/file/d/{fid}/view','-O',out],capture_output=True,text=True)
+    # the bare file id works with every gdown version (gdown 6 removed --fuzzy, which made every weekly download fail)
+    r=subprocess.run([sys.executable,'-m','gdown',fid,'-O',out],capture_output=True,text=True)
     if r.returncode!=0 or not os.path.exists(out) or os.path.getsize(out)<1_000_000:
         print(f'::warning::download of {y} failed (Google Drive quota?): {r.stderr.strip()[-300:]}'); ok=False
     else: print(y,'ok',os.path.getsize(out)//1_000_000,'MB')
