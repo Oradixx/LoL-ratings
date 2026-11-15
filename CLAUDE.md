@@ -17,7 +17,7 @@ python -m pytest -q tests/
 
 `.github/workflows/update.yml` relance tout le lundi à 04:23 UTC, puis note les pronostics Worlds et republie `docs/`. Si le téléchargement échoue, l'étape de calcul est sautée et le run apparaît quand même comme réussi : regarder si l'étape « Run the pipeline » a vraiment tourné (un run de 30 secondes n'a rien fait).
 
-Du 5 octobre au 9 novembre 2026, aucune mise à jour n'a tourné : `scripts/fetch_data.py` passait `--fuzzy` à gdown, option supprimée dans gdown 6. Le script passe maintenant l'identifiant du fichier seul. La page a été recalculée à la main le 15 novembre 2026 avec les données du 13 novembre (Worlds jusqu'aux demi-finales ; la finale arrive avec la prochaine mise à jour).
+Du 5 octobre au 9 novembre 2026, aucune mise à jour n'a tourné : `scripts/fetch_data.py` passait `--fuzzy` à gdown, option supprimée dans gdown 6. Le script passe maintenant l'identifiant du fichier seul. La page a été recalculée à la main le 15 novembre 2026 avec les données du 13 novembre (Worlds jusqu'aux demi-finales). Le 15 novembre au soir, la finale (Bilibili 3-1 Gen.G), absente d'Oracle's Elixir, a été ajoutée depuis les parties Leaguepedia de Rift Scout pour noter les pronostics : 98 parties, modèle 61,2 % (AUC 0,689) contre Elo 58,2 %. La prochaine mise à jour, avec le fichier d'Oracle's Elixir complet, refera la même note.
 
 ## Règles
 

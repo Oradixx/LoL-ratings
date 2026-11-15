@@ -8,7 +8,7 @@ Method inspired by [B.A.S.I.C.](https://github.com/HQEye/basic-most-average-nba-
 
 Data: [Oracle's Elixir](https://oracleselixir.com/tools/downloads) match data — 10,044 pro games in 2025 (building), 9,266 games in 2026 up to September 28 (judging), 2023 and 2024 (11,106 and 10,204 games) for the replication, 2022 for the bonus analyses.
 
-**Refresh of November 15, 2026.** The weekly update had silently skipped every run since October (the download script used a gdown option removed in gdown 6); fixed, and `results/` and the page re-run on data up to November 13, 2026 (Worlds up to the semi-finals). The figures in this README describe the September 28 run. **Worlds 2026 verdict (94 games, final still missing from the data):** the frozen model called 62.8 % of games (AUC 0.703, log-loss 0.609) vs 59.6 % for the team Elo frozen the same day (AUC 0.622); series 62 % vs 55 %.
+**Refresh of November 15, 2026.** The weekly update had silently skipped every run since October (the download script used a gdown option removed in gdown 6); fixed, and `results/` and the page re-run on data up to November 13, 2026 (Worlds up to the semi-finals). The figures in this README describe the September 28 run. **Worlds 2026 verdict (all 98 games, final included):** the frozen model called 61.2 % of games (AUC 0.689, log-loss 0.618) vs 58.2 % for the team Elo frozen the same day (AUC 0.612); series 61 % vs 54 %. In the final the model favoured Gen.G (64 % per game); Bilibili Gaming won 3-1. The four final games came from Leaguepedia (converted to the Oracle's Elixir format by Rift Scout, `pipeline/lp_games_2026.csv.gz`), as Oracle's Elixir had not published them yet.
 
 ## The result
 
