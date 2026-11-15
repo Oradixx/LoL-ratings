@@ -1,150 +1,150 @@
 {
  "league_gold": {
-  "LCK": 3731.0,
-  "LPL": 2583.0,
-  "LCKC": 2405.0,
-  "LEC": 2361.0,
-  "LCS": 2273.0,
-  "LFL": 2245.0,
-  "LCP": 1707.0,
-  "PRM": 1569.0,
-  "LES": 1489.0,
-  "CBLOL": 1483.0,
-  "seul:EM": 1371.0,
-  "seul:KeSPA Cup": 1240.0,
-  "seul:AM": 1238.0,
-  "TCL": 1136.0,
-  "NL": 812.0,
-  "NLC": 356.0,
-  "RL": 193.0,
-  "PCS": -99.0,
-  "AL": -140.0,
-  "PRMP": -241.0,
-  "seul:CT": -382.0,
+  "LCK": 3733.0,
+  "LPL": 2576.0,
+  "LCKC": 2410.0,
+  "LEC": 2362.0,
+  "LCS": 2277.0,
+  "LFL": 2220.0,
+  "LCP": 1737.0,
+  "PRM": 1559.0,
+  "CBLOL": 1487.0,
+  "LES": 1484.0,
+  "seul:EM": 1395.0,
+  "seul:AM": 1296.0,
+  "seul:KeSPA Cup": 1235.0,
+  "TCL": 1132.0,
+  "NL": 803.0,
+  "NLC": 348.0,
+  "RL": 203.0,
+  "PCS": -131.0,
+  "AL": -152.0,
+  "PRMP": -254.0,
+  "seul:CT": -380.0,
   "HM": -460.0,
-  "HLL": -662.0,
-  "VCS": -710.0,
-  "CD": -768.0,
-  "NACL": -819.0,
+  "HLL": -667.0,
+  "VCS": -699.0,
+  "CD": -764.0,
+  "NACL": -816.0,
   "seul:IC": -839.0,
-  "ROL": -944.0,
-  "EBL": -1129.0,
-  "LIT": -1219.0,
-  "LPLOL": -1549.0,
-  "seul:DCup": -1586.0,
-  "LRN": -1744.0,
-  "HC": -1819.0,
-  "LAS": -1992.0,
+  "ROL": -948.0,
+  "EBL": -1133.0,
+  "LIT": -1199.0,
+  "LPLOL": -1553.0,
+  "seul:DCup": -1633.0,
+  "LRN": -1740.0,
+  "HC": -1821.0,
+  "LAS": -1986.0,
   "NEXO": -2199.0,
-  "LJL": -2289.0,
-  "LRS": -2881.0,
-  "seul:HW": -3722.0
+  "LJL": -2280.0,
+  "LRS": -2876.0,
+  "seul:HW": -3725.0
  },
  "prior_w": {
   "ADC": {
-   "kpm": 465.7,
-   "dthpm": -711.0,
-   "apm": 541.9,
-   "dpm": 260.1,
-   "damageshare": -175.3,
-   "damagetakenperminute": -59.8,
-   "earned gpm": 921.3,
-   "earnedgoldshare": -843.9,
-   "cspm": 47.7,
-   "vspm": 74.4,
-   "wpm": 12.6,
-   "wcpm": 257.2,
-   "cwpm": -60.3,
-   "kp": -43.7,
-   "ttpm": 407.3,
-   "golddiffat15": 320.0,
-   "xpdiffat15": 26.6,
-   "csdiffat15": -131.8,
-   "has_lane": 153.5
+   "kpm": 470.3,
+   "dthpm": -714.7,
+   "apm": 534.5,
+   "dpm": 258.7,
+   "damageshare": -171.0,
+   "damagetakenperminute": -63.6,
+   "earned gpm": 918.7,
+   "earnedgoldshare": -839.6,
+   "cspm": 44.8,
+   "vspm": 75.8,
+   "wpm": 17.2,
+   "wcpm": 258.0,
+   "cwpm": -60.4,
+   "kp": -44.1,
+   "ttpm": 410.9,
+   "golddiffat15": 315.8,
+   "xpdiffat15": 31.3,
+   "csdiffat15": -128.1,
+   "has_lane": 150.1
   },
   "Jungle": {
-   "kpm": 287.2,
-   "dthpm": -703.2,
-   "apm": 738.8,
-   "dpm": 269.3,
-   "damageshare": -98.4,
-   "damagetakenperminute": 140.8,
-   "earned gpm": 765.5,
-   "earnedgoldshare": -715.0,
-   "cspm": 477.2,
-   "vspm": 156.5,
-   "wpm": 24.6,
-   "wcpm": -55.4,
-   "cwpm": -10.7,
-   "kp": -372.7,
-   "ttpm": 164.2,
-   "golddiffat15": -7.1,
-   "xpdiffat15": 58.7,
-   "csdiffat15": -136.2,
-   "has_lane": 305.7
+   "kpm": 290.1,
+   "dthpm": -704.0,
+   "apm": 736.5,
+   "dpm": 268.9,
+   "damageshare": -91.9,
+   "damagetakenperminute": 137.0,
+   "earned gpm": 763.9,
+   "earnedgoldshare": -715.9,
+   "cspm": 482.3,
+   "vspm": 155.7,
+   "wpm": 22.8,
+   "wcpm": -56.5,
+   "cwpm": -8.7,
+   "kp": -363.4,
+   "ttpm": 166.1,
+   "golddiffat15": -17.9,
+   "xpdiffat15": 58.3,
+   "csdiffat15": -131.6,
+   "has_lane": 307.4
   },
   "Mid": {
-   "kpm": 311.8,
-   "dthpm": -753.7,
-   "apm": 655.7,
-   "dpm": 340.2,
-   "damageshare": -85.2,
-   "damagetakenperminute": 82.2,
-   "earned gpm": 1031.5,
-   "earnedgoldshare": -1080.6,
-   "cspm": -33.5,
-   "vspm": 147.4,
-   "wpm": -48.2,
-   "wcpm": 32.7,
-   "cwpm": -84.5,
-   "kp": 25.9,
-   "ttpm": 540.0,
-   "golddiffat15": 85.8,
-   "xpdiffat15": 2.4,
-   "csdiffat15": 36.9,
-   "has_lane": 74.1
+   "kpm": 315.7,
+   "dthpm": -753.2,
+   "apm": 661.0,
+   "dpm": 344.0,
+   "damageshare": -76.0,
+   "damagetakenperminute": 81.3,
+   "earned gpm": 1030.6,
+   "earnedgoldshare": -1082.8,
+   "cspm": -37.1,
+   "vspm": 144.5,
+   "wpm": -54.2,
+   "wcpm": 31.2,
+   "cwpm": -83.9,
+   "kp": 24.8,
+   "ttpm": 543.4,
+   "golddiffat15": 71.3,
+   "xpdiffat15": 6.4,
+   "csdiffat15": 40.5,
+   "has_lane": 75.4
   },
   "Support": {
-   "kpm": -39.8,
-   "dthpm": -465.2,
-   "apm": 1007.5,
-   "dpm": 120.6,
-   "damageshare": -235.3,
-   "damagetakenperminute": -42.2,
-   "earned gpm": 1260.2,
-   "earnedgoldshare": -424.2,
-   "cspm": -145.2,
-   "vspm": 196.0,
-   "wpm": 22.6,
-   "wcpm": -11.4,
-   "cwpm": -110.2,
-   "kp": -179.0,
-   "ttpm": 267.3,
-   "golddiffat15": 76.3,
-   "xpdiffat15": -191.0,
-   "csdiffat15": 67.8,
-   "has_lane": 12.0
+   "kpm": -30.7,
+   "dthpm": -456.4,
+   "apm": 1009.9,
+   "dpm": 122.1,
+   "damageshare": -244.1,
+   "damagetakenperminute": -38.7,
+   "earned gpm": 1264.1,
+   "earnedgoldshare": -430.0,
+   "cspm": -141.8,
+   "vspm": 198.7,
+   "wpm": 23.6,
+   "wcpm": -14.1,
+   "cwpm": -111.1,
+   "kp": -177.0,
+   "ttpm": 262.9,
+   "golddiffat15": 67.7,
+   "xpdiffat15": -188.4,
+   "csdiffat15": 71.5,
+   "has_lane": 19.1
   },
   "Top": {
-   "kpm": 355.0,
-   "dthpm": -391.6,
-   "apm": 858.2,
-   "dpm": 431.9,
-   "damageshare": -80.1,
-   "damagetakenperminute": 37.8,
-   "earned gpm": 1032.3,
-   "earnedgoldshare": -1197.3,
-   "cspm": 497.1,
-   "vspm": -52.9,
-   "wpm": 106.6,
-   "wcpm": 85.2,
-   "cwpm": 4.8,
-   "kp": -114.7,
-   "ttpm": 167.6,
-   "golddiffat15": 135.0,
-   "xpdiffat15": 52.1,
+   "kpm": 357.6,
+   "dthpm": -390.3,
+   "apm": 856.9,
+   "dpm": 427.9,
+   "damageshare": -86.4,
+   "damagetakenperminute": 38.7,
+   "earned gpm": 1032.7,
+   "earnedgoldshare": -1195.0,
+   "cspm": 501.0,
+   "vspm": -50.5,
+   "wpm": 103.8,
+   "wcpm": 86.5,
+   "cwpm": 5.8,
+   "kp": -115.3,
+   "ttpm": 168.9,
+   "golddiffat15": 135.6,
+   "xpdiffat15": 50.1,
    "csdiffat15": 13.7,
-   "has_lane": -68.1
+   "has_lane": -62.9
   }
  },
  "top": {
@@ -154,7 +154,7 @@
     "team": "Gen.G",
     "home": "LCK",
     "gp": 167,
-    "gold": 4915.0,
+    "gold": 4916.0,
     "gold_u": 1183.0
    },
    {
@@ -162,7 +162,7 @@
     "team": "Hanwha Life Esports",
     "home": "LCK",
     "gp": 169,
-    "gold": 4812.0,
+    "gold": 4813.0,
     "gold_u": 1080.0
    },
    {
@@ -170,48 +170,48 @@
     "team": "KT Rolster",
     "home": "LCK",
     "gp": 128,
-    "gold": 4784.0,
-    "gold_u": 1052.0
+    "gold": 4787.0,
+    "gold_u": 1054.0
    },
    {
     "name": "Doran",
     "team": "T1",
     "home": "LCK",
     "gp": 187,
-    "gold": 4640.0,
+    "gold": 4641.0,
     "gold_u": 908.0
-   },
-   {
-    "name": "Siwoo",
-    "team": "Dplus Kia",
-    "home": "LCK",
-    "gp": 163,
-    "gold": 4105.0,
-    "gold_u": 374.0
    },
    {
     "name": "Driver",
     "team": "CTBC Flying Oyster",
     "home": "LCP",
     "gp": 65,
-    "gold": 4097.0,
-    "gold_u": 2390.0
+    "gold": 4119.0,
+    "gold_u": 2382.0
+   },
+   {
+    "name": "Siwoo",
+    "team": "Dplus Kia",
+    "home": "LCK",
+    "gp": 163,
+    "gold": 4107.0,
+    "gold_u": 373.0
    },
    {
     "name": "Flandre",
     "team": "Anyone's Legend",
     "home": "LPL",
     "gp": 183,
-    "gold": 4049.0,
-    "gold_u": 1465.0
+    "gold": 4046.0,
+    "gold_u": 1471.0
    },
    {
     "name": "369",
     "team": "Top Esports",
     "home": "LPL",
     "gp": 183,
-    "gold": 3890.0,
-    "gold_u": 1307.0
+    "gold": 3885.0,
+    "gold_u": 1309.0
    },
    {
     "name": "Bin",
@@ -219,14 +219,14 @@
     "home": "LPL",
     "gp": 189,
     "gold": 3779.0,
-    "gold_u": 1196.0
+    "gold_u": 1204.0
    },
    {
     "name": "Kingen",
     "team": "Nongshim RedForce",
     "home": "LCK",
     "gp": 144,
-    "gold": 3757.0,
+    "gold": 3759.0,
     "gold_u": 26.0
    }
   ],
@@ -236,7 +236,7 @@
     "team": "Gen.G",
     "home": "LCK",
     "gp": 165,
-    "gold": 4860.0,
+    "gold": 4862.0,
     "gold_u": 1128.0
    },
    {
@@ -244,72 +244,72 @@
     "team": "T1",
     "home": "LCK",
     "gp": 187,
-    "gold": 4774.0,
-    "gold_u": 1042.0
+    "gold": 4776.0,
+    "gold_u": 1043.0
    },
    {
     "name": "Peanut",
     "team": "Hanwha Life Esports",
     "home": "LCK",
     "gp": 152,
-    "gold": 4466.0,
-    "gold_u": 735.0
+    "gold": 4463.0,
+    "gold_u": 730.0
    },
    {
     "name": "Tarzan",
     "team": "Anyone's Legend",
     "home": "LPL",
     "gp": 183,
-    "gold": 4247.0,
-    "gold_u": 1664.0
+    "gold": 4245.0,
+    "gold_u": 1669.0
    },
    {
     "name": "Shad0w",
     "team": "Bilibili Gaming",
     "home": "LPL",
     "gp": 123,
-    "gold": 4240.0,
-    "gold_u": 1656.0
+    "gold": 4237.0,
+    "gold_u": 1662.0
    },
    {
     "name": "Kanavi",
     "team": "Hanwha Life Esports",
     "home": "LPL",
     "gp": 200,
-    "gold": 4202.0,
-    "gold_u": 1618.0
+    "gold": 4203.0,
+    "gold_u": 1628.0
    },
    {
     "name": "Lucid",
     "team": "Dplus Kia",
     "home": "LCK",
     "gp": 162,
-    "gold": 4191.0,
-    "gold_u": 460.0
+    "gold": 4192.0,
+    "gold_u": 459.0
    },
    {
     "name": "Beichuan",
     "team": "Bilibili Gaming",
     "home": "LPL",
     "gp": 128,
-    "gold": 4071.0,
-    "gold_u": 1487.0
+    "gold": 4061.0,
+    "gold_u": 1485.0
    },
    {
     "name": "YoungJae",
     "team": "KT Rolster Challengers",
     "home": "LCKC",
     "gp": 129,
-    "gold": 3892.0,
-    "gold_u": 1487.0
+    "gold": 3895.0,
+    "gold_u": 1486.0
    },
    {
     "name": "Inspired",
     "team": "FlyQuest",
     "home": "LCS",
     "gp": 91,
-    "gold": 3813.0,
-    "gold_u": 1540.0
+    "gold": 3820.0,
+    "gold_u": 1543.0
    }
   ],
   "Mid": [
@@ -318,8 +318,8 @@
     "team": "Gen.G",
     "home": "LCK",
     "gp": 163,
-    "gold": 5606.0,
-    "gold_u": 1875.0
+    "gold": 5605.0,
+    "gold_u": 1872.0
    },
    {
     "name": "Zeka",
@@ -327,31 +327,31 @@
     "home": "LCK",
     "gp": 169,
     "gold": 4873.0,
-    "gold_u": 1142.0
+    "gold_u": 1140.0
    },
    {
     "name": "Faker",
     "team": "T1",
     "home": "LCK",
     "gp": 187,
-    "gold": 4689.0,
-    "gold_u": 958.0
+    "gold": 4690.0,
+    "gold_u": 957.0
    },
    {
     "name": "Guti",
     "team": "T1 Esports Academy",
     "home": "LCKC",
     "gp": 92,
-    "gold": 4517.0,
-    "gold_u": 2112.0
+    "gold": 4526.0,
+    "gold_u": 2116.0
    },
    {
     "name": "kyeahoo",
     "team": "Kiwoom DRX Challengers",
     "home": "LCKC",
     "gp": 135,
-    "gold": 4343.0,
-    "gold_u": 1938.0
+    "gold": 4348.0,
+    "gold_u": 1939.0
    },
    {
     "name": "ShowMaker",
@@ -359,31 +359,31 @@
     "home": "LCK",
     "gp": 163,
     "gold": 4313.0,
-    "gold_u": 582.0
+    "gold_u": 580.0
    },
    {
     "name": "Knight",
     "team": "Bilibili Gaming",
     "home": "LPL",
     "gp": 180,
-    "gold": 4287.0,
-    "gold_u": 1703.0
+    "gold": 4290.0,
+    "gold_u": 1715.0
    },
    {
     "name": "Shanks",
     "team": "Anyone's Legend",
     "home": "LPL",
     "gp": 183,
-    "gold": 4027.0,
-    "gold_u": 1444.0
+    "gold": 4024.0,
+    "gold_u": 1449.0
    },
    {
     "name": "Zinie",
     "team": "KT Rolster Challengers",
     "home": "LCKC",
     "gp": 129,
-    "gold": 3963.0,
-    "gold_u": 1558.0
+    "gold": 3972.0,
+    "gold_u": 1563.0
    },
    {
     "name": "Creme",
@@ -391,7 +391,7 @@
     "home": "LPL",
     "gp": 183,
     "gold": 3905.0,
-    "gold_u": 1322.0
+    "gold_u": 1329.0
    }
   ],
   "ADC": [
@@ -400,80 +400,80 @@
     "team": "Gen.G",
     "home": "LCK",
     "gp": 163,
-    "gold": 5443.0,
-    "gold_u": 1711.0
+    "gold": 5449.0,
+    "gold_u": 1715.0
    },
    {
     "name": "Gumayusi",
     "team": "Hanwha Life Esports",
     "home": "LCK",
     "gp": 162,
-    "gold": 4511.0,
-    "gold_u": 779.0
+    "gold": 4513.0,
+    "gold_u": 780.0
    },
    {
     "name": "Viper",
     "team": "Bilibili Gaming",
     "home": "LCK",
     "gp": 161,
-    "gold": 4381.0,
-    "gold_u": 650.0
+    "gold": 4388.0,
+    "gold_u": 655.0
    },
    {
     "name": "Hope",
     "team": "Anyone's Legend",
     "home": "LPL",
     "gp": 183,
-    "gold": 4146.0,
-    "gold_u": 1563.0
+    "gold": 4143.0,
+    "gold_u": 1567.0
    },
    {
     "name": "Smash",
     "team": "Dplus Kia",
     "home": "LCKC",
     "gp": 144,
-    "gold": 4135.0,
-    "gold_u": 1729.0
+    "gold": 4141.0,
+    "gold_u": 1731.0
    },
    {
     "name": "Aiming",
     "team": "Dplus Kia",
     "home": "LCK",
     "gp": 146,
-    "gold": 4057.0,
-    "gold_u": 326.0
+    "gold": 4062.0,
+    "gold_u": 329.0
    },
    {
     "name": "Peyz",
     "team": "T1",
     "home": "LPL",
     "gp": 169,
-    "gold": 4016.0,
-    "gold_u": 1432.0
+    "gold": 4018.0,
+    "gold_u": 1442.0
    },
    {
     "name": "JackeyLove",
     "team": "Top Esports",
     "home": "LPL",
     "gp": 183,
-    "gold": 3888.0,
-    "gold_u": 1305.0
+    "gold": 3877.0,
+    "gold_u": 1301.0
    },
    {
     "name": "Elk",
     "team": "Weibo Gaming",
     "home": "LPL",
     "gp": 190,
-    "gold": 3887.0,
-    "gold_u": 1304.0
+    "gold": 3876.0,
+    "gold_u": 1300.0
    },
    {
     "name": "Jiwoo",
     "team": "Kiwoom DRX",
     "home": "LCK",
     "gp": 141,
-    "gold": 3848.0,
-    "gold_u": 117.0
+    "gold": 3849.0,
+    "gold_u": 116.0
    }
   ],
   "Support": [
@@ -482,31 +482,31 @@
     "team": "KT Rolster",
     "home": "LCK",
     "gp": 135,
-    "gold": 5195.0,
-    "gold_u": 1463.0
+    "gold": 5199.0,
+    "gold_u": 1465.0
    },
    {
     "name": "Delight",
     "team": "Hanwha Life Esports",
     "home": "LCK",
     "gp": 169,
-    "gold": 4979.0,
-    "gold_u": 1247.0
+    "gold": 4984.0,
+    "gold_u": 1251.0
    },
    {
     "name": "Duro",
     "team": "Gen.G",
     "home": "LCK",
     "gp": 167,
-    "gold": 4830.0,
-    "gold_u": 1099.0
+    "gold": 4831.0,
+    "gold_u": 1098.0
    },
    {
     "name": "Keria",
     "team": "T1",
     "home": "LCK",
     "gp": 187,
-    "gold": 4735.0,
+    "gold": 4737.0,
     "gold_u": 1004.0
    },
    {
@@ -514,8 +514,8 @@
     "team": "DN SOOPers",
     "home": "LCKC",
     "gp": 127,
-    "gold": 4159.0,
-    "gold_u": 1754.0
+    "gold": 4164.0,
+    "gold_u": 1755.0
    },
    {
     "name": "Kael",
@@ -523,54 +523,54 @@
     "home": "LPL",
     "gp": 183,
     "gold": 3869.0,
-    "gold_u": 1286.0
+    "gold_u": 1294.0
    },
    {
     "name": "Career",
     "team": "Dplus Kia",
     "home": "LCKC",
     "gp": 171,
-    "gold": 3686.0,
-    "gold_u": 1281.0
+    "gold": 3692.0,
+    "gold_u": 1283.0
    },
    {
     "name": "Andil",
     "team": "Kiwoom DRX",
     "home": "LCK",
     "gp": 103,
-    "gold": 3667.0,
-    "gold_u": -65.0
+    "gold": 3671.0,
+    "gold_u": -62.0
    },
    {
     "name": "Lehends",
     "team": "Nongshim RedForce",
     "home": "LCK",
     "gp": 147,
-    "gold": 3626.0,
-    "gold_u": -105.0
+    "gold": 3633.0,
+    "gold_u": -100.0
    },
    {
     "name": "Piero",
     "team": "Karmine Corp Blue",
     "home": "LFL",
     "gp": 114,
-    "gold": 3606.0,
-    "gold_u": 1360.0
+    "gold": 3603.0,
+    "gold_u": 1382.0
    }
   ]
  },
  "diag": {
   "v1_dev": {
-   "logloss": 0.616743824118529,
-   "auc": 0.7194510457244122
+   "logloss": 0.616077216423462,
+   "auc": 0.7210873613472594
   },
   "league_only_dev": {
-   "logloss": 0.6754400547016599,
-   "auc": 0.6183452973025945
+   "logloss": 0.6757956171364717,
+   "auc": 0.621407173508218
   },
   "placebo_dev": {
-   "logloss": 0.6935263296111163,
-   "auc": 0.47788503156364587
+   "logloss": 0.6934993947511225,
+   "auc": 0.47747145980082584
   }
  }
 }

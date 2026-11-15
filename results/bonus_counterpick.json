@@ -1,42 +1,42 @@
 {
  "top": {
-  "naive": -20.8,
-  "ctrl": 32.0,
-  "ctrl_se": 13.1,
-  "champ": 65.5,
-  "champ_se": 12.4,
-  "n": 53430
+  "naive": -20.3,
+  "ctrl": 33.6,
+  "ctrl_se": 13.0,
+  "champ": 68.8,
+  "champ_se": 12.3,
+  "n": 54662
  },
  "jng": {
-  "naive": 49.5,
-  "ctrl": 39.7,
-  "ctrl_se": 10.7,
-  "champ": 29.2,
-  "champ_se": 10.4,
-  "n": 53430
+  "naive": 43.8,
+  "ctrl": 35.1,
+  "ctrl_se": 10.6,
+  "champ": 26.8,
+  "champ_se": 10.3,
+  "n": 54662
  },
  "mid": {
-  "naive": -15.3,
-  "ctrl": 5.6,
-  "ctrl_se": 10.9,
+  "naive": -14.2,
+  "ctrl": 5.8,
+  "ctrl_se": 10.8,
   "champ": 26.1,
-  "champ_se": 10.6,
-  "n": 53430
+  "champ_se": 10.5,
+  "n": 54662
  },
  "bot": {
-  "naive": -17.6,
-  "ctrl": -18.6,
+  "naive": -16.7,
+  "ctrl": -17.4,
   "ctrl_se": 13.9,
-  "champ": -5.0,
-  "champ_se": 13.6,
-  "n": 53430
+  "champ": -4.3,
+  "champ_se": 13.5,
+  "n": 54662
  },
  "sup": {
-  "naive": -11.5,
-  "ctrl": -3.0,
+  "naive": -13.2,
+  "ctrl": -4.9,
   "ctrl_se": 6.8,
-  "champ": 1.4,
+  "champ": -0.4,
   "champ_se": 6.5,
-  "n": 53430
+  "n": 54662
  }
 }

@@ -2,22 +2,22 @@
  "diff": {
   "LCKC-LEC": [
    9,
-   93
+   94
   ],
   "LEC-LCS": [
-   18,
+   17,
    83
   ],
   "LCK-LPL": [
-   230,
+   232,
    60
   ],
   "LPL-LEC": [
-   45,
+   43,
    71
   ],
   "LFL-LEC": [
-   -23,
+   -28,
    142
   ],
   "LCKC-LCK": [
@@ -25,219 +25,219 @@
    84
   ],
   "LCKC-LFL": [
-   32,
+   38,
    149
   ]
  },
  "movers": [
   {
    "origine": "LCS",
-   "points_par_joueur": -350.0,
-   "se": 70.0,
-   "games": 515,
+   "points_par_joueur": -314.0,
+   "se": 69.0,
+   "games": 572,
    "joueurs": 11
   },
   {
    "origine": "NEXO",
-   "points_par_joueur": -156.0,
+   "points_par_joueur": -163.0,
    "se": 73.0,
-   "games": 356,
+   "games": 360,
    "joueurs": 30
   },
   {
    "origine": "NLC",
-   "points_par_joueur": -135.0,
+   "points_par_joueur": -137.0,
    "se": 44.0,
-   "games": 1032,
-   "joueurs": 41
+   "games": 1046,
+   "joueurs": 40
   },
   {
    "origine": "PRMP",
-   "points_par_joueur": -85.0,
-   "se": 62.0,
+   "points_par_joueur": -86.0,
+   "se": 61.0,
    "games": 154,
    "joueurs": 15
   },
   {
+   "origine": "LPL",
+   "points_par_joueur": -69.0,
+   "se": 82.0,
+   "games": 623,
+   "joueurs": 8
+  },
+  {
    "origine": "LCKC",
-   "points_par_joueur": -46.0,
-   "se": 44.0,
-   "games": 1270,
+   "points_par_joueur": -50.0,
+   "se": 42.0,
+   "games": 1415,
    "joueurs": 26
   },
   {
    "origine": "LES",
-   "points_par_joueur": -18.0,
-   "se": 47.0,
-   "games": 1257,
+   "points_par_joueur": -10.0,
+   "se": 45.0,
+   "games": 1355,
    "joueurs": 32
   },
   {
-   "origine": "LCP",
-   "points_par_joueur": -10.0,
-   "se": 57.0,
-   "games": 707,
-   "joueurs": 14
-  },
-  {
    "origine": "PRM",
-   "points_par_joueur": 0.0,
-   "se": 70.0,
-   "games": 747,
+   "points_par_joueur": -0.0,
+   "se": 69.0,
+   "games": 794,
    "joueurs": 24
   },
   {
+   "origine": "LCP",
+   "points_par_joueur": 1.0,
+   "se": 57.0,
+   "games": 721,
+   "joueurs": 14
+  },
+  {
    "origine": "LIT",
-   "points_par_joueur": 18.0,
-   "se": 50.0,
-   "games": 603,
+   "points_par_joueur": 17.0,
+   "se": 49.0,
+   "games": 620,
    "joueurs": 21
   },
   {
    "origine": "HLL",
-   "points_par_joueur": 25.0,
-   "se": 75.0,
-   "games": 618,
-   "joueurs": 21
+   "points_par_joueur": 20.0,
+   "se": 77.0,
+   "games": 611,
+   "joueurs": 20
   },
   {
    "origine": "RL",
-   "points_par_joueur": 28.0,
-   "se": 81.0,
-   "games": 480,
+   "points_par_joueur": 38.0,
+   "se": 80.0,
+   "games": 505,
    "joueurs": 12
   },
   {
    "origine": "HC",
-   "points_par_joueur": 32.0,
-   "se": 69.0,
-   "games": 473,
-   "joueurs": 30
-  },
-  {
-   "origine": "LPL",
-   "points_par_joueur": 40.0,
-   "se": 84.0,
-   "games": 595,
-   "joueurs": 8
-  },
-  {
-   "origine": "PCS",
-   "points_par_joueur": 63.0,
-   "se": 43.0,
-   "games": 318,
-   "joueurs": 12
+   "points_par_joueur": 39.0,
+   "se": 75.0,
+   "games": 459,
+   "joueurs": 29
   },
   {
    "origine": "LFL",
-   "points_par_joueur": 73.0,
-   "se": 39.0,
-   "games": 1208,
+   "points_par_joueur": 64.0,
+   "se": 38.0,
+   "games": 1289,
    "joueurs": 30
   },
   {
    "origine": "NL",
-   "points_par_joueur": 76.0,
+   "points_par_joueur": 68.0,
    "se": 42.0,
-   "games": 1278,
+   "games": 1351,
    "joueurs": 38
   },
   {
-   "origine": "CBLOL",
-   "points_par_joueur": 104.0,
-   "se": 78.0,
-   "games": 576,
-   "joueurs": 13
+   "origine": "PCS",
+   "points_par_joueur": 78.0,
+   "se": 42.0,
+   "games": 380,
+   "joueurs": 12
   },
   {
    "origine": "EBL",
-   "points_par_joueur": 127.0,
-   "se": 61.0,
-   "games": 712,
+   "points_par_joueur": 114.0,
+   "se": 60.0,
+   "games": 747,
    "joueurs": 24
   },
   {
    "origine": "HM",
-   "points_par_joueur": 148.0,
+   "points_par_joueur": 119.0,
    "se": 63.0,
-   "games": 912,
+   "games": 938,
    "joueurs": 24
+  },
+  {
+   "origine": "CBLOL",
+   "points_par_joueur": 133.0,
+   "se": 75.0,
+   "games": 644,
+   "joueurs": 13
+  },
+  {
+   "origine": "NACL",
+   "points_par_joueur": 149.0,
+   "se": 88.0,
+   "games": 375,
+   "joueurs": 8
   },
   {
    "origine": "ROL",
    "points_par_joueur": 163.0,
-   "se": 72.0,
-   "games": 484,
+   "se": 70.0,
+   "games": 501,
    "joueurs": 21
+  },
+  {
+   "origine": "CD",
+   "points_par_joueur": 167.0,
+   "se": 65.0,
+   "games": 401,
+   "joueurs": 15
   },
   {
    "origine": "TCL",
    "points_par_joueur": 171.0,
-   "se": 59.0,
-   "games": 974,
-   "joueurs": 20
-  },
-  {
-   "origine": "CD",
-   "points_par_joueur": 178.0,
-   "se": 68.0,
-   "games": 361,
-   "joueurs": 15
+   "se": 55.0,
+   "games": 1128,
+   "joueurs": 22
   },
   {
    "origine": "LRN",
-   "points_par_joueur": 210.0,
+   "points_par_joueur": 207.0,
    "se": 81.0,
    "games": 274,
    "joueurs": 9
   },
   {
-   "origine": "NACL",
-   "points_par_joueur": 248.0,
-   "se": 97.0,
-   "games": 320,
-   "joueurs": 8
+   "origine": "LEC",
+   "points_par_joueur": 274.0,
+   "se": 48.0,
+   "games": 649,
+   "joueurs": 12
   },
   {
    "origine": "AL",
-   "points_par_joueur": 281.0,
-   "se": 52.0,
-   "games": 897,
+   "points_par_joueur": 275.0,
+   "se": 51.0,
+   "games": 937,
    "joueurs": 28
   },
   {
    "origine": "LCK",
-   "points_par_joueur": 283.0,
-   "se": 72.0,
-   "games": 632,
+   "points_par_joueur": 295.0,
+   "se": 71.0,
+   "games": 671,
    "joueurs": 8
   },
   {
-   "origine": "LEC",
-   "points_par_joueur": 302.0,
-   "se": 50.0,
-   "games": 615,
-   "joueurs": 12
-  },
-  {
    "origine": "LPLOL",
-   "points_par_joueur": 305.0,
-   "se": 72.0,
-   "games": 506,
-   "joueurs": 30
+   "points_par_joueur": 313.0,
+   "se": 71.0,
+   "games": 533,
+   "joueurs": 31
   },
   {
    "origine": "LAS",
-   "points_par_joueur": 308.0,
+   "points_par_joueur": 320.0,
    "se": 59.0,
-   "games": 502,
+   "games": 514,
    "joueurs": 19
   },
   {
    "origine": "VCS",
-   "points_par_joueur": 410.0,
-   "se": 91.0,
-   "games": 253,
+   "points_par_joueur": 393.0,
+   "se": 83.0,
+   "games": 275,
    "joueurs": 6
   }
  ]

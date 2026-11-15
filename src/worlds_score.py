@@ -42,7 +42,7 @@ for (A,B,day),d in G.groupby(['A','B','day']):
         pa=d[k].iloc[0] if d.blue.iloc[0]==A else 1-d[k].iloc[0]
         r[k]=sum(comb(n-1+j,j)*pa**n*(1-pa)**j for j in range(n))
     ser.append(r)
-S=pd.DataFrame(ser); out['n_series']=len(S)
+S=pd.DataFrame(ser); out['n_series']=len(S); out['last_game']=str(pd.to_datetime(G.date).max().date())
 for k in ['p_model','p_elo']: out['series_acc_'+k]=float(((S[k]>0.5)==(S.a_won==1)).mean()) if len(S) else None
 print(json.dumps(out,indent=1,ensure_ascii=False))
 if not x.smoke: json.dump(out,open('results/worlds2026/score.json','w'),indent=1,ensure_ascii=False); G.to_csv('results/worlds2026/games_scored.csv',index=False)

@@ -8,6 +8,8 @@ Method inspired by [B.A.S.I.C.](https://github.com/HQEye/basic-most-average-nba-
 
 Data: [Oracle's Elixir](https://oracleselixir.com/tools/downloads) match data — 10,044 pro games in 2025 (building), 9,266 games in 2026 up to September 28 (judging), 2023 and 2024 (11,106 and 10,204 games) for the replication, 2022 for the bonus analyses.
 
+**Refresh of November 15, 2026.** The weekly update had silently skipped every run since October (the download script used a gdown option removed in gdown 6); fixed, and `results/` and the page re-run on data up to November 13, 2026 (Worlds up to the semi-finals). The figures in this README describe the September 28 run. **Worlds 2026 verdict (94 games, final still missing from the data):** the frozen model called 62.8 % of games (AUC 0.703, log-loss 0.609) vs 59.6 % for the team Elo frozen the same day (AUC 0.622); series 62 % vs 55 %.
+
 ## The result
 
 **The whole 2026 season in live conditions** (8,566 games, February → September). Every month the model is retrained on everything played before the 1st, then predicts that month. The Elo baselines are updated after *every* game, which favours them.

@@ -1,13 +1,13 @@
 {
  "auc": {
-  "u": 0.6636790043189522,
-  "theta": 0.7499961299710522,
-  "KDA": 0.6984357342992926,
-  "W": 0.6690931748169476,
-  "v03": 0.7309555875477949
+  "u": 0.6793968845692984,
+  "theta": 0.719471441885235,
+  "KDA": 0.6869258420982559,
+  "W": 0.6743476234855545,
+  "v03": 0.7273199307682067
  },
  "n": 1181,
- "n_prom": 122,
+ "n_prom": 145,
  "top": [
   {
    "name": "Guti",
@@ -15,9 +15,9 @@
    "home": "LCKC",
    "role": "Mid",
    "gp": 92,
-   "theta": 0.9034826348728583,
+   "theta": 0.9051664803275649,
    "promoted": false,
-   "gold": 4517.0
+   "gold": 4526.0
   },
   {
    "name": "kyeahoo",
@@ -25,9 +25,9 @@
    "home": "LCKC",
    "role": "Mid",
    "gp": 135,
-   "theta": 0.8686911980653768,
+   "theta": 0.869638545740671,
    "promoted": true,
-   "gold": 4343.0
+   "gold": 4348.0
   },
   {
    "name": "Quantum",
@@ -35,9 +35,9 @@
    "home": "LCKC",
    "role": "Support",
    "gp": 127,
-   "theta": 0.8317724543044627,
+   "theta": 0.832869031337262,
    "promoted": true,
-   "gold": 4159.0
+   "gold": 4164.0
   },
   {
    "name": "Smash",
@@ -45,9 +45,9 @@
    "home": "LCKC",
    "role": "ADC",
    "gp": 144,
-   "theta": 0.8269101202966451,
+   "theta": 0.8281636975301474,
    "promoted": true,
-   "gold": 4135.0
+   "gold": 4141.0
   },
   {
    "name": "Zinie",
@@ -55,9 +55,9 @@
    "home": "LCKC",
    "role": "Mid",
    "gp": 129,
-   "theta": 0.7925728023883234,
+   "theta": 0.7944548253377013,
    "promoted": true,
-   "gold": 3963.0
+   "gold": 3972.0
   },
   {
    "name": "YoungJae",
@@ -65,9 +65,9 @@
    "home": "LCKC",
    "role": "Jungle",
    "gp": 129,
-   "theta": 0.778424268702453,
+   "theta": 0.7790415393849489,
    "promoted": true,
-   "gold": 3892.0
+   "gold": 3895.0
   },
   {
    "name": "Paduck",
@@ -75,9 +75,9 @@
    "home": "LCKC",
    "role": "ADC",
    "gp": 129,
-   "theta": 0.7508249835152949,
+   "theta": 0.7519231936460113,
    "promoted": true,
-   "gold": 3754.0
+   "gold": 3760.0
   },
   {
    "name": "Career",
@@ -85,19 +85,9 @@
    "home": "LCKC",
    "role": "Support",
    "gp": 171,
-   "theta": 0.7372424967358433,
+   "theta": 0.7384730026149816,
    "promoted": true,
-   "gold": 3686.0
-  },
-  {
-   "name": "Rhilech",
-   "team": "BK ROG Esports",
-   "home": "LFL",
-   "role": "Jungle",
-   "gp": 61,
-   "theta": 0.7361857748054623,
-   "promoted": true,
-   "gold": 3681.0
+   "gold": 3692.0
   },
   {
    "name": "3XA",
@@ -105,9 +95,19 @@
    "home": "LFL",
    "role": "ADC",
    "gp": 127,
-   "theta": 0.7347170877484488,
+   "theta": 0.7330507844010894,
    "promoted": false,
-   "gold": 3674.0
+   "gold": 3665.0
+  },
+  {
+   "name": "Rhilech",
+   "team": "BK ROG Esports",
+   "home": "LFL",
+   "role": "Jungle",
+   "gp": 61,
+   "theta": 0.7293945914769977,
+   "promoted": true,
+   "gold": 3647.0
   },
   {
    "name": "Piero",
@@ -115,19 +115,9 @@
    "home": "LFL",
    "role": "Support",
    "gp": 114,
-   "theta": 0.7211043067230976,
+   "theta": 0.7205936034478266,
    "promoted": false,
-   "gold": 3606.0
-  },
-  {
-   "name": "SlowQ",
-   "team": "Karmine Corp Blue",
-   "home": "LFL",
-   "role": "Mid",
-   "gp": 127,
-   "theta": 0.7110215953446648,
-   "promoted": true,
-   "gold": 3555.0
+   "gold": 3603.0
   },
   {
    "name": "Juhan",
@@ -135,9 +125,19 @@
    "home": "LCKC",
    "role": "Jungle",
    "gp": 155,
-   "theta": 0.7062683027707768,
+   "theta": 0.709536871924623,
    "promoted": true,
-   "gold": 3531.0
+   "gold": 3548.0
+  },
+  {
+   "name": "SlowQ",
+   "team": "Karmine Corp Blue",
+   "home": "LFL",
+   "role": "Mid",
+   "gp": 127,
+   "theta": 0.7068807000250019,
+   "promoted": true,
+   "gold": 3534.0
   },
   {
    "name": "Vincenzo",
@@ -145,9 +145,9 @@
    "home": "LCKC",
    "role": "Jungle",
    "gp": 150,
-   "theta": 0.6817346259118728,
+   "theta": 0.6832342875943274,
    "promoted": false,
-   "gold": 3409.0
+   "gold": 3416.0
   },
   {
    "name": "Trigger",
@@ -155,9 +155,9 @@
    "home": "LCKC",
    "role": "ADC",
    "gp": 78,
-   "theta": 0.6735501716057655,
+   "theta": 0.6718936556960444,
    "promoted": true,
-   "gold": 3368.0
+   "gold": 3359.0
   }
  ],
  "promoted": [
@@ -165,178 +165,178 @@
    "name": "kyeahoo",
    "home": "LCKC",
    "role": "Mid",
-   "theta": 0.8686911980653768,
+   "theta": 0.869638545740671,
    "to": "LEC"
   },
   {
    "name": "Quantum",
    "home": "LCKC",
    "role": "Support",
-   "theta": 0.8317724543044627,
+   "theta": 0.832869031337262,
    "to": "LCK"
   },
   {
    "name": "Smash",
    "home": "LCKC",
    "role": "ADC",
-   "theta": 0.8269101202966451,
+   "theta": 0.8281636975301474,
    "to": "LCK"
   },
   {
    "name": "Zinie",
    "home": "LCKC",
    "role": "Mid",
-   "theta": 0.7925728023883234,
+   "theta": 0.7944548253377013,
    "to": "LCS"
   },
   {
    "name": "YoungJae",
    "home": "LCKC",
    "role": "Jungle",
-   "theta": 0.778424268702453,
+   "theta": 0.7790415393849489,
    "to": "CBLOL"
   },
   {
    "name": "Paduck",
    "home": "LCKC",
    "role": "ADC",
-   "theta": 0.7508249835152949,
+   "theta": 0.7519231936460113,
    "to": "LEC"
   },
   {
    "name": "Career",
    "home": "LCKC",
    "role": "Support",
-   "theta": 0.7372424967358433,
+   "theta": 0.7384730026149816,
    "to": "LCK"
   },
   {
    "name": "Rhilech",
    "home": "LFL",
    "role": "Jungle",
-   "theta": 0.7361857748054623,
-   "to": "LEC"
-  },
-  {
-   "name": "SlowQ",
-   "home": "LFL",
-   "role": "Mid",
-   "theta": 0.7110215953446648,
+   "theta": 0.7293945914769977,
    "to": "LEC"
   },
   {
    "name": "Juhan",
    "home": "LCKC",
    "role": "Jungle",
-   "theta": 0.7062683027707768,
+   "theta": 0.709536871924623,
    "to": "LPL"
+  },
+  {
+   "name": "SlowQ",
+   "home": "LFL",
+   "role": "Mid",
+   "theta": 0.7068807000250019,
+   "to": "LEC"
   },
   {
    "name": "Trigger",
    "home": "LCKC",
    "role": "ADC",
-   "theta": 0.6735501716057655,
+   "theta": 0.6718936556960444,
    "to": "CBLOL"
   },
   {
    "name": "Maynter",
    "home": "LFL",
    "role": "Top",
-   "theta": 0.673200216117785,
+   "theta": 0.6699384529776842,
    "to": "LEC"
   },
   {
    "name": "Fisher",
    "home": "LCKC",
    "role": "Mid",
-   "theta": 0.6685423815623395,
+   "theta": 0.6687365012986997,
    "to": "LCP"
   },
   {
    "name": "Serin",
    "home": "LFL",
    "role": "Mid",
-   "theta": 0.6530704774800127,
-   "to": "LEC"
-  },
-  {
-   "name": "Rekkles",
-   "home": "NLC",
-   "role": "Support",
-   "theta": 0.6288929758307953,
+   "theta": 0.6530323021611466,
    "to": "LEC"
   },
   {
    "name": "Frog",
    "home": "LCKC",
    "role": "Top",
-   "theta": 0.6263314957594889,
+   "theta": 0.62650600416709,
    "to": "LCK"
+  },
+  {
+   "name": "Rekkles",
+   "home": "NLC",
+   "role": "Support",
+   "theta": 0.6259674566251853,
+   "to": "LEC"
   },
   {
    "name": "Soboro",
    "home": "LCKC",
    "role": "Top",
-   "theta": 0.59656376668625,
+   "theta": 0.5949156982564493,
    "to": "LEC,LPL"
   },
   {
    "name": "LazyFeel",
    "home": "LCKC",
    "role": "ADC",
-   "theta": 0.590509645611088,
+   "theta": 0.5906597536481732,
    "to": "LCK"
   },
   {
    "name": "Jopa",
    "home": "LFL",
    "role": "ADC",
-   "theta": 0.5895490475835341,
+   "theta": 0.5897144581406147,
    "to": "LEC"
   },
   {
    "name": "Crownie",
    "home": "NLC",
    "role": "ADC",
-   "theta": 0.5893525143356821,
+   "theta": 0.5879455078641816,
    "to": "LEC"
   },
   {
    "name": "Burdol",
    "home": "LCKC",
    "role": "Top",
-   "theta": 0.580136213303263,
+   "theta": 0.5802974364709482,
    "to": "LPL"
   },
   {
    "name": "Nemesis",
    "home": "NLC",
    "role": "Mid",
-   "theta": 0.5763652820394356,
+   "theta": 0.5760632156318429,
    "to": "LEC"
   },
   {
    "name": "Grizzly",
    "home": "LCKC",
    "role": "Jungle",
-   "theta": 0.5745771078659758,
+   "theta": 0.5760264438370216,
    "to": "LPL"
-  },
-  {
-   "name": "Feisty",
-   "home": "LES",
-   "role": "Mid",
-   "theta": 0.5629082540783238,
-   "to": "CBLOL"
   },
   {
    "name": "Willer",
    "home": "LCKC",
    "role": "Jungle",
-   "theta": 0.5623708810346072,
+   "theta": 0.5639563705451638,
    "to": "LCK"
+  },
+  {
+   "name": "Feisty",
+   "home": "LES",
+   "role": "Mid",
+   "theta": 0.5621814008496906,
+   "to": "CBLOL"
   }
  ],
- "top20_rate": 0.7,
- "base": 0.10330228619813717
+ "top20_rate": 0.65,
+ "base": 0.12277730736663844
 }
